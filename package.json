@@ -1,7 +1,7 @@
 {
   "name": "greengolingo",
   "version": "1.0.0",
-  "description": "GreenGoLingo - Premium Portuguese Language Learning Application",
+  "description": "GreengoLingo - Premium Portuguese Language Learning Application",
   "type": "module",
   "scripts": {
     "dev": "vite",

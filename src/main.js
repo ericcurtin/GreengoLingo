@@ -1,5 +1,5 @@
 /**
- * GreenGoLingo - Premium Portuguese Language Learning Application
+ * GreengoLingo - Premium Portuguese Language Learning Application
  * Main JavaScript Application
  */
 
@@ -257,7 +257,7 @@ const api = {
       case 'get_version':
         return '0.1.0';
       case 'get_app_name':
-        return 'GreenGoLingo';
+        return 'GreengoLingo';
       case 'get_progress_summary':
         return mockApi.progress;
       case 'get_current_dialect':

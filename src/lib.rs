@@ -1,6 +1,6 @@
-//! GreenGoLingo Core Library
+//! GreengoLingo Core Library
 //!
-//! This crate provides the core functionality for the GreenGoLingo Portuguese
+//! This crate provides the core functionality for the GreengoLingo Portuguese
 //! language learning application. It handles dialect-specific content,
 //! CEFR-aligned lesson structure, and question evaluation.
 
@@ -20,7 +20,7 @@ pub use content::ContentManager;
 pub const VERSION: &str = env!("CARGO_PKG_VERSION");
 
 /// Application name
-pub const APP_NAME: &str = "GreenGoLingo";
+pub const APP_NAME: &str = "GreengoLingo";
 
 #[cfg(test)]
 mod tests {
@@ -33,6 +33,6 @@ mod tests {
 
     #[test]
     fn test_app_name() {
-        assert_eq!(APP_NAME, "GreenGoLingo");
+        assert_eq!(APP_NAME, "GreengoLingo");
     }
 }
