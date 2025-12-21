@@ -1,0 +1,19 @@
+[package]
+name = "greengolingo_core"
+version = "0.1.0"
+edition = "2021"
+description = "Core library for GreenGoLingo - A Portuguese language learning application"
+license = "Apache-2.0"
+
+[dependencies]
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+unicode-normalization = "0.1"
+
+[dev-dependencies]
+pretty_assertions = "1.4"
+
+[lib]
+name = "greengolingo_core"
+path = "src/lib.rs"
+crate-type = ["lib", "cdylib", "staticlib"]
