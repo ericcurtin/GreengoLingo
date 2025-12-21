@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GreenGoLingo</title>
+  <link rel="stylesheet" href="/src/styles.css">
+</head>
+<body class="dark-mode">
+  <div id="app">
+    <!-- Header -->
+    <header class="app-header">
+      <div class="logo">
+        <span class="logo-icon">🇵🇹</span>
+        <h1>GreenGoLingo</h1>
+      </div>
+      <nav class="nav-controls">
+        <button id="settingsBtn" class="icon-btn" title="Settings">⚙️</button>
+        <button id="darkModeBtn" class="icon-btn" title="Toggle Dark Mode">🌙</button>
+      </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <!-- Onboarding Screen -->
+      <section id="onboarding" class="screen active">
+        <div class="onboarding-container">
+          <h2>Welcome to GreenGoLingo</h2>
+          <p class="subtitle">Learn Portuguese the right way – with dialect precision and academic structure.</p>
+          
+          <div class="dialect-selection">
+            <h3>Choose Your Target Dialect</h3>
+            <p class="hint">This determines vocabulary, grammar, and pronunciation patterns.</p>
+            
+            <div class="dialect-cards">
+              <button class="dialect-card" data-dialect="pt-pt">
+                <span class="flag">🇵🇹</span>
+                <h4>European Portuguese (PT-PT)</h4>
+                <p>Portugal • Focuses on <em>Tu</em> and <em>Você</em></p>
+                <ul>
+                  <li>Autocarro (Bus)</li>
+                  <li>Estou a comer</li>
+                  <li>Amo-te</li>
+                </ul>
+              </button>
+              
+              <button class="dialect-card" data-dialect="pt-br">
+                <span class="flag">🇧🇷</span>
+                <h4>Brazilian Portuguese (PT-BR)</h4>
+                <p>Brazil • Primarily uses <em>Você</em></p>
+                <ul>
+                  <li>Ônibus (Bus)</li>
+                  <li>Estou comendo</li>
+                  <li>Te amo</li>
+                </ul>
+              </button>
+            </div>
+          </div>
+
+          <div class="typing-mode-selection" style="display: none;">
+            <h3>Choose Typing Mode</h3>
+            <p class="hint">This affects how strictly accents are checked.</p>
+            
+            <div class="mode-cards">
+              <button class="mode-card active" data-mode="lenient">
+                <h4>Lenient Mode</h4>
+                <p>Accents won't count as mistakes. Good for beginners.</p>
+                <span class="example">pao → pão ✓</span>
+              </button>
+              
+              <button class="mode-card" data-mode="strict">
+                <h4>Strict Mode</h4>
+                <p>Missing accents count as mistakes. For advanced learners.</p>
+                <span class="example">pao → pão ✗</span>
+              </button>
+            </div>
+
+            <button id="startLearning" class="primary-btn">Start Learning</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Dashboard Screen -->
+      <section id="dashboard" class="screen">
+        <div class="dashboard-container">
+          <div class="progress-summary">
+            <div class="stat-card">
+              <span class="stat-value" id="currentLevel">A1.1</span>
+              <span class="stat-label">Current Level</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-value" id="accuracy">0%</span>
+              <span class="stat-label">Accuracy</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-value" id="streak">0</span>
+              <span class="stat-label">Day Streak</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-value" id="wordsLearned">0</span>
+              <span class="stat-label">Words Learned</span>
+            </div>
+          </div>
+
+          <div class="level-tabs">
+            <button class="level-tab active" data-level="A1">A1 - Beginner</button>
+            <button class="level-tab" data-level="A2">A2 - Elementary</button>
+            <button class="level-tab" data-level="B1">B1 - Intermediate</button>
+            <button class="level-tab" data-level="B2">B2 - Upper Int.</button>
+            <button class="level-tab" data-level="C1">C1 - Advanced</button>
+            <button class="level-tab" data-level="C2">C2 - Proficient</button>
+          </div>
+
+          <div class="lessons-grid" id="lessonsGrid">
+            <!-- Lessons will be populated here -->
+          </div>
+        </div>
+      </section>
+
+      <!-- Lesson Screen -->
+      <section id="lesson" class="screen">
+        <div class="lesson-container">
+          <div class="lesson-header">
+            <button id="backBtn" class="back-btn">← Back</button>
+            <h2 id="lessonTitle">Lesson Title</h2>
+            <span class="progress-indicator" id="progressIndicator">1/10</span>
+          </div>
+
+          <!-- Cheat Sheet Panel -->
+          <div class="cheat-sheet-panel" id="cheatSheetPanel" style="display: none;">
+            <div class="cheat-sheet-content" id="cheatSheetContent">
+              <!-- Cheat sheet content will be populated here -->
+            </div>
+            <button id="closeCheatSheet" class="secondary-btn">Got it! Let's practice</button>
+          </div>
+
+          <!-- Question Panel -->
+          <div class="question-panel" id="questionPanel">
+            <div class="question-context" id="questionContext" style="display: none;">
+              <!-- Context will be shown here -->
+            </div>
+            
+            <div class="question-prompt" id="questionPrompt">
+              <!-- Question will be shown here -->
+            </div>
+
+            <!-- Multiple Choice Options -->
+            <div class="options-container" id="optionsContainer" style="display: none;">
+              <!-- Options will be populated here -->
+            </div>
+
+            <!-- Typing Input -->
+            <div class="typing-container" id="typingContainer" style="display: none;">
+              <input type="text" id="answerInput" class="answer-input" placeholder="Type your answer...">
+              <div class="keyboard-hints">
+                <span>Special characters: </span>
+                <button class="char-btn" data-char="ã">ã</button>
+                <button class="char-btn" data-char="õ">õ</button>
+                <button class="char-btn" data-char="á">á</button>
+                <button class="char-btn" data-char="é">é</button>
+                <button class="char-btn" data-char="í">í</button>
+                <button class="char-btn" data-char="ó">ó</button>
+                <button class="char-btn" data-char="ú">ú</button>
+                <button class="char-btn" data-char="ç">ç</button>
+                <button class="char-btn" data-char="â">â</button>
+                <button class="char-btn" data-char="ê">ê</button>
+                <button class="char-btn" data-char="ô">ô</button>
+              </div>
+            </div>
+
+            <button id="submitAnswer" class="primary-btn">Check Answer</button>
+            <button id="showHint" class="secondary-btn" style="display: none;">Show Hint</button>
+          </div>
+
+          <!-- Feedback Panel -->
+          <div class="feedback-panel" id="feedbackPanel" style="display: none;">
+            <div class="feedback-content" id="feedbackContent">
+              <!-- Feedback will be shown here -->
+            </div>
+            <button id="nextQuestion" class="primary-btn">Continue</button>
+            <button id="flagQuestion" class="text-btn">Flag for Review</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Settings Screen -->
+      <section id="settings" class="screen">
+        <div class="settings-container">
+          <div class="settings-header">
+            <button id="settingsBackBtn" class="back-btn">← Back</button>
+            <h2>Settings</h2>
+          </div>
+
+          <div class="settings-group">
+            <h3>Dialect</h3>
+            <div class="setting-row">
+              <span>Current Dialect</span>
+              <select id="dialectSelect">
+                <option value="pt-pt">European Portuguese (PT-PT)</option>
+                <option value="pt-br">Brazilian Portuguese (PT-BR)</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="settings-group">
+            <h3>Typing Mode</h3>
+            <div class="setting-row">
+              <span>Accent Strictness</span>
+              <select id="typingModeSelect">
+                <option value="lenient">Lenient (accents optional)</option>
+                <option value="strict">Strict (accents required)</option>
+              </select>
+            </div>
+            <p class="setting-hint">Strict mode is essential for Portuguese where 'pão' (bread) and 'pau' (stick) are very different!</p>
+          </div>
+
+          <div class="settings-group">
+            <h3>Appearance</h3>
+            <div class="setting-row">
+              <span>Dark Mode</span>
+              <label class="toggle">
+                <input type="checkbox" id="darkModeToggle" checked>
+                <span class="toggle-slider"></span>
+              </label>
+            </div>
+          </div>
+
+          <div class="settings-group">
+            <h3>Dialect Differences</h3>
+            <button id="viewDifferencesBtn" class="secondary-btn">View PT-PT vs PT-BR Differences</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Dialect Differences Modal -->
+      <div class="modal" id="dialectModal" style="display: none;">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2>PT-PT vs PT-BR Differences</h2>
+            <button class="close-btn" id="closeModal">×</button>
+          </div>
+          <div class="modal-body" id="dialectDifferences">
+            <!-- Differences will be populated here -->
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="app-footer">
+      <p>No hearts. No penalties. Just learning.</p>
+      <span class="version" id="appVersion">v0.1.0</span>
+    </footer>
+  </div>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
