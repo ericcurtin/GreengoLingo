@@ -1,8 +1,6 @@
-# GreenGoLingo 🇵🇹🇧🇷
+# GreenGoLingo
 
-**Premium Portuguese Language Learning Application**
-
-GreenGoLingo is a cross-platform Portuguese language learning app that prioritizes **dialect precision**, **academic structure**, and **human-crafted quality** over gamification. Unlike other apps, GreenGoLingo treats European Portuguese (PT-PT) and Brazilian Portuguese (PT-BR) as genuinely separate courses, not just different accents.
+GreenGoLingo is a cross-platform Portuguese language learning app.
 
 ## ✨ Key Features
 
@@ -33,48 +31,6 @@ Two effective question types designed for real learning:
    - No word bubbles - type from memory
    - **Strict Mode**: Accents required (pão vs pau)
    - **Lenient Mode**: Accents optional for beginners
-
-### 💚 No Penalties
-- **No Hearts System**: Mistakes are learning opportunities
-- **No Punishments**: Practice as much as you want
-- **Community Vetting**: Flag sentences for naturalness review
-
-### 🌙 Modern Design
-- Dark mode by default
-- Clean, minimalist interface
-- Adult-oriented - no "preschool" aesthetics
-
-## 🛠️ Technology Stack
-
-- **Core Logic**: Rust (cross-platform shared library)
-- **Desktop & Mobile**: Tauri 2.0 (macOS, Linux, Windows, iOS, Android)
-- **Frontend**: Vanilla JavaScript + CSS (no framework bloat)
-- **Build**: Vite + Cargo
-
-## 📦 Project Structure
-
-```
-GreengoLingo/
-├── src/                    # Rust core library
-│   ├── lib.rs              # Main library entry
-│   ├── dialect.rs          # PT-PT vs PT-BR handling
-│   ├── lesson.rs           # CEFR-aligned lessons
-│   ├── question.rs         # Question types & evaluation
-│   ├── progress.rs         # User progress tracking
-│   └── content.rs          # Lesson content management
-├── src-tauri/              # Tauri application
-│   ├── src/
-│   │   ├── lib.rs          # Tauri commands & state
-│   │   └── main.rs         # Entry point
-│   └── tauri.conf.json     # Tauri configuration
-├── src/                    # Frontend assets
-│   ├── main.js             # Application logic
-│   └── styles.css          # Dark mode styles
-├── index.html              # Main HTML
-├── Cargo.toml              # Rust dependencies
-├── package.json            # Node dependencies
-└── vite.config.js          # Vite configuration
-```
 
 ## 🚀 Getting Started
 
@@ -120,16 +76,6 @@ npm run tauri dev
 # Build for current platform
 npm run tauri build
 ```
-
-## 📱 Platform Support
-
-| Platform | Status |
-| --- | --- |
-| Linux | ✅ Supported |
-| macOS | ✅ Supported |
-| Windows | ✅ Supported |
-| iOS | ✅ Supported (via Tauri 2.0) |
-| Android | ✅ Supported (via Tauri 2.0) |
 
 ## 🧪 Testing
 
@@ -183,20 +129,3 @@ We especially welcome:
 - Vocabulary entries
 - Dialect-specific corrections
 
-## 📜 License
-
-Licensed under the Apache License 2.0. See [LICENSE](LICENSE) for details.
-
-## 🎯 Philosophy
-
-GreenGoLingo is built on these principles:
-
-1. **Quality over Quantity**: Human-crafted content over AI-generated
-2. **Precision over Simplification**: Real dialect differences matter
-3. **Learning over Gaming**: Tools for learners, not addiction mechanics
-4. **Transparency over Mystery**: Clear goals and explanations
-5. **Freedom over Punishment**: No hearts, no penalties
-
----
-
-*"Learn Portuguese the right way – with dialect precision and academic structure."*
