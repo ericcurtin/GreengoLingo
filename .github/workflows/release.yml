@@ -265,6 +265,26 @@ jobs:
         with:
           path: artifacts
 
+      - name: Create platform archives
+        run: |
+          cd artifacts
+          # Create Linux tar.gz
+          if [ -d "linux-artifacts" ]; then
+            tar -czvf greengolingo-linux-x64.tar.gz -C linux-artifacts .
+          fi
+          # Create macOS zip
+          if [ -d "macos-artifacts" ]; then
+            (cd macos-artifacts && zip -r ../greengolingo-macos.zip .)
+          fi
+          # Create Windows zip
+          if [ -d "windows-artifacts" ]; then
+            (cd windows-artifacts && zip -r ../greengolingo-windows-x64.zip .)
+          fi
+          # Rename Android APK
+          if [ -d "android-artifacts" ]; then
+            cp android-artifacts/*.apk greengolingo-android.apk
+          fi
+
       - name: Get version
         id: version
         run: |
@@ -286,6 +306,9 @@ jobs:
             - **Windows**: Release bundle
             - **Android**: .apk
           files: |
-            artifacts/**/*
+            artifacts/greengolingo-linux-x64.tar.gz
+            artifacts/greengolingo-macos.zip
+            artifacts/greengolingo-windows-x64.zip
+            artifacts/greengolingo-android.apk
           draft: false
           prerelease: false
