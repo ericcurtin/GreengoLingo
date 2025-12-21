@@ -171,14 +171,30 @@ jobs:
       - name: Initialize Android project
         run: just init-android
 
+      - name: Setup Android signing
+        run: |
+          echo "${{ secrets.ANDROID_KEYSTORE_BASE64 }}" | base64 --decode > src-tauri/gen/android/release.keystore
+
       - name: Build Android APK
+        env:
+          SIGNING_STORE_PASSWORD: ${{ secrets.ANDROID_KEYSTORE_PASSWORD }}
+          SIGNING_KEY_ALIAS: ${{ secrets.ANDROID_KEY_ALIAS }}
+          SIGNING_KEY_PASSWORD: ${{ secrets.ANDROID_KEY_PASSWORD }}
         run: just build-android
+
+      - name: Get version and rename APK
+        run: |
+          VERSION=$(jq -r '.version' src-tauri/tauri.conf.json)
+          mkdir -p artifacts
+          # Find and rename the signed APK
+          APK_PATH=$(find src-tauri/gen/android/app/build/outputs/apk -name "*.apk" -type f | head -1)
+          cp "$APK_PATH" "artifacts/GreenGoLingo-${VERSION}-android.apk"
 
       - name: Upload Android artifacts
         uses: actions/upload-artifact@v4
         with:
           name: android-artifacts
-          path: src-tauri/gen/android/app/build/outputs/apk/**/*.apk
+          path: artifacts/*.apk
 
   # iOS build disabled due to Tauri bug with arm64-sim target on Xcode 16.3+
   # See: https://github.com/tauri-apps/tauri/issues/13128
