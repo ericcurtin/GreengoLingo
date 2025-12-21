@@ -5,87 +5,220 @@
 default:
     @just --list
 
-# Install dependencies
+# ============================================================================
+# Setup & Dependencies
+# ============================================================================
+
+# Install all dependencies and generate icons
 install:
-    npm install
+    flutter pub get
+    cd rust && cargo fetch
+    ./scripts/generate_icons.sh
+
+# Clean all build artifacts
+clean:
+    flutter clean
+    cd rust && cargo clean
+
+# ============================================================================
+# Development
+# ============================================================================
+
+# Run app in development mode (defaults to current platform)
+dev:
+    flutter run
+
+# Run app on Android device/emulator
+dev-android:
+    flutter run -d android
+
+# Run app on iOS simulator
+dev-ios:
+    flutter run -d ios
+
+# Run app on Chrome (web)
+dev-web:
+    flutter run -d chrome
+
+# Run app on macOS
+dev-macos:
+    flutter run -d macos
+
+# Run app on Linux
+dev-linux:
+    flutter run -d linux
+
+# Run app on Windows
+dev-windows:
+    flutter run -d windows
+
+# Hot reload/restart (when running)
+reload:
+    flutter attach
+
+# ============================================================================
+# Testing
+# ============================================================================
+
+# Run all tests
+test: test-rust test-flutter
 
 # Run Rust tests
-test:
-    cargo test
+test-rust:
+    cd rust && cargo test
 
-# Build frontend only
-build-frontend:
-    npm run build
+# Run Flutter tests
+test-flutter:
+    flutter test
 
-# Build desktop app for current platform
-build-desktop:
-    npm run tauri build
+# Run Flutter tests with coverage
+test-coverage:
+    flutter test --coverage
 
-# Build desktop app for Linux (run on Linux)
-# Tauri builds for current platform automatically
-build-linux:
-    npm run tauri build
+# ============================================================================
+# Code Quality
+# ============================================================================
 
-# Build desktop app for macOS (run on macOS)
-# Tauri builds for current platform automatically
-build-macos:
-    npm run tauri build
-
-# Build desktop app for Windows (run on Windows)
-# Tauri builds for current platform automatically
-build-windows:
-    npm run tauri build
-
-# Build Android APK (requires Android SDK)
-build-android:
-    npm run tauri android build -- --apk true
-
-# Build iOS app (requires macOS with Xcode and code signing)
-build-ios:
-    npm run tauri ios build
-
-# Build iOS app for simulator (no code signing required, for CI)
-build-ios-simulator:
-    npm run tauri ios build -- --target aarch64-sim
-
-# Build all desktop formats (run on appropriate OS)
-build-all-desktop:
-    npm run tauri build
-
-# Development mode
-dev:
-    npm run tauri dev
-
-# Development mode for Android
-dev-android:
-    npm run tauri android dev
-
-# Development mode for iOS
-dev-ios:
-    npm run tauri ios dev
-
-# Initialize Android project (first time setup)
-init-android:
-    npm run tauri android init
-
-# Initialize iOS project (first time setup)
-init-ios:
-    npm run tauri ios init
-
-# Clean build artifacts
-clean:
-    cargo clean
-    rm -rf dist
-    rm -rf node_modules
+# Run all lints and checks
+lint: lint-rust lint-flutter
 
 # Lint Rust code
 lint-rust:
-    cargo clippy --all-targets --all-features -- -D warnings
+    cd rust && cargo clippy --all-targets --all-features -- -D warnings
+
+# Lint Flutter/Dart code
+lint-flutter:
+    flutter analyze
+
+# Format all code
+fmt: fmt-rust fmt-flutter
 
 # Format Rust code
 fmt-rust:
-    cargo fmt
+    cd rust && cargo fmt
+
+# Format Dart code
+fmt-flutter:
+    dart format lib test
+
+# Check formatting without changes
+check-fmt: check-fmt-rust check-fmt-flutter
 
 # Check Rust formatting
 check-fmt-rust:
-    cargo fmt -- --check
+    cd rust && cargo fmt -- --check
+
+# Check Dart formatting
+check-fmt-flutter:
+    dart format --set-exit-if-changed lib test
+
+# ============================================================================
+# Build - Desktop
+# ============================================================================
+
+# Build for current platform (release)
+build:
+    flutter build
+
+# Build Linux app
+build-linux:
+    flutter build linux --release
+
+# Build macOS app
+build-macos:
+    flutter build macos --release
+
+# Build Windows app
+build-windows:
+    flutter build windows --release
+
+# ============================================================================
+# Build - Mobile
+# ============================================================================
+
+# Build Android APK
+build-android:
+    flutter build apk --release
+
+# Build Android App Bundle (for Play Store)
+build-android-bundle:
+    flutter build appbundle --release
+
+# Build Android with split APKs by ABI
+build-android-split:
+    flutter build apk --release --split-per-abi
+
+# Build iOS (requires code signing)
+build-ios:
+    flutter build ios --release
+
+# Build iOS without code signing (for CI)
+build-ios-nosign:
+    flutter build ios --release --no-codesign
+
+# Build iOS IPA (requires code signing and export options)
+build-ipa:
+    flutter build ipa --release
+
+# ============================================================================
+# Build - All Platforms
+# ============================================================================
+
+# Build all desktop platforms (run on appropriate OS)
+build-all-desktop: build-linux build-macos build-windows
+
+# Build all mobile platforms
+build-all-mobile: build-android build-ios-nosign
+
+# ============================================================================
+# Rust-specific
+# ============================================================================
+
+# Build Rust library (debug)
+rust-build:
+    cd rust && cargo build
+
+# Build Rust library (release)
+rust-build-release:
+    cd rust && cargo build --release
+
+# Generate flutter_rust_bridge bindings
+frb-generate:
+    flutter_rust_bridge_codegen generate
+
+# ============================================================================
+# Utilities
+# ============================================================================
+
+# Show connected devices
+devices:
+    flutter devices
+
+# Show Flutter doctor output
+doctor:
+    flutter doctor -v
+
+# Upgrade Flutter
+upgrade:
+    flutter upgrade
+
+# Update dependencies
+update:
+    flutter pub upgrade
+    cd rust && cargo update
+
+# Generate app icons from README logo
+icons:
+    ./scripts/generate_icons.sh
+
+# Generate splash screen
+splash:
+    flutter pub run flutter_native_splash:create
+
+# Open iOS project in Xcode
+xcode:
+    open ios/Runner.xcworkspace
+
+# Open Android project in Android Studio
+android-studio:
+    open -a "Android Studio" android

@@ -1,0 +1,128 @@
+{
+  "id": "introductions_01",
+  "title": "Introductions",
+  "description": "Learn how to introduce yourself in European Portuguese",
+  "level": "A1",
+  "language_pair": {
+    "source": "en_US",
+    "target": "pt_PT"
+  },
+  "xp_reward": 10,
+  "order": 2,
+  "icon": "person",
+  "questions": [
+    {
+      "type": "multiple_choice",
+      "prompt": "How do you say 'My name is...' in Portuguese?",
+      "options": ["O meu nome é...", "Eu tenho...", "Eu sou de...", "Eu gosto de..."],
+      "correct_index": 0,
+      "explanation": "'O meu nome é' or simply 'Chamo-me' are both correct ways to introduce your name."
+    },
+    {
+      "type": "typing",
+      "prompt": "Write 'Nice to meet you' in Portuguese",
+      "correct_answers": ["Muito prazer", "Prazer em conhecê-lo", "Prazer"],
+      "hint": "Literally means 'Much pleasure'",
+      "accent_strict": false
+    },
+    {
+      "type": "sentence_builder",
+      "prompt": "Build: 'My name is Maria'",
+      "words": ["O", "meu", "nome", "é", "Maria", "tem"],
+      "correct_order": [0, 1, 2, 3, 4],
+      "distractors": ["tem"]
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "What does 'De onde é?' mean?",
+      "options": ["How old are you?", "What's your name?", "Where are you from?", "How are you?"],
+      "correct_index": 2,
+      "explanation": "'De onde é?' asks about someone's origin or hometown."
+    },
+    {
+      "type": "matching_pairs",
+      "prompt": "Match the phrases",
+      "pairs": [
+        ["My name is", "O meu nome é"],
+        ["I am from", "Eu sou de"],
+        ["Nice to meet you", "Muito prazer"],
+        ["And you?", "E tu?"]
+      ]
+    },
+    {
+      "type": "typing",
+      "prompt": "Write 'I am from Portugal' in Portuguese",
+      "correct_answers": ["Eu sou de Portugal", "Sou de Portugal"],
+      "hint": "Sou de + place",
+      "accent_strict": false
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "How do you ask 'What is your name?' formally?",
+      "options": ["Como te chamas?", "Qual é o seu nome?", "Quem és?", "Como estás?"],
+      "correct_index": 1,
+      "explanation": "'Qual é o seu nome?' is formal. 'Como te chamas?' is informal."
+    },
+    {
+      "type": "sentence_builder",
+      "prompt": "Build: 'I am Portuguese'",
+      "words": ["Eu", "sou", "português", "de", "falar"],
+      "correct_order": [0, 1, 2],
+      "distractors": ["de", "falar"]
+    }
+  ],
+  "cheat_sheet": {
+    "title": "Introducing Yourself",
+    "sections": [
+      {
+        "heading": "Saying Your Name",
+        "content": [
+          {
+            "type": "vocabulary",
+            "items": [
+              ["My name is...", "O meu nome é... / Chamo-me..."],
+              ["What's your name? (formal)", "Qual é o seu nome?"],
+              ["What's your name? (informal)", "Como te chamas?"],
+              ["I am called...", "Chamo-me..."]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Nationality & Origin",
+        "content": [
+          {
+            "type": "vocabulary",
+            "items": [
+              ["I am from...", "Eu sou de..."],
+              ["Where are you from?", "De onde é? / De onde és?"],
+              ["Portuguese (m/f)", "Português / Portuguesa"],
+              ["Brazilian (m/f)", "Brasileiro / Brasileira"],
+              ["English (m/f)", "Inglês / Inglesa"]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Polite Phrases",
+        "content": [
+          {
+            "type": "example",
+            "source": "Muito prazer",
+            "target": "Nice to meet you (literally: much pleasure)",
+            "note": "The standard response is also 'Muito prazer' or 'Igualmente' (likewise)"
+          }
+        ]
+      },
+      {
+        "heading": "European Portuguese Note",
+        "content": [
+          {
+            "type": "tip",
+            "text": "In Portugal, 'tu' (informal you) and 'você' (formal you) are both used. Use 'você' with strangers and older people."
+          }
+        ]
+      }
+    ]
+  }
+}

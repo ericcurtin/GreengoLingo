@@ -1,0 +1,137 @@
+{
+  "id": "greetings_01",
+  "title": "Saudações",
+  "description": "Aprenda cumprimentos básicos em Inglês",
+  "level": "A1",
+  "language_pair": {
+    "source": "pt_BR",
+    "target": "en_US"
+  },
+  "xp_reward": 10,
+  "order": 1,
+  "icon": "waving_hand",
+  "questions": [
+    {
+      "type": "multiple_choice",
+      "prompt": "Como se diz 'Oi' em Inglês?",
+      "options": ["Hi", "Goodbye", "Thank you", "Please"],
+      "correct_index": 0,
+      "explanation": "'Hi' é a saudação mais comum e casual em Inglês, como 'Oi' em Português."
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "O que significa 'Good morning'?",
+      "options": ["Boa noite", "Boa tarde", "Bom dia", "Tchau"],
+      "correct_index": 2,
+      "explanation": "'Good morning' é usado pela manhã, até o meio-dia."
+    },
+    {
+      "type": "typing",
+      "prompt": "Escreva 'Tudo bem?' em Inglês",
+      "correct_answers": ["How are you", "How are you?"],
+      "hint": "How + are + you",
+      "accent_strict": false
+    },
+    {
+      "type": "matching_pairs",
+      "prompt": "Combine as saudações",
+      "pairs": [
+        ["Oi", "Hi"],
+        ["Tchau", "Bye"],
+        ["Bom dia", "Good morning"],
+        ["Tudo bem?", "How are you?"]
+      ]
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Como se diz 'Tchau' em Inglês?",
+      "options": ["Hello", "Bye", "Thank you", "Good morning"],
+      "correct_index": 1,
+      "explanation": "'Bye' é a forma mais comum e informal de dizer tchau."
+    },
+    {
+      "type": "sentence_builder",
+      "prompt": "Construa: 'Oi, tudo bem?'",
+      "words": ["Hi", "how", "are", "you", "is", "good"],
+      "correct_order": [0, 1, 2, 3],
+      "distractors": ["is", "good"]
+    },
+    {
+      "type": "typing",
+      "prompt": "Escreva 'Até logo' em Inglês",
+      "correct_answers": ["See you later", "See you"],
+      "hint": "See + you + later",
+      "accent_strict": false
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Qual é a resposta típica para 'How are you?'",
+      "options": ["Hello", "I'm fine, thanks", "Goodbye", "Good morning"],
+      "correct_index": 1,
+      "explanation": "'I'm fine, thanks' ou 'I'm good' são respostas comuns."
+    }
+  ],
+  "cheat_sheet": {
+    "title": "Saudações em Inglês",
+    "sections": [
+      {
+        "heading": "Saudações Básicas",
+        "content": [
+          {
+            "type": "vocabulary",
+            "items": [
+              ["Olá", "Hello"],
+              ["Oi", "Hi"],
+              ["E aí?", "What's up?"],
+              ["Bom dia", "Good morning"],
+              ["Boa tarde", "Good afternoon"],
+              ["Boa noite", "Good evening / Good night"],
+              ["Tchau", "Bye"],
+              ["Até logo", "See you later"]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Tudo bem? em Inglês",
+        "content": [
+          {
+            "type": "text",
+            "text": "Diferentes formas de perguntar 'como você está':"
+          },
+          {
+            "type": "example",
+            "source": "How are you?",
+            "target": "Como você está? / Tudo bem?",
+            "note": "Forma padrão e educada"
+          },
+          {
+            "type": "example",
+            "source": "What's up?",
+            "target": "E aí? / Qual é?",
+            "note": "Muito informal, entre amigos"
+          },
+          {
+            "type": "example",
+            "source": "How's it going?",
+            "target": "Como vai? / Tudo certo?",
+            "note": "Casual, mas pode ser usado em muitas situações"
+          }
+        ]
+      },
+      {
+        "heading": "Dicas para Brasileiros",
+        "content": [
+          {
+            "type": "tip",
+            "text": "'Hi' é equivalente ao nosso 'Oi' - use sem medo!"
+          },
+          {
+            "type": "tip",
+            "text": "Em Inglês, 'How are you?' às vezes é só uma saudação, não esperam resposta detalhada."
+          }
+        ]
+      }
+    ]
+  }
+}
