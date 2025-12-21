@@ -1,0 +1,136 @@
+{
+  "id": "greetings_01",
+  "title": "Greetings",
+  "description": "Learn basic greetings and introductions in European Portuguese",
+  "level": "A1",
+  "language_pair": {
+    "source": "en_US",
+    "target": "pt_PT"
+  },
+  "xp_reward": 10,
+  "order": 1,
+  "icon": "waving_hand",
+  "questions": [
+    {
+      "type": "multiple_choice",
+      "prompt": "How do you say 'Hello' in Portuguese?",
+      "options": ["Olá", "Adeus", "Obrigado", "Por favor"],
+      "correct_index": 0,
+      "explanation": "Olá is the standard greeting in Portuguese, similar to 'Hello' in English."
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "What does 'Bom dia' mean?",
+      "options": ["Good night", "Good afternoon", "Good morning", "Goodbye"],
+      "correct_index": 2,
+      "explanation": "Bom dia is used in the morning until around noon."
+    },
+    {
+      "type": "typing",
+      "prompt": "Write 'Good afternoon' in Portuguese",
+      "correct_answers": ["Boa tarde"],
+      "hint": "Starts with 'Boa'...",
+      "accent_strict": false
+    },
+    {
+      "type": "matching_pairs",
+      "prompt": "Match the greetings",
+      "pairs": [
+        ["Hello", "Olá"],
+        ["Goodbye", "Adeus"],
+        ["Good morning", "Bom dia"],
+        ["Good night", "Boa noite"]
+      ]
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "How do you say 'Goodbye' in Portuguese?",
+      "options": ["Olá", "Adeus", "Obrigado", "Bom dia"],
+      "correct_index": 1,
+      "explanation": "Adeus is a formal way to say goodbye. 'Tchau' is more informal."
+    },
+    {
+      "type": "sentence_builder",
+      "prompt": "Build: 'Good morning, how are you?'",
+      "words": ["Bom", "dia", "como", "está", "bem"],
+      "correct_order": [0, 1, 2, 3],
+      "distractors": ["bem"]
+    },
+    {
+      "type": "typing",
+      "prompt": "Write 'Good night' in Portuguese",
+      "correct_answers": ["Boa noite"],
+      "hint": "Used when going to bed or late evening",
+      "accent_strict": false
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Which greeting would you use at 3pm?",
+      "options": ["Bom dia", "Boa tarde", "Boa noite", "Adeus"],
+      "correct_index": 1,
+      "explanation": "Boa tarde is used from around noon until evening (approximately 6pm)."
+    }
+  ],
+  "cheat_sheet": {
+    "title": "Portuguese Greetings",
+    "sections": [
+      {
+        "heading": "Basic Greetings",
+        "content": [
+          {
+            "type": "vocabulary",
+            "items": [
+              ["Hello", "Olá"],
+              ["Hi (informal)", "Oi"],
+              ["Good morning", "Bom dia"],
+              ["Good afternoon", "Boa tarde"],
+              ["Good evening/night", "Boa noite"],
+              ["Goodbye", "Adeus"],
+              ["Bye (informal)", "Tchau"]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "When to Use Each",
+        "content": [
+          {
+            "type": "text",
+            "text": "Portuguese greetings change based on the time of day:"
+          },
+          {
+            "type": "example",
+            "source": "Bom dia",
+            "target": "Good morning (until ~12pm)",
+            "note": "Used from morning until noon"
+          },
+          {
+            "type": "example",
+            "source": "Boa tarde",
+            "target": "Good afternoon (12pm - 6pm)",
+            "note": "Used from noon until evening"
+          },
+          {
+            "type": "example",
+            "source": "Boa noite",
+            "target": "Good evening/night (after 6pm)",
+            "note": "Used in the evening and when saying goodnight"
+          }
+        ]
+      },
+      {
+        "heading": "Tips",
+        "content": [
+          {
+            "type": "tip",
+            "text": "In Portugal, 'Olá' is universally polite. Use it when unsure!"
+          },
+          {
+            "type": "warning",
+            "text": "'Adeus' can sound very formal or final. 'Tchau' is more common in casual conversation."
+          }
+        ]
+      }
+    ]
+  }
+}

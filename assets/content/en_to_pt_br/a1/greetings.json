@@ -1,0 +1,130 @@
+{
+  "id": "greetings_01",
+  "title": "Greetings",
+  "description": "Learn basic greetings and introductions in Brazilian Portuguese",
+  "level": "A1",
+  "language_pair": {
+    "source": "en_US",
+    "target": "pt_BR"
+  },
+  "xp_reward": 10,
+  "order": 1,
+  "icon": "waving_hand",
+  "questions": [
+    {
+      "type": "multiple_choice",
+      "prompt": "How do you say 'Hello' in Brazilian Portuguese?",
+      "options": ["Olá", "Oi", "Tchau", "Obrigado"],
+      "correct_index": 1,
+      "explanation": "While 'Olá' works, Brazilians commonly use 'Oi' which is more casual and friendly."
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "What does 'Bom dia' mean?",
+      "options": ["Good night", "Good afternoon", "Good morning", "Goodbye"],
+      "correct_index": 2,
+      "explanation": "Bom dia is used in the morning until around noon."
+    },
+    {
+      "type": "typing",
+      "prompt": "Write 'Good afternoon' in Portuguese",
+      "correct_answers": ["Boa tarde"],
+      "hint": "Starts with 'Boa'...",
+      "accent_strict": false
+    },
+    {
+      "type": "matching_pairs",
+      "prompt": "Match the greetings",
+      "pairs": [
+        ["Hi", "Oi"],
+        ["Bye", "Tchau"],
+        ["Good morning", "Bom dia"],
+        ["Good night", "Boa noite"]
+      ]
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "What's the most common informal goodbye in Brazil?",
+      "options": ["Adeus", "Tchau", "Até logo", "Boa noite"],
+      "correct_index": 1,
+      "explanation": "'Tchau' (from Italian 'ciao') is the most common casual goodbye in Brazil."
+    },
+    {
+      "type": "sentence_builder",
+      "prompt": "Build: 'Hi, how are you?'",
+      "words": ["Oi", "tudo", "bem", "como", "está"],
+      "correct_order": [0, 1, 2],
+      "distractors": ["como", "está"]
+    },
+    {
+      "type": "typing",
+      "prompt": "Write 'Everything good?' (casual greeting) in Portuguese",
+      "correct_answers": ["Tudo bem", "Tudo bom"],
+      "hint": "A very common Brazilian greeting",
+      "accent_strict": false
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "How would Brazilians typically respond to 'Tudo bem?'",
+      "options": ["Olá", "Tudo bem", "Adeus", "Não"],
+      "correct_index": 1,
+      "explanation": "The typical response is 'Tudo bem' (Everything's good) or 'Tudo ótimo' (Everything's great)."
+    }
+  ],
+  "cheat_sheet": {
+    "title": "Brazilian Greetings",
+    "sections": [
+      {
+        "heading": "Basic Greetings",
+        "content": [
+          {
+            "type": "vocabulary",
+            "items": [
+              ["Hello", "Olá"],
+              ["Hi (very common)", "Oi"],
+              ["Good morning", "Bom dia"],
+              ["Good afternoon", "Boa tarde"],
+              ["Good evening/night", "Boa noite"],
+              ["Goodbye", "Tchau"],
+              ["See you later", "Até logo"]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Brazilian Style",
+        "content": [
+          {
+            "type": "text",
+            "text": "Brazilians often use casual greetings even in semi-formal situations:"
+          },
+          {
+            "type": "example",
+            "source": "Oi, tudo bem?",
+            "target": "Hi, everything good?",
+            "note": "The most common greeting combo in Brazil"
+          },
+          {
+            "type": "example",
+            "source": "E aí?",
+            "target": "What's up?",
+            "note": "Very casual, used among friends"
+          }
+        ]
+      },
+      {
+        "heading": "Brazil vs Portugal",
+        "content": [
+          {
+            "type": "tip",
+            "text": "Brazilians use 'Oi' much more than Portuguese people, who prefer 'Olá'."
+          },
+          {
+            "type": "tip",
+            "text": "'Tudo bem?' is the Brazilian equivalent of 'How are you?' - use it everywhere!"
+          }
+        ]
+      }
+    ]
+  }
+}

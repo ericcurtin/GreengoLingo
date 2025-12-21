@@ -1,0 +1,143 @@
+{
+  "id": "greetings_01",
+  "title": "Saudações",
+  "description": "Aprenda cumprimentos básicos em Inglês",
+  "level": "A1",
+  "language_pair": {
+    "source": "pt_PT",
+    "target": "en_US"
+  },
+  "xp_reward": 10,
+  "order": 1,
+  "icon": "waving_hand",
+  "questions": [
+    {
+      "type": "multiple_choice",
+      "prompt": "Como se diz 'Olá' em Inglês?",
+      "options": ["Hello", "Goodbye", "Thank you", "Please"],
+      "correct_index": 0,
+      "explanation": "'Hello' é a saudação padrão em Inglês, semelhante a 'Olá' em Português."
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "O que significa 'Good morning'?",
+      "options": ["Boa noite", "Boa tarde", "Bom dia", "Adeus"],
+      "correct_index": 2,
+      "explanation": "'Good morning' é usado pela manhã, até ao meio-dia."
+    },
+    {
+      "type": "typing",
+      "prompt": "Escreva 'Boa tarde' em Inglês",
+      "correct_answers": ["Good afternoon"],
+      "hint": "Good + afternoon",
+      "accent_strict": false
+    },
+    {
+      "type": "matching_pairs",
+      "prompt": "Combine as saudações",
+      "pairs": [
+        ["Olá", "Hello"],
+        ["Adeus", "Goodbye"],
+        ["Bom dia", "Good morning"],
+        ["Boa noite", "Good night"]
+      ]
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Como se diz 'Adeus' em Inglês?",
+      "options": ["Hello", "Goodbye", "Thank you", "Good morning"],
+      "correct_index": 1,
+      "explanation": "'Goodbye' é a forma padrão de dizer adeus. 'Bye' é mais informal."
+    },
+    {
+      "type": "sentence_builder",
+      "prompt": "Construa: 'Bom dia, como está?'",
+      "words": ["Good", "morning", "how", "are", "you", "is"],
+      "correct_order": [0, 1, 2, 3, 4],
+      "distractors": ["is"]
+    },
+    {
+      "type": "typing",
+      "prompt": "Escreva 'Boa noite' em Inglês",
+      "correct_answers": ["Good night", "Good evening"],
+      "hint": "Depende do contexto - chegada ou despedida",
+      "accent_strict": false
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Qual saudação usaria às 15h?",
+      "options": ["Good morning", "Good afternoon", "Good evening", "Goodbye"],
+      "correct_index": 1,
+      "explanation": "'Good afternoon' é usado aproximadamente do meio-dia às 18h."
+    }
+  ],
+  "cheat_sheet": {
+    "title": "Saudações em Inglês",
+    "sections": [
+      {
+        "heading": "Saudações Básicas",
+        "content": [
+          {
+            "type": "vocabulary",
+            "items": [
+              ["Olá", "Hello"],
+              ["Oi (informal)", "Hi"],
+              ["Bom dia", "Good morning"],
+              ["Boa tarde", "Good afternoon"],
+              ["Boa noite (chegada)", "Good evening"],
+              ["Boa noite (despedida)", "Good night"],
+              ["Adeus", "Goodbye"],
+              ["Tchau (informal)", "Bye"]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Quando Usar",
+        "content": [
+          {
+            "type": "text",
+            "text": "Os horários são semelhantes ao Português:"
+          },
+          {
+            "type": "example",
+            "source": "Good morning",
+            "target": "Bom dia (até ~12h)",
+            "note": "Da manhã até ao meio-dia"
+          },
+          {
+            "type": "example",
+            "source": "Good afternoon",
+            "target": "Boa tarde (12h - 18h)",
+            "note": "Do meio-dia até à noite"
+          },
+          {
+            "type": "example",
+            "source": "Good evening",
+            "target": "Boa noite (após 18h, ao chegar)",
+            "note": "Ao encontrar alguém à noite"
+          },
+          {
+            "type": "example",
+            "source": "Good night",
+            "target": "Boa noite (ao sair/dormir)",
+            "note": "Ao despedir-se ou ir dormir"
+          }
+        ]
+      },
+      {
+        "heading": "Dicas",
+        "content": [
+          {
+            "type": "tip",
+            "text": "'Hi' é muito comum e pode ser usado em quase todas as situações."
+          },
+          {
+            "type": "warning",
+            "text": "'Good evening' vs 'Good night': Evening = ao chegar, Night = ao sair."
+          }
+        ]
+      }
+    ]
+  }
+}
