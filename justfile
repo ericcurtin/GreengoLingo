@@ -12,13 +12,13 @@ default:
 # Install all dependencies and generate icons
 install:
     flutter pub get
-    cd rust && cargo fetch
+    cargo fetch
     ./scripts/generate_icons.sh
 
 # Clean all build artifacts
 clean:
     flutter clean
-    cd rust && cargo clean
+    cargo clean
 
 # ============================================================================
 # Development
@@ -65,7 +65,7 @@ test: test-rust test-flutter
 
 # Run Rust tests
 test-rust:
-    cd rust && cargo test
+    cargo test
 
 # Run Flutter tests
 test-flutter:
@@ -84,7 +84,7 @@ lint: lint-rust lint-flutter
 
 # Lint Rust code
 lint-rust:
-    cd rust && cargo clippy --all-targets --all-features -- -D warnings
+    cargo clippy --all-targets --all-features -- -D warnings
 
 # Lint Flutter/Dart code
 lint-flutter:
@@ -95,7 +95,7 @@ fmt: fmt-rust fmt-flutter
 
 # Format Rust code
 fmt-rust:
-    cd rust && cargo fmt
+    cargo fmt
 
 # Format Dart code
 fmt-flutter:
@@ -106,7 +106,7 @@ check-fmt: check-fmt-rust check-fmt-flutter
 
 # Check Rust formatting
 check-fmt-rust:
-    cd rust && cargo fmt -- --check
+    cargo fmt -- --check
 
 # Check Dart formatting
 check-fmt-flutter:
@@ -176,11 +176,11 @@ build-all-mobile: build-android build-ios-nosign
 
 # Build Rust library (debug)
 rust-build:
-    cd rust && cargo build
+    cargo build
 
 # Build Rust library (release)
 rust-build-release:
-    cd rust && cargo build --release
+    cargo build --release
 
 # Generate flutter_rust_bridge bindings
 frb-generate:
@@ -205,7 +205,7 @@ upgrade:
 # Update dependencies
 update:
     flutter pub upgrade
-    cd rust && cargo update
+    cargo update
 
 # Generate app icons from README logo
 icons:
