@@ -177,6 +177,7 @@ jobs:
 
       - name: Build Android APK
         env:
+          SIGNING_STORE_PATH: ${{ github.workspace }}/src-tauri/gen/android/release.keystore
           SIGNING_STORE_PASSWORD: ${{ secrets.ANDROID_KEYSTORE_PASSWORD }}
           SIGNING_KEY_ALIAS: ${{ secrets.ANDROID_KEY_ALIAS }}
           SIGNING_KEY_PASSWORD: ${{ secrets.ANDROID_KEY_PASSWORD }}
@@ -186,8 +187,14 @@ jobs:
         run: |
           VERSION=$(jq -r '.version' src-tauri/tauri.conf.json)
           mkdir -p artifacts
-          # Find and rename the signed APK
-          APK_PATH=$(find src-tauri/gen/android/app/build/outputs/apk -name "*.apk" -type f | head -1)
+          # Find the universal release APK (signed)
+          APK_PATH=$(find src-tauri/gen/android/app/build/outputs/apk -name "*-release.apk" -type f | head -1)
+          if [ -z "$APK_PATH" ]; then
+            echo "No release APK found. Available APKs:"
+            find src-tauri/gen/android/app/build/outputs/apk -name "*.apk" -type f
+            exit 1
+          fi
+          echo "Using APK: $APK_PATH"
           cp "$APK_PATH" "artifacts/GreenGoLingo-${VERSION}-android.apk"
 
       - name: Upload Android artifacts
