@@ -187,8 +187,8 @@ jobs:
         run: |
           VERSION=$(jq -r '.version' src-tauri/tauri.conf.json)
           mkdir -p artifacts
-          # Find the universal release APK (signed)
-          APK_PATH=$(find src-tauri/gen/android/app/build/outputs/apk -name "*-release.apk" -type f | head -1)
+          # Find the universal release APK (signed or unsigned)
+          APK_PATH=$(find src-tauri/gen/android/app/build/outputs/apk -name "*-release*.apk" -type f | head -1)
           if [ -z "$APK_PATH" ]; then
             echo "No release APK found. Available APKs:"
             find src-tauri/gen/android/app/build/outputs/apk -name "*.apk" -type f
