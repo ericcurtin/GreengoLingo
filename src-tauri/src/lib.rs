@@ -1,7 +1,7 @@
-//! GreenGoLingo Tauri Application
+//! GreengoLingo Tauri Application
 //!
 //! This is the main entry point for the Tauri application that provides
-//! the desktop and mobile interface for GreenGoLingo.
+//! the desktop and mobile interface for GreengoLingo.
 
 use greengolingo_core::{
     content::ContentManager,

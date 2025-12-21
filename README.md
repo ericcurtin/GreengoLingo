@@ -1,6 +1,6 @@
-# GreenGoLingo
+# GreengoLingo
 
-GreenGoLingo is a cross-platform Portuguese language learning app.
+GreengoLingo is a cross-platform Portuguese language learning app.
 
 ## ✨ Key Features
 

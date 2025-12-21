@@ -1,6 +1,6 @@
 {
   "$schema": "https://schema.tauri.app/config/2",
-  "productName": "GreenGoLingo",
+  "productName": "GreengoLingo",
   "version": "0.1.0",
   "identifier": "com.greengolingo.app",
   "build": {
@@ -13,7 +13,7 @@
     "withGlobalTauri": true,
     "windows": [
       {
-        "title": "GreenGoLingo",
+        "title": "GreengoLingo",
         "width": 1024,
         "height": 768,
         "minWidth": 400,

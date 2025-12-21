@@ -10,7 +10,7 @@ configs:
 settingGroups:
   app:
     base:
-      PRODUCT_NAME: GreenGoLingo
+      PRODUCT_NAME: GreengoLingo
       PRODUCT_BUNDLE_IDENTIFIER: com.greengolingo.app
 targetTemplates:
   app:

@@ -2,7 +2,7 @@
 name = "greengolingo_core"
 version = "0.1.0"
 edition = "2021"
-description = "Core library for GreenGoLingo - A Portuguese language learning application"
+description = "Core library for GreengoLingo - A Portuguese language learning application"
 license = "Apache-2.0"
 
 [dependencies]
