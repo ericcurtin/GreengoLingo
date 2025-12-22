@@ -294,6 +294,19 @@ jobs:
       - name: Build Android APK
         run: flutter build apk --release
 
+      - name: Check APK size
+        run: |
+          APK_PATH=$(find build/app/outputs/flutter-apk -name "*.apk" | head -1)
+          APK_SIZE=$(stat -c%s "$APK_PATH")
+          MAX_SIZE=$((64 * 1024 * 1024))
+          APK_SIZE_MB=$(echo "scale=2; $APK_SIZE / 1024 / 1024" | bc)
+          echo "APK size: ${APK_SIZE_MB} MB"
+          if [ "$APK_SIZE" -gt "$MAX_SIZE" ]; then
+            echo "::error::APK size (${APK_SIZE_MB} MB) exceeds maximum allowed size (64 MB)"
+            exit 1
+          fi
+          echo "APK size is within the 64 MB limit"
+
       - name: Upload Android artifacts
         if: github.event_name == 'push'
         uses: actions/upload-artifact@v4
