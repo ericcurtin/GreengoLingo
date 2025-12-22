@@ -1,0 +1,146 @@
+{
+  "id": "shopping_01_br_en",
+  "title": "Shopping Basics",
+  "description": "Aprenda vocabulário essencial de compras em inglês",
+  "level": "A2",
+  "language_pair": {
+    "source": "pt_BR",
+    "target": "en_US"
+  },
+  "xp_reward": 15,
+  "order": 3,
+  "icon": "shopping_cart",
+  "questions": [
+    {
+      "type": "multiple_choice",
+      "prompt": "Como se diz 'Quanto custa?' em inglês?",
+      "options": ["How much is it?", "What is it?", "Where is it?", "How is it?"],
+      "correct_index": 0,
+      "explanation": "'How much is it?' ou 'How much does it cost?' são as formas de perguntar o preço."
+    },
+    {
+      "type": "typing",
+      "prompt": "Escreva 'Eu gostaria' em inglês",
+      "correct_answers": ["I would like", "I'd like"],
+      "hint": "Forma condicional de 'to want'",
+      "accent_strict": false
+    },
+    {
+      "type": "matching_pairs",
+      "prompt": "Combine as frases de compras",
+      "pairs": [
+        ["Quanto?", "How much?"],
+        ["Muito caro", "Too expensive"],
+        ["Barato", "Cheap"],
+        ["A conta", "The bill"]
+      ]
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "O que significa 'Can I pay by card?'?",
+      "options": ["Posso pagar em dinheiro?", "Posso pagar no cartão?", "Você tem troco?", "Está em promoção?"],
+      "correct_index": 1,
+      "explanation": "'Card' significa cartão. 'Cash' seria dinheiro."
+    },
+    {
+      "type": "sentence_builder",
+      "prompt": "Construa: 'I want to buy this'",
+      "words": ["I", "want", "to", "buy", "this", "sell"],
+      "correct_order": [0, 1, 2, 3, 4],
+      "distractors": ["sell"]
+    },
+    {
+      "type": "typing",
+      "prompt": "Escreva 'Você tem...?' em inglês",
+      "correct_answers": ["Do you have?", "Do you have...?", "Have you got?"],
+      "hint": "Do you + verbo ter",
+      "accent_strict": false
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Como se pergunta por um tamanho maior?",
+      "options": ["Do you have smaller?", "Do you have bigger?", "Do you have another color?", "Do you have cheaper?"],
+      "correct_index": 1,
+      "explanation": "'Bigger' significa maior. 'Smaller' seria menor."
+    },
+    {
+      "type": "matching_pairs",
+      "prompt": "Combine os tipos de lojas",
+      "pairs": [
+        ["Padaria", "Bakery"],
+        ["Farmácia", "Pharmacy"],
+        ["Supermercado", "Supermarket"],
+        ["Livraria", "Bookstore"]
+      ]
+    }
+  ],
+  "cheat_sheet": {
+    "title": "Shopping in English",
+    "sections": [
+      {
+        "heading": "Frases Essenciais",
+        "content": [
+          {
+            "type": "vocabulary",
+            "items": [
+              ["Quanto custa?", "How much is it? / How much does it cost?"],
+              ["Eu gostaria...", "I would like... / I'd like..."],
+              ["Você tem...?", "Do you have...?"],
+              ["Estou só olhando", "I'm just looking"],
+              ["Vou levar", "I'll take it"],
+              ["Posso pagar no cartão?", "Can I pay by card?"],
+              ["Dinheiro", "Cash"],
+              ["Nota fiscal", "Receipt"]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Descrever Produtos",
+        "content": [
+          {
+            "type": "vocabulary",
+            "items": [
+              ["Caro", "Expensive"],
+              ["Barato", "Cheap"],
+              ["Grande / Maior", "Big / Bigger"],
+              ["Pequeno / Menor", "Small / Smaller"],
+              ["Esse", "This one"],
+              ["Aquele", "That one"]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Tipos de Lojas",
+        "content": [
+          {
+            "type": "vocabulary",
+            "items": [
+              ["Loja", "Shop / Store"],
+              ["Supermercado", "Supermarket"],
+              ["Feira / Mercado", "Market"],
+              ["Padaria", "Bakery"],
+              ["Açougue", "Butcher's"],
+              ["Farmácia", "Pharmacy"],
+              ["Livraria", "Bookstore"]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Dicas",
+        "content": [
+          {
+            "type": "tip",
+            "text": "Em inglês, 'I'd like' é a forma educada. 'I want' pode parecer um pouco direto."
+          },
+          {
+            "type": "warning",
+            "text": "'Store' é mais usado nos EUA; 'Shop' no Reino Unido."
+          }
+        ]
+      }
+    ]
+  }
+}

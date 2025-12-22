@@ -1,0 +1,164 @@
+{
+  "id": "numbers_01_br",
+  "title": "Numbers & Counting",
+  "description": "Learn numbers and counting in Brazilian Portuguese",
+  "level": "A2",
+  "language_pair": {
+    "source": "en_US",
+    "target": "pt_BR"
+  },
+  "xp_reward": 15,
+  "order": 1,
+  "icon": "numbers",
+  "questions": [
+    {
+      "type": "multiple_choice",
+      "prompt": "How do you say '20' in Portuguese?",
+      "options": ["Vinte", "Trinta", "Doze", "Quinze"],
+      "correct_index": 0,
+      "explanation": "'Vinte' means twenty in Portuguese."
+    },
+    {
+      "type": "typing",
+      "prompt": "Write the number '15' in Portuguese",
+      "correct_answers": ["Quinze", "quinze"],
+      "hint": "Starts with 'Qu'...",
+      "accent_strict": false
+    },
+    {
+      "type": "matching_pairs",
+      "prompt": "Match the numbers",
+      "pairs": [
+        ["Eleven", "Onze"],
+        ["Twelve", "Doze"],
+        ["Thirteen", "Treze"],
+        ["Fourteen", "Quatorze"]
+      ]
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "What is 'cinquenta' in English?",
+      "options": ["Fifteen", "Fifty", "Five hundred", "Five"],
+      "correct_index": 1,
+      "explanation": "'Cinquenta' means fifty. 'Quinhentos' would be five hundred."
+    },
+    {
+      "type": "sentence_builder",
+      "prompt": "Build: 'I have thirty reais'",
+      "words": ["Eu", "tenho", "trinta", "reais", "cem"],
+      "correct_order": [0, 1, 2, 3],
+      "distractors": ["cem"]
+    },
+    {
+      "type": "typing",
+      "prompt": "Write '100' in Portuguese",
+      "correct_answers": ["Cem", "cem"],
+      "hint": "A short word, starts with 'C'",
+      "accent_strict": false
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "How do you say '21' in Portuguese?",
+      "options": ["Vinte um", "Vinte e um", "Dois um", "Vinte-um"],
+      "correct_index": 1,
+      "explanation": "Numbers 21-99 use 'e' (and) between tens and units: vinte e um."
+    },
+    {
+      "type": "matching_pairs",
+      "prompt": "Match the larger numbers",
+      "pairs": [
+        ["One hundred", "Cem"],
+        ["Two hundred", "Duzentos"],
+        ["One thousand", "Mil"],
+        ["One million", "Um milhão"]
+      ]
+    }
+  ],
+  "cheat_sheet": {
+    "title": "Numbers in Portuguese",
+    "sections": [
+      {
+        "heading": "Numbers 1-20",
+        "content": [
+          {
+            "type": "vocabulary",
+            "items": [
+              ["1 - One", "Um/Uma"],
+              ["2 - Two", "Dois/Duas"],
+              ["3 - Three", "Três"],
+              ["4 - Four", "Quatro"],
+              ["5 - Five", "Cinco"],
+              ["6 - Six", "Seis"],
+              ["7 - Seven", "Sete"],
+              ["8 - Eight", "Oito"],
+              ["9 - Nine", "Nove"],
+              ["10 - Ten", "Dez"],
+              ["11 - Eleven", "Onze"],
+              ["12 - Twelve", "Doze"],
+              ["13 - Thirteen", "Treze"],
+              ["14 - Fourteen", "Quatorze"],
+              ["15 - Fifteen", "Quinze"],
+              ["16 - Sixteen", "Dezesseis"],
+              ["17 - Seventeen", "Dezessete"],
+              ["18 - Eighteen", "Dezoito"],
+              ["19 - Nineteen", "Dezenove"],
+              ["20 - Twenty", "Vinte"]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Tens",
+        "content": [
+          {
+            "type": "vocabulary",
+            "items": [
+              ["30 - Thirty", "Trinta"],
+              ["40 - Forty", "Quarenta"],
+              ["50 - Fifty", "Cinquenta"],
+              ["60 - Sixty", "Sessenta"],
+              ["70 - Seventy", "Setenta"],
+              ["80 - Eighty", "Oitenta"],
+              ["90 - Ninety", "Noventa"],
+              ["100 - One hundred", "Cem"]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Compound Numbers",
+        "content": [
+          {
+            "type": "text",
+            "text": "For numbers 21-99, use 'e' (and) between tens and units:"
+          },
+          {
+            "type": "example",
+            "source": "Vinte e cinco",
+            "target": "Twenty-five (25)",
+            "note": "Literally: twenty and five"
+          },
+          {
+            "type": "example",
+            "source": "Trinta e três",
+            "target": "Thirty-three (33)",
+            "note": "Literally: thirty and three"
+          }
+        ]
+      },
+      {
+        "heading": "Tips",
+        "content": [
+          {
+            "type": "tip",
+            "text": "Numbers 1 and 2 have feminine forms: 'uma' and 'duas' (e.g., 'duas pessoas' - two people)"
+          },
+          {
+            "type": "warning",
+            "text": "Brazilian Portuguese uses 'dezesseis', 'dezessete', 'dezenove' (with 'e'). European Portuguese uses 'dezasseis', 'dezassete', 'dezanove' (with 'a')."
+          }
+        ]
+      }
+    ]
+  }
+}

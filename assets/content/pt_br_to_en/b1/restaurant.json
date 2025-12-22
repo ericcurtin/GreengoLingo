@@ -1,0 +1,156 @@
+{
+  "id": "restaurant_01_br_en",
+  "title": "At the Restaurant",
+  "description": "Aprenda vocabulário e frases de restaurante em inglês",
+  "level": "B1",
+  "language_pair": {
+    "source": "pt_BR",
+    "target": "en_US"
+  },
+  "xp_reward": 20,
+  "order": 4,
+  "icon": "restaurant",
+  "questions": [
+    {
+      "type": "multiple_choice",
+      "prompt": "Como se diz 'Uma mesa para dois, por favor' em inglês?",
+      "options": ["A table for two, please", "Two tables, please", "I want to sit", "Is there space?"],
+      "correct_index": 0,
+      "explanation": "'A table for two, please' é o pedido padrão para uma mesa para duas pessoas."
+    },
+    {
+      "type": "typing",
+      "prompt": "Escreva 'A conta, por favor' em inglês",
+      "correct_answers": ["The bill, please", "The check, please", "Can I have the bill?"],
+      "hint": "The bill/check, please",
+      "accent_strict": false
+    },
+    {
+      "type": "matching_pairs",
+      "prompt": "Combine os itens de restaurante",
+      "pairs": [
+        ["Cardápio", "Menu"],
+        ["Garçom", "Waiter"],
+        ["Gorjeta", "Tip"],
+        ["Conta", "Bill / Check"]
+      ]
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "O que significa 'What do you recommend?'?",
+      "options": ["O que você tem?", "O que você recomenda?", "O que é isso?", "É bom?"],
+      "correct_index": 1,
+      "explanation": "'Recommend' significa recomendar."
+    },
+    {
+      "type": "sentence_builder",
+      "prompt": "Construa: 'I would like to order'",
+      "words": ["I", "would", "like", "to", "order", "pay"],
+      "correct_order": [0, 1, 2, 3, 4],
+      "distractors": ["pay"]
+    },
+    {
+      "type": "typing",
+      "prompt": "Escreva 'Sou vegetariano' em inglês",
+      "correct_answers": ["I'm vegetarian", "I am vegetarian", "I'm a vegetarian"],
+      "hint": "I'm + vegetarian",
+      "accent_strict": false
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Como se diz 'mal passado' (carne) em inglês?",
+      "options": ["Well done", "Rare", "Medium", "Raw"],
+      "correct_index": 1,
+      "explanation": "'Rare' significa mal passado. 'Well done' é bem passado."
+    },
+    {
+      "type": "matching_pairs",
+      "prompt": "Combine as descrições de comida",
+      "pairs": [
+        ["Mal passado", "Rare"],
+        ["Ao ponto", "Medium"],
+        ["Bem passado", "Well done"],
+        ["Grelhado / Na brasa", "Grilled"]
+      ]
+    }
+  ],
+  "cheat_sheet": {
+    "title": "At the Restaurant in English",
+    "sections": [
+      {
+        "heading": "Fazer uma Reserva",
+        "content": [
+          {
+            "type": "vocabulary",
+            "items": [
+              ["Queria fazer uma reserva", "I'd like to make a reservation"],
+              ["Uma mesa para dois", "A table for two"],
+              ["Para hoje à noite", "For tonight"],
+              ["Às oito horas", "At 8 o'clock"],
+              ["Vocês têm uma mesa?", "Do you have a table?"]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Fazer o Pedido",
+        "content": [
+          {
+            "type": "vocabulary",
+            "items": [
+              ["O cardápio, por favor", "The menu, please"],
+              ["Eu queria...", "I would like... / I'd like..."],
+              ["O que você recomenda?", "What do you recommend?"],
+              ["Eu vou querer...", "I'll have..."],
+              ["Para entrada/prato principal/sobremesa", "For appetizer/main course/dessert"],
+              ["Alguma coisa para beber?", "Anything to drink?"]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Restrições Alimentares",
+        "content": [
+          {
+            "type": "vocabulary",
+            "items": [
+              ["Sou vegetariano/a", "I'm vegetarian"],
+              ["Sou vegano/a", "I'm vegan"],
+              ["Tenho alergia a...", "I'm allergic to..."],
+              ["Sem...", "Without..."],
+              ["Tem...?", "Does it contain...?"],
+              ["Sem glúten", "Gluten-free"]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Pagar",
+        "content": [
+          {
+            "type": "vocabulary",
+            "items": [
+              ["A conta, por favor", "The bill, please / The check, please"],
+              ["A taxa de serviço tá incluída?", "Is service included?"],
+              ["Posso pagar no cartão?", "Can I pay by card?"],
+              ["Pode ficar com o troco", "Keep the change"]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Dicas",
+        "content": [
+          {
+            "type": "tip",
+            "text": "Nos EUA diz-se 'check', no Reino Unido 'bill' é mais comum."
+          },
+          {
+            "type": "warning",
+            "text": "Nos EUA, as gorjetas são muito importantes (15-20%). Diferente do Brasil onde já tem taxa de serviço."
+          }
+        ]
+      }
+    ]
+  }
+}

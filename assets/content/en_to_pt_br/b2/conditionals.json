@@ -1,0 +1,155 @@
+{
+  "id": "conditionals_01_br",
+  "title": "Conditional Sentences",
+  "description": "Master conditional structures in Brazilian Portuguese",
+  "level": "B2",
+  "language_pair": {
+    "source": "en_US",
+    "target": "pt_BR"
+  },
+  "xp_reward": 25,
+  "order": 3,
+  "icon": "alt_route",
+  "questions": [
+    {
+      "type": "multiple_choice",
+      "prompt": "Which is a real conditional (Type 1)?",
+      "options": ["Se tivesse dinheiro, comprava", "Se tiver dinheiro, compro", "Se tivesse tido dinheiro, teria comprado", "Se tinha dinheiro, comprava"],
+      "correct_index": 1,
+      "explanation": "Type 1 (real/possible): Se + future subjunctive + present indicative."
+    },
+    {
+      "type": "typing",
+      "prompt": "Complete: 'If I had money, I would buy' → Se ___ dinheiro, ___",
+      "correct_answers": ["tivesse, comprava", "tivesse dinheiro, comprava", "eu tivesse dinheiro, comprava"],
+      "hint": "Imperfect subjunctive + imperfect indicative (common in Brazil)",
+      "accent_strict": false
+    },
+    {
+      "type": "matching_pairs",
+      "prompt": "Match conditional types",
+      "pairs": [
+        ["Type 1 (Real)", "Se tiver, faço"],
+        ["Type 2 (Unreal present)", "Se tivesse, fazia/faria"],
+        ["Type 3 (Unreal past)", "Se tivesse tido, teria feito"],
+        ["Zero (General truth)", "Se chove, fico em casa"]
+      ]
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "In Brazilian Portuguese, what often replaces the conditional tense?",
+      "options": ["Future tense", "Present tense", "Imperfect tense", "Past tense"],
+      "correct_index": 2,
+      "explanation": "In spoken Brazilian Portuguese, the imperfect often replaces the conditional: 'fazia' instead of 'faria'."
+    },
+    {
+      "type": "sentence_builder",
+      "prompt": "Build: 'If I were you, I would go'",
+      "words": ["Se", "eu", "fosse", "você", "ia", "iria"],
+      "correct_order": [0, 1, 2, 3, 4],
+      "distractors": ["iria"]
+    },
+    {
+      "type": "typing",
+      "prompt": "Write 'If it rains, I'll stay home' in Portuguese",
+      "correct_answers": ["Se chover, fico em casa", "Se chover, vou ficar em casa"],
+      "hint": "Future subjunctive + present/future",
+      "accent_strict": false
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "What is the future subjunctive of 'ser' (eu)?",
+      "options": ["Seja", "Fosse", "For", "Seria"],
+      "correct_index": 2,
+      "explanation": "'For' is the future subjunctive of 'ser'. Used in 'se eu for...' (if I am/will be)."
+    },
+    {
+      "type": "matching_pairs",
+      "prompt": "Match the future subjunctive forms",
+      "pairs": [
+        ["Ser - se eu...", "for"],
+        ["Ter - se eu...", "tiver"],
+        ["Fazer - se eu...", "fizer"],
+        ["Ir - se eu...", "for"]
+      ]
+    }
+  ],
+  "cheat_sheet": {
+    "title": "Conditional Sentences",
+    "sections": [
+      {
+        "heading": "Type 0: General Truths",
+        "content": [
+          {
+            "type": "text",
+            "text": "For habits and general facts: Se + present + present"
+          },
+          {
+            "type": "example",
+            "source": "Se chove, fico em casa",
+            "target": "If/When it rains, I stay home",
+            "note": "Always true statement"
+          }
+        ]
+      },
+      {
+        "heading": "Type 1: Real/Possible",
+        "content": [
+          {
+            "type": "text",
+            "text": "For likely future conditions: Se + future subjunctive + present/future"
+          },
+          {
+            "type": "example",
+            "source": "Se tiver tempo, vou",
+            "target": "If I have time, I'll go",
+            "note": "Possible future situation"
+          }
+        ]
+      },
+      {
+        "heading": "Type 2: Unreal Present",
+        "content": [
+          {
+            "type": "text",
+            "text": "For hypothetical present: Se + imperfect subjunctive + imperfect/conditional"
+          },
+          {
+            "type": "example",
+            "source": "Se tivesse dinheiro, comprava/compraria",
+            "target": "If I had money, I would buy",
+            "note": "In Brazil, imperfect often replaces conditional"
+          }
+        ]
+      },
+      {
+        "heading": "Type 3: Unreal Past",
+        "content": [
+          {
+            "type": "text",
+            "text": "For hypothetical past: Se + past perfect subjunctive + conditional perfect"
+          },
+          {
+            "type": "example",
+            "source": "Se tivesse estudado, teria passado",
+            "target": "If I had studied, I would have passed",
+            "note": "Contrary to past reality"
+          }
+        ]
+      },
+      {
+        "heading": "Tips",
+        "content": [
+          {
+            "type": "tip",
+            "text": "In spoken Brazilian Portuguese, 'ia' and 'fazia' often replace 'iria' and 'faria' in conditionals."
+          },
+          {
+            "type": "warning",
+            "text": "The future subjunctive is still essential in Brazilian Portuguese for Type 1 conditionals."
+          }
+        ]
+      }
+    ]
+  }
+}

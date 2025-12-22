@@ -1,0 +1,146 @@
+{
+  "id": "conditionals_01_pt_en",
+  "title": "Conditional Sentences",
+  "description": "Domine as estruturas condicionais em inglês",
+  "level": "B2",
+  "language_pair": {
+    "source": "pt_PT",
+    "target": "en_US"
+  },
+  "xp_reward": 25,
+  "order": 3,
+  "icon": "alt_route",
+  "questions": [
+    {
+      "type": "multiple_choice",
+      "prompt": "Como se traduz 'Se chover, fico em casa'?",
+      "options": ["If it rains, I stay home", "If it will rain, I stay home", "If it rained, I stay home", "If it raining, I stay home"],
+      "correct_index": 0,
+      "explanation": "Condicional tipo 1: If + presente simples + presente/futuro simples."
+    },
+    {
+      "type": "typing",
+      "prompt": "Escreva: 'Se eu tivesse dinheiro, compraria'",
+      "correct_answers": ["If I had money, I would buy", "If I had money I would buy"],
+      "hint": "Tipo 2: If + passado simples + would + infinitivo",
+      "accent_strict": false
+    },
+    {
+      "type": "matching_pairs",
+      "prompt": "Combine os tipos de condicionais",
+      "pairs": [
+        ["Tipo 0 (Verdade geral)", "If + present, present"],
+        ["Tipo 1 (Real)", "If + present, will + infinitive"],
+        ["Tipo 2 (Irreal presente)", "If + past, would + infinitive"],
+        ["Tipo 3 (Irreal passado)", "If + past perfect, would have + past participle"]
+      ]
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Que tempo verbal se usa depois de 'if' no tipo 2?",
+      "options": ["Present simple", "Past simple", "Past perfect", "Future"],
+      "correct_index": 1,
+      "explanation": "No tipo 2 (irreal presente), usa-se 'if + past simple'."
+    },
+    {
+      "type": "sentence_builder",
+      "prompt": "Construa: 'If I were you, I would go'",
+      "words": ["If", "I", "were", "you", "I", "would", "go"],
+      "correct_order": [0, 1, 2, 3, 4, 5, 6],
+      "distractors": []
+    },
+    {
+      "type": "typing",
+      "prompt": "Escreva 'Se tivesse estudado, teria passado'",
+      "correct_answers": ["If I had studied, I would have passed"],
+      "hint": "Tipo 3: If + past perfect + would have + past participle",
+      "accent_strict": false
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "O que significa 'I wish I had more time'?",
+      "options": ["Quem me dera ter mais tempo", "Espero ter mais tempo", "Terei mais tempo", "Tinha mais tempo"],
+      "correct_index": 0,
+      "explanation": "'I wish + past' expressa um desejo irreal no presente, como 'quem me dera'."
+    },
+    {
+      "type": "matching_pairs",
+      "prompt": "Combine as frases",
+      "pairs": [
+        ["Se eu fosse rico", "If I were rich"],
+        ["Se tivesse sabido", "If I had known"],
+        ["Quem me dera poder", "I wish I could"],
+        ["Se eu pudesse", "If I could"]
+      ]
+    }
+  ],
+  "cheat_sheet": {
+    "title": "Conditionals in English",
+    "sections": [
+      {
+        "heading": "Type 0 & 1: Real Conditionals",
+        "content": [
+          {
+            "type": "text",
+            "text": "Para situações reais ou possíveis:"
+          },
+          {
+            "type": "example",
+            "source": "Se chove, fico em casa",
+            "target": "If it rains, I stay home",
+            "note": "Tipo 0: Verdade geral"
+          },
+          {
+            "type": "example",
+            "source": "Se chover amanhã, fico em casa",
+            "target": "If it rains tomorrow, I will stay home",
+            "note": "Tipo 1: Possibilidade futura"
+          }
+        ]
+      },
+      {
+        "heading": "Type 2: Unreal Present",
+        "content": [
+          {
+            "type": "text",
+            "text": "Para situações hipotéticas no presente:"
+          },
+          {
+            "type": "example",
+            "source": "Se eu fosse rico, viajaria",
+            "target": "If I were rich, I would travel",
+            "note": "Usa-se 'were' para todas as pessoas (formal)"
+          }
+        ]
+      },
+      {
+        "heading": "Type 3: Unreal Past",
+        "content": [
+          {
+            "type": "text",
+            "text": "Para situações hipotéticas no passado:"
+          },
+          {
+            "type": "example",
+            "source": "Se tivesse estudado, teria passado",
+            "target": "If I had studied, I would have passed",
+            "note": "Arrependimento ou especulação sobre o passado"
+          }
+        ]
+      },
+      {
+        "heading": "Dicas",
+        "content": [
+          {
+            "type": "tip",
+            "text": "Em inglês, NÃO se usa 'will' na cláusula com 'if' nos tipos 0, 1 e 2."
+          },
+          {
+            "type": "warning",
+            "text": "O português usa o futuro do conjuntivo ('Se chover'), mas o inglês usa o presente simples ('If it rains')."
+          }
+        ]
+      }
+    ]
+  }
+}

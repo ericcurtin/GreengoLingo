@@ -1,0 +1,127 @@
+{
+  "id": "introductions_01_br",
+  "title": "Introductions",
+  "description": "Learn how to introduce yourself in Brazilian Portuguese",
+  "level": "A1",
+  "language_pair": {
+    "source": "en_US",
+    "target": "pt_BR"
+  },
+  "xp_reward": 10,
+  "order": 2,
+  "icon": "person",
+  "questions": [
+    {
+      "type": "multiple_choice",
+      "prompt": "How do you say 'My name is...' in Brazilian Portuguese?",
+      "options": ["Meu nome é...", "Eu tenho...", "Eu sou de...", "Eu gosto de..."],
+      "correct_index": 0,
+      "explanation": "'Meu nome é' is the most common way to say 'My name is' in Brazil. You can also say 'Me chamo'."
+    },
+    {
+      "type": "typing",
+      "prompt": "Write 'Nice to meet you' in Portuguese",
+      "correct_answers": ["Muito prazer", "Prazer", "Prazer em te conhecer"],
+      "hint": "Literally means 'Much pleasure'",
+      "accent_strict": false
+    },
+    {
+      "type": "sentence_builder",
+      "prompt": "Build: 'My name is Maria'",
+      "words": ["Meu", "nome", "é", "Maria", "tem"],
+      "correct_order": [0, 1, 2, 3],
+      "distractors": ["tem"]
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "What does 'De onde você é?' mean?",
+      "options": ["How old are you?", "What's your name?", "Where are you from?", "How are you?"],
+      "correct_index": 2,
+      "explanation": "'De onde você é?' asks about someone's origin or hometown."
+    },
+    {
+      "type": "matching_pairs",
+      "prompt": "Match the phrases",
+      "pairs": [
+        ["My name is", "Meu nome é"],
+        ["I am from", "Eu sou de"],
+        ["Nice to meet you", "Muito prazer"],
+        ["And you?", "E você?"]
+      ]
+    },
+    {
+      "type": "typing",
+      "prompt": "Write 'I am from Brazil' in Portuguese",
+      "correct_answers": ["Eu sou do Brasil", "Sou do Brasil"],
+      "hint": "Sou de + place (remember: de + o = do)",
+      "accent_strict": false
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "How do you ask 'What is your name?' in Brazil?",
+      "options": ["Qual é o seu nome?", "Como você se chama?", "Quem é você?", "Both A and B are correct"],
+      "correct_index": 3,
+      "explanation": "Both 'Qual é o seu nome?' and 'Como você se chama?' are commonly used in Brazil."
+    },
+    {
+      "type": "sentence_builder",
+      "prompt": "Build: 'I am Brazilian'",
+      "words": ["Eu", "sou", "brasileiro", "de", "falar"],
+      "correct_order": [0, 1, 2],
+      "distractors": ["de", "falar"]
+    }
+  ],
+  "cheat_sheet": {
+    "title": "Introducing Yourself",
+    "sections": [
+      {
+        "heading": "Saying Your Name",
+        "content": [
+          {
+            "type": "vocabulary",
+            "items": [
+              ["My name is...", "Meu nome é... / Me chamo..."],
+              ["What's your name?", "Qual é o seu nome? / Como você se chama?"],
+              ["I am called...", "Me chamo..."]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Nationality & Origin",
+        "content": [
+          {
+            "type": "vocabulary",
+            "items": [
+              ["I am from...", "Eu sou de..."],
+              ["Where are you from?", "De onde você é?"],
+              ["Brazilian (m/f)", "Brasileiro / Brasileira"],
+              ["American (m/f)", "Americano / Americana"],
+              ["English (m/f)", "Inglês / Inglesa"]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Polite Phrases",
+        "content": [
+          {
+            "type": "example",
+            "source": "Muito prazer",
+            "target": "Nice to meet you (literally: much pleasure)",
+            "note": "The response is often 'Prazer' or 'Igualmente' (likewise)"
+          }
+        ]
+      },
+      {
+        "heading": "Brazilian Portuguese Note",
+        "content": [
+          {
+            "type": "tip",
+            "text": "In Brazil, 'você' is used much more commonly than 'tu'. It's appropriate in both formal and informal situations."
+          }
+        ]
+      }
+    ]
+  }
+}

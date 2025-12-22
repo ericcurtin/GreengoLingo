@@ -1,0 +1,140 @@
+{
+  "id": "basic_expressions_01_pt",
+  "title": "Basic Expressions",
+  "description": "Learn essential everyday expressions in European Portuguese",
+  "level": "A1",
+  "language_pair": {
+    "source": "en_US",
+    "target": "pt_PT"
+  },
+  "xp_reward": 10,
+  "order": 4,
+  "icon": "speech_bubble",
+  "questions": [
+    {
+      "type": "multiple_choice",
+      "prompt": "How do you say 'please' in Portuguese?",
+      "options": ["obrigado", "por favor", "desculpe", "com licença"],
+      "correct_index": 1,
+      "explanation": "'Por favor' or 'se faz favor' are used when making polite requests in Portugal."
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "How does a man say 'thank you' in Portuguese?",
+      "options": ["obrigada", "obrigado", "por favor", "de nada"],
+      "correct_index": 1,
+      "explanation": "Men say 'obrigado' (ending in -o), while women say 'obrigada' (ending in -a)."
+    },
+    {
+      "type": "typing",
+      "prompt": "Write 'You're welcome' in Portuguese",
+      "correct_answers": ["de nada", "De nada"],
+      "hint": "Literally means 'of nothing'",
+      "accent_strict": false
+    },
+    {
+      "type": "matching_pairs",
+      "prompt": "Match the expressions",
+      "pairs": [
+        ["Yes", "Sim"],
+        ["No", "Não"],
+        ["Please", "Por favor"],
+        ["Excuse me", "Com licença"]
+      ]
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "What does 'Desculpe' mean?",
+      "options": ["Thank you", "Please", "Sorry / Excuse me", "You're welcome"],
+      "correct_index": 2,
+      "explanation": "'Desculpe' is the formal way to apologize or get attention. 'Desculpa' is informal."
+    },
+    {
+      "type": "typing",
+      "prompt": "Write 'I don't understand' in Portuguese",
+      "correct_answers": ["Não entendo", "Eu não entendo", "Não percebo"],
+      "hint": "Não + entendo/percebo",
+      "accent_strict": false
+    },
+    {
+      "type": "sentence_builder",
+      "prompt": "Build: 'Do you speak English?'",
+      "words": ["Fala", "inglês", "português", "come", "dorme"],
+      "correct_order": [0, 1],
+      "distractors": ["português", "come", "dorme"]
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "How do you say 'I don't know' in Portuguese?",
+      "options": ["Não sei", "Não entendo", "Não falo", "Não gosto"],
+      "correct_index": 0,
+      "explanation": "'Não sei' literally means 'I don't know'. Very commonly used."
+    }
+  ],
+  "cheat_sheet": {
+    "title": "Essential Portuguese Expressions",
+    "sections": [
+      {
+        "heading": "Polite Words",
+        "content": [
+          {
+            "type": "vocabulary",
+            "items": [
+              ["Please", "Por favor / Se faz favor"],
+              ["Thank you (male speaker)", "Obrigado"],
+              ["Thank you (female speaker)", "Obrigada"],
+              ["You're welcome", "De nada"],
+              ["Excuse me (to pass)", "Com licença"],
+              ["Sorry (formal)", "Desculpe"],
+              ["Sorry (informal)", "Desculpa"]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Yes and No",
+        "content": [
+          {
+            "type": "vocabulary",
+            "items": [
+              ["Yes", "Sim"],
+              ["No", "Não"],
+              ["Maybe", "Talvez"],
+              ["Of course", "Claro"]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Useful Phrases",
+        "content": [
+          {
+            "type": "vocabulary",
+            "items": [
+              ["I don't understand", "Não entendo / Não percebo"],
+              ["I don't know", "Não sei"],
+              ["Do you speak English?", "Fala inglês?"],
+              ["I speak a little Portuguese", "Falo um pouco de português"],
+              ["Can you repeat?", "Pode repetir?"]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Portugal vs Brazil",
+        "content": [
+          {
+            "type": "tip",
+            "text": "In Portugal, 'se faz favor' is commonly used alongside 'por favor'. Also, 'não percebo' (I don't understand) is more common than 'não entendo'."
+          },
+          {
+            "type": "example",
+            "source": "Muito obrigado!",
+            "target": "Thank you very much! (said by a man)",
+            "note": "Add 'muito' for emphasis"
+          }
+        ]
+      }
+    ]
+  }
+}

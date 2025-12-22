@@ -1,0 +1,147 @@
+{
+  "id": "academic_01_pt_en",
+  "title": "Academic Language",
+  "description": "Aprenda escrita académica em inglês",
+  "level": "C1",
+  "language_pair": {
+    "source": "pt_PT",
+    "target": "en_US"
+  },
+  "xp_reward": 30,
+  "order": 3,
+  "icon": "menu_book",
+  "questions": [
+    {
+      "type": "multiple_choice",
+      "prompt": "Como se diz 'Segundo o autor' em inglês académico?",
+      "options": ["The author said", "According to the author", "The author spoke", "In accordance to the author"],
+      "correct_index": 1,
+      "explanation": "'According to the author' ou 'As [author] argues' são formas académicas de citar."
+    },
+    {
+      "type": "typing",
+      "prompt": "Traduza 'O objetivo deste estudo é...'",
+      "correct_answers": ["The aim of this study is...", "This study aims to...", "The purpose of this study is..."],
+      "hint": "Aim/Purpose/Goal = Objetivo",
+      "accent_strict": false
+    },
+    {
+      "type": "matching_pairs",
+      "prompt": "Combine os conectores académicos",
+      "pairs": [
+        ["Além disso", "Furthermore / Moreover"],
+        ["Contudo / No entanto", "However / Nevertheless"],
+        ["Portanto / Por conseguinte", "Therefore / Thus / Hence"],
+        ["Em conclusão", "In conclusion / To conclude"]
+      ]
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Qual é a voz preferida na escrita académica inglesa?",
+      "options": ["Activa sempre", "Passiva sempre", "Activa preferida, passiva para objectividade", "Não há preferência"],
+      "correct_index": 2,
+      "explanation": "O inglês académico moderno prefere a voz activa, mas a passiva é usada para objectividade ou quando o agente é desconhecido."
+    },
+    {
+      "type": "sentence_builder",
+      "prompt": "Construa: 'The data suggests that...'",
+      "words": ["The", "data", "suggests", "that", "suggest"],
+      "correct_order": [0, 1, 2, 3],
+      "distractors": ["suggest"]
+    },
+    {
+      "type": "typing",
+      "prompt": "Traduza 'Observa-se que...'",
+      "correct_answers": ["It is observed that...", "It can be observed that...", "One can observe that..."],
+      "hint": "Use construções impessoais ou passivas",
+      "accent_strict": false
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Que estilo de citação é mais comum em inglês?",
+      "options": ["ABNT", "APA, MLA, ou Harvard", "ISO", "Não há estilos específicos"],
+      "correct_index": 1,
+      "explanation": "APA (psicologia/ciências sociais), MLA (humanidades), Harvard e Chicago são os estilos mais comuns."
+    },
+    {
+      "type": "matching_pairs",
+      "prompt": "Combine a linguagem de citação",
+      "pairs": [
+        ["Segundo...", "According to..."],
+        ["Conforme argumenta...", "As [author] argues..."],
+        ["Nas palavras de...", "In the words of... / As [author] puts it..."],
+        ["Apud / Citado em...", "As cited in..."]
+      ]
+    }
+  ],
+  "cheat_sheet": {
+    "title": "Academic English",
+    "sections": [
+      {
+        "heading": "Estrutura de Trabalho Académico",
+        "content": [
+          {
+            "type": "vocabulary",
+            "items": [
+              ["Resumo", "Abstract"],
+              ["Introdução", "Introduction"],
+              ["Revisão da Literatura", "Literature Review"],
+              ["Metodologia", "Methodology / Methods"],
+              ["Resultados", "Results / Findings"],
+              ["Discussão", "Discussion"],
+              ["Conclusão", "Conclusion"],
+              ["Referências", "References / Bibliography"]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Conectores Académicos",
+        "content": [
+          {
+            "type": "vocabulary",
+            "items": [
+              ["Além disso", "Furthermore / Moreover / In addition"],
+              ["Contudo / No entanto", "However / Nevertheless / Nonetheless"],
+              ["Portanto / Logo", "Therefore / Thus / Hence / Consequently"],
+              ["Por outro lado", "On the other hand / Conversely"],
+              ["Em contrapartida", "In contrast / By contrast"],
+              ["Por outras palavras", "In other words / That is to say"]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Hedging (Atenuação)",
+        "content": [
+          {
+            "type": "text",
+            "text": "O inglês académico usa 'hedging' para evitar afirmações absolutas:"
+          },
+          {
+            "type": "vocabulary",
+            "items": [
+              ["Parece que", "It appears/seems that..."],
+              ["Sugere-se que", "It is suggested that... / The evidence suggests..."],
+              ["É possível que", "It is possible that... / may/might/could"],
+              ["Tende a", "tends to / is likely to"]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Dicas",
+        "content": [
+          {
+            "type": "tip",
+            "text": "O inglês académico moderno aceita 'I' e 'we', especialmente em algumas disciplinas. Verifique as convenções da sua área."
+          },
+          {
+            "type": "warning",
+            "text": "'Data' pode ser singular ou plural em inglês: 'The data shows...' ou 'The data show...'. Seja consistente."
+          }
+        ]
+      }
+    ]
+  }
+}

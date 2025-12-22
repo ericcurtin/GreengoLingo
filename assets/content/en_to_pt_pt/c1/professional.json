@@ -1,0 +1,143 @@
+{
+  "id": "professional_01",
+  "title": "Professional Communication",
+  "description": "Master business and professional language in European Portuguese",
+  "level": "C1",
+  "language_pair": {
+    "source": "en_US",
+    "target": "pt_PT"
+  },
+  "xp_reward": 30,
+  "order": 2,
+  "icon": "business",
+  "questions": [
+    {
+      "type": "multiple_choice",
+      "prompt": "How do you begin a formal email in Portuguese?",
+      "options": ["Olá!", "Exmo(a). Sr(a).", "Querido(a)", "Ei!"],
+      "correct_index": 1,
+      "explanation": "'Exmo(a). Sr(a).' (Excelentíssimo/a Senhor/a) is the most formal salutation."
+    },
+    {
+      "type": "typing",
+      "prompt": "Write 'Yours sincerely' in formal Portuguese",
+      "correct_answers": ["Com os melhores cumprimentos", "Atenciosamente", "Com elevada consideração"],
+      "hint": "Formal closing for business correspondence",
+      "accent_strict": false
+    },
+    {
+      "type": "matching_pairs",
+      "prompt": "Match the business expressions",
+      "pairs": [
+        ["Regarding...", "Relativamente a... / No que diz respeito a..."],
+        ["Please find attached", "Segue em anexo"],
+        ["I am writing to...", "Venho por este meio..."],
+        ["As per our conversation", "Conforme a nossa conversa"]
+      ]
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "What does 'Agradeço desde já a sua atenção' mean?",
+      "options": ["I already appreciate your attention", "Thank you in advance for your attention", "I appreciate your yesterday's attention", "Thank you very much for everything"],
+      "correct_index": 1,
+      "explanation": "'Desde já' means 'in advance'. This is a formal closing expression."
+    },
+    {
+      "type": "sentence_builder",
+      "prompt": "Build: 'I would like to request a meeting'",
+      "words": ["Gostaria", "de", "solicitar", "uma", "reunião", "quero"],
+      "correct_order": [0, 1, 2, 3, 4],
+      "distractors": ["quero"]
+    },
+    {
+      "type": "typing",
+      "prompt": "Write 'Due to unforeseen circumstances' in Portuguese",
+      "correct_answers": ["Devido a circunstâncias imprevistas", "Por motivos imprevistos"],
+      "hint": "Devido a = Due to",
+      "accent_strict": false
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Which register is appropriate for a business proposal?",
+      "options": ["Tu form with slang", "Você form with colloquialisms", "Formal 'o senhor/a senhora' with professional vocabulary", "Any register is fine"],
+      "correct_index": 2,
+      "explanation": "Business proposals require formal register with 'o senhor/a senhora' and professional vocabulary."
+    },
+    {
+      "type": "matching_pairs",
+      "prompt": "Match meeting vocabulary",
+      "pairs": [
+        ["Agenda", "Ordem de trabalhos"],
+        ["Minutes", "Ata"],
+        ["To adjourn", "Adiar / Encerrar"],
+        ["Any other business", "Outros assuntos"]
+      ]
+    }
+  ],
+  "cheat_sheet": {
+    "title": "Professional Communication",
+    "sections": [
+      {
+        "heading": "Formal Email Structure",
+        "content": [
+          {
+            "type": "vocabulary",
+            "items": [
+              ["Opening (very formal)", "Exmo(a). Sr(a). / Prezado(a) Sr(a)."],
+              ["Opening (formal)", "Caro(a) Sr(a). / Estimado(a) Sr(a)."],
+              ["Body introduction", "Venho por este meio... / Escrevo para..."],
+              ["Closing (very formal)", "Com os melhores cumprimentos"],
+              ["Closing (formal)", "Atenciosamente / Cumprimentos"]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Useful Expressions",
+        "content": [
+          {
+            "type": "vocabulary",
+            "items": [
+              ["Regarding...", "Relativamente a... / No que concerne a..."],
+              ["Please find attached", "Segue em anexo / Em anexo envio"],
+              ["As discussed", "Conforme acordado / Conforme discutido"],
+              ["For your information", "Para seu conhecimento"],
+              ["At your earliest convenience", "Logo que possível / Na primeira oportunidade"],
+              ["Thank you in advance", "Agradeço desde já"]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Meeting Vocabulary",
+        "content": [
+          {
+            "type": "vocabulary",
+            "items": [
+              ["Meeting", "Reunião"],
+              ["Agenda", "Ordem de trabalhos"],
+              ["Minutes", "Ata"],
+              ["To chair (a meeting)", "Presidir"],
+              ["To attend", "Assistir / Comparecer"],
+              ["To postpone", "Adiar"],
+              ["Decision", "Deliberação"]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Tips",
+        "content": [
+          {
+            "type": "tip",
+            "text": "In Portugal, formal business communication often uses the conditional ('gostaria de') rather than simple present for requests."
+          },
+          {
+            "type": "warning",
+            "text": "Avoid using 'tu' in business contexts unless you have an established informal relationship."
+          }
+        ]
+      }
+    ]
+  }
+}

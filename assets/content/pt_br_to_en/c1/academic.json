@@ -1,0 +1,148 @@
+{
+  "id": "academic_01_br_en",
+  "title": "Academic Language",
+  "description": "Aprenda escrita acadêmica em inglês",
+  "level": "C1",
+  "language_pair": {
+    "source": "pt_BR",
+    "target": "en_US"
+  },
+  "xp_reward": 30,
+  "order": 3,
+  "icon": "menu_book",
+  "questions": [
+    {
+      "type": "multiple_choice",
+      "prompt": "Como se diz 'Segundo o autor' em inglês acadêmico?",
+      "options": ["The author said", "According to the author", "The author spoke", "In accordance to the author"],
+      "correct_index": 1,
+      "explanation": "'According to the author' ou 'As [author] argues' são formas acadêmicas de citar."
+    },
+    {
+      "type": "typing",
+      "prompt": "Traduza 'O objetivo deste estudo é...'",
+      "correct_answers": ["The aim of this study is...", "This study aims to...", "The purpose of this study is..."],
+      "hint": "Aim/Purpose/Goal = Objetivo",
+      "accent_strict": false
+    },
+    {
+      "type": "matching_pairs",
+      "prompt": "Combine os conectores acadêmicos",
+      "pairs": [
+        ["Além disso", "Furthermore / Moreover"],
+        ["Contudo / No entanto", "However / Nevertheless"],
+        ["Portanto / Logo", "Therefore / Thus / Hence"],
+        ["Em conclusão", "In conclusion / To conclude"]
+      ]
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Qual estilo de citação é mais comum em inglês?",
+      "options": ["ABNT", "APA, MLA, ou Chicago", "ISO", "Não há estilos específicos"],
+      "correct_index": 1,
+      "explanation": "APA (psicologia/ciências sociais), MLA (humanidades), Chicago são os estilos mais comuns em inglês."
+    },
+    {
+      "type": "sentence_builder",
+      "prompt": "Construa: 'The data suggests that...'",
+      "words": ["The", "data", "suggests", "that", "suggest"],
+      "correct_order": [0, 1, 2, 3],
+      "distractors": ["suggest"]
+    },
+    {
+      "type": "typing",
+      "prompt": "Traduza 'Observa-se que...'",
+      "correct_answers": ["It is observed that...", "It can be observed that...", "One can observe that..."],
+      "hint": "Use construções impessoais ou passivas",
+      "accent_strict": false
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Qual é a voz preferida na escrita acadêmica inglesa moderna?",
+      "options": ["Ativa sempre", "Passiva sempre", "Ativa preferida, passiva para objetividade", "Não há preferência"],
+      "correct_index": 2,
+      "explanation": "O inglês acadêmico moderno prefere a voz ativa, mas a passiva é usada para objetividade."
+    },
+    {
+      "type": "matching_pairs",
+      "prompt": "Combine a linguagem de citação",
+      "pairs": [
+        ["Segundo...", "According to..."],
+        ["Conforme argumenta...", "As [author] argues..."],
+        ["Nas palavras de...", "In the words of..."],
+        ["Grifo nosso", "Emphasis added"]
+      ]
+    }
+  ],
+  "cheat_sheet": {
+    "title": "Academic English",
+    "sections": [
+      {
+        "heading": "Estrutura de Trabalho Acadêmico",
+        "content": [
+          {
+            "type": "vocabulary",
+            "items": [
+              ["Resumo", "Abstract"],
+              ["Introdução", "Introduction"],
+              ["Revisão de Literatura", "Literature Review"],
+              ["Metodologia", "Methodology / Methods"],
+              ["Resultados", "Results / Findings"],
+              ["Discussão", "Discussion"],
+              ["Considerações Finais", "Conclusion"],
+              ["Referências", "References / Bibliography"]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "ABNT vs APA/MLA",
+        "content": [
+          {
+            "type": "text",
+            "text": "O inglês usa estilos diferentes de ABNT:"
+          },
+          {
+            "type": "example",
+            "source": "ABNT: (SILVA, 2020)",
+            "target": "APA: (Silva, 2020)",
+            "note": "APA usa capitalização normal"
+          },
+          {
+            "type": "example",
+            "source": "ABNT: SILVA, João. Título. 2020.",
+            "target": "APA: Silva, J. (2020). Title.",
+            "note": "Formato diferente nas referências"
+          }
+        ]
+      },
+      {
+        "heading": "Hedging (Atenuação)",
+        "content": [
+          {
+            "type": "vocabulary",
+            "items": [
+              ["Parece que", "It appears/seems that..."],
+              ["Sugere-se que", "It is suggested that..."],
+              ["É possível que", "It is possible that... / may/might"],
+              ["Tende a", "tends to / is likely to"]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Dicas",
+        "content": [
+          {
+            "type": "tip",
+            "text": "Verifique qual estilo de citação sua universidade/revista exige antes de escrever."
+          },
+          {
+            "type": "warning",
+            "text": "'Data' pode ser singular ou plural em inglês: 'The data shows...' ou 'The data show...'"
+          }
+        ]
+      }
+    ]
+  }
+}

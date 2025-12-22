@@ -1,0 +1,142 @@
+{
+  "id": "nuanced_language_01_br",
+  "title": "Nuanced Language",
+  "description": "Master subtle linguistic distinctions in Brazilian Portuguese",
+  "level": "C2",
+  "language_pair": {
+    "source": "en_US",
+    "target": "pt_BR"
+  },
+  "xp_reward": 35,
+  "order": 1,
+  "icon": "psychology_alt",
+  "questions": [
+    {
+      "type": "multiple_choice",
+      "prompt": "What is the subtle difference between 'saudade' and 'nostalgia'?",
+      "options": ["They are identical", "Saudade is deeper longing, nostalgia is simpler memory", "Nostalgia is more emotional", "Saudade is only for places"],
+      "correct_index": 1,
+      "explanation": "'Saudade' encompasses a profound longing that combines sadness and joy. 'Nostalgia' is simpler."
+    },
+    {
+      "type": "typing",
+      "prompt": "What does 'dar um jeitinho' mean culturally?",
+      "correct_answers": ["To find a creative workaround", "To bend the rules", "Brazilian way of solving problems"],
+      "hint": "A uniquely Brazilian concept",
+      "accent_strict": false
+    },
+    {
+      "type": "matching_pairs",
+      "prompt": "Match the subtle distinctions",
+      "pairs": [
+        ["Saber (conhecimento)", "To know (facts/skills)"],
+        ["Conhecer (familiaridade)", "To know (people/places)"],
+        ["Ser (permanent)", "To be (essence)"],
+        ["Estar (temporary)", "To be (state/condition)"]
+      ]
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "What nuance does 'né' add at the end of a sentence?",
+      "options": ["Negation", "Seeking confirmation/agreement", "Emphasis", "Question"],
+      "correct_index": 1,
+      "explanation": "'Né' (não é) seeks confirmation, like 'right?' or 'isn't it?'"
+    },
+    {
+      "type": "sentence_builder",
+      "prompt": "Build: 'Be that as it may' (Seja como for)",
+      "words": ["Seja", "como", "for", "é", "será"],
+      "correct_order": [0, 1, 2],
+      "distractors": ["é", "será"]
+    },
+    {
+      "type": "typing",
+      "prompt": "Express 'The thing is...' (introducing an uncomfortable truth)",
+      "correct_answers": ["É que...", "A questão é que...", "O negócio é que..."],
+      "hint": "Often used to introduce excuses or complications",
+      "accent_strict": false
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "What does 'deixa disso' convey?",
+      "options": ["Leave it there", "Stop it / Drop it / Never mind", "Keep it", "Give it to me"],
+      "correct_index": 1,
+      "explanation": "'Deixa disso' tells someone to drop a subject or stop a behavior."
+    },
+    {
+      "type": "matching_pairs",
+      "prompt": "Match the modal nuances",
+      "pairs": [
+        ["Pode ser que...", "It might be that... (possibility)"],
+        ["Deve ser que...", "It must be that... (probability)"],
+        ["Capaz que...", "Maybe/Possibly (regional)"],
+        ["Será que...?", "I wonder if...? (doubt)"]
+      ]
+    }
+  ],
+  "cheat_sheet": {
+    "title": "Nuanced Language",
+    "sections": [
+      {
+        "heading": "Brazilian Cultural Concepts",
+        "content": [
+          {
+            "type": "vocabulary",
+            "items": [
+              ["Jeitinho brasileiro", "Creative workaround / Bending rules"],
+              ["Saudade", "Deep longing with mixed emotions"],
+              ["Malandro/Malandragem", "Street-smart cunning"],
+              ["Ginga", "Rhythmic movement/swagger"]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Discourse Particles",
+        "content": [
+          {
+            "type": "text",
+            "text": "Brazilian Portuguese uses many particles for nuance:"
+          },
+          {
+            "type": "vocabulary",
+            "items": [
+              ["Né?", "Right? / Isn't it?"],
+              ["Tipo", "Like (filler/example)"],
+              ["Então", "So / Well then"],
+              ["Aí", "Then / And so"],
+              ["Sabe?", "You know?"]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Regional Variations",
+        "content": [
+          {
+            "type": "vocabulary",
+            "items": [
+              ["Oxente! (NE)", "Expression of surprise"],
+              ["Bah! (S)", "Expression of surprise/emphasis"],
+              ["Uai! (MG)", "Expression of surprise"],
+              ["Mano (SP)", "Dude/Bro"]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Tips",
+        "content": [
+          {
+            "type": "tip",
+            "text": "Brazilian Portuguese has strong regional variations. Learn the expressions of the region you'll be in."
+          },
+          {
+            "type": "warning",
+            "text": "'Jeitinho' can be positive (creativity) or negative (corruption) depending on context."
+          }
+        ]
+      }
+    ]
+  }
+}

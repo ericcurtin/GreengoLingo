@@ -1,0 +1,136 @@
+{
+  "id": "cultural_01_br_en",
+  "title": "Cultura Anglo-Americana",
+  "description": "Aprenda sobre referências culturais essenciais do mundo anglófono",
+  "level": "C2",
+  "language_pair": {
+    "source": "pt_BR",
+    "target": "en_US"
+  },
+  "xp_reward": 35,
+  "order": 3,
+  "icon": "public",
+  "questions": [
+    {
+      "type": "multiple_choice",
+      "prompt": "O que significa a expressão 'The American Dream'?",
+      "options": ["Um filme famoso", "A crença na mobilidade social através do trabalho", "Um tipo de música", "Uma festa tradicional"],
+      "correct_index": 1,
+      "explanation": "'The American Dream' representa a ideia de que qualquer pessoa pode alcançar sucesso através de trabalho duro."
+    },
+    {
+      "type": "typing",
+      "prompt": "Como se chama o dia de ação de graças em inglês?",
+      "correct_answers": ["Thanksgiving", "thanksgiving"],
+      "hint": "Thanks + giving",
+      "accent_strict": false
+    },
+    {
+      "type": "matching_pairs",
+      "prompt": "Combine feriados com suas datas",
+      "pairs": [
+        ["Christmas", "December 25"],
+        ["Independence Day (US)", "July 4"],
+        ["Halloween", "October 31"],
+        ["St. Patrick's Day", "March 17"]
+      ]
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "O que é 'small talk'?",
+      "options": ["Falar baixo", "Conversa casual e leve", "Discurso formal", "Gíria"],
+      "correct_index": 1,
+      "explanation": "'Small talk' é a conversa leve e casual sobre assuntos não importantes, muito comum na cultura anglófona."
+    },
+    {
+      "type": "sentence_builder",
+      "prompt": "Construa: 'How about this weather?'",
+      "words": ["How", "about", "this", "weather", "that", "climate"],
+      "correct_order": [0, 1, 2, 3],
+      "distractors": ["that", "climate"]
+    },
+    {
+      "type": "typing",
+      "prompt": "Como se diz 'hora do chá' em inglês?",
+      "correct_answers": ["Tea time", "teatime"],
+      "hint": "Tradição britânica",
+      "accent_strict": false
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Qual é a diferença entre 'British English' e 'American English'?",
+      "options": ["Apenas sotaque", "Sotaque, vocabulário e algumas grafias", "São línguas diferentes", "Não há diferença"],
+      "correct_index": 1,
+      "explanation": "Além do sotaque, há diferenças de vocabulário (lift/elevator) e ortografia (colour/color)."
+    },
+    {
+      "type": "matching_pairs",
+      "prompt": "Combine termos britânicos com americanos",
+      "pairs": [
+        ["Flat (UK)", "Apartment (US)"],
+        ["Lorry (UK)", "Truck (US)"],
+        ["Queue (UK)", "Line (US)"],
+        ["Biscuit (UK)", "Cookie (US)"]
+      ]
+    }
+  ],
+  "cheat_sheet": {
+    "title": "Cultura Anglo-Americana",
+    "sections": [
+      {
+        "heading": "Feriados Importantes",
+        "content": [
+          {
+            "type": "vocabulary",
+            "items": [
+              ["Thanksgiving", "Ação de Graças (4a quinta de novembro)"],
+              ["Independence Day", "4 de Julho (EUA)"],
+              ["Boxing Day", "26 de dezembro (Reino Unido)"],
+              ["Memorial Day", "Último domingo de maio (EUA)"],
+              ["Guy Fawkes Night", "5 de novembro (Reino Unido)"]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Conceitos Culturais",
+        "content": [
+          {
+            "type": "vocabulary",
+            "items": [
+              ["The American Dream", "Crença na mobilidade social"],
+              ["Stiff upper lip", "Manter compostura (britânico)"],
+              ["Melting pot", "Mistura de culturas"],
+              ["Work-life balance", "Equilíbrio trabalho-vida"],
+              ["Political correctness", "Correção política"]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Etiqueta Social",
+        "content": [
+          {
+            "type": "tip",
+            "text": "'Small talk' sobre o tempo, esportes ou notícias é esperado em contextos sociais. Evite perguntas muito pessoais no início."
+          },
+          {
+            "type": "example",
+            "source": "How's it going?",
+            "target": "Como vai? (não espera resposta detalhada)",
+            "note": "Responda com 'Good, thanks! And you?' - é uma saudação, não uma pergunta real."
+          }
+        ]
+      },
+      {
+        "heading": "Diferenças UK vs US",
+        "content": [
+          {
+            "type": "tip",
+            "text": "Americanos são geralmente mais diretos e entusiasmados; britânicos usam mais understatement e ironia."
+          }
+        ]
+      }
+    ]
+  }
+}

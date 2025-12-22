@@ -1,0 +1,154 @@
+{
+  "id": "days_time_01_br_en",
+  "title": "Days & Time",
+  "description": "Aprenda os dias da semana e horas em inglês",
+  "level": "A2",
+  "language_pair": {
+    "source": "pt_BR",
+    "target": "en_US"
+  },
+  "xp_reward": 15,
+  "order": 2,
+  "icon": "calendar_today",
+  "questions": [
+    {
+      "type": "multiple_choice",
+      "prompt": "Como se diz 'segunda-feira' em inglês?",
+      "options": ["Monday", "Tuesday", "Sunday", "Saturday"],
+      "correct_index": 0,
+      "explanation": "'Monday' vem de 'Moon day' (dia da lua)."
+    },
+    {
+      "type": "matching_pairs",
+      "prompt": "Combine os dias da semana",
+      "pairs": [
+        ["Segunda-feira", "Monday"],
+        ["Quarta-feira", "Wednesday"],
+        ["Sexta-feira", "Friday"],
+        ["Domingo", "Sunday"]
+      ]
+    },
+    {
+      "type": "typing",
+      "prompt": "Escreva 'sábado' em inglês",
+      "correct_answers": ["Saturday", "saturday"],
+      "hint": "Começa com 'S', tem 8 letras",
+      "accent_strict": false
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "O que significa 'It's three o'clock'?",
+      "options": ["São duas horas", "São três horas", "São treze horas", "Às três horas"],
+      "correct_index": 1,
+      "explanation": "'It's three o'clock' significa 'São três horas'."
+    },
+    {
+      "type": "sentence_builder",
+      "prompt": "Construa: 'What time is it?'",
+      "words": ["What", "time", "is", "it", "are"],
+      "correct_order": [0, 1, 2, 3],
+      "distractors": ["are"]
+    },
+    {
+      "type": "typing",
+      "prompt": "Escreva 'É uma hora' em inglês",
+      "correct_answers": ["It's one o'clock", "Its one o'clock", "It is one o'clock"],
+      "hint": "It's + número + o'clock",
+      "accent_strict": false
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Como se diz 'e meia' em inglês?",
+      "options": ["Quarter past", "Half past", "Quarter to", "O'clock"],
+      "correct_index": 1,
+      "explanation": "'Half past' significa 'e meia' (:30)."
+    },
+    {
+      "type": "matching_pairs",
+      "prompt": "Combine as expressões de tempo",
+      "pairs": [
+        ["E quinze", "Quarter past"],
+        ["E meia", "Half past"],
+        ["Quinze para", "Quarter to"],
+        ["Em ponto", "O'clock"]
+      ]
+    }
+  ],
+  "cheat_sheet": {
+    "title": "Days & Time in English",
+    "sections": [
+      {
+        "heading": "Dias da Semana",
+        "content": [
+          {
+            "type": "vocabulary",
+            "items": [
+              ["Segunda-feira", "Monday"],
+              ["Terça-feira", "Tuesday"],
+              ["Quarta-feira", "Wednesday"],
+              ["Quinta-feira", "Thursday"],
+              ["Sexta-feira", "Friday"],
+              ["Sábado", "Saturday"],
+              ["Domingo", "Sunday"]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Dizer as Horas",
+        "content": [
+          {
+            "type": "text",
+            "text": "Em inglês, usa-se 'It's' + número + 'o'clock':"
+          },
+          {
+            "type": "example",
+            "source": "É uma hora",
+            "target": "It's one o'clock",
+            "note": "Sempre usa 'It's', nunca muda para plural"
+          },
+          {
+            "type": "example",
+            "source": "São duas horas",
+            "target": "It's two o'clock",
+            "note": "Mesmo com números maiores"
+          },
+          {
+            "type": "example",
+            "source": "São três e meia",
+            "target": "It's half past three",
+            "note": "Half past = e meia"
+          }
+        ]
+      },
+      {
+        "heading": "Expressões de Tempo",
+        "content": [
+          {
+            "type": "vocabulary",
+            "items": [
+              ["E quinze", "Quarter past"],
+              ["E meia / E trinta", "Half past"],
+              ["Quinze para", "Quarter to"],
+              ["Meio-dia", "Noon / Midday"],
+              ["Meia-noite", "Midnight"]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Dicas",
+        "content": [
+          {
+            "type": "tip",
+            "text": "Os dias da semana em inglês sempre têm letra maiúscula."
+          },
+          {
+            "type": "warning",
+            "text": "Em inglês, usa-se AM (manhã) e PM (tarde/noite) em vez do sistema de 24 horas."
+          }
+        ]
+      }
+    ]
+  }
+}

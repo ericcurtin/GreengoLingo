@@ -1,0 +1,138 @@
+{
+  "id": "cultural_01_br",
+  "title": "Cultural Context",
+  "description": "Understand cultural references and context in Brazilian Portuguese",
+  "level": "C2",
+  "language_pair": {
+    "source": "en_US",
+    "target": "pt_BR"
+  },
+  "xp_reward": 35,
+  "order": 3,
+  "icon": "public",
+  "questions": [
+    {
+      "type": "multiple_choice",
+      "prompt": "What does 'Carnaval' represent beyond the festival?",
+      "options": ["Just a party", "Release, inversion of social order, Brazilian identity", "Religious celebration", "Political event"],
+      "correct_index": 1,
+      "explanation": "Carnaval embodies temporary social inversion, collective joy, and a core expression of Brazilian culture."
+    },
+    {
+      "type": "typing",
+      "prompt": "What is 'Festa Junina' celebrating?",
+      "correct_answers": ["São João", "Saint John", "Harvest festival", "June saints"],
+      "hint": "Major Brazilian celebration in June",
+      "accent_strict": false
+    },
+    {
+      "type": "matching_pairs",
+      "prompt": "Match cultural concepts",
+      "pairs": [
+        ["Jeitinho brasileiro", "Creative problem-solving"],
+        ["Samba", "Music, dance, and cultural identity"],
+        ["Cordialidade", "Warmth but also hierarchy"],
+        ["Malandragem", "Street-smart cunning"]
+      ]
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "What is 'o homem cordial' (the cordial man)?",
+      "options": ["A polite person", "Sérgio Buarque de Holanda's concept of Brazilian character", "A carnival figure", "A political title"],
+      "correct_index": 1,
+      "explanation": "'O homem cordial' is a sociological concept describing Brazilian emotional/personal approach to social relations."
+    },
+    {
+      "type": "sentence_builder",
+      "prompt": "Build: 'God willing' (Se Deus quiser)",
+      "words": ["Se", "Deus", "quiser", "quer", "quis"],
+      "correct_order": [0, 1, 2],
+      "distractors": ["quer", "quis"]
+    },
+    {
+      "type": "typing",
+      "prompt": "What does 'axé' mean in Bahian culture?",
+      "correct_answers": ["Positive energy", "Life force", "Spiritual power"],
+      "hint": "Also a music genre",
+      "accent_strict": false
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "What is the cultural significance of 'futebol' in Brazil?",
+      "options": ["Just a sport", "National passion, identity, and social mobility path", "European import", "Only entertainment"],
+      "correct_index": 1,
+      "explanation": "Football is deeply tied to Brazilian national identity, pride, and has been a path to social mobility."
+    },
+    {
+      "type": "matching_pairs",
+      "prompt": "Match regional cultures",
+      "pairs": [
+        ["Nordeste", "Forró, cangaço, sertão"],
+        ["Sul", "Gaúcho culture, chimarrão"],
+        ["Bahia", "Axé, candomblé, acarajé"],
+        ["Rio", "Samba, favela culture, bossa nova"]
+      ]
+    }
+  ],
+  "cheat_sheet": {
+    "title": "Brazilian Cultural Context",
+    "sections": [
+      {
+        "heading": "Core Cultural Concepts",
+        "content": [
+          {
+            "type": "vocabulary",
+            "items": [
+              ["Jeitinho brasileiro", "Creative workaround to obstacles"],
+              ["Cordialidade", "Warmth in social relations (but complex)"],
+              ["Malandragem", "Street-smart survival skills"],
+              ["Saudade", "Deep nostalgic longing"]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Major Celebrations",
+        "content": [
+          {
+            "type": "vocabulary",
+            "items": [
+              ["Carnaval", "Pre-Lenten celebration (February)"],
+              ["Festa Junina", "June harvest festivals"],
+              ["Réveillon", "New Year's celebration"],
+              ["Dia da Consciência Negra", "Black Awareness Day (Nov 20)"]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Regional Diversity",
+        "content": [
+          {
+            "type": "vocabulary",
+            "items": [
+              ["Norte", "Amazon, indigenous influences"],
+              ["Nordeste", "Drought culture, forró, literatura de cordel"],
+              ["Sudeste", "Economic center, diverse migration"],
+              ["Sul", "European heritage, gaúcho culture"],
+              ["Centro-Oeste", "Pantanal, cerrado, agribusiness"]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Tips",
+        "content": [
+          {
+            "type": "tip",
+            "text": "Brazil is extremely diverse. Don't generalize - each region has distinct culture, food, and expressions."
+          },
+          {
+            "type": "warning",
+            "text": "Topics like race, inequality, and favelas require sensitivity and nuanced understanding."
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,150 @@
+{
+  "id": "future_01_br",
+  "title": "Future Plans",
+  "description": "Learn to talk about future plans in Brazilian Portuguese",
+  "level": "B1",
+  "language_pair": {
+    "source": "en_US",
+    "target": "pt_BR"
+  },
+  "xp_reward": 20,
+  "order": 2,
+  "icon": "event",
+  "questions": [
+    {
+      "type": "multiple_choice",
+      "prompt": "How do you say 'I will go' in Portuguese?",
+      "options": ["Eu vou ir", "Eu irei", "Eu fui", "Eu ia"],
+      "correct_index": 0,
+      "explanation": "In Brazilian Portuguese, 'vou ir' is more common than the formal 'irei'."
+    },
+    {
+      "type": "typing",
+      "prompt": "Write 'I'm going to eat' in Portuguese",
+      "correct_answers": ["Vou comer", "Eu vou comer"],
+      "hint": "Use ir + infinitive",
+      "accent_strict": false
+    },
+    {
+      "type": "matching_pairs",
+      "prompt": "Match the future expressions",
+      "pairs": [
+        ["Tomorrow", "Amanhã"],
+        ["Next week", "Na semana que vem"],
+        ["Next year", "No ano que vem"],
+        ["Later", "Mais tarde"]
+      ]
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "What is 'Vou trabalhar amanhã' in English?",
+      "options": ["I worked tomorrow", "I'm going to work tomorrow", "I will have worked", "I was working"],
+      "correct_index": 1,
+      "explanation": "'Ir + infinitive' expresses near future plans, similar to 'going to' in English."
+    },
+    {
+      "type": "sentence_builder",
+      "prompt": "Build: 'Next week I will travel'",
+      "words": ["Na", "semana", "que", "vem", "vou", "viajar"],
+      "correct_order": [0, 1, 2, 3, 4, 5],
+      "distractors": []
+    },
+    {
+      "type": "typing",
+      "prompt": "Write 'They will arrive' in Portuguese",
+      "correct_answers": ["Eles vão chegar", "Elas vão chegar", "Vão chegar"],
+      "hint": "Use ir + infinitive (most natural in Brazil)",
+      "accent_strict": false
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Which is MORE common in spoken Brazilian Portuguese for future?",
+      "options": ["Eu comerei (formal future)", "Eu vou comer (ir + infinitive)", "Eu como (present)", "Eu comia (imperfect)"],
+      "correct_index": 1,
+      "explanation": "In spoken Brazilian Portuguese, 'ir + infinitive' is by far the most common way to express future."
+    },
+    {
+      "type": "matching_pairs",
+      "prompt": "Match the sentences",
+      "pairs": [
+        ["I will speak", "Vou falar"],
+        ["We will see", "Vamos ver / A gente vai ver"],
+        ["She will come", "Ela vai vir"],
+        ["They will do", "Vão fazer"]
+      ]
+    }
+  ],
+  "cheat_sheet": {
+    "title": "Future Tense in Portuguese",
+    "sections": [
+      {
+        "heading": "Ir + Infinitive (Going to)",
+        "content": [
+          {
+            "type": "text",
+            "text": "The standard way to express future in Brazilian Portuguese:"
+          },
+          {
+            "type": "vocabulary",
+            "items": [
+              ["I'm going to speak", "Eu vou falar"],
+              ["You're going to speak", "Você vai falar"],
+              ["He/She is going to speak", "Ele/Ela vai falar"],
+              ["We're going to speak", "A gente vai falar / Nós vamos falar"],
+              ["They're going to speak", "Eles/Elas vão falar"]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Futuro Simples (Formal Future)",
+        "content": [
+          {
+            "type": "text",
+            "text": "Rarely used in speech, but found in formal writing:"
+          },
+          {
+            "type": "vocabulary",
+            "items": [
+              ["I will speak", "Falarei"],
+              ["You will speak", "Falará"],
+              ["He/She will speak", "Falará"],
+              ["We will speak", "Falaremos"],
+              ["They will speak", "Falarão"]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Time Expressions",
+        "content": [
+          {
+            "type": "vocabulary",
+            "items": [
+              ["Tomorrow", "Amanhã"],
+              ["Day after tomorrow", "Depois de amanhã"],
+              ["Next week", "Na semana que vem / Na próxima semana"],
+              ["Next month", "No mês que vem / No próximo mês"],
+              ["Next year", "No ano que vem / No próximo ano"],
+              ["Soon", "Em breve / Logo"],
+              ["Later", "Mais tarde / Depois"]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Tips",
+        "content": [
+          {
+            "type": "tip",
+            "text": "Brazilians almost always use 'ir + infinitive' for future. The formal future sounds literary or very formal."
+          },
+          {
+            "type": "warning",
+            "text": "'Semana que vem' and 'ano que vem' are very Brazilian expressions."
+          }
+        ]
+      }
+    ]
+  }
+}

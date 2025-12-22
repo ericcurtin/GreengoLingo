@@ -1,0 +1,137 @@
+{
+  "id": "proverbs_01_br",
+  "title": "Proverbs and Wisdom",
+  "description": "Learn traditional Brazilian proverbs and sayings",
+  "level": "C2",
+  "language_pair": {
+    "source": "en_US",
+    "target": "pt_BR"
+  },
+  "xp_reward": 35,
+  "order": 4,
+  "icon": "format_quote",
+  "questions": [
+    {
+      "type": "multiple_choice",
+      "prompt": "What does 'Água mole em pedra dura, tanto bate até que fura' mean?",
+      "options": ["Water is powerful", "Persistence pays off", "Stone is stronger than water", "Rain causes damage"],
+      "correct_index": 1,
+      "explanation": "Like 'constant dripping wears the stone' - persistence achieves results."
+    },
+    {
+      "type": "typing",
+      "prompt": "Complete: 'Quem não tem cão, caça com ___'",
+      "correct_answers": ["gato", "Quem não tem cão, caça com gato"],
+      "hint": "Meaning: make do with what you have",
+      "accent_strict": false
+    },
+    {
+      "type": "matching_pairs",
+      "prompt": "Match proverbs with meanings",
+      "pairs": [
+        ["De grão em grão a galinha enche o papo", "Little by little"],
+        ["Mais vale tarde do que nunca", "Better late than never"],
+        ["Cachorro que ladra não morde", "Barking dogs seldom bite"],
+        ["Em terra de cego, quem tem um olho é rei", "In the land of the blind..."]
+      ]
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "What does 'Deus ajuda quem cedo madruga' correspond to?",
+      "options": ["God helps those who help themselves", "The early bird catches the worm", "God loves lazy people", "Sleep is important"],
+      "correct_index": 1,
+      "explanation": "Similar to 'the early bird catches the worm' - early risers succeed."
+    },
+    {
+      "type": "sentence_builder",
+      "prompt": "Build: 'Where there's smoke, there's fire'",
+      "words": ["Onde", "há", "fumaça", "há", "fogo"],
+      "correct_order": [0, 1, 2, 3, 4],
+      "distractors": []
+    },
+    {
+      "type": "typing",
+      "prompt": "What proverb means 'The squeaky wheel gets the grease'?",
+      "correct_answers": ["Quem não chora não mama", "Quem não chora, não mama"],
+      "hint": "Literally about crying and nursing",
+      "accent_strict": false
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "What does 'Quem com ferro fere, com ferro será ferido' mean?",
+      "options": ["Iron is dangerous", "What goes around comes around", "Be careful with tools", "War is bad"],
+      "correct_index": 1,
+      "explanation": "Similar to 'live by the sword, die by the sword'."
+    },
+    {
+      "type": "matching_pairs",
+      "prompt": "Match more proverbs",
+      "pairs": [
+        ["Não adianta chorar sobre leite derramado", "No use crying over spilt milk"],
+        ["Quem tudo quer, tudo perde", "Grasp all, lose all"],
+        ["A cavalo dado não se olha os dentes", "Don't look a gift horse in the mouth"],
+        ["Devagar se vai ao longe", "Slow and steady wins the race"]
+      ]
+    }
+  ],
+  "cheat_sheet": {
+    "title": "Brazilian Proverbs",
+    "sections": [
+      {
+        "heading": "Persistence & Patience",
+        "content": [
+          {
+            "type": "vocabulary",
+            "items": [
+              ["Água mole em pedra dura, tanto bate até que fura", "Persistence pays off"],
+              ["De grão em grão a galinha enche o papo", "Little by little"],
+              ["Devagar se vai ao longe", "Slow and steady wins the race"],
+              ["Deus ajuda quem cedo madruga", "The early bird catches the worm"]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Consequences & Justice",
+        "content": [
+          {
+            "type": "vocabulary",
+            "items": [
+              ["Quem com ferro fere, com ferro será ferido", "What goes around comes around"],
+              ["Quem semeia vento, colhe tempestade", "Sow the wind, reap the whirlwind"],
+              ["Onde há fumaça, há fogo", "Where there's smoke, there's fire"],
+              ["Cada macaco no seu galho", "Mind your own business"]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Practical Wisdom",
+        "content": [
+          {
+            "type": "vocabulary",
+            "items": [
+              ["Mais vale prevenir do que remediar", "Prevention is better than cure"],
+              ["Quem não tem cão, caça com gato", "Make do with what you have"],
+              ["Quem não chora, não mama", "The squeaky wheel gets the grease"],
+              ["Não adianta chorar sobre leite derramado", "No use crying over spilt milk"]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Tips",
+        "content": [
+          {
+            "type": "tip",
+            "text": "Brazilian proverbs are widely used. Learning them shows cultural fluency and enriches your expression."
+          },
+          {
+            "type": "warning",
+            "text": "Some proverbs vary between Brazil and Portugal. These are the Brazilian versions."
+          }
+        ]
+      }
+    ]
+  }
+}

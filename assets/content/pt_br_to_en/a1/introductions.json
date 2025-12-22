@@ -1,0 +1,127 @@
+{
+  "id": "introductions_01_br_en",
+  "title": "Introduções",
+  "description": "Aprenda como se apresentar em inglês",
+  "level": "A1",
+  "language_pair": {
+    "source": "pt_BR",
+    "target": "en_US"
+  },
+  "xp_reward": 10,
+  "order": 2,
+  "icon": "person",
+  "questions": [
+    {
+      "type": "multiple_choice",
+      "prompt": "Como você diz 'Meu nome é...' em inglês?",
+      "options": ["My name is...", "I have...", "I am from...", "I like..."],
+      "correct_index": 0,
+      "explanation": "'My name is...' é a forma mais comum de dizer 'Meu nome é...' em inglês."
+    },
+    {
+      "type": "typing",
+      "prompt": "Escreva 'Muito prazer' em inglês",
+      "correct_answers": ["Nice to meet you", "Pleased to meet you"],
+      "hint": "Nice to...",
+      "accent_strict": false
+    },
+    {
+      "type": "sentence_builder",
+      "prompt": "Construa: 'My name is John'",
+      "words": ["My", "name", "is", "John", "have"],
+      "correct_order": [0, 1, 2, 3],
+      "distractors": ["have"]
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "O que significa 'Where are you from?'",
+      "options": ["Quantos anos você tem?", "Qual é o seu nome?", "De onde você é?", "Como você está?"],
+      "correct_index": 2,
+      "explanation": "'Where are you from?' pergunta sobre a origem ou cidade natal de alguém."
+    },
+    {
+      "type": "matching_pairs",
+      "prompt": "Combine as frases",
+      "pairs": [
+        ["Meu nome é", "My name is"],
+        ["Eu sou de", "I am from"],
+        ["Muito prazer", "Nice to meet you"],
+        ["E você?", "And you?"]
+      ]
+    },
+    {
+      "type": "typing",
+      "prompt": "Escreva 'Eu sou do Brasil' em inglês",
+      "correct_answers": ["I am from Brazil", "I'm from Brazil"],
+      "hint": "I am from + lugar",
+      "accent_strict": false
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Como você pergunta 'Qual é o seu nome?' em inglês?",
+      "options": ["What is your name?", "How are you?", "Who are you?", "Where is your name?"],
+      "correct_index": 0,
+      "explanation": "'What is your name?' ou 'What's your name?' é a forma padrão de perguntar o nome de alguém."
+    },
+    {
+      "type": "sentence_builder",
+      "prompt": "Construa: 'I am Brazilian'",
+      "words": ["I", "am", "Brazilian", "from", "speak"],
+      "correct_order": [0, 1, 2],
+      "distractors": ["from", "speak"]
+    }
+  ],
+  "cheat_sheet": {
+    "title": "Apresentando-se em Inglês",
+    "sections": [
+      {
+        "heading": "Dizendo Seu Nome",
+        "content": [
+          {
+            "type": "vocabulary",
+            "items": [
+              ["Meu nome é...", "My name is..."],
+              ["Qual é o seu nome?", "What is your name? / What's your name?"],
+              ["Me chamo...", "My name is... / I'm called..."]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Nacionalidade e Origem",
+        "content": [
+          {
+            "type": "vocabulary",
+            "items": [
+              ["Eu sou de...", "I am from... / I'm from..."],
+              ["De onde você é?", "Where are you from?"],
+              ["Brasileiro(a)", "Brazilian"],
+              ["Americano(a)", "American"],
+              ["Inglês/Inglesa", "English / British"]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Frases Educadas",
+        "content": [
+          {
+            "type": "example",
+            "source": "Nice to meet you",
+            "target": "Muito prazer (literalmente: legal te conhecer)",
+            "note": "A resposta comum é 'Nice to meet you too' (prazer também)"
+          }
+        ]
+      },
+      {
+        "heading": "Dica de Inglês",
+        "content": [
+          {
+            "type": "tip",
+            "text": "Em inglês, 'you' é usado para 'você', 'tu', 'vocês' e 'senhores/as'. Não há distinção formal/informal como em português."
+          }
+        ]
+      }
+    ]
+  }
+}

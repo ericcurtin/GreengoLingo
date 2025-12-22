@@ -1,0 +1,164 @@
+{
+  "id": "numbers_01_pt_en",
+  "title": "Numbers & Counting",
+  "description": "Learn numbers and counting in English",
+  "level": "A2",
+  "language_pair": {
+    "source": "pt_PT",
+    "target": "en_US"
+  },
+  "xp_reward": 15,
+  "order": 1,
+  "icon": "numbers",
+  "questions": [
+    {
+      "type": "multiple_choice",
+      "prompt": "Como se diz 'vinte' em inglês?",
+      "options": ["Twenty", "Thirty", "Twelve", "Fifteen"],
+      "correct_index": 0,
+      "explanation": "'Twenty' significa vinte em inglês."
+    },
+    {
+      "type": "typing",
+      "prompt": "Escreva o número 'quinze' em inglês",
+      "correct_answers": ["Fifteen", "fifteen"],
+      "hint": "Começa com 'F'...",
+      "accent_strict": false
+    },
+    {
+      "type": "matching_pairs",
+      "prompt": "Combine os números",
+      "pairs": [
+        ["Onze", "Eleven"],
+        ["Doze", "Twelve"],
+        ["Treze", "Thirteen"],
+        ["Catorze", "Fourteen"]
+      ]
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "O que significa 'fifty' em português?",
+      "options": ["Quinze", "Cinquenta", "Quinhentos", "Cinco"],
+      "correct_index": 1,
+      "explanation": "'Fifty' significa cinquenta."
+    },
+    {
+      "type": "sentence_builder",
+      "prompt": "Construa: 'I have thirty euros'",
+      "words": ["I", "have", "thirty", "euros", "hundred"],
+      "correct_order": [0, 1, 2, 3],
+      "distractors": ["hundred"]
+    },
+    {
+      "type": "typing",
+      "prompt": "Escreva 'cem' em inglês",
+      "correct_answers": ["One hundred", "Hundred", "hundred", "100"],
+      "hint": "Uma palavra curta, ou 'one' + ...",
+      "accent_strict": false
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Como se diz 'vinte e um' em inglês?",
+      "options": ["Twenty one", "Twenty-one", "Two one", "Twelve one"],
+      "correct_index": 1,
+      "explanation": "Números compostos em inglês usam hífen: twenty-one."
+    },
+    {
+      "type": "matching_pairs",
+      "prompt": "Combine os números maiores",
+      "pairs": [
+        ["Cem", "One hundred"],
+        ["Duzentos", "Two hundred"],
+        ["Mil", "One thousand"],
+        ["Um milhão", "One million"]
+      ]
+    }
+  ],
+  "cheat_sheet": {
+    "title": "Numbers in English",
+    "sections": [
+      {
+        "heading": "Numbers 1-20",
+        "content": [
+          {
+            "type": "vocabulary",
+            "items": [
+              ["Um/Uma", "One"],
+              ["Dois/Duas", "Two"],
+              ["Três", "Three"],
+              ["Quatro", "Four"],
+              ["Cinco", "Five"],
+              ["Seis", "Six"],
+              ["Sete", "Seven"],
+              ["Oito", "Eight"],
+              ["Nove", "Nine"],
+              ["Dez", "Ten"],
+              ["Onze", "Eleven"],
+              ["Doze", "Twelve"],
+              ["Treze", "Thirteen"],
+              ["Catorze", "Fourteen"],
+              ["Quinze", "Fifteen"],
+              ["Dezasseis", "Sixteen"],
+              ["Dezassete", "Seventeen"],
+              ["Dezoito", "Eighteen"],
+              ["Dezanove", "Nineteen"],
+              ["Vinte", "Twenty"]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Dezenas",
+        "content": [
+          {
+            "type": "vocabulary",
+            "items": [
+              ["Trinta", "Thirty"],
+              ["Quarenta", "Forty"],
+              ["Cinquenta", "Fifty"],
+              ["Sessenta", "Sixty"],
+              ["Setenta", "Seventy"],
+              ["Oitenta", "Eighty"],
+              ["Noventa", "Ninety"],
+              ["Cem", "One hundred"]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Números Compostos",
+        "content": [
+          {
+            "type": "text",
+            "text": "Em inglês, números de 21-99 usam hífen:"
+          },
+          {
+            "type": "example",
+            "source": "Vinte e cinco",
+            "target": "Twenty-five",
+            "note": "Com hífen entre dezenas e unidades"
+          },
+          {
+            "type": "example",
+            "source": "Trinta e três",
+            "target": "Thirty-three",
+            "note": "Com hífen entre dezenas e unidades"
+          }
+        ]
+      },
+      {
+        "heading": "Dicas",
+        "content": [
+          {
+            "type": "tip",
+            "text": "Em inglês, 'one' e 'two' não mudam com o género (ao contrário de 'um/uma' e 'dois/duas')."
+          },
+          {
+            "type": "warning",
+            "text": "Atenção: 'forty' não tem 'u' (não é 'fourty')."
+          }
+        ]
+      }
+    ]
+  }
+}

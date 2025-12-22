@@ -1,0 +1,152 @@
+{
+  "id": "questions_01",
+  "title": "Asking Questions",
+  "description": "Learn how to ask common questions in European Portuguese",
+  "level": "A2",
+  "language_pair": {
+    "source": "en_US",
+    "target": "pt_PT"
+  },
+  "xp_reward": 15,
+  "order": 4,
+  "icon": "help",
+  "questions": [
+    {
+      "type": "multiple_choice",
+      "prompt": "How do you say 'Where?' in Portuguese?",
+      "options": ["Quando?", "Onde?", "Quem?", "O quê?"],
+      "correct_index": 1,
+      "explanation": "'Onde' means where. 'Quando' means when."
+    },
+    {
+      "type": "matching_pairs",
+      "prompt": "Match the question words",
+      "pairs": [
+        ["What?", "O quê?"],
+        ["Who?", "Quem?"],
+        ["When?", "Quando?"],
+        ["Why?", "Porquê?"]
+      ]
+    },
+    {
+      "type": "typing",
+      "prompt": "Write 'How?' in Portuguese",
+      "correct_answers": ["Como?", "como"],
+      "hint": "Same as asking 'how are you'",
+      "accent_strict": false
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "What does 'Onde fica o banco?' mean?",
+      "options": ["When is the bank open?", "Where is the bank?", "What is the bank?", "How far is the bank?"],
+      "correct_index": 1,
+      "explanation": "'Onde fica' means 'where is' (location of a place)."
+    },
+    {
+      "type": "sentence_builder",
+      "prompt": "Build: 'Why are you here?'",
+      "words": ["Porque", "é", "que", "estás", "aqui", "lá"],
+      "correct_order": [0, 1, 2, 3, 4],
+      "distractors": ["lá"]
+    },
+    {
+      "type": "typing",
+      "prompt": "Write 'What is this?' in Portuguese",
+      "correct_answers": ["O que é isto?", "O que é isso?", "Que é isto?"],
+      "hint": "O que é + demonstrative",
+      "accent_strict": false
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "How do you ask 'How much?' (quantity)?",
+      "options": ["Quanto?", "Quantos?", "Qual?", "Como?"],
+      "correct_index": 1,
+      "explanation": "'Quantos/Quantas' asks about quantity (how many). 'Quanto' asks about amount/price."
+    },
+    {
+      "type": "matching_pairs",
+      "prompt": "Match the questions",
+      "pairs": [
+        ["Where is the bathroom?", "Onde é a casa de banho?"],
+        ["What time is it?", "Que horas são?"],
+        ["How do I get to...?", "Como chego a...?"],
+        ["Can you help me?", "Pode ajudar-me?"]
+      ]
+    }
+  ],
+  "cheat_sheet": {
+    "title": "Question Words",
+    "sections": [
+      {
+        "heading": "Basic Question Words",
+        "content": [
+          {
+            "type": "vocabulary",
+            "items": [
+              ["What?", "O quê? / Que?"],
+              ["Who?", "Quem?"],
+              ["Where?", "Onde?"],
+              ["When?", "Quando?"],
+              ["Why?", "Porquê?"],
+              ["How?", "Como?"],
+              ["How much?", "Quanto?"],
+              ["How many?", "Quantos? / Quantas?"],
+              ["Which?", "Qual? / Quais?"]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Common Questions",
+        "content": [
+          {
+            "type": "example",
+            "source": "Onde fica...?",
+            "target": "Where is...? (location)",
+            "note": "Used for places/buildings"
+          },
+          {
+            "type": "example",
+            "source": "Onde está...?",
+            "target": "Where is...? (position)",
+            "note": "Used for people/objects"
+          },
+          {
+            "type": "example",
+            "source": "Porque é que...?",
+            "target": "Why...?",
+            "note": "Full form for asking why"
+          }
+        ]
+      },
+      {
+        "heading": "Useful Questions",
+        "content": [
+          {
+            "type": "vocabulary",
+            "items": [
+              ["Where is the bathroom?", "Onde é a casa de banho?"],
+              ["Do you speak English?", "Fala inglês?"],
+              ["Can you repeat?", "Pode repetir?"],
+              ["What does this mean?", "O que significa isto?"],
+              ["Is there...?", "Há...?"]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Tips",
+        "content": [
+          {
+            "type": "tip",
+            "text": "Questions can be formed simply by raising intonation at the end of a statement."
+          },
+          {
+            "type": "warning",
+            "text": "'Porquê' (why) at the end of a sentence vs 'Porque' (because/why) at the start of an answer."
+          }
+        ]
+      }
+    ]
+  }
+}

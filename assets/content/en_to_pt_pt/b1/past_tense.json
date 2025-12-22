@@ -1,0 +1,150 @@
+{
+  "id": "past_tense_01",
+  "title": "Talking About the Past",
+  "description": "Learn to use past tense in European Portuguese",
+  "level": "B1",
+  "language_pair": {
+    "source": "en_US",
+    "target": "pt_PT"
+  },
+  "xp_reward": 20,
+  "order": 1,
+  "icon": "history",
+  "questions": [
+    {
+      "type": "multiple_choice",
+      "prompt": "How do you say 'I went' in Portuguese?",
+      "options": ["Eu fui", "Eu vou", "Eu ia", "Eu irei"],
+      "correct_index": 0,
+      "explanation": "'Fui' is the pretérito perfeito of 'ir' (to go). 'Vou' is present, 'ia' is imperfect, 'irei' is future."
+    },
+    {
+      "type": "typing",
+      "prompt": "Write 'I ate' in Portuguese",
+      "correct_answers": ["Eu comi", "Comi"],
+      "hint": "Pretérito perfeito of 'comer'",
+      "accent_strict": false
+    },
+    {
+      "type": "matching_pairs",
+      "prompt": "Match the past tense forms",
+      "pairs": [
+        ["I was (permanent)", "Eu fui"],
+        ["I was (temporary)", "Eu estive"],
+        ["I had", "Eu tive"],
+        ["I did/made", "Eu fiz"]
+      ]
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "What is the difference between 'Eu fui' and 'Eu ia'?",
+      "options": ["Fui is future, ia is past", "Fui is completed action, ia is ongoing/habitual", "They mean the same", "Fui is formal, ia is informal"],
+      "correct_index": 1,
+      "explanation": "'Fui' (pretérito perfeito) is a completed action. 'Ia' (pretérito imperfeito) describes ongoing or habitual past actions."
+    },
+    {
+      "type": "sentence_builder",
+      "prompt": "Build: 'Yesterday I worked a lot'",
+      "words": ["Ontem", "eu", "trabalhei", "muito", "trabalho"],
+      "correct_order": [0, 1, 2, 3],
+      "distractors": ["trabalho"]
+    },
+    {
+      "type": "typing",
+      "prompt": "Write 'She spoke' in Portuguese",
+      "correct_answers": ["Ela falou"],
+      "hint": "Pretérito perfeito of 'falar' with feminine subject",
+      "accent_strict": false
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Which sentence describes a habitual past action?",
+      "options": ["Ontem comi pizza", "Quando era criança, comia sempre pizza", "Comi a pizza toda", "Vou comer pizza"],
+      "correct_index": 1,
+      "explanation": "The imperfect tense 'comia' describes habitual actions in the past. 'Quando era criança' (when I was a child) signals repeated past actions."
+    },
+    {
+      "type": "matching_pairs",
+      "prompt": "Match with pretérito perfeito",
+      "pairs": [
+        ["To speak - I spoke", "Falar - Falei"],
+        ["To eat - I ate", "Comer - Comi"],
+        ["To leave - I left", "Partir - Parti"],
+        ["To see - I saw", "Ver - Vi"]
+      ]
+    }
+  ],
+  "cheat_sheet": {
+    "title": "Past Tense in Portuguese",
+    "sections": [
+      {
+        "heading": "Pretérito Perfeito (Simple Past)",
+        "content": [
+          {
+            "type": "text",
+            "text": "Used for completed actions in the past:"
+          },
+          {
+            "type": "vocabulary",
+            "items": [
+              ["I spoke", "Eu falei"],
+              ["You spoke (informal)", "Tu falaste"],
+              ["He/She spoke", "Ele/Ela falou"],
+              ["We spoke", "Nós falámos"],
+              ["They spoke", "Eles/Elas falaram"]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Pretérito Imperfeito (Imperfect)",
+        "content": [
+          {
+            "type": "text",
+            "text": "Used for ongoing, habitual, or descriptive past actions:"
+          },
+          {
+            "type": "vocabulary",
+            "items": [
+              ["I used to speak", "Eu falava"],
+              ["You used to speak", "Tu falavas"],
+              ["He/She used to speak", "Ele/Ela falava"],
+              ["We used to speak", "Nós falávamos"],
+              ["They used to speak", "Eles/Elas falavam"]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Irregular Verbs",
+        "content": [
+          {
+            "type": "vocabulary",
+            "items": [
+              ["To be (ser) - I was", "Eu fui"],
+              ["To be (estar) - I was", "Eu estive"],
+              ["To have - I had", "Eu tive"],
+              ["To go - I went", "Eu fui"],
+              ["To do/make - I did", "Eu fiz"],
+              ["To see - I saw", "Eu vi"],
+              ["To say - I said", "Eu disse"]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Tips",
+        "content": [
+          {
+            "type": "tip",
+            "text": "In European Portuguese, 'nós falámos' has an accent to distinguish from present tense 'falamos'."
+          },
+          {
+            "type": "warning",
+            "text": "'Ser' and 'ir' share the same past tense forms (fui, foste, foi, etc.). Context determines meaning."
+          }
+        ]
+      }
+    ]
+  }
+}

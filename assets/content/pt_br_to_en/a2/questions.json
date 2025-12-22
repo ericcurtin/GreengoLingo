@@ -1,0 +1,150 @@
+{
+  "id": "questions_01_br_en",
+  "title": "Asking Questions",
+  "description": "Aprenda como fazer perguntas comuns em inglês",
+  "level": "A2",
+  "language_pair": {
+    "source": "pt_BR",
+    "target": "en_US"
+  },
+  "xp_reward": 15,
+  "order": 4,
+  "icon": "help",
+  "questions": [
+    {
+      "type": "multiple_choice",
+      "prompt": "Como se diz 'Onde?' em inglês?",
+      "options": ["When?", "Where?", "Who?", "What?"],
+      "correct_index": 1,
+      "explanation": "'Where' significa onde. 'When' significa quando."
+    },
+    {
+      "type": "matching_pairs",
+      "prompt": "Combine as palavras interrogativas",
+      "pairs": [
+        ["O quê?", "What?"],
+        ["Quem?", "Who?"],
+        ["Quando?", "When?"],
+        ["Por quê?", "Why?"]
+      ]
+    },
+    {
+      "type": "typing",
+      "prompt": "Escreva 'Como?' em inglês",
+      "correct_answers": ["How?", "how"],
+      "hint": "Mesma palavra que em 'How are you?'",
+      "accent_strict": false
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "O que significa 'Where is the bank?'?",
+      "options": ["Quando o banco abre?", "Onde fica o banco?", "O que é o banco?", "A que distância fica o banco?"],
+      "correct_index": 1,
+      "explanation": "'Where is' significa 'Onde fica/está'."
+    },
+    {
+      "type": "sentence_builder",
+      "prompt": "Construa: 'Why are you here?'",
+      "words": ["Why", "are", "you", "here", "there"],
+      "correct_order": [0, 1, 2, 3],
+      "distractors": ["there"]
+    },
+    {
+      "type": "typing",
+      "prompt": "Escreva 'O que é isso?' em inglês",
+      "correct_answers": ["What is this?", "What's this?", "What is that?"],
+      "hint": "What + is + demonstrativo",
+      "accent_strict": false
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Como se pergunta 'Quantos?' em inglês?",
+      "options": ["How much?", "How many?", "Which?", "How?"],
+      "correct_index": 1,
+      "explanation": "'How many' pergunta quantidade contável. 'How much' para incontáveis ou preço."
+    },
+    {
+      "type": "matching_pairs",
+      "prompt": "Combine as perguntas",
+      "pairs": [
+        ["Onde é o banheiro?", "Where is the bathroom?"],
+        ["Que horas são?", "What time is it?"],
+        ["Como eu chego em...?", "How do I get to...?"],
+        ["Você pode me ajudar?", "Can you help me?"]
+      ]
+    }
+  ],
+  "cheat_sheet": {
+    "title": "Question Words in English",
+    "sections": [
+      {
+        "heading": "Palavras Interrogativas Básicas",
+        "content": [
+          {
+            "type": "vocabulary",
+            "items": [
+              ["O quê? / Que?", "What?"],
+              ["Quem?", "Who?"],
+              ["Onde?", "Where?"],
+              ["Quando?", "When?"],
+              ["Por quê?", "Why?"],
+              ["Como?", "How?"],
+              ["Quanto? (preço)", "How much?"],
+              ["Quantos?", "How many?"],
+              ["Qual?", "Which?"]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Estrutura de Perguntas",
+        "content": [
+          {
+            "type": "text",
+            "text": "Em inglês, a ordem das palavras muda nas perguntas:"
+          },
+          {
+            "type": "example",
+            "source": "Onde fica...?",
+            "target": "Where is...?",
+            "note": "Palavra interrogativa + verbo + sujeito"
+          },
+          {
+            "type": "example",
+            "source": "O que você está fazendo?",
+            "target": "What are you doing?",
+            "note": "What + auxiliar + sujeito + verbo"
+          }
+        ]
+      },
+      {
+        "heading": "Perguntas Úteis",
+        "content": [
+          {
+            "type": "vocabulary",
+            "items": [
+              ["Onde é o banheiro?", "Where is the bathroom?"],
+              ["Você fala inglês?", "Do you speak English?"],
+              ["Pode repetir?", "Can you repeat that?"],
+              ["O que isso significa?", "What does this mean?"],
+              ["Tem...?", "Is there...? / Are there...?"]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Dicas",
+        "content": [
+          {
+            "type": "tip",
+            "text": "'How much' para coisas incontáveis (dinheiro, água). 'How many' para contáveis (pessoas, livros)."
+          },
+          {
+            "type": "warning",
+            "text": "Em inglês, as perguntas quase sempre precisam de um auxiliar (do, does, is, are, can, etc.)."
+          }
+        ]
+      }
+    ]
+  }
+}

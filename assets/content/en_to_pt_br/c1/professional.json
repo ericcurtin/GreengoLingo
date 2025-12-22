@@ -1,0 +1,143 @@
+{
+  "id": "professional_01_br",
+  "title": "Professional Communication",
+  "description": "Master business and professional language in Brazilian Portuguese",
+  "level": "C1",
+  "language_pair": {
+    "source": "en_US",
+    "target": "pt_BR"
+  },
+  "xp_reward": 30,
+  "order": 2,
+  "icon": "business",
+  "questions": [
+    {
+      "type": "multiple_choice",
+      "prompt": "How do you begin a formal email in Brazilian Portuguese?",
+      "options": ["Oi!", "Prezado(a) Sr(a).", "Querido(a)", "E aí!"],
+      "correct_index": 1,
+      "explanation": "'Prezado(a) Sr(a).' is the standard formal salutation in Brazil."
+    },
+    {
+      "type": "typing",
+      "prompt": "Write 'Yours sincerely' in formal Brazilian Portuguese",
+      "correct_answers": ["Atenciosamente", "Cordialmente", "Respeitosamente"],
+      "hint": "Formal closing for business correspondence",
+      "accent_strict": false
+    },
+    {
+      "type": "matching_pairs",
+      "prompt": "Match the business expressions",
+      "pairs": [
+        ["Regarding...", "Com relação a... / Em relação a..."],
+        ["Please find attached", "Segue anexo / Em anexo"],
+        ["I am writing to...", "Escrevo para..."],
+        ["As per our conversation", "Conforme nossa conversa"]
+      ]
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "What does 'Fico no aguardo de seu retorno' mean?",
+      "options": ["I'm waiting for you to return", "I await your reply", "I'm leaving now", "I'll wait for you"],
+      "correct_index": 1,
+      "explanation": "'Fico no aguardo' is a formal way to say 'I await' in business communication."
+    },
+    {
+      "type": "sentence_builder",
+      "prompt": "Build: 'I would like to schedule a meeting'",
+      "words": ["Gostaria", "de", "agendar", "uma", "reunião", "quero"],
+      "correct_order": [0, 1, 2, 3, 4],
+      "distractors": ["quero"]
+    },
+    {
+      "type": "typing",
+      "prompt": "Write 'Due to unforeseen circumstances' in Portuguese",
+      "correct_answers": ["Devido a circunstâncias imprevistas", "Por motivos imprevistos"],
+      "hint": "Devido a = Due to",
+      "accent_strict": false
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Which is more appropriate in Brazilian business email?",
+      "options": ["Starting with 'Oi'", "Using 'você' consistently", "Using very formal titles", "Mixing tu and você"],
+      "correct_index": 1,
+      "explanation": "Brazilian business culture typically uses 'você' consistently. Very formal titles are less common than in Portugal."
+    },
+    {
+      "type": "matching_pairs",
+      "prompt": "Match meeting vocabulary",
+      "pairs": [
+        ["Agenda", "Pauta"],
+        ["Minutes", "Ata"],
+        ["To reschedule", "Remarcar"],
+        ["Follow-up", "Acompanhamento"]
+      ]
+    }
+  ],
+  "cheat_sheet": {
+    "title": "Professional Communication",
+    "sections": [
+      {
+        "heading": "Formal Email Structure",
+        "content": [
+          {
+            "type": "vocabulary",
+            "items": [
+              ["Opening (formal)", "Prezado(a) Sr(a). / Caro(a)"],
+              ["Opening (semi-formal)", "Bom dia / Boa tarde"],
+              ["Body introduction", "Escrevo para... / Entro em contato para..."],
+              ["Closing (formal)", "Atenciosamente / Cordialmente"],
+              ["Closing (semi-formal)", "Abraços / Abs"]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Useful Expressions",
+        "content": [
+          {
+            "type": "vocabulary",
+            "items": [
+              ["Regarding...", "Com relação a... / Sobre..."],
+              ["Please find attached", "Segue anexo / Segue em anexo"],
+              ["As discussed", "Conforme conversamos / Conforme alinhado"],
+              ["For your information", "Para seu conhecimento"],
+              ["ASAP", "O mais rápido possível / Com urgência"],
+              ["I await your reply", "Fico no aguardo / Aguardo retorno"]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Meeting Vocabulary",
+        "content": [
+          {
+            "type": "vocabulary",
+            "items": [
+              ["Meeting", "Reunião"],
+              ["Agenda", "Pauta"],
+              ["Minutes", "Ata"],
+              ["To schedule", "Agendar / Marcar"],
+              ["To attend", "Participar"],
+              ["To reschedule", "Remarcar"],
+              ["Action items", "Próximos passos"]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Tips",
+        "content": [
+          {
+            "type": "tip",
+            "text": "Brazilian business culture is generally more informal than European. Using first names after initial contact is common."
+          },
+          {
+            "type": "warning",
+            "text": "'Prezado' is more common in Brazil; 'Exmo.' is rarely used outside very formal legal/governmental contexts."
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,141 @@
+{
+  "id": "professional_01_pt_en",
+  "title": "Professional Communication",
+  "description": "Domine a linguagem empresarial e profissional em inglês",
+  "level": "C1",
+  "language_pair": {
+    "source": "pt_PT",
+    "target": "en_US"
+  },
+  "xp_reward": 30,
+  "order": 2,
+  "icon": "business",
+  "questions": [
+    {
+      "type": "multiple_choice",
+      "prompt": "Como se começa um email formal em inglês?",
+      "options": ["Hi!", "Dear Mr/Ms...", "Hey!", "What's up?"],
+      "correct_index": 1,
+      "explanation": "'Dear Mr/Ms + surname' é a saudação formal padrão em inglês."
+    },
+    {
+      "type": "typing",
+      "prompt": "Traduza 'Com os melhores cumprimentos'",
+      "correct_answers": ["Yours sincerely", "Sincerely yours", "Best regards"],
+      "hint": "Fecho formal para correspondência profissional",
+      "accent_strict": false
+    },
+    {
+      "type": "matching_pairs",
+      "prompt": "Combine as expressões empresariais",
+      "pairs": [
+        ["Relativamente a...", "Regarding... / With regard to..."],
+        ["Segue em anexo", "Please find attached"],
+        ["Venho por este meio...", "I am writing to..."],
+        ["Conforme a nossa conversa", "As per our conversation"]
+      ]
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Qual é a tradução de 'Agradeço desde já'?",
+      "options": ["I thank you since yesterday", "Thank you in advance", "I appreciate your yesterday's attention", "Thank you very much"],
+      "correct_index": 1,
+      "explanation": "'Thank you in advance' é a expressão equivalente em inglês."
+    },
+    {
+      "type": "sentence_builder",
+      "prompt": "Construa: 'I would like to request a meeting'",
+      "words": ["I", "would", "like", "to", "request", "a", "meeting"],
+      "correct_order": [0, 1, 2, 3, 4, 5, 6],
+      "distractors": []
+    },
+    {
+      "type": "typing",
+      "prompt": "Traduza 'Devido a circunstâncias imprevistas'",
+      "correct_answers": ["Due to unforeseen circumstances", "Owing to unforeseen circumstances"],
+      "hint": "Due to = Devido a",
+      "accent_strict": false
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Qual é mais formal em inglês?",
+      "options": ["Can you...?", "Could you...?", "Would you be able to...?", "Do it!"],
+      "correct_index": 2,
+      "explanation": "'Would you be able to...?' é a forma mais formal e educada de fazer pedidos."
+    },
+    {
+      "type": "matching_pairs",
+      "prompt": "Combine o vocabulário de reuniões",
+      "pairs": [
+        ["Ordem de trabalhos", "Agenda"],
+        ["Ata", "Minutes"],
+        ["Adiar", "To postpone / To adjourn"],
+        ["Outros assuntos", "Any other business (AOB)"]
+      ]
+    }
+  ],
+  "cheat_sheet": {
+    "title": "Professional English Communication",
+    "sections": [
+      {
+        "heading": "Estrutura de Email Formal",
+        "content": [
+          {
+            "type": "vocabulary",
+            "items": [
+              ["Abertura (muito formal)", "Dear Mr/Ms/Dr + Surname"],
+              ["Abertura (formal)", "Dear + First name"],
+              ["Abertura (semi-formal)", "Hello / Hi + Name"],
+              ["Fecho (formal, UK)", "Yours sincerely (se sabe o nome)"],
+              ["Fecho (formal, UK)", "Yours faithfully (se não sabe o nome)"],
+              ["Fecho (formal, US)", "Sincerely / Best regards"]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Expressões Úteis",
+        "content": [
+          {
+            "type": "vocabulary",
+            "items": [
+              ["Relativamente a...", "Regarding... / With regard to..."],
+              ["Segue em anexo", "Please find attached / Attached please find"],
+              ["Conforme acordado", "As agreed / As discussed"],
+              ["Para seu conhecimento", "For your information (FYI)"],
+              ["Logo que possível", "At your earliest convenience / ASAP"],
+              ["Agradeço desde já", "Thank you in advance"]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Diferenças UK vs US",
+        "content": [
+          {
+            "type": "vocabulary",
+            "items": [
+              ["PT: Cumprimentos", "UK: Yours sincerely / US: Sincerely"],
+              ["PT: Reunião", "UK: Meeting / US: Meeting"],
+              ["PT: Férias", "UK: Holiday / US: Vacation"],
+              ["PT: Currículo", "UK: CV / US: Resume"]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Dicas",
+        "content": [
+          {
+            "type": "tip",
+            "text": "No inglês de negócios, seja directo mas educado. Use 'would' e 'could' para suavizar pedidos."
+          },
+          {
+            "type": "warning",
+            "text": "No Reino Unido, 'Yours sincerely' usa-se quando sabe o nome; 'Yours faithfully' quando não sabe."
+          }
+        ]
+      }
+    ]
+  }
+}

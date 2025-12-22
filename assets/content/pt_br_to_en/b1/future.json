@@ -1,0 +1,150 @@
+{
+  "id": "future_01_br_en",
+  "title": "Future Plans",
+  "description": "Aprenda a falar sobre planos futuros em inglês",
+  "level": "B1",
+  "language_pair": {
+    "source": "pt_BR",
+    "target": "en_US"
+  },
+  "xp_reward": 20,
+  "order": 2,
+  "icon": "event",
+  "questions": [
+    {
+      "type": "multiple_choice",
+      "prompt": "Como se diz 'Eu vou ir' em inglês?",
+      "options": ["I'm going to go", "I will go", "I went", "I was going"],
+      "correct_index": 0,
+      "explanation": "'I'm going to go' ou 'I will go' são ambos corretos para o futuro."
+    },
+    {
+      "type": "typing",
+      "prompt": "Escreva 'Vou comer' em inglês",
+      "correct_answers": ["I'm going to eat", "I will eat", "I'll eat"],
+      "hint": "Going to + verbo ou will + verbo",
+      "accent_strict": false
+    },
+    {
+      "type": "matching_pairs",
+      "prompt": "Combine as expressões de futuro",
+      "pairs": [
+        ["Amanhã", "Tomorrow"],
+        ["Na semana que vem", "Next week"],
+        ["No ano que vem", "Next year"],
+        ["Mais tarde", "Later"]
+      ]
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "O que significa 'I'm going to work tomorrow'?",
+      "options": ["Trabalhei amanhã", "Vou trabalhar amanhã", "Terei trabalhado", "Estava trabalhando"],
+      "correct_index": 1,
+      "explanation": "'Going to' expressa planos para o futuro próximo."
+    },
+    {
+      "type": "sentence_builder",
+      "prompt": "Construa: 'Next week I will travel'",
+      "words": ["Next", "week", "I", "will", "travel", "traveled"],
+      "correct_order": [0, 1, 2, 3, 4],
+      "distractors": ["traveled"]
+    },
+    {
+      "type": "typing",
+      "prompt": "Escreva 'Eles vão chegar' em inglês",
+      "correct_answers": ["They will arrive", "They're going to arrive", "They are going to arrive"],
+      "hint": "Will ou going to + arrive",
+      "accent_strict": false
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Qual é a diferença entre 'will' e 'going to'?",
+      "options": ["Will é passado, going to é futuro", "Will para decisões espontâneas, going to para planos", "São completamente iguais", "Will é informal, going to é formal"],
+      "correct_index": 1,
+      "explanation": "'Will' é usado para decisões espontâneas ou promessas. 'Going to' para planos feitos antecipadamente."
+    },
+    {
+      "type": "matching_pairs",
+      "prompt": "Combine as frases",
+      "pairs": [
+        ["Vou falar", "I'm going to speak / I will speak"],
+        ["A gente vai ver", "We're going to see / We will see"],
+        ["Ela vai vir", "She's going to come / She will come"],
+        ["Vão fazer", "They're going to do / They will do"]
+      ]
+    }
+  ],
+  "cheat_sheet": {
+    "title": "Future Tense in English",
+    "sections": [
+      {
+        "heading": "Going To (Planos)",
+        "content": [
+          {
+            "type": "text",
+            "text": "Usado para planos e intenções:"
+          },
+          {
+            "type": "vocabulary",
+            "items": [
+              ["Vou falar", "I'm going to speak"],
+              ["Você vai falar", "You're going to speak"],
+              ["Ele/Ela vai falar", "He's/She's going to speak"],
+              ["A gente vai falar", "We're going to speak"],
+              ["Eles vão falar", "They're going to speak"]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Will (Futuro Simples)",
+        "content": [
+          {
+            "type": "text",
+            "text": "Usado para promessas, ofertas e decisões espontâneas:"
+          },
+          {
+            "type": "vocabulary",
+            "items": [
+              ["Eu vou falar (formal)", "I will speak / I'll speak"],
+              ["Você vai falar (formal)", "You will speak / You'll speak"],
+              ["Ele/Ela vai falar (formal)", "He/She will speak"],
+              ["Nós vamos falar (formal)", "We will speak / We'll speak"],
+              ["Eles vão falar (formal)", "They will speak / They'll speak"]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Expressões de Tempo",
+        "content": [
+          {
+            "type": "vocabulary",
+            "items": [
+              ["Amanhã", "Tomorrow"],
+              ["Depois de amanhã", "The day after tomorrow"],
+              ["Na semana que vem", "Next week"],
+              ["No mês que vem", "Next month"],
+              ["No ano que vem", "Next year"],
+              ["Em breve / Logo", "Soon"],
+              ["Mais tarde / Depois", "Later"]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Dicas",
+        "content": [
+          {
+            "type": "tip",
+            "text": "Use 'going to' para planos: 'I'm going to visit my family'. Use 'will' para promessas: 'I will help you'."
+          },
+          {
+            "type": "warning",
+            "text": "'Will' contrai para 'll: I'll, you'll, he'll, etc."
+          }
+        ]
+      }
+    ]
+  }
+}

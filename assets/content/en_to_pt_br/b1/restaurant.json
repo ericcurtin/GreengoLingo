@@ -1,0 +1,156 @@
+{
+  "id": "restaurant_01_br",
+  "title": "At the Restaurant",
+  "description": "Learn restaurant vocabulary and phrases in Brazilian Portuguese",
+  "level": "B1",
+  "language_pair": {
+    "source": "en_US",
+    "target": "pt_BR"
+  },
+  "xp_reward": 20,
+  "order": 4,
+  "icon": "restaurant",
+  "questions": [
+    {
+      "type": "multiple_choice",
+      "prompt": "How do you say 'A table for two, please' in Portuguese?",
+      "options": ["Uma mesa para dois, por favor", "Duas mesas, por favor", "Quero sentar", "Tem lugar?"],
+      "correct_index": 0,
+      "explanation": "'Uma mesa para dois' is the standard request for a table for two people."
+    },
+    {
+      "type": "typing",
+      "prompt": "Write 'The bill, please' in Portuguese",
+      "correct_answers": ["A conta, por favor", "Pode trazer a conta?"],
+      "hint": "A conta = the bill",
+      "accent_strict": false
+    },
+    {
+      "type": "matching_pairs",
+      "prompt": "Match the restaurant items",
+      "pairs": [
+        ["Menu", "O cardápio"],
+        ["Waiter", "O garçom"],
+        ["Tip", "A gorjeta"],
+        ["Bill", "A conta"]
+      ]
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "What does 'O que você recomenda?' mean?",
+      "options": ["What do you have?", "What do you recommend?", "What is this?", "Is it good?"],
+      "correct_index": 1,
+      "explanation": "'Recomendar' means to recommend. This is a polite way to ask for suggestions."
+    },
+    {
+      "type": "sentence_builder",
+      "prompt": "Build: 'I would like to order'",
+      "words": ["Eu", "queria", "fazer", "o", "pedido", "pagar"],
+      "correct_order": [0, 1, 2, 3, 4],
+      "distractors": ["pagar"]
+    },
+    {
+      "type": "typing",
+      "prompt": "Write 'I'm vegetarian' in Portuguese (male speaker)",
+      "correct_answers": ["Sou vegetariano", "Eu sou vegetariano"],
+      "hint": "Use 'ser' for permanent characteristics",
+      "accent_strict": false
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "How do you say 'rare' (for meat)?",
+      "options": ["Bem passado", "Mal passado", "Ao ponto", "Cru"],
+      "correct_index": 1,
+      "explanation": "'Mal passado' means rare (lightly cooked). 'Bem passado' is well done."
+    },
+    {
+      "type": "matching_pairs",
+      "prompt": "Match the food descriptions",
+      "pairs": [
+        ["Rare", "Mal passado"],
+        ["Medium", "Ao ponto"],
+        ["Well done", "Bem passado"],
+        ["Grilled", "Grelhado / Na brasa"]
+      ]
+    }
+  ],
+  "cheat_sheet": {
+    "title": "At the Restaurant",
+    "sections": [
+      {
+        "heading": "Making a Reservation",
+        "content": [
+          {
+            "type": "vocabulary",
+            "items": [
+              ["I'd like to make a reservation", "Queria fazer uma reserva"],
+              ["A table for two", "Uma mesa para dois"],
+              ["For tonight", "Para hoje à noite"],
+              ["At 8 o'clock", "Às oito horas"],
+              ["Do you have a table?", "Vocês têm uma mesa? / Tem mesa?"]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Ordering",
+        "content": [
+          {
+            "type": "vocabulary",
+            "items": [
+              ["The menu, please", "O cardápio, por favor"],
+              ["I would like...", "Eu queria... / Eu gostaria de..."],
+              ["What do you recommend?", "O que você recomenda?"],
+              ["I'll have...", "Eu vou querer... / Vou pedir..."],
+              ["For appetizer/main/dessert", "Para entrada/prato principal/sobremesa"],
+              ["Anything to drink?", "Alguma coisa para beber?"]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Dietary Requirements",
+        "content": [
+          {
+            "type": "vocabulary",
+            "items": [
+              ["I'm vegetarian", "Sou vegetariano/a"],
+              ["I'm vegan", "Sou vegano/a"],
+              ["I'm allergic to...", "Tenho alergia a... / Sou alérgico/a a..."],
+              ["Without...", "Sem..."],
+              ["Does it contain...?", "Tem...? / Contém...?"],
+              ["Gluten-free", "Sem glúten"]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Paying",
+        "content": [
+          {
+            "type": "vocabulary",
+            "items": [
+              ["The bill, please", "A conta, por favor"],
+              ["Is service included?", "A taxa de serviço tá incluída?"],
+              ["Can I pay by card?", "Posso pagar no cartão?"],
+              ["Keep the change", "Pode ficar com o troco"]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Tips",
+        "content": [
+          {
+            "type": "tip",
+            "text": "In Brazil, the menu is called 'cardápio'. 'Ementa' is not used."
+          },
+          {
+            "type": "warning",
+            "text": "Many Brazilian restaurants automatically add a 10% service charge ('taxa de serviço'). Check before tipping extra."
+          }
+        ]
+      }
+    ]
+  }
+}

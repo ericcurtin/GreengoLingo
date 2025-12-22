@@ -1,0 +1,144 @@
+{
+  "id": "register_01_pt_en",
+  "title": "Register and Style",
+  "description": "Compreenda registos e variação estilística em inglês",
+  "level": "C1",
+  "language_pair": {
+    "source": "pt_PT",
+    "target": "en_US"
+  },
+  "xp_reward": 30,
+  "order": 4,
+  "icon": "style",
+  "questions": [
+    {
+      "type": "multiple_choice",
+      "prompt": "Qual é a forma mais formal de dizer 'I want'?",
+      "options": ["I want", "I'd like", "I would like", "I would appreciate if I could have"],
+      "correct_index": 3,
+      "explanation": "'I would appreciate if I could have' é muito formal. 'I would like' é educado e formal."
+    },
+    {
+      "type": "typing",
+      "prompt": "Converta para formal: 'Give me that'",
+      "correct_answers": ["Could you please give me that?", "Would you mind giving me that?", "I would appreciate it if you could give me that"],
+      "hint": "Use formas condicionais e expressões de cortesia",
+      "accent_strict": false
+    },
+    {
+      "type": "matching_pairs",
+      "prompt": "Combine informal com formal",
+      "pairs": [
+        ["OK / Alright", "Certainly / Of course"],
+        ["Great / Cool", "Excellent / Wonderful"],
+        ["Like (tipo)", "For example / Such as"],
+        ["Loads / Tons", "A great deal / Numerous"]
+      ]
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Quando se usa 'Dear Sir/Madam' em inglês?",
+      "options": ["Com amigos", "Quando não se sabe o nome do destinatário", "Sempre em emails", "Nunca se usa"],
+      "correct_index": 1,
+      "explanation": "'Dear Sir/Madam' é usado quando não se sabe o nome do destinatário em correspondência formal."
+    },
+    {
+      "type": "sentence_builder",
+      "prompt": "Construa pedido formal: 'Would you be so kind as to...'",
+      "words": ["Would", "you", "be", "so", "kind", "as", "to"],
+      "correct_order": [0, 1, 2, 3, 4, 5, 6],
+      "distractors": []
+    },
+    {
+      "type": "typing",
+      "prompt": "Traduza formalmente: 'Não concordo'",
+      "correct_answers": ["I respectfully disagree", "I'm afraid I don't share that view", "With respect, I have a different opinion"],
+      "hint": "Use expressões atenuantes",
+      "accent_strict": false
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Qual é a diferença entre inglês britânico e americano em formalidade?",
+      "options": ["Britânico sempre mais formal", "Americano sempre mais formal", "Ambos têm níveis similares, mas expressões diferentes", "Não há diferença"],
+      "correct_index": 2,
+      "explanation": "Ambos têm níveis de formalidade similares, mas usam algumas expressões e ortografias diferentes."
+    },
+    {
+      "type": "matching_pairs",
+      "prompt": "Combine phrasal verbs informais com equivalentes formais",
+      "pairs": [
+        ["Put off (adiar)", "Postpone"],
+        ["Find out (descobrir)", "Discover / Ascertain"],
+        ["Get (obter)", "Obtain / Acquire"],
+        ["Look into (investigar)", "Investigate / Examine"]
+      ]
+    }
+  ],
+  "cheat_sheet": {
+    "title": "Register and Style in English",
+    "sections": [
+      {
+        "heading": "Níveis de Formalidade em Pedidos",
+        "content": [
+          {
+            "type": "vocabulary",
+            "items": [
+              ["Directo/Informal", "Give me... / I want..."],
+              ["Educado", "Can you...? / I'd like..."],
+              ["Formal", "Could you please...? / I would like..."],
+              ["Muito formal", "Would you be so kind as to...? / I would be most grateful if..."]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Vocabulário Formal vs Informal",
+        "content": [
+          {
+            "type": "vocabulary",
+            "items": [
+              ["OK → Acceptable / Satisfactory", "Está bem → Aceitável"],
+              ["Get → Obtain / Acquire", "Obter"],
+              ["Help → Assist", "Ajudar → Assistir"],
+              ["Ask → Enquire / Request", "Perguntar → Inquirir"],
+              ["Tell → Inform / Notify", "Dizer → Informar"],
+              ["Buy → Purchase", "Comprar → Adquirir"]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Phrasal Verbs vs Verbos Latinos",
+        "content": [
+          {
+            "type": "text",
+            "text": "O inglês formal prefere verbos de origem latina a phrasal verbs:"
+          },
+          {
+            "type": "vocabulary",
+            "items": [
+              ["Put off → Postpone", "Adiar"],
+              ["Find out → Discover", "Descobrir"],
+              ["Set up → Establish", "Estabelecer"],
+              ["Go on → Continue", "Continuar"],
+              ["Look at → Examine", "Examinar"]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Dicas",
+        "content": [
+          {
+            "type": "tip",
+            "text": "Em inglês formal, evite contrações (don't → do not) e phrasal verbs."
+          },
+          {
+            "type": "warning",
+            "text": "Ser demasiado formal pode parecer frio ou distante em contextos onde se espera informalidade."
+          }
+        ]
+      }
+    ]
+  }
+}

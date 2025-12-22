@@ -1,0 +1,150 @@
+{
+  "id": "future_01",
+  "title": "Future Plans",
+  "description": "Learn to talk about future plans in European Portuguese",
+  "level": "B1",
+  "language_pair": {
+    "source": "en_US",
+    "target": "pt_PT"
+  },
+  "xp_reward": 20,
+  "order": 2,
+  "icon": "event",
+  "questions": [
+    {
+      "type": "multiple_choice",
+      "prompt": "How do you say 'I will go' in Portuguese?",
+      "options": ["Eu vou ir", "Eu irei", "Eu fui", "Eu ia"],
+      "correct_index": 1,
+      "explanation": "'Irei' is the future tense of 'ir'. 'Vou ir' is also common (going to go)."
+    },
+    {
+      "type": "typing",
+      "prompt": "Write 'I'm going to eat' in Portuguese",
+      "correct_answers": ["Vou comer", "Eu vou comer"],
+      "hint": "Use ir + infinitive",
+      "accent_strict": false
+    },
+    {
+      "type": "matching_pairs",
+      "prompt": "Match the future expressions",
+      "pairs": [
+        ["Tomorrow", "Amanhã"],
+        ["Next week", "Na próxima semana"],
+        ["Next year", "No próximo ano"],
+        ["Later", "Mais tarde"]
+      ]
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "What is 'Vou trabalhar amanhã' in English?",
+      "options": ["I worked tomorrow", "I'm going to work tomorrow", "I will have worked", "I was working"],
+      "correct_index": 1,
+      "explanation": "'Ir + infinitive' expresses near future plans, similar to 'going to' in English."
+    },
+    {
+      "type": "sentence_builder",
+      "prompt": "Build: 'Next week I will travel'",
+      "words": ["Na", "próxima", "semana", "vou", "viajar", "viajei"],
+      "correct_order": [0, 1, 2, 3, 4],
+      "distractors": ["viajei"]
+    },
+    {
+      "type": "typing",
+      "prompt": "Write 'They will arrive' (formal future) in Portuguese",
+      "correct_answers": ["Eles chegarão", "Elas chegarão", "Chegarão"],
+      "hint": "Future tense of 'chegar'",
+      "accent_strict": false
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Which is MORE common in spoken Portuguese for future?",
+      "options": ["Eu comerei (formal future)", "Eu vou comer (ir + infinitive)", "Eu como (present)", "Eu comia (imperfect)"],
+      "correct_index": 1,
+      "explanation": "In spoken Portuguese, 'ir + infinitive' is much more common than the formal future tense."
+    },
+    {
+      "type": "matching_pairs",
+      "prompt": "Match the sentences",
+      "pairs": [
+        ["I will speak", "Falarei / Vou falar"],
+        ["We will see", "Veremos / Vamos ver"],
+        ["She will come", "Ela virá / Ela vai vir"],
+        ["They will do", "Farão / Vão fazer"]
+      ]
+    }
+  ],
+  "cheat_sheet": {
+    "title": "Future Tense in Portuguese",
+    "sections": [
+      {
+        "heading": "Ir + Infinitive (Going to)",
+        "content": [
+          {
+            "type": "text",
+            "text": "Most common way to express future in spoken Portuguese:"
+          },
+          {
+            "type": "vocabulary",
+            "items": [
+              ["I'm going to speak", "Vou falar"],
+              ["You're going to speak", "Vais falar"],
+              ["He/She is going to speak", "Vai falar"],
+              ["We're going to speak", "Vamos falar"],
+              ["They're going to speak", "Vão falar"]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Futuro Simples (Formal Future)",
+        "content": [
+          {
+            "type": "text",
+            "text": "Used in formal writing and speech:"
+          },
+          {
+            "type": "vocabulary",
+            "items": [
+              ["I will speak", "Falarei"],
+              ["You will speak", "Falarás"],
+              ["He/She will speak", "Falará"],
+              ["We will speak", "Falaremos"],
+              ["They will speak", "Falarão"]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Time Expressions",
+        "content": [
+          {
+            "type": "vocabulary",
+            "items": [
+              ["Tomorrow", "Amanhã"],
+              ["Day after tomorrow", "Depois de amanhã"],
+              ["Next week", "Na próxima semana"],
+              ["Next month", "No próximo mês"],
+              ["Next year", "No próximo ano"],
+              ["Soon", "Em breve"],
+              ["Later", "Mais tarde"]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Tips",
+        "content": [
+          {
+            "type": "tip",
+            "text": "Use 'ir + infinitive' in everyday conversation. The formal future sounds too formal for casual speech."
+          },
+          {
+            "type": "warning",
+            "text": "Some verbs have irregular future stems: fazer→far-, dizer→dir-, trazer→trar-."
+          }
+        ]
+      }
+    ]
+  }
+}

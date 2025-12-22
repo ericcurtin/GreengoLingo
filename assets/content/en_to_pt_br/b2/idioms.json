@@ -1,0 +1,154 @@
+{
+  "id": "idioms_01_br",
+  "title": "Idiomatic Expressions",
+  "description": "Learn common Brazilian Portuguese idioms and expressions",
+  "level": "B2",
+  "language_pair": {
+    "source": "en_US",
+    "target": "pt_BR"
+  },
+  "xp_reward": 25,
+  "order": 4,
+  "icon": "lightbulb",
+  "questions": [
+    {
+      "type": "multiple_choice",
+      "prompt": "What does 'Estar de saco cheio' mean?",
+      "options": ["To be full", "To be fed up", "To be excited", "To be tired"],
+      "correct_index": 1,
+      "explanation": "'Estar de saco cheio' means to be fed up or annoyed with something."
+    },
+    {
+      "type": "typing",
+      "prompt": "How do you say 'It's raining cats and dogs' in Brazilian Portuguese?",
+      "correct_answers": ["Está chovendo canivetes", "Tá chovendo canivetes", "Chover canivetes"],
+      "hint": "Literal meaning: raining penknives",
+      "accent_strict": false
+    },
+    {
+      "type": "matching_pairs",
+      "prompt": "Match the idioms",
+      "pairs": [
+        ["Custar os olhos da cara", "To cost an arm and a leg"],
+        ["Pisar na bola", "To mess up/drop the ball"],
+        ["Bater as botas", "To kick the bucket"],
+        ["Dar com a língua nos dentes", "To spill the beans"]
+      ]
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "What does 'Ficar de bico calado' mean?",
+      "options": ["To stay quiet/keep a secret", "To be angry", "To eat a lot", "To be happy"],
+      "correct_index": 0,
+      "explanation": "'Ficar de bico calado' means to keep quiet or keep one's mouth shut."
+    },
+    {
+      "type": "sentence_builder",
+      "prompt": "Build: 'That's a piece of cake' (É mamão com açúcar)",
+      "words": ["É", "mamão", "com", "açúcar", "difícil"],
+      "correct_order": [0, 1, 2, 3],
+      "distractors": ["difícil"]
+    },
+    {
+      "type": "typing",
+      "prompt": "Write the idiom meaning 'to be broke' in Brazilian Portuguese",
+      "correct_answers": ["Estar duro", "Estar liso", "Estar sem grana"],
+      "hint": "Colloquial expression for having no money",
+      "accent_strict": false
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "What does 'Pagar mico' mean?",
+      "options": ["To pay for a monkey", "To embarrass oneself in public", "To be very expensive", "To be cheap"],
+      "correct_index": 1,
+      "explanation": "'Pagar mico' means to embarrass oneself or make a fool of oneself in public."
+    },
+    {
+      "type": "matching_pairs",
+      "prompt": "Match more idioms",
+      "pairs": [
+        ["Ter jogo de cintura", "To be flexible/adaptable"],
+        ["Dar uma mãozinha", "To give a helping hand"],
+        ["Ficar bolado", "To be upset/annoyed"],
+        ["Estar por fora", "To be out of the loop"]
+      ]
+    }
+  ],
+  "cheat_sheet": {
+    "title": "Brazilian Portuguese Idioms",
+    "sections": [
+      {
+        "heading": "Everyday Expressions",
+        "content": [
+          {
+            "type": "vocabulary",
+            "items": [
+              ["Estar de saco cheio", "To be fed up"],
+              ["É mamão com açúcar", "It's a piece of cake / Easy"],
+              ["Não entender patavina", "To not understand anything"],
+              ["Pisar na bola", "To mess up/make a mistake"],
+              ["Ficar de bico calado", "To keep quiet"]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Money & Success",
+        "content": [
+          {
+            "type": "vocabulary",
+            "items": [
+              ["Custar os olhos da cara", "To cost an arm and a leg"],
+              ["Estar duro/liso", "To be broke"],
+              ["Pisar na bola", "To mess up/fail"],
+              ["Dar certo", "To work out/succeed"],
+              ["Arrasar", "To rock it/do amazingly"]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Weather & Nature",
+        "content": [
+          {
+            "type": "vocabulary",
+            "items": [
+              ["Chover canivetes", "To rain cats and dogs"],
+              ["Fazer um frio de rachar", "To be freezing cold"],
+              ["Fazer um calor danado", "To be really hot"],
+              ["Quando as galinhas criarem dentes", "When pigs fly"]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Personality & Behaviour",
+        "content": [
+          {
+            "type": "vocabulary",
+            "items": [
+              ["Ter jogo de cintura", "To be flexible/adaptable"],
+              ["Pagar mico", "To embarrass oneself"],
+              ["Dar uma mãozinha", "To help out"],
+              ["Dar com a língua nos dentes", "To spill the beans"],
+              ["Ser gente boa", "To be a nice/cool person"]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Tips",
+        "content": [
+          {
+            "type": "tip",
+            "text": "Brazilian idioms often differ from European Portuguese. 'É mamão com açúcar' (Brazil) vs 'É canja' (Portugal)."
+          },
+          {
+            "type": "warning",
+            "text": "Some idioms are very informal and best used with friends rather than in professional settings."
+          }
+        ]
+      }
+    ]
+  }
+}
