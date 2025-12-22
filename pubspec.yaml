@@ -45,10 +45,36 @@ flutter:
 
   assets:
     - assets/images/
+    # A1 lessons
     - assets/content/en_to_pt_pt/a1/
     - assets/content/en_to_pt_br/a1/
     - assets/content/pt_pt_to_en/a1/
     - assets/content/pt_br_to_en/a1/
+    # A2 lessons
+    - assets/content/en_to_pt_pt/a2/
+    - assets/content/en_to_pt_br/a2/
+    - assets/content/pt_pt_to_en/a2/
+    - assets/content/pt_br_to_en/a2/
+    # B1 lessons
+    - assets/content/en_to_pt_pt/b1/
+    - assets/content/en_to_pt_br/b1/
+    - assets/content/pt_pt_to_en/b1/
+    - assets/content/pt_br_to_en/b1/
+    # B2 lessons
+    - assets/content/en_to_pt_pt/b2/
+    - assets/content/en_to_pt_br/b2/
+    - assets/content/pt_pt_to_en/b2/
+    - assets/content/pt_br_to_en/b2/
+    # C1 lessons
+    - assets/content/en_to_pt_pt/c1/
+    - assets/content/en_to_pt_br/c1/
+    - assets/content/pt_pt_to_en/c1/
+    - assets/content/pt_br_to_en/c1/
+    # C2 lessons
+    - assets/content/en_to_pt_pt/c2/
+    - assets/content/en_to_pt_br/c2/
+    - assets/content/pt_pt_to_en/c2/
+    - assets/content/pt_br_to_en/c2/
 
   # Fonts (uncomment and download fonts to use custom typography)
   # fonts:
