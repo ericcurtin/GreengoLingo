@@ -93,10 +93,10 @@ class _SentenceBuilderQuestionState extends State<SentenceBuilderQuestion> {
         // Prompt
         Text(
           widget.prompt,
-          style: const TextStyle(
+          style: TextStyle(
             fontSize: 24,
             fontWeight: FontWeight.bold,
-            color: AppColors.textDark,
+            color: Theme.of(context).colorScheme.onSurface,
             height: 1.3,
           ),
         ).animate().fadeIn(),
@@ -107,39 +107,42 @@ class _SentenceBuilderQuestionState extends State<SentenceBuilderQuestion> {
           'Tap words to build the sentence',
           style: TextStyle(
             fontSize: 14,
-            color: AppColors.textMedium,
+            color: Theme.of(context).colorScheme.onSurfaceVariant,
           ),
         ).animate().fadeIn(delay: 100.ms),
 
         const SizedBox(height: 24),
 
         // Selected words area (answer zone)
-        Container(
-          width: double.infinity,
-          constraints: const BoxConstraints(minHeight: 80),
-          padding: const EdgeInsets.all(16),
-          decoration: BoxDecoration(
-            color: _hasSubmitted
-                ? (_isCorrect ? AppColors.correctLight : AppColors.incorrectLight)
-                : Colors.grey.shade100,
-            borderRadius: BorderRadius.circular(16),
-            border: Border.all(
-              color: _hasSubmitted
-                  ? (_isCorrect ? AppColors.correct : AppColors.incorrect)
-                  : Colors.grey.shade300,
-              width: 2,
-            ),
-          ),
-          child: _selectedIndices.isEmpty
-              ? Center(
-                  child: Text(
-                    'Your sentence will appear here',
-                    style: TextStyle(
-                      color: AppColors.textMedium,
-                      fontStyle: FontStyle.italic,
-                    ),
-                  ),
-                )
+        Builder(
+          builder: (context) {
+            final isDark = Theme.of(context).brightness == Brightness.dark;
+            return Container(
+              width: double.infinity,
+              constraints: const BoxConstraints(minHeight: 80),
+              padding: const EdgeInsets.all(16),
+              decoration: BoxDecoration(
+                color: _hasSubmitted
+                    ? (_isCorrect ? AppColors.correctLight : AppColors.incorrectLight)
+                    : (isDark ? AppColors.surfaceDark : Colors.grey.shade100),
+                borderRadius: BorderRadius.circular(16),
+                border: Border.all(
+                  color: _hasSubmitted
+                      ? (_isCorrect ? AppColors.correct : AppColors.incorrect)
+                      : (isDark ? Colors.grey.shade700 : Colors.grey.shade300),
+                  width: 2,
+                ),
+              ),
+              child: _selectedIndices.isEmpty
+                  ? Center(
+                      child: Text(
+                        'Your sentence will appear here',
+                        style: TextStyle(
+                          color: Theme.of(context).colorScheme.onSurfaceVariant,
+                          fontStyle: FontStyle.italic,
+                        ),
+                      ),
+                    )
               : Wrap(
                   spacing: 8,
                   runSpacing: 8,
@@ -158,6 +161,8 @@ class _SentenceBuilderQuestionState extends State<SentenceBuilderQuestion> {
                     );
                   }).toList(),
                 ),
+            );
+          },
         ).animate().fadeIn(delay: 150.ms),
 
         const SizedBox(height: 24),
@@ -168,7 +173,7 @@ class _SentenceBuilderQuestionState extends State<SentenceBuilderQuestion> {
           style: TextStyle(
             fontSize: 14,
             fontWeight: FontWeight.w600,
-            color: AppColors.textMedium,
+            color: Theme.of(context).colorScheme.onSurfaceVariant,
           ),
         ),
 
@@ -219,26 +224,28 @@ class _SentenceBuilderQuestionState extends State<SentenceBuilderQuestion> {
                 color: AppColors.info.withOpacity(0.1),
                 borderRadius: BorderRadius.circular(12),
               ),
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  const Text(
-                    'Correct answer:',
-                    style: TextStyle(
-                      fontSize: 14,
-                      color: AppColors.textMedium,
+              child: Builder(
+                builder: (context) => Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      'Correct answer:',
+                      style: TextStyle(
+                        fontSize: 14,
+                        color: Theme.of(context).colorScheme.onSurfaceVariant,
+                      ),
                     ),
-                  ),
-                  const SizedBox(height: 4),
-                  Text(
-                    _correctSentence,
-                    style: const TextStyle(
-                      fontSize: 18,
-                      fontWeight: FontWeight.bold,
-                      color: AppColors.textDark,
+                    const SizedBox(height: 4),
+                    Text(
+                      _correctSentence,
+                      style: TextStyle(
+                        fontSize: 18,
+                        fontWeight: FontWeight.bold,
+                        color: Theme.of(context).colorScheme.onSurface,
+                      ),
                     ),
-                  ),
-                ],
+                  ],
+                ),
               ),
             ),
           ).animate().fadeIn(delay: 200.ms),
@@ -266,6 +273,10 @@ class _WordChip extends StatelessWidget {
     Color textColor;
     Color borderColor;
 
+    final isDark = Theme.of(context).brightness == Brightness.dark;
+    final surfaceColor = isDark ? AppColors.surfaceDark : Colors.white;
+    final defaultBorderColor = isDark ? Colors.grey.shade700 : Colors.grey.shade300;
+
     if (isCorrect != null) {
       if (isCorrect!) {
         backgroundColor = AppColors.correct;
@@ -281,13 +292,13 @@ class _WordChip extends StatelessWidget {
       textColor = Colors.white;
       borderColor = AppTheme.primaryGreen;
     } else if (isDisabled) {
-      backgroundColor = Colors.grey.shade200;
-      textColor = AppColors.textMedium;
-      borderColor = Colors.grey.shade300;
+      backgroundColor = isDark ? Colors.grey.shade800 : Colors.grey.shade200;
+      textColor = Theme.of(context).colorScheme.onSurfaceVariant;
+      borderColor = defaultBorderColor;
     } else {
-      backgroundColor = Colors.white;
-      textColor = AppColors.textDark;
-      borderColor = Colors.grey.shade300;
+      backgroundColor = surfaceColor;
+      textColor = Theme.of(context).colorScheme.onSurface;
+      borderColor = defaultBorderColor;
     }
 
     return Container(

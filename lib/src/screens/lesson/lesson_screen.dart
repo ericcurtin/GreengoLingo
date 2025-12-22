@@ -130,7 +130,9 @@ class _LessonScreenState extends ConsumerState<LessonScreen> {
           borderRadius: BorderRadius.circular(4),
           child: LinearProgressIndicator(
             value: progress,
-            backgroundColor: Colors.grey.shade200,
+            backgroundColor: Theme.of(context).brightness == Brightness.dark
+                ? AppColors.progressBackgroundDark
+                : Colors.grey.shade200,
             valueColor: const AlwaysStoppedAnimation(AppTheme.primaryGreen),
             minHeight: 8,
           ),
@@ -143,7 +145,7 @@ class _LessonScreenState extends ConsumerState<LessonScreen> {
                 '${_currentQuestion + 1}/${_questions.length}',
                 style: TextStyle(
                   fontWeight: FontWeight.bold,
-                  color: AppColors.textMedium,
+                  color: Theme.of(context).colorScheme.onSurfaceVariant,
                 ),
               ),
             ),
@@ -284,10 +286,10 @@ class _LessonScreenState extends ConsumerState<LessonScreen> {
               const SizedBox(height: 24),
               Text(
                 isPerfect ? 'Perfect!' : 'Lesson Complete!',
-                style: const TextStyle(
+                style: TextStyle(
                   fontSize: 32,
                   fontWeight: FontWeight.bold,
-                  color: AppColors.textDark,
+                  color: Theme.of(context).colorScheme.onSurface,
                 ),
               ).animate().fadeIn(delay: 400.ms),
               const SizedBox(height: 16),
@@ -295,7 +297,7 @@ class _LessonScreenState extends ConsumerState<LessonScreen> {
                 'You got $_correctAnswers out of ${_questions.length} correct',
                 style: TextStyle(
                   fontSize: 18,
-                  color: AppColors.textMedium,
+                  color: Theme.of(context).colorScheme.onSurfaceVariant,
                 ),
               ).animate().fadeIn(delay: 500.ms),
               const SizedBox(height: 32),

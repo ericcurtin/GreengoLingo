@@ -51,10 +51,10 @@ class _MultipleChoiceQuestionState extends State<MultipleChoiceQuestion> {
         // Prompt
         Text(
           widget.prompt,
-          style: const TextStyle(
+          style: TextStyle(
             fontSize: 24,
             fontWeight: FontWeight.bold,
-            color: AppColors.textDark,
+            color: Theme.of(context).colorScheme.onSurface,
             height: 1.3,
           ),
         ).animate().fadeIn(),
@@ -72,6 +72,10 @@ class _MultipleChoiceQuestionState extends State<MultipleChoiceQuestion> {
           Color borderColor;
           Color textColor;
 
+          final isDark = Theme.of(context).brightness == Brightness.dark;
+          final surfaceColor = isDark ? AppColors.surfaceDark : Colors.white;
+          final defaultTextColor = Theme.of(context).colorScheme.onSurface;
+
           if (showResult) {
             if (isCorrect) {
               backgroundColor = AppColors.correctLight;
@@ -82,16 +86,16 @@ class _MultipleChoiceQuestionState extends State<MultipleChoiceQuestion> {
               borderColor = AppColors.incorrect;
               textColor = AppColors.incorrect;
             } else {
-              backgroundColor = Colors.white;
-              borderColor = Colors.grey.shade200;
-              textColor = AppColors.textDark;
+              backgroundColor = surfaceColor;
+              borderColor = isDark ? Colors.grey.shade700 : Colors.grey.shade200;
+              textColor = defaultTextColor;
             }
           } else {
             backgroundColor = isSelected
                 ? AppTheme.primaryGreen.withOpacity(0.1)
-                : Colors.white;
-            borderColor = isSelected ? AppTheme.primaryGreen : Colors.grey.shade200;
-            textColor = AppColors.textDark;
+                : surfaceColor;
+            borderColor = isSelected ? AppTheme.primaryGreen : (isDark ? Colors.grey.shade700 : Colors.grey.shade200);
+            textColor = defaultTextColor;
           }
 
           return Padding(
@@ -171,7 +175,7 @@ class _MultipleChoiceQuestionState extends State<MultipleChoiceQuestion> {
                     child: Text(
                       widget.explanation!,
                       style: TextStyle(
-                        color: AppColors.textDark,
+                        color: Theme.of(context).colorScheme.onSurface,
                         height: 1.4,
                       ),
                     ),

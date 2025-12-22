@@ -206,16 +206,19 @@ class _LevelCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final progress = lessonCount > 0 ? completedCount / lessonCount : 0.0;
+    final isDark = Theme.of(context).brightness == Brightness.dark;
+    final surfaceColor = isDark ? AppColors.surfaceDark : Colors.white;
+    final lockedColor = isDark ? Colors.grey.shade800 : Colors.grey.shade100;
 
     return GestureDetector(
       onTap: onTap,
       child: Container(
         decoration: BoxDecoration(
-          color: isLocked ? Colors.grey.shade100 : Colors.white,
+          color: isLocked ? lockedColor : surfaceColor,
           borderRadius: BorderRadius.circular(20),
           boxShadow: [
             BoxShadow(
-              color: (isLocked ? Colors.grey : color).withOpacity(0.15),
+              color: (isLocked ? Colors.grey : color).withOpacity(isDark ? 0.3 : 0.15),
               blurRadius: 10,
               offset: const Offset(0, 4),
             ),
@@ -265,7 +268,7 @@ class _LevelCard extends StatelessWidget {
                     style: TextStyle(
                       fontSize: 14,
                       fontWeight: FontWeight.w600,
-                      color: isLocked ? Colors.grey : AppColors.textDark,
+                      color: isLocked ? Colors.grey : Theme.of(context).colorScheme.onSurface,
                     ),
                   ),
                   const SizedBox(height: 4),
@@ -273,7 +276,7 @@ class _LevelCard extends StatelessWidget {
                     '$completedCount / $lessonCount lessons',
                     style: TextStyle(
                       fontSize: 12,
-                      color: AppColors.textMedium,
+                      color: Theme.of(context).colorScheme.onSurfaceVariant,
                     ),
                   ),
                   const SizedBox(height: 8),
@@ -282,7 +285,7 @@ class _LevelCard extends StatelessWidget {
                     borderRadius: BorderRadius.circular(4),
                     child: LinearProgressIndicator(
                       value: progress,
-                      backgroundColor: Colors.grey.shade200,
+                      backgroundColor: isDark ? AppColors.progressBackgroundDark : Colors.grey.shade200,
                       valueColor: AlwaysStoppedAnimation(
                         isLocked ? Colors.grey : color,
                       ),

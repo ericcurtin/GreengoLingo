@@ -118,10 +118,10 @@ class _MatchingPairsQuestionState extends State<MatchingPairsQuestion> {
         // Prompt
         Text(
           widget.prompt,
-          style: const TextStyle(
+          style: TextStyle(
             fontSize: 24,
             fontWeight: FontWeight.bold,
-            color: AppColors.textDark,
+            color: Theme.of(context).colorScheme.onSurface,
             height: 1.3,
           ),
         ).animate().fadeIn(),
@@ -132,7 +132,7 @@ class _MatchingPairsQuestionState extends State<MatchingPairsQuestion> {
           'Tap to match pairs',
           style: TextStyle(
             fontSize: 14,
-            color: AppColors.textMedium,
+            color: Theme.of(context).colorScheme.onSurfaceVariant,
           ),
         ).animate().fadeIn(delay: 100.ms),
 
@@ -224,6 +224,10 @@ class _MatchItem extends StatelessWidget {
     Color borderColor;
     Color textColor;
 
+    final isDark = Theme.of(context).brightness == Brightness.dark;
+    final surfaceColor = isDark ? AppColors.surfaceDark : Colors.white;
+    final defaultBorderColor = isDark ? Colors.grey.shade700 : Colors.grey.shade300;
+
     if (showResult) {
       if (isCorrect) {
         backgroundColor = AppColors.correctLight;
@@ -235,17 +239,17 @@ class _MatchItem extends StatelessWidget {
         textColor = AppColors.incorrect;
       }
     } else if (isMatched) {
-      backgroundColor = Colors.grey.shade100;
-      borderColor = Colors.grey.shade300;
-      textColor = AppColors.textMedium;
+      backgroundColor = isDark ? Colors.grey.shade800 : Colors.grey.shade100;
+      borderColor = defaultBorderColor;
+      textColor = Theme.of(context).colorScheme.onSurfaceVariant;
     } else if (isSelected) {
       backgroundColor = AppTheme.primaryGreen.withOpacity(0.15);
       borderColor = AppTheme.primaryGreen;
       textColor = AppTheme.primaryGreen;
     } else {
-      backgroundColor = Colors.white;
-      borderColor = Colors.grey.shade300;
-      textColor = AppColors.textDark;
+      backgroundColor = surfaceColor;
+      borderColor = defaultBorderColor;
+      textColor = Theme.of(context).colorScheme.onSurface;
     }
 
     return Padding(
