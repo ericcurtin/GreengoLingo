@@ -125,10 +125,10 @@ class _TypingQuestionState extends State<TypingQuestion> {
         // Prompt
         Text(
           widget.prompt,
-          style: const TextStyle(
+          style: TextStyle(
             fontSize: 24,
             fontWeight: FontWeight.bold,
-            color: AppColors.textDark,
+            color: Theme.of(context).colorScheme.onSurface,
             height: 1.3,
           ),
         ).animate().fadeIn(),
@@ -140,7 +140,7 @@ class _TypingQuestionState extends State<TypingQuestion> {
               'Hint: ${widget.hint}',
               style: TextStyle(
                 fontSize: 14,
-                color: AppColors.textMedium,
+                color: Theme.of(context).colorScheme.onSurfaceVariant,
                 fontStyle: FontStyle.italic,
               ),
             ),
@@ -160,14 +160,14 @@ class _TypingQuestionState extends State<TypingQuestion> {
             filled: true,
             fillColor: _hasSubmitted
                 ? (_isCorrect ? AppColors.correctLight : AppColors.incorrectLight)
-                : Colors.grey.shade100,
+                : (Theme.of(context).brightness == Brightness.dark ? AppColors.surfaceDark : Colors.grey.shade100),
             border: OutlineInputBorder(
               borderRadius: BorderRadius.circular(16),
               borderSide: BorderSide.none,
             ),
             enabledBorder: OutlineInputBorder(
               borderRadius: BorderRadius.circular(16),
-              borderSide: BorderSide(color: Colors.grey.shade300),
+              borderSide: BorderSide(color: Theme.of(context).brightness == Brightness.dark ? Colors.grey.shade700 : Colors.grey.shade300),
             ),
             focusedBorder: OutlineInputBorder(
               borderRadius: BorderRadius.circular(16),
@@ -184,7 +184,7 @@ class _TypingQuestionState extends State<TypingQuestion> {
             fontSize: 18,
             color: _hasSubmitted
                 ? (_isCorrect ? AppColors.correct : AppColors.incorrect)
-                : AppColors.textDark,
+                : Theme.of(context).colorScheme.onSurface,
           ),
           onSubmitted: (_) => _submit(),
         ).animate().fadeIn(delay: 100.ms),
@@ -203,9 +203,9 @@ class _TypingQuestionState extends State<TypingQuestion> {
                   width: 44,
                   height: 44,
                   decoration: BoxDecoration(
-                    color: Colors.white,
+                    color: Theme.of(context).brightness == Brightness.dark ? AppColors.surfaceDark : Colors.white,
                     borderRadius: BorderRadius.circular(8),
-                    border: Border.all(color: Colors.grey.shade300),
+                    border: Border.all(color: Theme.of(context).brightness == Brightness.dark ? Colors.grey.shade700 : Colors.grey.shade300),
                     boxShadow: [
                       BoxShadow(
                         color: Colors.black.withOpacity(0.05),
@@ -217,9 +217,10 @@ class _TypingQuestionState extends State<TypingQuestion> {
                   child: Center(
                     child: Text(
                       char,
-                      style: const TextStyle(
+                      style: TextStyle(
                         fontSize: 20,
                         fontWeight: FontWeight.w500,
+                        color: Theme.of(context).colorScheme.onSurface,
                       ),
                     ),
                   ),
@@ -250,26 +251,28 @@ class _TypingQuestionState extends State<TypingQuestion> {
                 color: AppColors.info.withOpacity(0.1),
                 borderRadius: BorderRadius.circular(12),
               ),
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  const Text(
-                    'Correct answer:',
-                    style: TextStyle(
-                      fontSize: 14,
-                      color: AppColors.textMedium,
+              child: Builder(
+                builder: (context) => Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      'Correct answer:',
+                      style: TextStyle(
+                        fontSize: 14,
+                        color: Theme.of(context).colorScheme.onSurfaceVariant,
+                      ),
                     ),
-                  ),
-                  const SizedBox(height: 4),
-                  Text(
-                    widget.correctAnswers.first,
-                    style: const TextStyle(
-                      fontSize: 18,
-                      fontWeight: FontWeight.bold,
-                      color: AppColors.textDark,
+                    const SizedBox(height: 4),
+                    Text(
+                      widget.correctAnswers.first,
+                      style: TextStyle(
+                        fontSize: 18,
+                        fontWeight: FontWeight.bold,
+                        color: Theme.of(context).colorScheme.onSurface,
+                      ),
                     ),
-                  ),
-                ],
+                  ],
+                ),
               ),
             ),
           ).animate().fadeIn(delay: 200.ms),
