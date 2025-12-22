@@ -95,12 +95,60 @@ jobs:
       - name: Build Linux
         run: flutter build linux --release
 
+      - name: Get version
+        id: version
+        run: |
+          VERSION=$(grep 'version:' pubspec.yaml | head -1 | sed 's/version: //' | tr -d ' ')
+          echo "version=$VERSION" >> $GITHUB_OUTPUT
+
+      - name: Create DEB package
+        run: |
+          VERSION=${{ steps.version.outputs.version }}
+          PKG_ROOT=pkg-deb
+          mkdir -p $PKG_ROOT/DEBIAN
+          mkdir -p $PKG_ROOT/usr/bin
+          mkdir -p $PKG_ROOT/usr/lib/greengolingo
+          mkdir -p $PKG_ROOT/usr/share/applications
+          mkdir -p $PKG_ROOT/usr/share/icons/hicolor/256x256/apps
+
+          # Copy application files
+          cp -r build/linux/x64/release/bundle/* $PKG_ROOT/usr/lib/greengolingo/
+
+          # Create launcher script
+          cat > $PKG_ROOT/usr/bin/greengolingo << 'LAUNCHER'
+          #!/bin/bash
+          cd /usr/lib/greengolingo
+          exec ./greengolingo "$@"
+          LAUNCHER
+          chmod +x $PKG_ROOT/usr/bin/greengolingo
+
+          # Copy desktop file and icon
+          cp linux/greengolingo.desktop $PKG_ROOT/usr/share/applications/
+          cp linux/flutter/assets/greengolingo.png $PKG_ROOT/usr/share/icons/hicolor/256x256/apps/ || cp assets/images/logo.png $PKG_ROOT/usr/share/icons/hicolor/256x256/apps/greengolingo.png
+
+          # Create control file
+          cat > $PKG_ROOT/DEBIAN/control << EOF
+          Package: greengolingo
+          Version: $VERSION
+          Section: education
+          Priority: optional
+          Architecture: amd64
+          Depends: libgtk-3-0
+          Maintainer: GreengoLingo <noreply@greengolingo.com>
+          Description: Learn languages through gamification
+           GreengoLingo is a language learning application that helps you
+           learn Portuguese and English through interactive exercises.
+          EOF
+
+          # Build the deb package
+          dpkg-deb --build $PKG_ROOT greengolingo-linux-x64.deb
+
       - name: Upload Linux artifacts
         if: github.event_name == 'push'
         uses: actions/upload-artifact@v4
         with:
           name: linux-artifacts
-          path: build/linux/x64/release/bundle/
+          path: greengolingo-linux-x64.deb
 
   build-macos:
     runs-on: macos-latest
@@ -108,8 +156,8 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Install ImageMagick
-        run: brew install imagemagick
+      - name: Install dependencies
+        run: brew install imagemagick create-dmg
 
       - name: Setup Flutter
         uses: subosito/flutter-action@v2
@@ -133,12 +181,25 @@ jobs:
       - name: Build macOS
         run: flutter build macos --release
 
+      - name: Create DMG
+        run: |
+          create-dmg \
+            --volname "GreengoLingo" \
+            --window-pos 200 120 \
+            --window-size 600 400 \
+            --icon-size 100 \
+            --icon "greengolingo.app" 150 185 \
+            --hide-extension "greengolingo.app" \
+            --app-drop-link 450 185 \
+            greengolingo-macos.dmg \
+            build/macos/Build/Products/Release/greengolingo.app
+
       - name: Upload macOS artifacts
         if: github.event_name == 'push'
         uses: actions/upload-artifact@v4
         with:
           name: macos-artifacts
-          path: build/macos/Build/Products/Release/*.app
+          path: greengolingo-macos.dmg
 
   build-windows:
     runs-on: windows-latest
@@ -146,8 +207,10 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Install ImageMagick
-        run: choco install imagemagick -y
+      - name: Install dependencies
+        run: |
+          choco install imagemagick -y
+          choco install innosetup -y
 
       - name: Setup Flutter
         uses: subosito/flutter-action@v2
@@ -172,12 +235,25 @@ jobs:
       - name: Build Windows
         run: flutter build windows --release
 
+      - name: Get version
+        id: version
+        shell: bash
+        run: |
+          VERSION=$(grep 'version:' pubspec.yaml | head -1 | sed 's/version: //' | tr -d ' ')
+          echo "version=$VERSION" >> $GITHUB_OUTPUT
+
+      - name: Create Windows installer
+        shell: cmd
+        run: |
+          set APP_VERSION=${{ steps.version.outputs.version }}
+          "C:\Program Files (x86)\Inno Setup 6\ISCC.exe" windows\installer.iss
+
       - name: Upload Windows artifacts
         if: github.event_name == 'push'
         uses: actions/upload-artifact@v4
         with:
           name: windows-artifacts
-          path: build/windows/x64/runner/Release/
+          path: windows/greengolingo-windows-x64-setup.exe
 
   build-android:
     runs-on: ubuntu-22.04
@@ -270,22 +346,22 @@ jobs:
         with:
           path: artifacts
 
-      - name: Create platform archives
+      - name: Prepare release artifacts
         run: |
           cd artifacts
-          # Create Linux tar.gz
+          # Copy Linux packages
           if [ -d "linux-artifacts" ]; then
-            tar -czvf greengolingo-linux-x64.tar.gz -C linux-artifacts .
+            cp linux-artifacts/*.deb .
           fi
-          # Create macOS zip
+          # Copy macOS DMG
           if [ -d "macos-artifacts" ]; then
-            (cd macos-artifacts && zip -r ../greengolingo-macos.zip .)
+            cp macos-artifacts/*.dmg .
           fi
-          # Create Windows zip
+          # Copy Windows installer
           if [ -d "windows-artifacts" ]; then
-            (cd windows-artifacts && zip -r ../greengolingo-windows-x64.zip .)
+            cp windows-artifacts/*.exe .
           fi
-          # Rename Android APK
+          # Copy Android APK
           if [ -d "android-artifacts" ]; then
             cp android-artifacts/*.apk greengolingo-android.apk
           fi
@@ -306,14 +382,14 @@ jobs:
             Automated release from main branch.
 
             ## Downloads
-            - **Linux**: Flutter bundle
-            - **macOS**: .app
-            - **Windows**: Release bundle
-            - **Android**: .apk
+            - **Linux**: `.deb` (Debian/Ubuntu)
+            - **macOS**: `.dmg` installer
+            - **Windows**: `.exe` installer
+            - **Android**: `.apk`
           files: |
-            artifacts/greengolingo-linux-x64.tar.gz
-            artifacts/greengolingo-macos.zip
-            artifacts/greengolingo-windows-x64.zip
+            artifacts/greengolingo-linux-x64.deb
+            artifacts/greengolingo-macos.dmg
+            artifacts/greengolingo-windows-x64-setup.exe
             artifacts/greengolingo-android.apk
           draft: false
           prerelease: false

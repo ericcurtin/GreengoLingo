@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=GreengoLingo
+Comment=Learn languages through gamification
+Exec=/usr/bin/greengolingo
+Icon=greengolingo
+Terminal=false
+Type=Application
+Categories=Education;Languages;
+Keywords=language;learning;portuguese;english;education;
