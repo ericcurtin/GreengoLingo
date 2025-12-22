@@ -5,15 +5,24 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../../theme/app_theme.dart';
 import '../../theme/colors.dart';
 import '../../providers/gamification_provider.dart';
+import '../../providers/progress_provider.dart';
+import '../../services/lesson_service.dart';
 import '../../services/haptic_service.dart';
 import '../../widgets/questions/multiple_choice.dart';
 import '../../widgets/questions/typing_input.dart';
 import '../../widgets/questions/matching_pairs.dart';
 import '../../widgets/questions/sentence_builder.dart';
 
-/// Demo lesson screen showing question flow
+/// Lesson screen that displays questions from a lesson
 class LessonScreen extends ConsumerStatefulWidget {
-  const LessonScreen({super.key});
+  final Lesson lesson;
+  final String level;
+
+  const LessonScreen({
+    super.key,
+    required this.lesson,
+    required this.level,
+  });
 
   @override
   ConsumerState<LessonScreen> createState() => _LessonScreenState();
@@ -26,44 +35,7 @@ class _LessonScreenState extends ConsumerState<LessonScreen> {
   bool _lastAnswerCorrect = false;
   bool _lessonComplete = false;
 
-  // Demo questions
-  final List<Map<String, dynamic>> _questions = [
-    {
-      'type': 'multiple_choice',
-      'prompt': "How do you say 'Hello' in Portuguese?",
-      'options': ['Olá', 'Adeus', 'Obrigado', 'Por favor'],
-      'correctIndex': 0,
-      'explanation': 'Olá is the standard greeting in Portuguese.',
-    },
-    {
-      'type': 'typing',
-      'prompt': "Write 'Thank you' in Portuguese",
-      'correctAnswers': ['Obrigado', 'Obrigada'],
-      'hint': 'Starts with O...',
-    },
-    {
-      'type': 'matching',
-      'prompt': 'Match the greetings',
-      'pairs': [
-        {'left': 'Hello', 'right': 'Olá'},
-        {'left': 'Goodbye', 'right': 'Adeus'},
-        {'left': 'Good morning', 'right': 'Bom dia'},
-      ],
-    },
-    {
-      'type': 'sentence_builder',
-      'prompt': "Build: 'I am happy'",
-      'words': ['Eu', 'estou', 'feliz', 'triste'],
-      'correctOrder': [0, 1, 2],
-    },
-    {
-      'type': 'multiple_choice',
-      'prompt': "What does 'Adeus' mean?",
-      'options': ['Hello', 'Goodbye', 'Please', 'Thank you'],
-      'correctIndex': 1,
-      'explanation': 'Adeus means goodbye in Portuguese.',
-    },
-  ];
+  List<Map<String, dynamic>> get _questions => widget.lesson.questions;
 
   void _handleAnswer(bool isCorrect) {
     setState(() {
@@ -89,19 +61,25 @@ class _LessonScreenState extends ConsumerState<LessonScreen> {
     }
   }
 
-  void _completeLesson() {
+  void _completeLesson() async {
     final scorePercent = (_correctAnswers / _questions.length * 100).round();
     final isPerfect = scorePercent == 100;
 
-    // Award XP
+    // Award XP using lesson's XP reward
     ref.read(gamificationProvider.notifier).awardXP(
-          10, // base XP
+          widget.lesson.xpReward,
           perfect: isPerfect,
           updateStreak: true,
         );
 
     if (!_lessonComplete) {
       ref.read(gamificationProvider.notifier).recordActivity();
+
+      // Mark lesson as completed in progress tracker
+      await ref.read(progressProvider.notifier).completeLesson(
+            widget.level,
+            widget.lesson.id,
+          );
     }
 
     setState(() {
@@ -115,6 +93,21 @@ class _LessonScreenState extends ConsumerState<LessonScreen> {
   Widget build(BuildContext context) {
     if (_lessonComplete) {
       return _buildCompletionScreen();
+    }
+
+    if (_questions.isEmpty) {
+      return Scaffold(
+        appBar: AppBar(
+          leading: IconButton(
+            icon: const Icon(Icons.close),
+            onPressed: () => Navigator.of(context).pop(),
+          ),
+          title: Text(widget.lesson.title),
+        ),
+        body: const Center(
+          child: Text('No questions available for this lesson.'),
+        ),
+      );
     }
 
     final question = _questions[_currentQuestion];
@@ -169,43 +162,55 @@ class _LessonScreenState extends ConsumerState<LessonScreen> {
   }
 
   Widget _buildQuestion(Map<String, dynamic> question) {
-    switch (question['type']) {
+    final type = question['type'] as String;
+
+    switch (type) {
       case 'multiple_choice':
         return MultipleChoiceQuestion(
-          prompt: question['prompt'],
-          options: List<String>.from(question['options']),
-          correctIndex: question['correctIndex'],
-          explanation: question['explanation'],
+          prompt: question['prompt'] as String,
+          options: List<String>.from(question['options'] as List),
+          correctIndex: question['correct_index'] as int? ?? question['correctIndex'] as int? ?? 0,
+          explanation: question['explanation'] as String?,
           enabled: !_showingFeedback,
           onAnswer: _handleAnswer,
         );
       case 'typing':
         return TypingQuestion(
-          prompt: question['prompt'],
-          correctAnswers: List<String>.from(question['correctAnswers']),
-          hint: question['hint'],
+          prompt: question['prompt'] as String,
+          correctAnswers: List<String>.from(question['correct_answers'] as List? ?? question['correctAnswers'] as List? ?? []),
+          hint: question['hint'] as String?,
           enabled: !_showingFeedback,
           onAnswer: _handleAnswer,
         );
+      case 'matching_pairs':
       case 'matching':
+        final pairs = question['pairs'] as List;
         return MatchingPairsQuestion(
-          prompt: question['prompt'],
-          pairs: (question['pairs'] as List)
-              .map((p) => MapEntry<String, String>(p['left'], p['right']))
-              .toList(),
+          prompt: question['prompt'] as String,
+          pairs: pairs.map((p) {
+            if (p is List) {
+              return MapEntry<String, String>(p[0] as String, p[1] as String);
+            } else if (p is Map) {
+              return MapEntry<String, String>(
+                (p['left'] ?? p[0]) as String,
+                (p['right'] ?? p[1]) as String,
+              );
+            }
+            return const MapEntry<String, String>('', '');
+          }).toList(),
           enabled: !_showingFeedback,
           onAnswer: _handleAnswer,
         );
       case 'sentence_builder':
         return SentenceBuilderQuestion(
-          prompt: question['prompt'],
-          words: List<String>.from(question['words']),
-          correctOrder: List<int>.from(question['correctOrder']),
+          prompt: question['prompt'] as String,
+          words: List<String>.from(question['words'] as List),
+          correctOrder: List<int>.from(question['correct_order'] as List? ?? question['correctOrder'] as List? ?? []),
           enabled: !_showingFeedback,
           onAnswer: _handleAnswer,
         );
       default:
-        return const Text('Unknown question type');
+        return Text('Unknown question type: $type');
     }
   }
 
@@ -270,6 +275,9 @@ class _LessonScreenState extends ConsumerState<LessonScreen> {
   Widget _buildCompletionScreen() {
     final scorePercent = (_correctAnswers / _questions.length * 100).round();
     final isPerfect = scorePercent == 100;
+    final xpEarned = isPerfect
+        ? (widget.lesson.xpReward * 1.5).round()
+        : widget.lesson.xpReward;
 
     return Scaffold(
       body: SafeArea(
@@ -292,11 +300,19 @@ class _LessonScreenState extends ConsumerState<LessonScreen> {
                   color: Theme.of(context).colorScheme.onSurface,
                 ),
               ).animate().fadeIn(delay: 400.ms),
+              const SizedBox(height: 8),
+              Text(
+                widget.lesson.title,
+                style: TextStyle(
+                  fontSize: 18,
+                  color: Theme.of(context).colorScheme.onSurfaceVariant,
+                ),
+              ).animate().fadeIn(delay: 450.ms),
               const SizedBox(height: 16),
               Text(
                 'You got $_correctAnswers out of ${_questions.length} correct',
                 style: TextStyle(
-                  fontSize: 18,
+                  fontSize: 16,
                   color: Theme.of(context).colorScheme.onSurfaceVariant,
                 ),
               ).animate().fadeIn(delay: 500.ms),
@@ -340,7 +356,7 @@ class _LessonScreenState extends ConsumerState<LessonScreen> {
                     const Icon(Icons.bolt, color: AppColors.xpGold),
                     const SizedBox(width: 8),
                     Text(
-                      '+${isPerfect ? 15 : 10} XP',
+                      '+$xpEarned XP',
                       style: const TextStyle(
                         fontSize: 20,
                         fontWeight: FontWeight.bold,
@@ -354,7 +370,7 @@ class _LessonScreenState extends ConsumerState<LessonScreen> {
               SizedBox(
                 width: double.infinity,
                 child: ElevatedButton(
-                  onPressed: () => Navigator.of(context).pop(),
+                  onPressed: () => Navigator.of(context).pop(true), // Return true to indicate completion
                   child: const Text('Continue'),
                 ),
               ),
@@ -379,7 +395,7 @@ class _LessonScreenState extends ConsumerState<LessonScreen> {
           TextButton(
             onPressed: () {
               Navigator.of(context).pop();
-              Navigator.of(context).pop();
+              Navigator.of(context).pop(false); // Return false to indicate no completion
             },
             child: const Text('Leave'),
           ),
