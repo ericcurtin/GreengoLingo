@@ -1,0 +1,136 @@
+{
+  "id": "nuanced_language_01_br_en",
+  "title": "Nuances do Inglês",
+  "description": "Domine as sutilezas e nuances avançadas do inglês",
+  "level": "C2",
+  "language_pair": {
+    "source": "pt_BR",
+    "target": "en_US"
+  },
+  "xp_reward": 35,
+  "order": 1,
+  "icon": "psychology",
+  "questions": [
+    {
+      "type": "multiple_choice",
+      "prompt": "Qual é a diferença entre 'I forgot' e 'I've forgotten'?",
+      "options": ["Nenhuma diferença", "Forgot é passado, forgotten enfatiza relevância presente", "Forgotten é mais formal", "Forgot é britânico"],
+      "correct_index": 1,
+      "explanation": "'I've forgotten' sugere que o esquecimento ainda afeta o presente; 'I forgot' é mais distante."
+    },
+    {
+      "type": "typing",
+      "prompt": "Qual advérbio torna 'I disagree' mais educado?",
+      "correct_answers": ["I respectfully disagree", "I somewhat disagree", "I rather disagree"],
+      "hint": "Adicione um modificador antes de 'disagree'",
+      "accent_strict": false
+    },
+    {
+      "type": "matching_pairs",
+      "prompt": "Combine expressões com seus níveis de formalidade",
+      "pairs": [
+        ["Would you mind...?", "Muito formal"],
+        ["Could you...?", "Formal"],
+        ["Can you...?", "Neutro"],
+        ["Do this.", "Informal/direto"]
+      ]
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "O que significa 'understatement'?",
+      "options": ["Exagero", "Dizer menos do que se quer dizer", "Falar baixo", "Ser direto"],
+      "correct_index": 1,
+      "explanation": "'Understatement' é típico do humor britânico - dizer 'not bad' quando algo é excelente."
+    },
+    {
+      "type": "sentence_builder",
+      "prompt": "Construa uma recusa educada: 'I'm afraid I can't'",
+      "words": ["I'm", "afraid", "I", "can't", "not", "won't"],
+      "correct_order": [0, 1, 2, 3],
+      "distractors": ["not", "won't"]
+    },
+    {
+      "type": "typing",
+      "prompt": "Como dizer 'talvez' de forma mais sofisticada?",
+      "correct_answers": ["Perhaps", "Possibly", "Conceivably"],
+      "hint": "Mais formal que 'maybe'",
+      "accent_strict": false
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "O que significa 'That's quite good' no inglês britânico?",
+      "options": ["É muito bom", "É razoável/OK", "É perfeito", "É ruim"],
+      "correct_index": 1,
+      "explanation": "No inglês britânico, 'quite' frequentemente diminui a força do adjetivo, enquanto no americano intensifica."
+    },
+    {
+      "type": "matching_pairs",
+      "prompt": "Combine expressões com significados reais (understatement britânico)",
+      "pairs": [
+        ["Not bad", "Muito bom"],
+        ["Interesting", "Discordo/não gosto"],
+        ["With respect", "Você está errado"],
+        ["I'll bear it in mind", "Vou ignorar"]
+      ]
+    }
+  ],
+  "cheat_sheet": {
+    "title": "Nuances do Inglês",
+    "sections": [
+      {
+        "heading": "Hedging (Atenuadores)",
+        "content": [
+          {
+            "type": "vocabulary",
+            "items": [
+              ["Sort of / Kind of", "Mais ou menos"],
+              ["Somewhat", "Um tanto"],
+              ["Rather", "Bastante / Um pouco"],
+              ["I'm afraid", "Infelizmente (educado)"],
+              ["I wonder if", "Será que (pedido educado)"]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Intensificadores Graduados",
+        "content": [
+          {
+            "type": "vocabulary",
+            "items": [
+              ["Slightly", "Levemente"],
+              ["Fairly / Rather", "Razoavelmente"],
+              ["Quite (US)", "Bastante"],
+              ["Very", "Muito"],
+              ["Extremely / Incredibly", "Extremamente"]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Understatement Britânico",
+        "content": [
+          {
+            "type": "example",
+            "source": "It's a bit chilly",
+            "target": "Está um pouco frio (pode significar: está congelando)",
+            "note": "Britânicos frequentemente minimizam situações extremas"
+          },
+          {
+            "type": "warning",
+            "text": "Cuidado: 'quite' significa coisas diferentes no inglês britânico (moderado) e americano (muito)."
+          }
+        ]
+      },
+      {
+        "heading": "Pedidos Educados",
+        "content": [
+          {
+            "type": "tip",
+            "text": "Quanto mais indireto o pedido, mais educado: 'I was wondering if you might possibly be able to...' é extremamente polido."
+          }
+        ]
+      }
+    ]
+  }
+}

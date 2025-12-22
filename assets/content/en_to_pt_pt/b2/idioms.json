@@ -1,0 +1,154 @@
+{
+  "id": "idioms_01",
+  "title": "Idiomatic Expressions",
+  "description": "Learn common Portuguese idioms and expressions",
+  "level": "B2",
+  "language_pair": {
+    "source": "en_US",
+    "target": "pt_PT"
+  },
+  "xp_reward": 25,
+  "order": 4,
+  "icon": "lightbulb",
+  "questions": [
+    {
+      "type": "multiple_choice",
+      "prompt": "What does 'Estar com os azeites' mean?",
+      "options": ["To be cooking", "To be in a bad mood", "To be excited", "To be tired"],
+      "correct_index": 1,
+      "explanation": "'Estar com os azeites' means to be in a bad mood or irritated."
+    },
+    {
+      "type": "typing",
+      "prompt": "How do you say 'It's raining cats and dogs' in Portuguese?",
+      "correct_answers": ["Está a chover a cântaros", "Chover a cântaros", "Está a chover a potes"],
+      "hint": "Literal meaning: raining by the pitcher/pot",
+      "accent_strict": false
+    },
+    {
+      "type": "matching_pairs",
+      "prompt": "Match the idioms",
+      "pairs": [
+        ["Custar os olhos da cara", "To cost an arm and a leg"],
+        ["Meter água", "To fail/mess up"],
+        ["Bater a bota", "To kick the bucket"],
+        ["Dar com a língua nos dentes", "To spill the beans"]
+      ]
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "What does 'Ficar a ver navios' mean?",
+      "options": ["To go sailing", "To be left empty-handed/disappointed", "To see ships", "To travel by sea"],
+      "correct_index": 1,
+      "explanation": "'Ficar a ver navios' means to be left waiting, disappointed, or empty-handed."
+    },
+    {
+      "type": "sentence_builder",
+      "prompt": "Build: 'That's a piece of cake' (É canja)",
+      "words": ["Isso", "é", "canja", "difícil", "fácil"],
+      "correct_order": [0, 1, 2],
+      "distractors": ["difícil", "fácil"]
+    },
+    {
+      "type": "typing",
+      "prompt": "Write the idiom meaning 'to be broke' in Portuguese",
+      "correct_answers": ["Estar teso", "Estar sem um tostão", "Estar liso"],
+      "hint": "Colloquial expression for having no money",
+      "accent_strict": false
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "What does 'Engolir sapos' mean?",
+      "options": ["To eat frogs", "To accept insults/humiliation silently", "To feel sick", "To talk too much"],
+      "correct_index": 1,
+      "explanation": "'Engolir sapos' means to swallow one's pride or accept humiliation silently."
+    },
+    {
+      "type": "matching_pairs",
+      "prompt": "Match more idioms",
+      "pairs": [
+        ["Ter muita lata", "To have a lot of nerve"],
+        ["Estar feito ao bife", "To be in trouble"],
+        ["Pôr-se a milhas", "To run away/disappear"],
+        ["Armar-se em esperto", "To act smart/be a smart-aleck"]
+      ]
+    }
+  ],
+  "cheat_sheet": {
+    "title": "Portuguese Idioms",
+    "sections": [
+      {
+        "heading": "Everyday Expressions",
+        "content": [
+          {
+            "type": "vocabulary",
+            "items": [
+              ["Estar com os azeites", "To be in a bad mood"],
+              ["É canja", "It's a piece of cake / Easy"],
+              ["Não perceber patavina", "To not understand anything"],
+              ["Meter o pé na argola", "To put one's foot in it"],
+              ["Ficar a ver navios", "To be left empty-handed"]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Money & Success",
+        "content": [
+          {
+            "type": "vocabulary",
+            "items": [
+              ["Custar os olhos da cara", "To cost an arm and a leg"],
+              ["Estar teso/liso", "To be broke"],
+              ["Meter água", "To fail/mess up"],
+              ["Dar-se bem", "To do well/succeed"],
+              ["Partir a loiça toda", "To rock it/do amazingly"]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Weather & Nature",
+        "content": [
+          {
+            "type": "vocabulary",
+            "items": [
+              ["Chover a cântaros", "To rain cats and dogs"],
+              ["Estar um frio de rachar", "To be freezing cold"],
+              ["Estar um calor de morrer", "To be boiling hot"],
+              ["Quando as galinhas tiverem dentes", "When pigs fly"]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Personality & Behaviour",
+        "content": [
+          {
+            "type": "vocabulary",
+            "items": [
+              ["Ter muita lata", "To have a lot of nerve"],
+              ["Armar-se em esperto", "To act like a know-it-all"],
+              ["Engolir sapos", "To swallow one's pride"],
+              ["Dar com a língua nos dentes", "To spill the beans"],
+              ["Ser boa onda", "To be cool/nice"]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Tips",
+        "content": [
+          {
+            "type": "tip",
+            "text": "Many Portuguese idioms have different equivalents in Brazilian Portuguese. These are European Portuguese expressions."
+          },
+          {
+            "type": "warning",
+            "text": "Some idioms can be quite colloquial. Use with caution in formal situations."
+          }
+        ]
+      }
+    ]
+  }
+}

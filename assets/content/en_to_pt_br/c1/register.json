@@ -1,0 +1,138 @@
+{
+  "id": "register_01_br",
+  "title": "Register and Style",
+  "description": "Understand language registers and stylistic variation in Brazilian Portuguese",
+  "level": "C1",
+  "language_pair": {
+    "source": "en_US",
+    "target": "pt_BR"
+  },
+  "xp_reward": 30,
+  "order": 4,
+  "icon": "style",
+  "questions": [
+    {
+      "type": "multiple_choice",
+      "prompt": "Which is the most formal way to say 'I want'?",
+      "options": ["Quero", "Queria", "Gostaria de", "Desejaria"],
+      "correct_index": 3,
+      "explanation": "'Desejaria' is the most formal, but in Brazil 'Gostaria de' is typically sufficient for formal contexts."
+    },
+    {
+      "type": "typing",
+      "prompt": "Convert to formal register: 'Me dá isso'",
+      "correct_answers": ["Poderia me dar isso?", "Você poderia me dar isso?"],
+      "hint": "Use conditional and polite forms",
+      "accent_strict": false
+    },
+    {
+      "type": "matching_pairs",
+      "prompt": "Match informal to formal/standard",
+      "pairs": [
+        ["Tá (está)", "Está"],
+        ["Legal", "Bom / Ótimo"],
+        ["Tipo assim", "Por exemplo"],
+        ["Mano/Cara", "Amigo / Colega"]
+      ]
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "How is 'você' generally used in Brazil?",
+      "options": ["Very formal only", "Standard for most situations", "Never used", "Only for elderly"],
+      "correct_index": 1,
+      "explanation": "In Brazil, 'você' is the standard form of address for most situations, from casual to semi-formal."
+    },
+    {
+      "type": "sentence_builder",
+      "prompt": "Build formal request: 'Would you be so kind as to...'",
+      "words": ["Você", "poderia", "por", "gentileza", "...", "pode"],
+      "correct_order": [0, 1, 2, 3, 4],
+      "distractors": ["pode"]
+    },
+    {
+      "type": "typing",
+      "prompt": "Write a formal way to say 'I don't agree'",
+      "correct_answers": ["Peço desculpas, mas discordo", "Com todo respeito, discordo", "Não compartilho dessa opinião"],
+      "hint": "Use softening expressions",
+      "accent_strict": false
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "When is 'o senhor/a senhora' used in Brazil?",
+      "options": ["Never", "With everyone", "With elderly or in very formal situations", "Only in writing"],
+      "correct_index": 2,
+      "explanation": "'O senhor/a senhora' is used with elderly people or in very formal professional contexts."
+    },
+    {
+      "type": "matching_pairs",
+      "prompt": "Match colloquial to standard",
+      "pairs": [
+        ["Tô (estou)", "Estou"],
+        ["Pra (para)", "Para"],
+        ["Cê (você)", "Você"],
+        ["Num (não)", "Não"]
+      ]
+    }
+  ],
+  "cheat_sheet": {
+    "title": "Register and Style",
+    "sections": [
+      {
+        "heading": "Address Forms in Brazil",
+        "content": [
+          {
+            "type": "vocabulary",
+            "items": [
+              ["Very formal", "O senhor / A senhora"],
+              ["Standard/Polite", "Você"],
+              ["Informal (some regions)", "Tu"],
+              ["Very informal", "Cê / Ocê (spoken)"]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Request Formality Levels",
+        "content": [
+          {
+            "type": "vocabulary",
+            "items": [
+              ["Direct", "Me dá isso (Give me that)"],
+              ["Polite", "Você pode me dar isso? (Can you give me that?)"],
+              ["Formal", "Poderia me dar isso? (Could you give me that?)"],
+              ["Very formal", "Você poderia, por gentileza, me dar isso?"]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Regional Variations",
+        "content": [
+          {
+            "type": "text",
+            "text": "Brazil has regional differences in formality:"
+          },
+          {
+            "type": "example",
+            "source": "Tu vai? (South/Northeast)",
+            "target": "Você vai? (Standard)",
+            "note": "'Tu' is used in some regions with 3rd person verb"
+          }
+        ]
+      },
+      {
+        "heading": "Tips",
+        "content": [
+          {
+            "type": "tip",
+            "text": "Brazilian Portuguese tends to be more informal than European Portuguese in professional contexts."
+          },
+          {
+            "type": "warning",
+            "text": "Colloquial contractions (tô, cê, pra) should be avoided in formal writing but are standard in speech."
+          }
+        ]
+      }
+    ]
+  }
+}

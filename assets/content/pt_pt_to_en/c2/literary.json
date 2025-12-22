@@ -1,0 +1,140 @@
+{
+  "id": "literary_01_pt_en",
+  "title": "Inglês Literário",
+  "description": "Explore o estilo literário e a prosa elevada em inglês",
+  "level": "C2",
+  "language_pair": {
+    "source": "pt_PT",
+    "target": "en_US"
+  },
+  "xp_reward": 35,
+  "order": 2,
+  "icon": "auto_stories",
+  "questions": [
+    {
+      "type": "multiple_choice",
+      "prompt": "Quem escreveu 'Pride and Prejudice', um dos romances mais famosos em inglês?",
+      "options": ["Charlotte Brontë", "Jane Austen", "Virginia Woolf", "Emily Dickinson"],
+      "correct_index": 1,
+      "explanation": "Jane Austen é conhecida pelos seus romances que exploram questões sociais e matrimoniais."
+    },
+    {
+      "type": "typing",
+      "prompt": "Como se diz 'narrador não fiável' em inglês?",
+      "correct_answers": ["Unreliable narrator", "unreliable narrator"],
+      "hint": "Unreliable...",
+      "accent_strict": false
+    },
+    {
+      "type": "matching_pairs",
+      "prompt": "Combine autores com as suas obras",
+      "pairs": [
+        ["Shakespeare", "Hamlet"],
+        ["Charles Dickens", "Oliver Twist"],
+        ["Virginia Woolf", "Mrs. Dalloway"],
+        ["Ernest Hemingway", "The Old Man and the Sea"]
+      ]
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "O que é 'stream of consciousness' na literatura?",
+      "options": ["Um tipo de poesia", "Uma técnica narrativa", "Um género literário", "Um movimento artístico"],
+      "correct_index": 1,
+      "explanation": "'Stream of consciousness' (fluxo de consciência) é uma técnica que representa os pensamentos contínuos de uma personagem."
+    },
+    {
+      "type": "sentence_builder",
+      "prompt": "Construa: 'It was the best of times'",
+      "words": ["It", "was", "the", "best", "of", "times", "worst"],
+      "correct_order": [0, 1, 2, 3, 4, 5],
+      "distractors": ["worst"]
+    },
+    {
+      "type": "typing",
+      "prompt": "Como se diz 'metáfora' em inglês?",
+      "correct_answers": ["Metaphor", "metaphor"],
+      "hint": "Começa com 'M'",
+      "accent_strict": false
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Qual movimento literário representa Shakespeare?",
+      "options": ["Romanticism", "Modernism", "Renaissance", "Victorian"],
+      "correct_index": 2,
+      "explanation": "Shakespeare é o maior escritor do período da Renascença inglesa (English Renaissance)."
+    },
+    {
+      "type": "matching_pairs",
+      "prompt": "Combine termos literários",
+      "pairs": [
+        ["Irony", "Ironia"],
+        ["Foreshadowing", "Prenúncio"],
+        ["Allegory", "Alegoria"],
+        ["Satire", "Sátira"]
+      ]
+    }
+  ],
+  "cheat_sheet": {
+    "title": "Inglês Literário",
+    "sections": [
+      {
+        "heading": "Autores Importantes",
+        "content": [
+          {
+            "type": "vocabulary",
+            "items": [
+              ["William Shakespeare", "Drama e poesia da Renascença"],
+              ["Jane Austen", "Romances sociais do século XIX"],
+              ["Charles Dickens", "Crítica social, era vitoriana"],
+              ["Virginia Woolf", "Modernismo, fluxo de consciência"],
+              ["Ernest Hemingway", "Prosa minimalista, Lost Generation"]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Movimentos Literários",
+        "content": [
+          {
+            "type": "vocabulary",
+            "items": [
+              ["Renaissance", "Renascença (1500-1600)"],
+              ["Romanticism", "Romantismo (1800-1850)"],
+              ["Victorian Era", "Era Vitoriana (1837-1901)"],
+              ["Modernism", "Modernismo (1900-1940)"],
+              ["Postmodernism", "Pós-modernismo (1945-)"]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Técnicas Literárias",
+        "content": [
+          {
+            "type": "vocabulary",
+            "items": [
+              ["Stream of consciousness", "Fluxo de consciência"],
+              ["Unreliable narrator", "Narrador não fiável"],
+              ["Foreshadowing", "Prenúncio"],
+              ["Symbolism", "Simbolismo"],
+              ["Imagery", "Imagens/descrições vívidas"]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Dicas",
+        "content": [
+          {
+            "type": "tip",
+            "text": "Ler literatura clássica em inglês ajuda a compreender expressões e estruturas que ainda são utilizadas hoje."
+          },
+          {
+            "type": "tip",
+            "text": "Shakespeare inventou muitas palavras e expressões ainda usadas, como 'lonely', 'generous' e 'break the ice'."
+          }
+        ]
+      }
+    ]
+  }
+}

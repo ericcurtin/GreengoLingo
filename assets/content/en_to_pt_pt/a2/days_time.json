@@ -1,0 +1,154 @@
+{
+  "id": "days_time_01",
+  "title": "Days & Time",
+  "description": "Learn days of the week and telling time in European Portuguese",
+  "level": "A2",
+  "language_pair": {
+    "source": "en_US",
+    "target": "pt_PT"
+  },
+  "xp_reward": 15,
+  "order": 2,
+  "icon": "calendar_today",
+  "questions": [
+    {
+      "type": "multiple_choice",
+      "prompt": "How do you say 'Monday' in Portuguese?",
+      "options": ["Segunda-feira", "Terça-feira", "Domingo", "Sábado"],
+      "correct_index": 0,
+      "explanation": "Segunda-feira literally means 'second fair/market day'."
+    },
+    {
+      "type": "matching_pairs",
+      "prompt": "Match the days of the week",
+      "pairs": [
+        ["Monday", "Segunda-feira"],
+        ["Wednesday", "Quarta-feira"],
+        ["Friday", "Sexta-feira"],
+        ["Sunday", "Domingo"]
+      ]
+    },
+    {
+      "type": "typing",
+      "prompt": "Write 'Saturday' in Portuguese",
+      "correct_answers": ["Sábado", "sabado"],
+      "hint": "Starts with 'S', has an accent",
+      "accent_strict": false
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "What does 'São três horas' mean?",
+      "options": ["It's two o'clock", "It's three o'clock", "It's thirteen hours", "At three o'clock"],
+      "correct_index": 1,
+      "explanation": "'São três horas' means 'It's three o'clock'. 'São' is used for hours 2-12."
+    },
+    {
+      "type": "sentence_builder",
+      "prompt": "Build: 'What time is it?'",
+      "words": ["Que", "horas", "são", "tempo", "é"],
+      "correct_order": [0, 1, 2],
+      "distractors": ["tempo", "é"]
+    },
+    {
+      "type": "typing",
+      "prompt": "Write 'It's one o'clock' in Portuguese",
+      "correct_answers": ["É uma hora", "e uma hora"],
+      "hint": "Use 'É' (singular) for one o'clock",
+      "accent_strict": false
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "How do you say 'half past' in Portuguese?",
+      "options": ["E quinze", "E meia", "E quarenta e cinco", "Menos quinze"],
+      "correct_index": 1,
+      "explanation": "'E meia' means 'and half', used for :30."
+    },
+    {
+      "type": "matching_pairs",
+      "prompt": "Match the time expressions",
+      "pairs": [
+        ["Quarter past", "E um quarto"],
+        ["Half past", "E meia"],
+        ["Quarter to", "Menos um quarto"],
+        ["O'clock", "Em ponto"]
+      ]
+    }
+  ],
+  "cheat_sheet": {
+    "title": "Days & Time",
+    "sections": [
+      {
+        "heading": "Days of the Week",
+        "content": [
+          {
+            "type": "vocabulary",
+            "items": [
+              ["Monday", "Segunda-feira"],
+              ["Tuesday", "Terça-feira"],
+              ["Wednesday", "Quarta-feira"],
+              ["Thursday", "Quinta-feira"],
+              ["Friday", "Sexta-feira"],
+              ["Saturday", "Sábado"],
+              ["Sunday", "Domingo"]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Telling Time",
+        "content": [
+          {
+            "type": "text",
+            "text": "Use 'É' for one o'clock, 'São' for other hours:"
+          },
+          {
+            "type": "example",
+            "source": "É uma hora",
+            "target": "It's one o'clock",
+            "note": "Singular form"
+          },
+          {
+            "type": "example",
+            "source": "São duas horas",
+            "target": "It's two o'clock",
+            "note": "Plural form"
+          },
+          {
+            "type": "example",
+            "source": "São três e meia",
+            "target": "It's half past three",
+            "note": "E meia = and half"
+          }
+        ]
+      },
+      {
+        "heading": "Time Expressions",
+        "content": [
+          {
+            "type": "vocabulary",
+            "items": [
+              ["Quarter past", "E um quarto / E quinze"],
+              ["Half past", "E meia / E trinta"],
+              ["Quarter to", "Menos um quarto"],
+              ["Noon", "Meio-dia"],
+              ["Midnight", "Meia-noite"]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Tips",
+        "content": [
+          {
+            "type": "tip",
+            "text": "Portuguese often shortens days: 'segunda', 'terça', etc. without '-feira'."
+          },
+          {
+            "type": "warning",
+            "text": "Portugal uses the 24-hour clock in formal contexts (e.g., 'São quinze horas' = 3 PM)."
+          }
+        ]
+      }
+    ]
+  }
+}

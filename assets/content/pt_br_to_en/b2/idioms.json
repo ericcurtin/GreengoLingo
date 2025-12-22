@@ -1,0 +1,153 @@
+{
+  "id": "idioms_01_br_en",
+  "title": "Idiomatic Expressions",
+  "description": "Aprenda expressões idiomáticas comuns em inglês",
+  "level": "B2",
+  "language_pair": {
+    "source": "pt_BR",
+    "target": "en_US"
+  },
+  "xp_reward": 25,
+  "order": 4,
+  "icon": "lightbulb",
+  "questions": [
+    {
+      "type": "multiple_choice",
+      "prompt": "O que significa 'It's raining cats and dogs'?",
+      "options": ["Está chovendo animais", "Está chovendo muito forte", "Os animais estão correndo", "É hora de passear o cachorro"],
+      "correct_index": 1,
+      "explanation": "'It's raining cats and dogs' significa chover muito forte, como 'chover canivetes'."
+    },
+    {
+      "type": "typing",
+      "prompt": "Como se diz 'custar os olhos da cara' em inglês?",
+      "correct_answers": ["To cost an arm and a leg", "Cost an arm and a leg"],
+      "hint": "Envolve partes do corpo",
+      "accent_strict": false
+    },
+    {
+      "type": "matching_pairs",
+      "prompt": "Combine as expressões",
+      "pairs": [
+        ["É mamão com açúcar", "It's a piece of cake"],
+        ["Matar dois coelhos de uma cajadada", "Kill two birds with one stone"],
+        ["Bater as botas", "To kick the bucket"],
+        ["Dar com a língua nos dentes", "To spill the beans"]
+      ]
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "O que significa 'Break a leg!'?",
+      "options": ["Quebra uma perna!", "Corre!", "Boa sorte!", "Cuidado!"],
+      "correct_index": 2,
+      "explanation": "'Break a leg!' é uma forma de desejar boa sorte, especialmente a atores antes de uma apresentação."
+    },
+    {
+      "type": "sentence_builder",
+      "prompt": "Construa: 'Let the cat out of the bag'",
+      "words": ["Let", "the", "cat", "out", "of", "the", "bag"],
+      "correct_order": [0, 1, 2, 3, 4, 5, 6],
+      "distractors": []
+    },
+    {
+      "type": "typing",
+      "prompt": "Como se diz 'estar nas nuvens' em inglês?",
+      "correct_answers": ["To have one's head in the clouds", "To be on cloud nine", "Head in the clouds"],
+      "hint": "Também usa 'clouds' ou 'cloud'",
+      "accent_strict": false
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "O que significa 'Once in a blue moon'?",
+      "options": ["Todo mês", "Muito raramente", "Quando tem lua cheia", "Nunca"],
+      "correct_index": 1,
+      "explanation": "'Once in a blue moon' significa muito raramente, de vez em quando."
+    },
+    {
+      "type": "matching_pairs",
+      "prompt": "Combine mais expressões",
+      "pairs": [
+        ["Quando galinhas criarem dentes", "When pigs fly"],
+        ["Não ter papas na língua", "Not to mince words"],
+        ["Pisar na bola", "To mess up / To drop the ball"],
+        ["Ser bem direto", "To call a spade a spade"]
+      ]
+    }
+  ],
+  "cheat_sheet": {
+    "title": "English Idioms",
+    "sections": [
+      {
+        "heading": "Expressões do Dia-a-dia",
+        "content": [
+          {
+            "type": "vocabulary",
+            "items": [
+              ["É mamão com açúcar", "It's a piece of cake"],
+              ["Estar de saco cheio", "To be fed up"],
+              ["Ficar de bico calado", "To keep quiet / To zip it"],
+              ["Não entender nada", "To not have a clue"],
+              ["Pisar na bola", "To drop the ball / To mess up"]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Dinheiro & Sucesso",
+        "content": [
+          {
+            "type": "vocabulary",
+            "items": [
+              ["Custar os olhos da cara", "To cost an arm and a leg"],
+              ["Estar duro/liso", "To be broke"],
+              ["Pisar na bola", "To mess up / To drop the ball"],
+              ["Arrasar", "To hit it out of the park / To nail it"],
+              ["Dar certo", "To work out / To pan out"]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Tempo & Raridade",
+        "content": [
+          {
+            "type": "vocabulary",
+            "items": [
+              ["Chover canivetes", "To rain cats and dogs"],
+              ["Muito raramente", "Once in a blue moon"],
+              ["Quando galinhas criarem dentes", "When pigs fly"],
+              ["Num piscar de olhos", "In the blink of an eye"]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Comunicação",
+        "content": [
+          {
+            "type": "vocabulary",
+            "items": [
+              ["Dar com a língua nos dentes", "To spill the beans / Let the cat out of the bag"],
+              ["Não ter papas na língua", "Not to mince words / To speak one's mind"],
+              ["Ser direto", "To call a spade a spade"],
+              ["Ficar batendo na mesma tecla", "To harp on about something"]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Dicas",
+        "content": [
+          {
+            "type": "tip",
+            "text": "Os idiomas não se traduzem literalmente! Memorize a expressão completa em inglês."
+          },
+          {
+            "type": "warning",
+            "text": "Alguns idiomas são mais usados no inglês americano, outros no britânico. Preste atenção ao contexto."
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,150 @@
+{
+  "id": "numbers_01_pt",
+  "title": "Numbers 1-20",
+  "description": "Learn basic numbers in European Portuguese",
+  "level": "A1",
+  "language_pair": {
+    "source": "en_US",
+    "target": "pt_PT"
+  },
+  "xp_reward": 10,
+  "order": 3,
+  "icon": "numbers",
+  "questions": [
+    {
+      "type": "multiple_choice",
+      "prompt": "How do you say 'one' in Portuguese?",
+      "options": ["um", "dois", "três", "zero"],
+      "correct_index": 0,
+      "explanation": "'Um' means one. For feminine nouns, you use 'uma'."
+    },
+    {
+      "type": "matching_pairs",
+      "prompt": "Match the numbers",
+      "pairs": [
+        ["one", "um"],
+        ["two", "dois"],
+        ["three", "três"],
+        ["four", "quatro"]
+      ]
+    },
+    {
+      "type": "typing",
+      "prompt": "Write 'five' in Portuguese",
+      "correct_answers": ["cinco"],
+      "hint": "Starts with 'c'",
+      "accent_strict": false
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "What number is 'dez'?",
+      "options": ["eight", "nine", "ten", "twelve"],
+      "correct_index": 2,
+      "explanation": "'Dez' means ten in Portuguese."
+    },
+    {
+      "type": "matching_pairs",
+      "prompt": "Match the numbers",
+      "pairs": [
+        ["six", "seis"],
+        ["seven", "sete"],
+        ["eight", "oito"],
+        ["nine", "nove"]
+      ]
+    },
+    {
+      "type": "typing",
+      "prompt": "Write 'eleven' in Portuguese",
+      "correct_answers": ["onze"],
+      "hint": "Starts with 'o'",
+      "accent_strict": false
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "How do you say 'twenty' in Portuguese?",
+      "options": ["quinze", "dezasseis", "dezanove", "vinte"],
+      "correct_index": 3,
+      "explanation": "'Vinte' means twenty in Portuguese."
+    },
+    {
+      "type": "sentence_builder",
+      "prompt": "Build the number: 'fifteen'",
+      "words": ["quinze", "catorze", "treze", "doze"],
+      "correct_order": [0],
+      "distractors": ["catorze", "treze", "doze"]
+    }
+  ],
+  "cheat_sheet": {
+    "title": "Numbers in European Portuguese",
+    "sections": [
+      {
+        "heading": "Numbers 1-10",
+        "content": [
+          {
+            "type": "vocabulary",
+            "items": [
+              ["1 - one", "um / uma"],
+              ["2 - two", "dois / duas"],
+              ["3 - three", "três"],
+              ["4 - four", "quatro"],
+              ["5 - five", "cinco"],
+              ["6 - six", "seis"],
+              ["7 - seven", "sete"],
+              ["8 - eight", "oito"],
+              ["9 - nine", "nove"],
+              ["10 - ten", "dez"]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Numbers 11-20",
+        "content": [
+          {
+            "type": "vocabulary",
+            "items": [
+              ["11 - eleven", "onze"],
+              ["12 - twelve", "doze"],
+              ["13 - thirteen", "treze"],
+              ["14 - fourteen", "catorze"],
+              ["15 - fifteen", "quinze"],
+              ["16 - sixteen", "dezasseis"],
+              ["17 - seventeen", "dezassete"],
+              ["18 - eighteen", "dezoito"],
+              ["19 - nineteen", "dezanove"],
+              ["20 - twenty", "vinte"]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Gender with Numbers",
+        "content": [
+          {
+            "type": "tip",
+            "text": "In Portuguese, 1 and 2 have masculine and feminine forms: 'um/uma' and 'dois/duas'. Example: 'um carro' (one car), 'uma casa' (one house)."
+          },
+          {
+            "type": "example",
+            "source": "Eu tenho duas irmãs",
+            "target": "I have two sisters",
+            "note": "'Duas' is used because 'irmãs' is feminine"
+          }
+        ]
+      },
+      {
+        "heading": "European Portuguese Spelling",
+        "content": [
+          {
+            "type": "tip",
+            "text": "In Portugal, 16-19 are spelled 'dezasseis, dezassete, dezoito, dezanove' (with 'ss'). In Brazil, they use 'z': 'dezesseis, dezessete...'"
+          },
+          {
+            "type": "tip",
+            "text": "Portugal uses 'catorze' for 14, while Brazil uses both 'catorze' and 'quatorze'."
+          }
+        ]
+      }
+    ]
+  }
+}

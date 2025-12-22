@@ -1,0 +1,144 @@
+{
+  "id": "literary_01",
+  "title": "Literary Portuguese",
+  "description": "Explore literary style and elevated prose in European Portuguese",
+  "level": "C2",
+  "language_pair": {
+    "source": "en_US",
+    "target": "pt_PT"
+  },
+  "xp_reward": 35,
+  "order": 2,
+  "icon": "auto_stories",
+  "questions": [
+    {
+      "type": "multiple_choice",
+      "prompt": "What literary device is 'O mar salgado, quanto do teu sal são lágrimas de Portugal'?",
+      "options": ["Simile", "Metaphor with personification", "Alliteration", "Hyperbole"],
+      "correct_index": 1,
+      "explanation": "Pessoa's famous line uses metaphor (tears as salt) and personification (Portugal crying)."
+    },
+    {
+      "type": "typing",
+      "prompt": "Write the literary form of 'had I known' (archaic inversion)",
+      "correct_answers": ["Tivesse eu sabido", "Soubera eu"],
+      "hint": "Verb before subject in literary/archaic style",
+      "accent_strict": false
+    },
+    {
+      "type": "matching_pairs",
+      "prompt": "Match literary terms",
+      "pairs": [
+        ["Metáfora", "Metaphor"],
+        ["Metonímia", "Metonymy"],
+        ["Sinédoque", "Synecdoche"],
+        ["Hipérbole", "Hyperbole"]
+      ]
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "What is the 'pretérito mais-que-perfeito simples' (e.g., 'fizera') used for in modern Portuguese?",
+      "options": ["Everyday speech", "Literary/formal writing", "Future events", "Commands"],
+      "correct_index": 1,
+      "explanation": "The simple pluperfect ('fizera' instead of 'tinha feito') is now primarily literary."
+    },
+    {
+      "type": "sentence_builder",
+      "prompt": "Build literary phrase: 'Assim se fez' (And so it was done)",
+      "words": ["Assim", "se", "fez", "foi", "feito"],
+      "correct_order": [0, 1, 2],
+      "distractors": ["foi", "feito"]
+    },
+    {
+      "type": "typing",
+      "prompt": "Write 'Wherefore' (old-fashioned 'why') in Portuguese",
+      "correct_answers": ["Por que razão", "Porventura", "Por qual motivo"],
+      "hint": "Elevated/archaic question word",
+      "accent_strict": false
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "What is 'mesóclise' (e.g., 'dar-lhe-ei')?",
+      "options": ["A dialectal form", "Pronoun placement in future/conditional", "A literary genre", "A type of metaphor"],
+      "correct_index": 1,
+      "explanation": "Mesóclise places the pronoun inside the verb in future and conditional: 'dar-lhe-ei' (I will give him)."
+    },
+    {
+      "type": "matching_pairs",
+      "prompt": "Match literary vocabulary",
+      "pairs": [
+        ["Outrora", "In times past / Formerly"],
+        ["Porventura", "Perhaps / Perchance"],
+        ["Deveras", "Indeed / Truly"],
+        ["Assaz", "Quite / Rather (archaic)"]
+      ]
+    }
+  ],
+  "cheat_sheet": {
+    "title": "Literary Portuguese",
+    "sections": [
+      {
+        "heading": "Literary Verb Forms",
+        "content": [
+          {
+            "type": "text",
+            "text": "Literary Portuguese uses verb forms rare in speech:"
+          },
+          {
+            "type": "vocabulary",
+            "items": [
+              ["Mais-que-perfeito simples", "fizera, dissera, fora (literary pluperfect)"],
+              ["Futuro do conjuntivo", "se fizer, quando vir (future subjunctive)"],
+              ["Mesóclise", "dar-te-ei, fá-lo-ia (pronoun inside verb)"]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Archaic/Elevated Vocabulary",
+        "content": [
+          {
+            "type": "vocabulary",
+            "items": [
+              ["Outrora", "In times past"],
+              ["Porventura", "Perhaps / Perchance"],
+              ["Deveras", "Indeed / Truly"],
+              ["Assaz", "Quite / Sufficiently"],
+              ["Amiúde", "Often / Frequently"],
+              ["Ademais", "Furthermore / Moreover"]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Literary Devices",
+        "content": [
+          {
+            "type": "vocabulary",
+            "items": [
+              ["Metáfora", "Metaphor - implicit comparison"],
+              ["Símile", "Simile - explicit comparison with 'como'"],
+              ["Metonímia", "Metonymy - part for whole"],
+              ["Personificação", "Personification - human traits to non-human"],
+              ["Hipérbole", "Hyperbole - exaggeration"],
+              ["Eufemismo", "Euphemism - softened expression"]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Tips",
+        "content": [
+          {
+            "type": "tip",
+            "text": "Read Portuguese authors like Pessoa, Saramago, and Eça de Queirós to internalize literary style."
+          },
+          {
+            "type": "warning",
+            "text": "Literary forms like mesóclise and simple pluperfect sound pretentious in casual conversation."
+          }
+        ]
+      }
+    ]
+  }
+}

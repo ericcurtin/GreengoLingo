@@ -1,0 +1,137 @@
+{
+  "id": "cultural_01",
+  "title": "Cultural Context",
+  "description": "Understand cultural references and context in European Portuguese",
+  "level": "C2",
+  "language_pair": {
+    "source": "en_US",
+    "target": "pt_PT"
+  },
+  "xp_reward": 35,
+  "order": 3,
+  "icon": "public",
+  "questions": [
+    {
+      "type": "multiple_choice",
+      "prompt": "What does 'Fado' represent in Portuguese culture?",
+      "options": ["Just a music genre", "A philosophy of fate, melancholy, and longing", "A dance form", "A religious practice"],
+      "correct_index": 1,
+      "explanation": "Fado embodies the Portuguese soul - saudade, fate, melancholy - and is UNESCO Intangible Cultural Heritage."
+    },
+    {
+      "type": "typing",
+      "prompt": "What is 'Dia de Portugal' (June 10th) also known as?",
+      "correct_answers": ["Dia de Camões", "Dia de Portugal, de Camões e das Comunidades Portuguesas"],
+      "hint": "Named after Portugal's national poet",
+      "accent_strict": false
+    },
+    {
+      "type": "matching_pairs",
+      "prompt": "Match cultural concepts",
+      "pairs": [
+        ["Saudade", "Portuguese melancholic longing"],
+        ["Fado", "Music of fate and soul"],
+        ["Azulejos", "Traditional blue tiles"],
+        ["Bacalhau", "Cod - national dish symbol"]
+      ]
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "What does 'Sebastianismo' refer to?",
+      "options": ["A cooking style", "Messianic belief in King Sebastian's return", "A musical tradition", "A religious order"],
+      "correct_index": 1,
+      "explanation": "Sebastianismo is the belief that King Sebastian will return to restore Portugal to greatness - a cultural myth."
+    },
+    {
+      "type": "sentence_builder",
+      "prompt": "Build: 'God willing' (Se Deus quiser)",
+      "words": ["Se", "Deus", "quiser", "quer", "quis"],
+      "correct_order": [0, 1, 2],
+      "distractors": ["quer", "quis"]
+    },
+    {
+      "type": "typing",
+      "prompt": "What expression means 'to show off' (negative connotation)?",
+      "correct_answers": ["Armar-se", "Dar espetáculo", "Fazer fita"],
+      "hint": "Often implies pretentiousness",
+      "accent_strict": false
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "What is the cultural significance of '25 de Abril'?",
+      "options": ["Christmas", "Carnation Revolution - end of dictatorship", "Independence Day", "National holiday for food"],
+      "correct_index": 1,
+      "explanation": "April 25, 1974 - the Carnation Revolution peacefully ended 48 years of dictatorship."
+    },
+    {
+      "type": "matching_pairs",
+      "prompt": "Match historical/cultural references",
+      "pairs": [
+        ["Os Lusíadas", "National epic poem by Camões"],
+        ["25 de Abril", "Carnation Revolution"],
+        ["Estado Novo", "Salazar's authoritarian regime"],
+        ["Os Descobrimentos", "Age of Discoveries"]
+      ]
+    }
+  ],
+  "cheat_sheet": {
+    "title": "Cultural Context",
+    "sections": [
+      {
+        "heading": "Core Cultural Concepts",
+        "content": [
+          {
+            "type": "vocabulary",
+            "items": [
+              ["Saudade", "Unique Portuguese longing - joy and sadness combined"],
+              ["Fado", "Soul music embodying fate and emotion"],
+              ["Sebastianismo", "Messianic hope in a savior's return"],
+              ["Desenrascanço", "Portuguese ingenuity in problem-solving"]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Historical References",
+        "content": [
+          {
+            "type": "vocabulary",
+            "items": [
+              ["Os Descobrimentos", "Age of Portuguese Discoveries (15th-16th c.)"],
+              ["Estado Novo", "Salazar's dictatorship (1933-1974)"],
+              ["25 de Abril", "Carnation Revolution (1974)"],
+              ["Os Lusíadas", "Camões' national epic poem"]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Religious/Social Expressions",
+        "content": [
+          {
+            "type": "vocabulary",
+            "items": [
+              ["Se Deus quiser", "God willing"],
+              ["Graças a Deus", "Thank God"],
+              ["Nossa Senhora!", "Blessed Virgin! (exclamation)"],
+              ["Ir à missa (fig.)", "To not miss anything"]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Tips",
+        "content": [
+          {
+            "type": "tip",
+            "text": "Understanding Portuguese history and Fado culture is essential for deep language comprehension."
+          },
+          {
+            "type": "warning",
+            "text": "Be sensitive when discussing colonial history - it's complex and emotionally charged."
+          }
+        ]
+      }
+    ]
+  }
+}

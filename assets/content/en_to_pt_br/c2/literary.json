@@ -1,0 +1,140 @@
+{
+  "id": "literary_01_br",
+  "title": "Literary Portuguese",
+  "description": "Explore literary style and elevated prose in Brazilian Portuguese",
+  "level": "C2",
+  "language_pair": {
+    "source": "en_US",
+    "target": "pt_BR"
+  },
+  "xp_reward": 35,
+  "order": 2,
+  "icon": "auto_stories",
+  "questions": [
+    {
+      "type": "multiple_choice",
+      "prompt": "Who wrote 'Grande Sertão: Veredas', considered one of Brazil's greatest novels?",
+      "options": ["Machado de Assis", "Guimarães Rosa", "Clarice Lispector", "Jorge Amado"],
+      "correct_index": 1,
+      "explanation": "Guimarães Rosa's masterpiece is known for its innovative language and sertão (backlands) setting."
+    },
+    {
+      "type": "typing",
+      "prompt": "What literary technique is creating new words called?",
+      "correct_answers": ["Neologismo", "Neologism"],
+      "hint": "Guimarães Rosa was famous for this",
+      "accent_strict": false
+    },
+    {
+      "type": "matching_pairs",
+      "prompt": "Match Brazilian authors with their works",
+      "pairs": [
+        ["Machado de Assis", "Dom Casmurro"],
+        ["Clarice Lispector", "A Hora da Estrela"],
+        ["Jorge Amado", "Gabriela, Cravo e Canela"],
+        ["Carlos Drummond", "Sentimento do Mundo"]
+      ]
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "What is the 'pretérito mais-que-perfeito simples' (e.g., 'fizera') used for in modern Portuguese?",
+      "options": ["Everyday speech", "Literary/formal writing", "Future events", "Commands"],
+      "correct_index": 1,
+      "explanation": "The simple pluperfect ('fizera' instead of 'tinha feito') is primarily literary."
+    },
+    {
+      "type": "sentence_builder",
+      "prompt": "Build literary phrase: 'Assim se fez' (And so it was done)",
+      "words": ["Assim", "se", "fez", "foi", "feito"],
+      "correct_order": [0, 1, 2],
+      "distractors": ["foi", "feito"]
+    },
+    {
+      "type": "typing",
+      "prompt": "What is 'fluxo de consciência' in English?",
+      "correct_answers": ["Stream of consciousness", "Flow of consciousness"],
+      "hint": "Clarice Lispector's signature technique",
+      "accent_strict": false
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "What literary movement did Machado de Assis represent?",
+      "options": ["Romanticism", "Realism/Naturalism", "Modernism", "Baroque"],
+      "correct_index": 1,
+      "explanation": "Machado de Assis is considered the master of Brazilian Realism."
+    },
+    {
+      "type": "matching_pairs",
+      "prompt": "Match literary movements",
+      "pairs": [
+        ["Romantismo", "19th century emotion and nationalism"],
+        ["Realismo", "Social criticism, psychological depth"],
+        ["Modernismo", "1922 Week - Brazilian identity"],
+        ["Tropicalismo", "1960s cultural movement"]
+      ]
+    }
+  ],
+  "cheat_sheet": {
+    "title": "Literary Brazilian Portuguese",
+    "sections": [
+      {
+        "heading": "Key Authors",
+        "content": [
+          {
+            "type": "vocabulary",
+            "items": [
+              ["Machado de Assis", "Master of Realism, irony, psychological depth"],
+              ["Guimarães Rosa", "Language innovator, sertão themes"],
+              ["Clarice Lispector", "Stream of consciousness, existential"],
+              ["Carlos Drummond de Andrade", "Major modernist poet"],
+              ["Jorge Amado", "Bahian culture and social themes"]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Literary Movements",
+        "content": [
+          {
+            "type": "vocabulary",
+            "items": [
+              ["Romantismo", "Indianism, nationalism (1830s-1880s)"],
+              ["Realismo", "Social criticism (1880s-1900s)"],
+              ["Modernismo", "1922 Semana de Arte Moderna"],
+              ["Concretismo", "Visual poetry (1950s)"],
+              ["Tropicalismo", "Cultural movement (1960s)"]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Literary Techniques",
+        "content": [
+          {
+            "type": "vocabulary",
+            "items": [
+              ["Fluxo de consciência", "Stream of consciousness"],
+              ["Neologismo", "Creating new words"],
+              ["Narrador não confiável", "Unreliable narrator"],
+              ["Metalinguagem", "Self-referential language"],
+              ["Intertextualidade", "References to other texts"]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Tips",
+        "content": [
+          {
+            "type": "tip",
+            "text": "Reading Brazilian authors is essential for understanding the range and creativity of the language."
+          },
+          {
+            "type": "warning",
+            "text": "Guimarães Rosa's vocabulary is famously difficult even for native speakers."
+          }
+        ]
+      }
+    ]
+  }
+}

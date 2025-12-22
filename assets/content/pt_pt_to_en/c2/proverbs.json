@@ -1,0 +1,142 @@
+{
+  "id": "proverbs_01_pt_en",
+  "title": "Provérbios e Expressões",
+  "description": "Aprenda provérbios e expressões idiomáticas avançadas em inglês",
+  "level": "C2",
+  "language_pair": {
+    "source": "pt_PT",
+    "target": "en_US"
+  },
+  "xp_reward": 35,
+  "order": 4,
+  "icon": "format_quote",
+  "questions": [
+    {
+      "type": "multiple_choice",
+      "prompt": "Qual é o equivalente de 'Água mole em pedra dura, tanto bate até que fura'?",
+      "options": ["Water under the bridge", "A drop in the ocean", "Slow and steady wins the race", "Don't rock the boat"],
+      "correct_index": 2,
+      "explanation": "'Slow and steady wins the race' transmite a mesma ideia de persistência e paciência."
+    },
+    {
+      "type": "typing",
+      "prompt": "Complete: 'Actions speak louder than...'",
+      "correct_answers": ["words", "Words"],
+      "hint": "O que dizemos...",
+      "accent_strict": false
+    },
+    {
+      "type": "matching_pairs",
+      "prompt": "Combine provérbios em português com equivalentes em inglês",
+      "pairs": [
+        ["Grão a grão...", "Little by little"],
+        ["Quem com ferro fere...", "What goes around comes around"],
+        ["Em terra de cegos...", "In the land of the blind..."],
+        ["Cão que ladra...", "Barking dogs seldom bite"]
+      ]
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "O que significa 'Don't put all your eggs in one basket'?",
+      "options": ["Não seja ganancioso", "Diversifique os seus riscos", "Seja cuidadoso com comida", "Pense antes de agir"],
+      "correct_index": 1,
+      "explanation": "Este provérbio aconselha a não colocar todos os recursos numa única opção."
+    },
+    {
+      "type": "sentence_builder",
+      "prompt": "Complete: 'The early bird catches...'",
+      "words": ["the", "worm", "bird", "fish", "fly"],
+      "correct_order": [0, 1],
+      "distractors": ["bird", "fish", "fly"]
+    },
+    {
+      "type": "typing",
+      "prompt": "Como dizer 'mais vale prevenir do que remediar' em inglês?",
+      "correct_answers": ["Better safe than sorry", "Prevention is better than cure", "An ounce of prevention is worth a pound of cure"],
+      "hint": "Better safe...",
+      "accent_strict": false
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "O que significa 'It's not rocket science'?",
+      "options": ["É sobre ciência", "Não é difícil", "É muito complicado", "Precisa de especialista"],
+      "correct_index": 1,
+      "explanation": "Esta expressão significa que algo não é tão difícil quanto parece."
+    },
+    {
+      "type": "matching_pairs",
+      "prompt": "Combine expressões idiomáticas",
+      "pairs": [
+        ["Break a leg", "Boa sorte"],
+        ["Hit the nail on the head", "Acertar em cheio"],
+        ["Bite the bullet", "Enfrentar algo difícil"],
+        ["Burn bridges", "Queimar pontes"]
+      ]
+    }
+  ],
+  "cheat_sheet": {
+    "title": "Provérbios em Inglês",
+    "sections": [
+      {
+        "heading": "Provérbios sobre Trabalho",
+        "content": [
+          {
+            "type": "vocabulary",
+            "items": [
+              ["No pain, no gain", "Sem esforço não há recompensa"],
+              ["Practice makes perfect", "A prática leva à perfeição"],
+              ["Where there's a will, there's a way", "Querer é poder"],
+              ["Rome wasn't built in a day", "Roma não foi construída num dia"],
+              ["The early bird catches the worm", "Deus ajuda quem cedo madruga"]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Provérbios sobre Prudência",
+        "content": [
+          {
+            "type": "vocabulary",
+            "items": [
+              ["Look before you leap", "Olha antes de saltar"],
+              ["Better safe than sorry", "Mais vale prevenir que remediar"],
+              ["Don't count your chickens before they hatch", "Não contes com o ovo na galinha"],
+              ["A stitch in time saves nine", "Um ponto a tempo poupa nove"],
+              ["Think twice", "Pensa duas vezes"]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Expressões Idiomáticas Comuns",
+        "content": [
+          {
+            "type": "vocabulary",
+            "items": [
+              ["Break the ice", "Quebrar o gelo"],
+              ["Cost an arm and a leg", "Custar os olhos da cara"],
+              ["Once in a blue moon", "De vez em quando (raramente)"],
+              ["Piece of cake", "Canja"],
+              ["Under the weather", "Indisposto"]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Dicas",
+        "content": [
+          {
+            "type": "tip",
+            "text": "Nem todos os provérbios têm equivalentes diretos entre línguas. Por vezes o sentido é o mesmo, mas a imagem é diferente."
+          },
+          {
+            "type": "example",
+            "source": "It's raining cats and dogs",
+            "target": "Está a chover muito (não: gatos e cães!)",
+            "note": "Equivalente português: 'Está a chover a potes'"
+          }
+        ]
+      }
+    ]
+  }
+}

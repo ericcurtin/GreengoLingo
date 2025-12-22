@@ -1,0 +1,147 @@
+{
+  "id": "advanced_grammar_01_pt_en",
+  "title": "Advanced Verb Forms",
+  "description": "Domine estruturas verbais complexas em inglês",
+  "level": "C1",
+  "language_pair": {
+    "source": "pt_PT",
+    "target": "en_US"
+  },
+  "xp_reward": 30,
+  "order": 1,
+  "icon": "school",
+  "questions": [
+    {
+      "type": "multiple_choice",
+      "prompt": "O inglês tem infinitivo pessoal como o português?",
+      "options": ["Sim, igual", "Não, usa outras estruturas", "Só no passado", "Só no futuro"],
+      "correct_index": 1,
+      "explanation": "O inglês não tem infinitivo pessoal. Usa 'for + object + to infinitive': 'For us to understand'."
+    },
+    {
+      "type": "typing",
+      "prompt": "Traduza: 'É importante chegarmos a horas'",
+      "correct_answers": ["It's important for us to arrive on time", "It is important that we arrive on time"],
+      "hint": "Use 'for + object + to infinitive' ou 'that + subjunctive'",
+      "accent_strict": false
+    },
+    {
+      "type": "matching_pairs",
+      "prompt": "Combine os tempos compostos",
+      "pairs": [
+        ["Tinha falado", "I had spoken (past perfect)"],
+        ["Terei falado", "I will have spoken (future perfect)"],
+        ["Teria falado", "I would have spoken (conditional perfect)"],
+        ["Tendo falado", "Having spoken (perfect participle)"]
+      ]
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Como se expressa 'futuro do conjuntivo' em inglês?",
+      "options": ["Future subjunctive", "Present simple after 'when/if'", "Will + infinitive", "Present continuous"],
+      "correct_index": 1,
+      "explanation": "O inglês usa presente simples depois de 'when', 'if', 'as soon as' para o futuro: 'When he arrives'."
+    },
+    {
+      "type": "sentence_builder",
+      "prompt": "Construa: 'Having studied, he passed'",
+      "words": ["Having", "studied", "he", "passed", "to study"],
+      "correct_order": [0, 1, 2, 3],
+      "distractors": ["to study"]
+    },
+    {
+      "type": "typing",
+      "prompt": "Traduza: 'Se tivesse sabido, teria vindo'",
+      "correct_answers": ["If I had known, I would have come", "Had I known, I would have come"],
+      "hint": "Third conditional: If + past perfect + would have + past participle",
+      "accent_strict": false
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Qual é a diferença entre 'I have spoken' e 'I spoke'?",
+      "options": ["Nenhuma", "Have spoken liga ao presente, spoke é acção acabada", "Spoke é mais formal", "Have spoken é passado distante"],
+      "correct_index": 1,
+      "explanation": "'I have spoken' (present perfect) tem relevância para o presente. 'I spoke' (past simple) é uma acção completa no passado."
+    },
+    {
+      "type": "matching_pairs",
+      "prompt": "Combine as estruturas",
+      "pairs": [
+        ["Para nós entendermos", "For us to understand"],
+        ["Antes de eles saírem", "Before they leave"],
+        ["Depois de tu chegares", "After you arrive"],
+        ["Sem eu saber", "Without me knowing"]
+      ]
+    }
+  ],
+  "cheat_sheet": {
+    "title": "Advanced English Verb Forms",
+    "sections": [
+      {
+        "heading": "Equivalentes do Infinitivo Pessoal",
+        "content": [
+          {
+            "type": "text",
+            "text": "O inglês usa 'for + object + to infinitive' em vez de infinitivo pessoal:"
+          },
+          {
+            "type": "example",
+            "source": "Para nós chegarmos",
+            "target": "For us to arrive",
+            "note": "For + pronome objecto + to + infinitivo"
+          },
+          {
+            "type": "example",
+            "source": "É importante estudarmos",
+            "target": "It's important for us to study",
+            "note": "Ou: 'It's important that we study'"
+          }
+        ]
+      },
+      {
+        "heading": "Tempos Perfeitos",
+        "content": [
+          {
+            "type": "vocabulary",
+            "items": [
+              ["Present Perfect", "I have spoken (tenho falado)"],
+              ["Past Perfect", "I had spoken (tinha falado)"],
+              ["Future Perfect", "I will have spoken (terei falado)"],
+              ["Conditional Perfect", "I would have spoken (teria falado)"],
+              ["Perfect Infinitive", "To have spoken (ter falado)"],
+              ["Perfect Participle", "Having spoken (tendo falado)"]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Futuro em Orações Temporais",
+        "content": [
+          {
+            "type": "text",
+            "text": "O inglês usa presente simples (não 'will') após conjunções temporais:"
+          },
+          {
+            "type": "example",
+            "source": "Quando ele chegar (fut. conj.)",
+            "target": "When he arrives (presente)",
+            "note": "NÃO: When he will arrive"
+          }
+        ]
+      },
+      {
+        "heading": "Dicas",
+        "content": [
+          {
+            "type": "tip",
+            "text": "O present perfect inglês corresponde muitas vezes ao pretérito perfeito ou ao presente com 'já'."
+          },
+          {
+            "type": "warning",
+            "text": "Não use 'will' depois de 'when', 'if', 'as soon as', 'before', 'after' para acções futuras."
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,149 @@
+{
+  "id": "past_tense_01_pt_en",
+  "title": "Talking About the Past",
+  "description": "Aprenda a usar o passado em inglês",
+  "level": "B1",
+  "language_pair": {
+    "source": "pt_PT",
+    "target": "en_US"
+  },
+  "xp_reward": 20,
+  "order": 1,
+  "icon": "history",
+  "questions": [
+    {
+      "type": "multiple_choice",
+      "prompt": "Como se diz 'Eu fui' em inglês?",
+      "options": ["I went", "I go", "I was going", "I will go"],
+      "correct_index": 0,
+      "explanation": "'I went' é o passado simples de 'to go'."
+    },
+    {
+      "type": "typing",
+      "prompt": "Escreva 'Eu comi' em inglês",
+      "correct_answers": ["I ate", "I have eaten"],
+      "hint": "Passado simples de 'to eat'",
+      "accent_strict": false
+    },
+    {
+      "type": "matching_pairs",
+      "prompt": "Combine as formas do passado",
+      "pairs": [
+        ["Eu fui (ser)", "I was"],
+        ["Eu estive", "I was"],
+        ["Eu tive", "I had"],
+        ["Eu fiz", "I did / I made"]
+      ]
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Qual é a diferença entre 'I went' e 'I was going'?",
+      "options": ["Went é futuro, was going é passado", "Went é acção completa, was going é acção contínua", "São iguais", "Went é formal, was going é informal"],
+      "correct_index": 1,
+      "explanation": "'I went' é uma acção completa no passado. 'I was going' descreve uma acção em progresso no passado."
+    },
+    {
+      "type": "sentence_builder",
+      "prompt": "Construa: 'Yesterday I worked a lot'",
+      "words": ["Yesterday", "I", "worked", "a", "lot", "work"],
+      "correct_order": [0, 1, 2, 3, 4],
+      "distractors": ["work"]
+    },
+    {
+      "type": "typing",
+      "prompt": "Escreva 'Ela falou' em inglês",
+      "correct_answers": ["She spoke", "She talked"],
+      "hint": "Passado simples de 'to speak' ou 'to talk'",
+      "accent_strict": false
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Que frase descreve uma acção habitual no passado?",
+      "options": ["Yesterday I ate pizza", "When I was a child, I used to eat pizza", "I ate the whole pizza", "I'm going to eat pizza"],
+      "correct_index": 1,
+      "explanation": "'Used to' descreve acções habituais no passado em inglês."
+    },
+    {
+      "type": "matching_pairs",
+      "prompt": "Combine os verbos irregulares",
+      "pairs": [
+        ["Falar - Falei", "Speak - Spoke"],
+        ["Comer - Comi", "Eat - Ate"],
+        ["Ver - Vi", "See - Saw"],
+        ["Fazer - Fiz", "Do - Did"]
+      ]
+    }
+  ],
+  "cheat_sheet": {
+    "title": "Past Tense in English",
+    "sections": [
+      {
+        "heading": "Simple Past",
+        "content": [
+          {
+            "type": "text",
+            "text": "Usado para acções completas no passado:"
+          },
+          {
+            "type": "vocabulary",
+            "items": [
+              ["Eu falei", "I spoke / I talked"],
+              ["Tu falaste", "You spoke / You talked"],
+              ["Ele/Ela falou", "He/She spoke / talked"],
+              ["Nós falámos", "We spoke / We talked"],
+              ["Eles falaram", "They spoke / They talked"]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Past Continuous",
+        "content": [
+          {
+            "type": "text",
+            "text": "Usado para acções em progresso no passado:"
+          },
+          {
+            "type": "vocabulary",
+            "items": [
+              ["Eu estava a falar", "I was speaking/talking"],
+              ["Tu estavas a falar", "You were speaking/talking"],
+              ["Ele/Ela estava a falar", "He/She was speaking/talking"],
+              ["Nós estávamos a falar", "We were speaking/talking"],
+              ["Eles estavam a falar", "They were speaking/talking"]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Verbos Irregulares Comuns",
+        "content": [
+          {
+            "type": "vocabulary",
+            "items": [
+              ["Ser/Estar - Fui/Estive", "Be - Was/Were"],
+              ["Ter - Tive", "Have - Had"],
+              ["Ir - Fui", "Go - Went"],
+              ["Fazer - Fiz", "Do - Did / Make - Made"],
+              ["Ver - Vi", "See - Saw"],
+              ["Dizer - Disse", "Say - Said"]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Dicas",
+        "content": [
+          {
+            "type": "tip",
+            "text": "Em inglês, verbos regulares no passado terminam em '-ed': worked, talked, played."
+          },
+          {
+            "type": "warning",
+            "text": "Em inglês, não há diferença entre pretérito perfeito e imperfeito como em português. Use 'used to' para hábitos passados."
+          }
+        ]
+      }
+    ]
+  }
+}

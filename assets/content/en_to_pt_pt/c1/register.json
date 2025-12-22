@@ -1,0 +1,140 @@
+{
+  "id": "register_01",
+  "title": "Register and Style",
+  "description": "Understand language registers and stylistic variation in European Portuguese",
+  "level": "C1",
+  "language_pair": {
+    "source": "en_US",
+    "target": "pt_PT"
+  },
+  "xp_reward": 30,
+  "order": 4,
+  "icon": "style",
+  "questions": [
+    {
+      "type": "multiple_choice",
+      "prompt": "Which is the most formal way to say 'I want'?",
+      "options": ["Quero", "Queria", "Gostaria de", "Desejaria"],
+      "correct_index": 3,
+      "explanation": "'Desejaria' is the most formal. 'Gostaria' is formal, 'Queria' is polite, 'Quero' is direct."
+    },
+    {
+      "type": "typing",
+      "prompt": "Convert to formal register: 'Dá-me isso'",
+      "correct_answers": ["Poderia dar-me isso?", "Faz favor de me dar isso?", "Importa-se de me dar isso?"],
+      "hint": "Use conditional and polite forms",
+      "accent_strict": false
+    },
+    {
+      "type": "matching_pairs",
+      "prompt": "Match informal to formal",
+      "pairs": [
+        ["Tá bem", "Está bem / De acordo"],
+        ["Fixe", "Excelente / Ótimo"],
+        ["Tipo", "Por exemplo / Digamos"],
+        ["Bué", "Muito / Bastante"]
+      ]
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "When would you use 'tu' vs 'você' vs 'o senhor' in Portugal?",
+      "options": ["All are interchangeable", "Tu for friends, você for strangers, o senhor for formal", "Only tu is used", "Only você is used"],
+      "correct_index": 1,
+      "explanation": "'Tu' is for friends/family, 'você' for acquaintances, 'o senhor/a senhora' for formal/elderly."
+    },
+    {
+      "type": "sentence_builder",
+      "prompt": "Build formal request: 'Would you be so kind as to...'",
+      "words": ["Teria", "a", "amabilidade", "de", "...", "pode"],
+      "correct_order": [0, 1, 2, 3, 4],
+      "distractors": ["pode"]
+    },
+    {
+      "type": "typing",
+      "prompt": "Write a formal way to say 'I don't agree'",
+      "correct_answers": ["Permita-me discordar", "Com a devida vénia, discordo", "Peço desculpa, mas não partilho dessa opinião"],
+      "hint": "Use softening expressions",
+      "accent_strict": false
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "What register uses 'Vossa Excelência'?",
+      "options": ["Casual conversation", "Very formal/diplomatic", "Academic writing", "Journalistic"],
+      "correct_index": 1,
+      "explanation": "'Vossa Excelência' is used in very formal contexts, especially diplomatic or official communication."
+    },
+    {
+      "type": "matching_pairs",
+      "prompt": "Match colloquial to standard",
+      "pairs": [
+        ["Tou (estou)", "Estou"],
+        ["Pra (para)", "Para"],
+        ["Tás (estás)", "Estás"],
+        ["Cum (com)", "Com"]
+      ]
+    }
+  ],
+  "cheat_sheet": {
+    "title": "Register and Style",
+    "sections": [
+      {
+        "heading": "Formal vs Informal Address",
+        "content": [
+          {
+            "type": "vocabulary",
+            "items": [
+              ["Very formal", "Vossa Excelência / O(A) Senhor(a) Doutor(a)"],
+              ["Formal", "O senhor / A senhora"],
+              ["Polite neutral", "Você"],
+              ["Informal", "Tu"],
+              ["Very informal", "Tu + slang"]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Request Formality Levels",
+        "content": [
+          {
+            "type": "vocabulary",
+            "items": [
+              ["Direct", "Dá-me isso (Give me that)"],
+              ["Polite", "Podes dar-me isso? (Can you give me that?)"],
+              ["Formal", "Poderia dar-me isso? (Could you give me that?)"],
+              ["Very formal", "Teria a amabilidade de me dar isso? (Would you be so kind...)"]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Colloquial vs Standard",
+        "content": [
+          {
+            "type": "vocabulary",
+            "items": [
+              ["Tou → Estou", "I am"],
+              ["Tá → Está", "Is/It is"],
+              ["Pra → Para", "For/To"],
+              ["Bué → Muito", "Very/A lot"],
+              ["Fixe → Ótimo/Excelente", "Cool/Great"],
+              ["Gajo/Gaja → Homem/Mulher", "Guy/Girl"]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Tips",
+        "content": [
+          {
+            "type": "tip",
+            "text": "In Portugal, 'você' can sometimes sound slightly distant. With acquaintances, often the verb alone without pronoun is used."
+          },
+          {
+            "type": "warning",
+            "text": "Using 'tu' with someone who expects formal address can be seen as disrespectful. When in doubt, be more formal."
+          }
+        ]
+      }
+    ]
+  }
+}

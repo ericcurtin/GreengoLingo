@@ -1,0 +1,151 @@
+{
+  "id": "advanced_grammar_01",
+  "title": "Advanced Verb Forms",
+  "description": "Master complex verb structures in European Portuguese",
+  "level": "C1",
+  "language_pair": {
+    "source": "en_US",
+    "target": "pt_PT"
+  },
+  "xp_reward": 30,
+  "order": 1,
+  "icon": "school",
+  "questions": [
+    {
+      "type": "multiple_choice",
+      "prompt": "What is the personal infinitive unique to Portuguese?",
+      "options": ["An infinitive that changes with person", "The basic infinitive", "A past infinitive", "A future infinitive"],
+      "correct_index": 0,
+      "explanation": "Portuguese has a personal infinitive that conjugates: falar, falares, falar, falarmos, falarem."
+    },
+    {
+      "type": "typing",
+      "prompt": "Write 'It's important for us to arrive on time' using personal infinitive",
+      "correct_answers": ["É importante chegarmos a horas", "É importante nós chegarmos a horas"],
+      "hint": "Use personal infinitive: chegar + -mos",
+      "accent_strict": false
+    },
+    {
+      "type": "matching_pairs",
+      "prompt": "Match the compound tenses",
+      "pairs": [
+        ["Tinha falado", "I had spoken (pluperfect)"],
+        ["Terei falado", "I will have spoken (future perfect)"],
+        ["Teria falado", "I would have spoken (conditional perfect)"],
+        ["Tenha falado", "I may have spoken (perfect subjunctive)"]
+      ]
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "When do you use the future subjunctive?",
+      "options": ["After 'se' and 'quando' for future events", "For past hypotheticals", "In formal writing only", "Never in modern Portuguese"],
+      "correct_index": 0,
+      "explanation": "Future subjunctive is used with 'se', 'quando', 'assim que', etc. for future possibilities: 'Quando ele chegar'."
+    },
+    {
+      "type": "sentence_builder",
+      "prompt": "Build: 'By having studied, he passed' (gerund compound)",
+      "words": ["Tendo", "estudado", "ele", "passou", "ter"],
+      "correct_order": [0, 1, 2, 3],
+      "distractors": ["ter"]
+    },
+    {
+      "type": "typing",
+      "prompt": "Write 'If I had known, I would have come' in Portuguese",
+      "correct_answers": ["Se tivesse sabido, teria vindo", "Se eu tivesse sabido, teria vindo"],
+      "hint": "Past perfect subjunctive + conditional perfect",
+      "accent_strict": false
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "What is the difference between 'Ele tem falado' and 'Ele falou'?",
+      "options": ["No difference", "Tem falado = recent/ongoing past, Falou = completed past", "Tem falado is incorrect", "Falou is more informal"],
+      "correct_index": 1,
+      "explanation": "'Tem falado' emphasizes recent or ongoing relevance to the present. 'Falou' is a completed past action."
+    },
+    {
+      "type": "matching_pairs",
+      "prompt": "Match personal infinitive uses",
+      "pairs": [
+        ["Para nós entendermos", "For us to understand"],
+        ["Antes de eles saírem", "Before they leave"],
+        ["Depois de tu chegares", "After you arrive"],
+        ["Sem eu saber", "Without me knowing"]
+      ]
+    }
+  ],
+  "cheat_sheet": {
+    "title": "Advanced Verb Forms",
+    "sections": [
+      {
+        "heading": "Personal Infinitive",
+        "content": [
+          {
+            "type": "text",
+            "text": "The personal infinitive conjugates with person, unique to Portuguese:"
+          },
+          {
+            "type": "vocabulary",
+            "items": [
+              ["(eu) falar", "(para eu) falar"],
+              ["(tu) falares", "(para tu) falares"],
+              ["(ele/ela) falar", "(para ele/ela) falar"],
+              ["(nós) falarmos", "(para nós) falarmos"],
+              ["(eles) falarem", "(para eles) falarem"]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Compound Tenses",
+        "content": [
+          {
+            "type": "vocabulary",
+            "items": [
+              ["Present Perfect", "Tenho falado (I have been speaking)"],
+              ["Past Perfect", "Tinha falado (I had spoken)"],
+              ["Future Perfect", "Terei falado (I will have spoken)"],
+              ["Conditional Perfect", "Teria falado (I would have spoken)"],
+              ["Perfect Subjunctive", "Tenha falado (I may have spoken)"],
+              ["Pluperfect Subjunctive", "Tivesse falado (I might have spoken)"]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Future Subjunctive",
+        "content": [
+          {
+            "type": "text",
+            "text": "Used with conjunctions for future conditions:"
+          },
+          {
+            "type": "example",
+            "source": "Quando ele chegar",
+            "target": "When he arrives",
+            "note": "Future subjunctive with 'quando'"
+          },
+          {
+            "type": "example",
+            "source": "Se eu tiver tempo",
+            "target": "If I have time",
+            "note": "Future subjunctive with 'se'"
+          }
+        ]
+      },
+      {
+        "heading": "Tips",
+        "content": [
+          {
+            "type": "tip",
+            "text": "Use personal infinitive when the subject of the subordinate clause differs from the main clause."
+          },
+          {
+            "type": "warning",
+            "text": "In European Portuguese, the present perfect (ter + participle) often emphasizes recent or ongoing action, not a completed one."
+          }
+        ]
+      }
+    ]
+  }
+}

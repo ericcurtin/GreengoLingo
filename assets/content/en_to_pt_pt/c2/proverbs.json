@@ -1,0 +1,137 @@
+{
+  "id": "proverbs_01",
+  "title": "Proverbs and Wisdom",
+  "description": "Learn traditional Portuguese proverbs and sayings",
+  "level": "C2",
+  "language_pair": {
+    "source": "en_US",
+    "target": "pt_PT"
+  },
+  "xp_reward": 35,
+  "order": 4,
+  "icon": "format_quote",
+  "questions": [
+    {
+      "type": "multiple_choice",
+      "prompt": "What does 'Água mole em pedra dura, tanto bate até que fura' mean?",
+      "options": ["Water is powerful", "Persistence pays off", "Stone is stronger than water", "Rain causes damage"],
+      "correct_index": 1,
+      "explanation": "Like 'constant dripping wears the stone' - persistence and patience achieve results."
+    },
+    {
+      "type": "typing",
+      "prompt": "Complete: 'Quem não tem cão, caça com ___'",
+      "correct_answers": ["gato", "Quem não tem cão, caça com gato"],
+      "hint": "Meaning: make do with what you have",
+      "accent_strict": false
+    },
+    {
+      "type": "matching_pairs",
+      "prompt": "Match proverbs with meanings",
+      "pairs": [
+        ["Grão a grão enche a galinha o papo", "Little by little"],
+        ["Mais vale tarde do que nunca", "Better late than never"],
+        ["De pequenino se torce o pepino", "Start young / Good habits early"],
+        ["Em terra de cegos, quem tem um olho é rei", "In the land of the blind..."]
+      ]
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "What does 'Quem com ferros mata, com ferros morre' correspond to?",
+      "options": ["What goes around comes around", "Iron is dangerous", "War is inevitable", "Tools are important"],
+      "correct_index": 0,
+      "explanation": "Similar to 'live by the sword, die by the sword' - actions have consequences."
+    },
+    {
+      "type": "sentence_builder",
+      "prompt": "Build: 'A friend in need is a friend indeed'",
+      "words": ["Amigo", "na", "necessidade", "é", "amigo", "de", "verdade"],
+      "correct_order": [0, 1, 2, 3, 4, 5, 6],
+      "distractors": []
+    },
+    {
+      "type": "typing",
+      "prompt": "What proverb means 'The squeaky wheel gets the grease'?",
+      "correct_answers": ["Quem não chora não mama", "Quem não chora, não mama"],
+      "hint": "Literally about crying and nursing",
+      "accent_strict": false
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "What does 'Cão que ladra não morde' mean?",
+      "options": ["Dogs are dangerous", "Barking dogs seldom bite / All talk, no action", "Dogs should be quiet", "Fear the silent ones"],
+      "correct_index": 1,
+      "explanation": "Those who make the most threats are often least likely to act."
+    },
+    {
+      "type": "matching_pairs",
+      "prompt": "Match more proverbs",
+      "pairs": [
+        ["Não há fumo sem fogo", "Where there's smoke, there's fire"],
+        ["Quem tudo quer, tudo perde", "Grasp all, lose all"],
+        ["A cavalo dado não se olha o dente", "Don't look a gift horse in the mouth"],
+        ["Devagar se vai ao longe", "Slow and steady wins the race"]
+      ]
+    }
+  ],
+  "cheat_sheet": {
+    "title": "Portuguese Proverbs",
+    "sections": [
+      {
+        "heading": "Persistence & Patience",
+        "content": [
+          {
+            "type": "vocabulary",
+            "items": [
+              ["Água mole em pedra dura, tanto bate até que fura", "Persistence pays off"],
+              ["Grão a grão enche a galinha o papo", "Little by little"],
+              ["Devagar se vai ao longe", "Slow and steady wins the race"],
+              ["Roma não se fez num dia", "Rome wasn't built in a day"]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Consequences & Justice",
+        "content": [
+          {
+            "type": "vocabulary",
+            "items": [
+              ["Quem com ferros mata, com ferros morre", "Live by the sword, die by the sword"],
+              ["Quem semeia ventos, colhe tempestades", "Sow the wind, reap the whirlwind"],
+              ["Não há fumo sem fogo", "Where there's smoke, there's fire"],
+              ["Cada macaco no seu galho", "Mind your own business"]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Wisdom & Advice",
+        "content": [
+          {
+            "type": "vocabulary",
+            "items": [
+              ["Mais vale prevenir que remediar", "Prevention is better than cure"],
+              ["De pequenino se torce o pepino", "Start good habits early"],
+              ["Quem não tem cão, caça com gato", "Make do with what you have"],
+              ["Mais vale um pássaro na mão que dois a voar", "A bird in the hand..."]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Tips",
+        "content": [
+          {
+            "type": "tip",
+            "text": "Proverbs are widely used in Portuguese conversation. Using them appropriately shows cultural fluency."
+          },
+          {
+            "type": "warning",
+            "text": "Some proverbs may sound old-fashioned. Listen to how native speakers use them in context."
+          }
+        ]
+      }
+    ]
+  }
+}

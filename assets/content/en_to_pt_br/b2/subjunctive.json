@@ -1,0 +1,146 @@
+{
+  "id": "subjunctive_01_br",
+  "title": "The Subjunctive Mood",
+  "description": "Master the subjunctive mood in Brazilian Portuguese",
+  "level": "B2",
+  "language_pair": {
+    "source": "en_US",
+    "target": "pt_BR"
+  },
+  "xp_reward": 25,
+  "order": 1,
+  "icon": "psychology",
+  "questions": [
+    {
+      "type": "multiple_choice",
+      "prompt": "Which sentence uses the present subjunctive correctly?",
+      "options": ["Espero que ele vem", "Espero que ele venha", "Espero que ele vinha", "Espero que ele veio"],
+      "correct_index": 1,
+      "explanation": "After 'espero que' (I hope that), use the present subjunctive: 'venha' from 'vir'."
+    },
+    {
+      "type": "typing",
+      "prompt": "Complete: 'É importante que você ___' (estudar)",
+      "correct_answers": ["estude", "É importante que você estude"],
+      "hint": "Present subjunctive of 'estudar' for 'você'",
+      "accent_strict": false
+    },
+    {
+      "type": "matching_pairs",
+      "prompt": "Match the triggers with subjunctive usage",
+      "pairs": [
+        ["Espero que...", "I hope that..."],
+        ["Duvido que...", "I doubt that..."],
+        ["Embora...", "Although..."],
+        ["Talvez...", "Perhaps/Maybe..."]
+      ]
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "When do you use the subjunctive in Portuguese?",
+      "options": ["For certain facts", "For wishes, doubts, and emotions", "Only for past actions", "Never in spoken Portuguese"],
+      "correct_index": 1,
+      "explanation": "The subjunctive expresses wishes, doubts, emotions, and hypothetical situations."
+    },
+    {
+      "type": "sentence_builder",
+      "prompt": "Build: 'I want you to come' (Quero que você venha)",
+      "words": ["Quero", "que", "você", "venha", "vem"],
+      "correct_order": [0, 1, 2, 3],
+      "distractors": ["vem"]
+    },
+    {
+      "type": "typing",
+      "prompt": "Write 'Although he is tired' in Portuguese",
+      "correct_answers": ["Embora ele esteja cansado", "Embora esteja cansado"],
+      "hint": "Embora + subjunctive of 'estar'",
+      "accent_strict": false
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "What is the past subjunctive of 'ser' (eu)?",
+      "options": ["Eu seja", "Eu fosse", "Eu era", "Eu fui"],
+      "correct_index": 1,
+      "explanation": "'Fosse' is the past (imperfect) subjunctive of 'ser'. 'Seja' is present subjunctive."
+    },
+    {
+      "type": "matching_pairs",
+      "prompt": "Match indicative to subjunctive forms",
+      "pairs": [
+        ["Ele tem (indicative)", "Ele tenha (subjunctive)"],
+        ["Ela é (indicative)", "Ela seja (subjunctive)"],
+        ["A gente vai (indicative)", "A gente vá (subjunctive)"],
+        ["Eles fazem (indicative)", "Eles façam (subjunctive)"]
+      ]
+    }
+  ],
+  "cheat_sheet": {
+    "title": "The Subjunctive Mood",
+    "sections": [
+      {
+        "heading": "When to Use Subjunctive",
+        "content": [
+          {
+            "type": "text",
+            "text": "The subjunctive is used after expressions of:"
+          },
+          {
+            "type": "vocabulary",
+            "items": [
+              ["Wishes", "Quero que..., Desejo que..., Espero que..."],
+              ["Doubt", "Duvido que..., Não acredito que..."],
+              ["Emotion", "Estou feliz que..., Sinto muito que..."],
+              ["Necessity", "É preciso que..., É necessário que..."],
+              ["Possibility", "Talvez..., É possível que..."]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Present Subjunctive Formation",
+        "content": [
+          {
+            "type": "text",
+            "text": "Regular verbs - take the 'eu' present form, drop -o, add subjunctive endings:"
+          },
+          {
+            "type": "vocabulary",
+            "items": [
+              ["Falar: fale, fale, fale, falemos, falem", "-AR verbs (você form)"],
+              ["Comer: coma, coma, coma, comamos, comam", "-ER verbs"],
+              ["Partir: parta, parta, parta, partamos, partam", "-IR verbs"]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Irregular Present Subjunctive",
+        "content": [
+          {
+            "type": "vocabulary",
+            "items": [
+              ["Ser: seja, seja, seja, sejamos, sejam", "to be (permanent)"],
+              ["Estar: esteja, esteja, esteja, estejamos, estejam", "to be (temporary)"],
+              ["Ir: vá, vá, vá, vamos, vão", "to go"],
+              ["Ter: tenha, tenha, tenha, tenhamos, tenham", "to have"],
+              ["Haver: haja", "there to be"]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Tips",
+        "content": [
+          {
+            "type": "tip",
+            "text": "In Brazil, some speakers replace subjunctive with indicative in casual speech, but subjunctive is still correct and used in writing."
+          },
+          {
+            "type": "warning",
+            "text": "If the main clause and subordinate clause have the same subject, use the infinitive: 'Quero ir' (I want to go)."
+          }
+        ]
+      }
+    ]
+  }
+}

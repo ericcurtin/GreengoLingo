@@ -1,0 +1,139 @@
+{
+  "id": "basic_expressions_01_br_en",
+  "title": "Expressões Básicas",
+  "description": "Aprenda expressões essenciais do dia a dia em inglês",
+  "level": "A1",
+  "language_pair": {
+    "source": "pt_BR",
+    "target": "en_US"
+  },
+  "xp_reward": 10,
+  "order": 4,
+  "icon": "speech_bubble",
+  "questions": [
+    {
+      "type": "multiple_choice",
+      "prompt": "Como você diz 'por favor' em inglês?",
+      "options": ["thank you", "please", "sorry", "excuse me"],
+      "correct_index": 1,
+      "explanation": "'Please' é usado exatamente como 'por favor' - ao fazer pedidos educadamente."
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Como você diz 'obrigado' em inglês?",
+      "options": ["thanks", "thank you", "please", "As duas primeiras estão corretas"],
+      "correct_index": 3,
+      "explanation": "'Thank you' é formal e 'thanks' é informal. Ambos são muito usados."
+    },
+    {
+      "type": "typing",
+      "prompt": "Escreva 'De nada' em inglês",
+      "correct_answers": ["You're welcome", "You are welcome", "Youre welcome"],
+      "hint": "You're...",
+      "accent_strict": false
+    },
+    {
+      "type": "matching_pairs",
+      "prompt": "Combine as expressões",
+      "pairs": [
+        ["Sim", "Yes"],
+        ["Não", "No"],
+        ["Por favor", "Please"],
+        ["Com licença", "Excuse me"]
+      ]
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "O que significa 'Sorry'?",
+      "options": ["Obrigado", "Por favor", "Desculpa", "De nada"],
+      "correct_index": 2,
+      "explanation": "'Sorry' é usado para pedir desculpas ou chamar atenção educadamente."
+    },
+    {
+      "type": "typing",
+      "prompt": "Escreva 'Eu não entendo' em inglês",
+      "correct_answers": ["I don't understand", "I do not understand"],
+      "hint": "I don't...",
+      "accent_strict": false
+    },
+    {
+      "type": "sentence_builder",
+      "prompt": "Construa: 'Você fala português?'",
+      "words": ["Do", "you", "speak", "Portuguese", "eat"],
+      "correct_order": [0, 1, 2, 3],
+      "distractors": ["eat"]
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Como você diz 'Eu não sei' em inglês?",
+      "options": ["I don't know", "I don't understand", "I don't speak", "I don't like"],
+      "correct_index": 0,
+      "explanation": "'I don't know' é muito usado no dia a dia."
+    }
+  ],
+  "cheat_sheet": {
+    "title": "Expressões Essenciais em Inglês",
+    "sections": [
+      {
+        "heading": "Palavras de Cortesia",
+        "content": [
+          {
+            "type": "vocabulary",
+            "items": [
+              ["Por favor", "Please"],
+              ["Obrigado/a (formal)", "Thank you"],
+              ["Obrigado/a (informal)", "Thanks"],
+              ["De nada", "You're welcome"],
+              ["Com licença", "Excuse me"],
+              ["Desculpa", "Sorry"]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Sim e Não",
+        "content": [
+          {
+            "type": "vocabulary",
+            "items": [
+              ["Sim", "Yes"],
+              ["Não", "No"],
+              ["Talvez", "Maybe"],
+              ["Claro", "Of course"]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Frases Úteis",
+        "content": [
+          {
+            "type": "vocabulary",
+            "items": [
+              ["Não entendo", "I don't understand"],
+              ["Não sei", "I don't know"],
+              ["Você fala português?", "Do you speak Portuguese?"],
+              ["Eu falo um pouco de inglês", "I speak a little English"],
+              ["Pode repetir?", "Can you repeat?"]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Diferença do Português",
+        "content": [
+          {
+            "type": "tip",
+            "text": "Em inglês, 'thank you' e 'thanks' não mudam conforme o gênero de quem fala. Diferente do português com 'obrigado/obrigada'."
+          },
+          {
+            "type": "example",
+            "source": "Thank you very much!",
+            "target": "Muito obrigado/a!",
+            "note": "Adicione 'very much' para dar ênfase"
+          }
+        ]
+      }
+    ]
+  }
+}

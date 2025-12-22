@@ -1,0 +1,152 @@
+{
+  "id": "directions_01_pt_en",
+  "title": "Giving Directions",
+  "description": "Aprenda a dar e compreender direcções em inglês",
+  "level": "B1",
+  "language_pair": {
+    "source": "pt_PT",
+    "target": "en_US"
+  },
+  "xp_reward": 20,
+  "order": 3,
+  "icon": "directions",
+  "questions": [
+    {
+      "type": "multiple_choice",
+      "prompt": "Como se diz 'Vire à esquerda' em inglês?",
+      "options": ["Turn left", "Turn right", "Go straight", "Go back"],
+      "correct_index": 0,
+      "explanation": "'Turn left' significa virar à esquerda."
+    },
+    {
+      "type": "typing",
+      "prompt": "Escreva 'Siga em frente' em inglês",
+      "correct_answers": ["Go straight", "Go straight ahead", "Keep going straight"],
+      "hint": "Go + straight",
+      "accent_strict": false
+    },
+    {
+      "type": "matching_pairs",
+      "prompt": "Combine as direcções",
+      "pairs": [
+        ["Vire à direita", "Turn right"],
+        ["Vire à esquerda", "Turn left"],
+        ["Siga em frente", "Go straight"],
+        ["Volte para trás", "Go back"]
+      ]
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "O que significa 'It's next to the bank'?",
+      "options": ["Fica atrás do banco", "Fica ao lado do banco", "Fica em frente do banco", "Fica longe do banco"],
+      "correct_index": 1,
+      "explanation": "'Next to' significa 'ao lado de'."
+    },
+    {
+      "type": "sentence_builder",
+      "prompt": "Construa: 'Take the first street on the right'",
+      "words": ["Take", "the", "first", "street", "on", "the", "right"],
+      "correct_order": [0, 1, 2, 3, 4, 5, 6],
+      "distractors": []
+    },
+    {
+      "type": "typing",
+      "prompt": "Escreva 'Fica perto daqui' em inglês",
+      "correct_answers": ["It's near here", "It's nearby", "It's close by"],
+      "hint": "Near = perto",
+      "accent_strict": false
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Como se pergunta 'Como chego à estação?'",
+      "options": ["Where is the station?", "How do I get to the station?", "Is there a station?", "Is the station open?"],
+      "correct_index": 1,
+      "explanation": "'How do I get to...' é a forma padrão de pedir direcções em inglês."
+    },
+    {
+      "type": "matching_pairs",
+      "prompt": "Combine as palavras de localização",
+      "pairs": [
+        ["Ao lado de", "Next to"],
+        ["Em frente de", "In front of"],
+        ["Atrás de", "Behind"],
+        ["Entre", "Between"]
+      ]
+    }
+  ],
+  "cheat_sheet": {
+    "title": "Directions in English",
+    "sections": [
+      {
+        "heading": "Direcções Básicas",
+        "content": [
+          {
+            "type": "vocabulary",
+            "items": [
+              ["Vire à esquerda", "Turn left"],
+              ["Vire à direita", "Turn right"],
+              ["Siga em frente", "Go straight / Keep going straight"],
+              ["Volte para trás", "Go back / Turn around"],
+              ["Atravesse a rua", "Cross the street"],
+              ["Na esquina", "At the corner"],
+              ["No semáforo", "At the traffic lights"]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Palavras de Localização",
+        "content": [
+          {
+            "type": "vocabulary",
+            "items": [
+              ["Ao lado de", "Next to"],
+              ["Em frente de", "In front of / Opposite"],
+              ["Atrás de", "Behind"],
+              ["Entre", "Between"],
+              ["Perto de", "Near / Close to"],
+              ["Longe de", "Far from"],
+              ["Do outro lado", "On the other side / Across from"]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Pedir Direcções",
+        "content": [
+          {
+            "type": "example",
+            "source": "Como chego a...?",
+            "target": "How do I get to...?",
+            "note": "Forma padrão de pedir direcções"
+          },
+          {
+            "type": "example",
+            "source": "Onde fica...?",
+            "target": "Where is...?",
+            "note": "Para perguntar sobre localização"
+          },
+          {
+            "type": "example",
+            "source": "É longe daqui?",
+            "target": "Is it far from here?",
+            "note": "Para verificar a distância"
+          }
+        ]
+      },
+      {
+        "heading": "Dicas",
+        "content": [
+          {
+            "type": "tip",
+            "text": "Em inglês, pode dizer 'take' para ruas: 'Take the first left' (apanhe a primeira à esquerda)."
+          },
+          {
+            "type": "warning",
+            "text": "'Opposite' significa exactamente em frente, do outro lado da rua."
+          }
+        ]
+      }
+    ]
+  }
+}

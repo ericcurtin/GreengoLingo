@@ -1,0 +1,152 @@
+{
+  "id": "directions_01_br",
+  "title": "Giving Directions",
+  "description": "Learn to give and understand directions in Brazilian Portuguese",
+  "level": "B1",
+  "language_pair": {
+    "source": "en_US",
+    "target": "pt_BR"
+  },
+  "xp_reward": 20,
+  "order": 3,
+  "icon": "directions",
+  "questions": [
+    {
+      "type": "multiple_choice",
+      "prompt": "How do you say 'Turn left' in Portuguese?",
+      "options": ["Vira à esquerda", "Vira à direita", "Segue em frente", "Volta para trás"],
+      "correct_index": 0,
+      "explanation": "'Vira à esquerda' means turn left. In Brazil, 'vira' (informal) is common."
+    },
+    {
+      "type": "typing",
+      "prompt": "Write 'Go straight' in Portuguese",
+      "correct_answers": ["Segue em frente", "Siga em frente", "Vai em frente", "Continue em frente"],
+      "hint": "Segue or siga + em frente",
+      "accent_strict": false
+    },
+    {
+      "type": "matching_pairs",
+      "prompt": "Match the directions",
+      "pairs": [
+        ["Turn right", "Vira à direita"],
+        ["Turn left", "Vira à esquerda"],
+        ["Go straight", "Segue em frente"],
+        ["Go back", "Volta para trás"]
+      ]
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "What does 'Fica do lado do banco' mean?",
+      "options": ["It's behind the bank", "It's next to the bank", "It's in front of the bank", "It's far from the bank"],
+      "correct_index": 1,
+      "explanation": "'Do lado de' means 'next to' in Brazilian Portuguese."
+    },
+    {
+      "type": "sentence_builder",
+      "prompt": "Build: 'Take the first street on the right'",
+      "words": ["Pega", "a", "primeira", "rua", "à", "direita", "esquerda"],
+      "correct_order": [0, 1, 2, 3, 4, 5],
+      "distractors": ["esquerda"]
+    },
+    {
+      "type": "typing",
+      "prompt": "Write 'It's near here' in Portuguese",
+      "correct_answers": ["Fica perto daqui", "É perto daqui", "Fica aqui perto"],
+      "hint": "Perto = near, daqui = from here",
+      "accent_strict": false
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "How do you ask 'How do I get to the station?'",
+      "options": ["Onde fica a estação?", "Como eu chego na estação?", "Tem uma estação?", "A estação tá aberta?"],
+      "correct_index": 1,
+      "explanation": "'Como eu chego em/na...' is the Brazilian way to ask for directions."
+    },
+    {
+      "type": "matching_pairs",
+      "prompt": "Match the location words",
+      "pairs": [
+        ["Next to", "Do lado de"],
+        ["In front of", "Na frente de"],
+        ["Behind", "Atrás de"],
+        ["Between", "Entre"]
+      ]
+    }
+  ],
+  "cheat_sheet": {
+    "title": "Directions in Portuguese",
+    "sections": [
+      {
+        "heading": "Basic Directions",
+        "content": [
+          {
+            "type": "vocabulary",
+            "items": [
+              ["Turn left", "Vira à esquerda / Dobra à esquerda"],
+              ["Turn right", "Vira à direita / Dobra à direita"],
+              ["Go straight", "Segue em frente / Continua reto"],
+              ["Go back", "Volta para trás"],
+              ["Cross the street", "Atravessa a rua"],
+              ["At the corner", "Na esquina"],
+              ["At the traffic lights", "No semáforo / No sinal"]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Location Words",
+        "content": [
+          {
+            "type": "vocabulary",
+            "items": [
+              ["Next to", "Do lado de"],
+              ["In front of", "Na frente de"],
+              ["Behind", "Atrás de"],
+              ["Between", "Entre"],
+              ["Near", "Perto de"],
+              ["Far from", "Longe de"],
+              ["Opposite", "Na frente de / Do outro lado"]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Asking for Directions",
+        "content": [
+          {
+            "type": "example",
+            "source": "Como eu chego em/na...?",
+            "target": "How do I get to...?",
+            "note": "Standard way to ask for directions in Brazil"
+          },
+          {
+            "type": "example",
+            "source": "Onde fica...?",
+            "target": "Where is...?",
+            "note": "For asking about location"
+          },
+          {
+            "type": "example",
+            "source": "É longe daqui?",
+            "target": "Is it far from here?",
+            "note": "To check distance"
+          }
+        ]
+      },
+      {
+        "heading": "Tips",
+        "content": [
+          {
+            "type": "tip",
+            "text": "In Brazil, 'pega' (informal) or 'pegue' is used for 'take' a street. 'Dobra' means to turn at a corner."
+          },
+          {
+            "type": "warning",
+            "text": "Brazilians often say 'chego em' or 'chego na' rather than 'chego a' (more European)."
+          }
+        ]
+      }
+    ]
+  }
+}

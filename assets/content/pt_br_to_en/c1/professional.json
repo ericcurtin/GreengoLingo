@@ -1,0 +1,143 @@
+{
+  "id": "professional_01_br_en",
+  "title": "Professional Communication",
+  "description": "Domine a linguagem empresarial e profissional em inglês",
+  "level": "C1",
+  "language_pair": {
+    "source": "pt_BR",
+    "target": "en_US"
+  },
+  "xp_reward": 30,
+  "order": 2,
+  "icon": "business",
+  "questions": [
+    {
+      "type": "multiple_choice",
+      "prompt": "Como se começa um email formal em inglês?",
+      "options": ["Hi!", "Dear Mr/Ms...", "Hey!", "What's up?"],
+      "correct_index": 1,
+      "explanation": "'Dear Mr/Ms + surname' é a saudação formal padrão em inglês."
+    },
+    {
+      "type": "typing",
+      "prompt": "Traduza 'Atenciosamente'",
+      "correct_answers": ["Sincerely", "Best regards", "Yours sincerely"],
+      "hint": "Fecho formal para correspondência profissional",
+      "accent_strict": false
+    },
+    {
+      "type": "matching_pairs",
+      "prompt": "Combine as expressões empresariais",
+      "pairs": [
+        ["Com relação a...", "Regarding... / With regard to..."],
+        ["Segue anexo", "Please find attached"],
+        ["Escrevo para...", "I am writing to..."],
+        ["Conforme nossa conversa", "As per our conversation"]
+      ]
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Qual é a tradução de 'Fico no aguardo'?",
+      "options": ["I am waiting", "I look forward to hearing from you", "I'm leaving", "I'll wait"],
+      "correct_index": 1,
+      "explanation": "'I look forward to hearing from you' é a expressão profissional equivalente."
+    },
+    {
+      "type": "sentence_builder",
+      "prompt": "Construa: 'I would like to schedule a meeting'",
+      "words": ["I", "would", "like", "to", "schedule", "a", "meeting"],
+      "correct_order": [0, 1, 2, 3, 4, 5, 6],
+      "distractors": []
+    },
+    {
+      "type": "typing",
+      "prompt": "Traduza 'Devido a circunstâncias imprevistas'",
+      "correct_answers": ["Due to unforeseen circumstances", "Owing to unforeseen circumstances"],
+      "hint": "Due to = Devido a",
+      "accent_strict": false
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Qual é mais formal em inglês?",
+      "options": ["Can you...?", "Could you...?", "Would you be able to...?", "Do it!"],
+      "correct_index": 2,
+      "explanation": "'Would you be able to...?' é a forma mais formal e educada de fazer pedidos."
+    },
+    {
+      "type": "matching_pairs",
+      "prompt": "Combine o vocabulário de reuniões",
+      "pairs": [
+        ["Pauta", "Agenda"],
+        ["Ata", "Minutes"],
+        ["Remarcar", "To reschedule"],
+        ["Acompanhamento", "Follow-up"]
+      ]
+    }
+  ],
+  "cheat_sheet": {
+    "title": "Professional English Communication",
+    "sections": [
+      {
+        "heading": "Estrutura de Email Formal",
+        "content": [
+          {
+            "type": "vocabulary",
+            "items": [
+              ["Abertura (muito formal)", "Dear Mr/Ms/Dr + Surname"],
+              ["Abertura (formal)", "Dear + First name"],
+              ["Abertura (semi-formal)", "Hello / Hi + Name"],
+              ["Fecho (formal)", "Sincerely / Best regards"],
+              ["Fecho (semi-formal)", "Best / Thanks"]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Expressões Úteis",
+        "content": [
+          {
+            "type": "vocabulary",
+            "items": [
+              ["Com relação a...", "Regarding... / With regard to..."],
+              ["Segue anexo", "Please find attached"],
+              ["Conforme alinhado", "As discussed / As agreed"],
+              ["Para seu conhecimento", "For your information (FYI)"],
+              ["O mais rápido possível", "ASAP / At your earliest convenience"],
+              ["Fico no aguardo", "I look forward to hearing from you"]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Comparação Brasil-EUA",
+        "content": [
+          {
+            "type": "text",
+            "text": "O inglês americano de negócios é relativamente informal comparado com o europeu:"
+          },
+          {
+            "type": "vocabulary",
+            "items": [
+              ["Prezado → Dear", "Formal"],
+              ["Oi → Hi", "Casual/Semi-formal"],
+              ["Abraços → Best / Cheers", "Informal"]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Dicas",
+        "content": [
+          {
+            "type": "tip",
+            "text": "O inglês americano de negócios tende a ser mais direto. Use 'would' e 'could' para suavizar pedidos."
+          },
+          {
+            "type": "warning",
+            "text": "Evite traduzir 'Oi' como 'Hi' em emails muito formais. Use 'Dear' ou 'Hello'."
+          }
+        ]
+      }
+    ]
+  }
+}

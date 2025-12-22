@@ -1,0 +1,139 @@
+{
+  "id": "basic_expressions_01_br",
+  "title": "Basic Expressions",
+  "description": "Learn essential everyday expressions in Brazilian Portuguese",
+  "level": "A1",
+  "language_pair": {
+    "source": "en_US",
+    "target": "pt_BR"
+  },
+  "xp_reward": 10,
+  "order": 4,
+  "icon": "speech_bubble",
+  "questions": [
+    {
+      "type": "multiple_choice",
+      "prompt": "How do you say 'please' in Portuguese?",
+      "options": ["obrigado", "por favor", "desculpa", "com licença"],
+      "correct_index": 1,
+      "explanation": "'Por favor' is used just like 'please' in English - when making requests or asking politely."
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "How does a man say 'thank you' in Portuguese?",
+      "options": ["obrigada", "obrigado", "por favor", "de nada"],
+      "correct_index": 1,
+      "explanation": "Men say 'obrigado' (ending in -o), while women say 'obrigada' (ending in -a)."
+    },
+    {
+      "type": "typing",
+      "prompt": "Write 'You're welcome' in Portuguese",
+      "correct_answers": ["de nada", "De nada"],
+      "hint": "Literally means 'of nothing'",
+      "accent_strict": false
+    },
+    {
+      "type": "matching_pairs",
+      "prompt": "Match the expressions",
+      "pairs": [
+        ["Yes", "Sim"],
+        ["No", "Não"],
+        ["Please", "Por favor"],
+        ["Excuse me", "Com licença"]
+      ]
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "What does 'Desculpa' mean?",
+      "options": ["Thank you", "Please", "Sorry / Excuse me", "You're welcome"],
+      "correct_index": 2,
+      "explanation": "'Desculpa' is used to apologize or get someone's attention, like 'sorry' or 'excuse me'."
+    },
+    {
+      "type": "typing",
+      "prompt": "Write 'I don't understand' in Portuguese",
+      "correct_answers": ["Não entendo", "Eu não entendo", "Nao entendo"],
+      "hint": "Não + entendo",
+      "accent_strict": false
+    },
+    {
+      "type": "sentence_builder",
+      "prompt": "Build: 'Do you speak English?'",
+      "words": ["Você", "fala", "inglês", "português", "come"],
+      "correct_order": [0, 1, 2],
+      "distractors": ["português", "come"]
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "How do you say 'I don't know' in Portuguese?",
+      "options": ["Não sei", "Não entendo", "Não falo", "Não gosto"],
+      "correct_index": 0,
+      "explanation": "'Não sei' literally means 'I don't know'. It's very commonly used."
+    }
+  ],
+  "cheat_sheet": {
+    "title": "Essential Brazilian Expressions",
+    "sections": [
+      {
+        "heading": "Polite Words",
+        "content": [
+          {
+            "type": "vocabulary",
+            "items": [
+              ["Please", "Por favor"],
+              ["Thank you (male speaker)", "Obrigado"],
+              ["Thank you (female speaker)", "Obrigada"],
+              ["You're welcome", "De nada"],
+              ["Excuse me (to pass)", "Com licença"],
+              ["Sorry", "Desculpa / Desculpe"]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Yes and No",
+        "content": [
+          {
+            "type": "vocabulary",
+            "items": [
+              ["Yes", "Sim"],
+              ["No", "Não"],
+              ["Maybe", "Talvez"],
+              ["Of course", "Claro"]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Useful Phrases",
+        "content": [
+          {
+            "type": "vocabulary",
+            "items": [
+              ["I don't understand", "Não entendo"],
+              ["I don't know", "Não sei"],
+              ["Do you speak English?", "Você fala inglês?"],
+              ["I speak a little Portuguese", "Eu falo um pouco de português"],
+              ["Can you repeat?", "Pode repetir?"]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Gender in Thank You",
+        "content": [
+          {
+            "type": "tip",
+            "text": "The word for 'thank you' changes based on the speaker's gender: men say 'obrigado', women say 'obrigada'. It doesn't matter who you're speaking to!"
+          },
+          {
+            "type": "example",
+            "source": "Muito obrigado!",
+            "target": "Thank you very much! (said by a man)",
+            "note": "Add 'muito' for emphasis"
+          }
+        ]
+      }
+    ]
+  }
+}

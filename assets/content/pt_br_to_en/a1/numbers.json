@@ -1,0 +1,140 @@
+{
+  "id": "numbers_01_br_en",
+  "title": "Números 1-20",
+  "description": "Aprenda os números básicos em inglês",
+  "level": "A1",
+  "language_pair": {
+    "source": "pt_BR",
+    "target": "en_US"
+  },
+  "xp_reward": 10,
+  "order": 3,
+  "icon": "numbers",
+  "questions": [
+    {
+      "type": "multiple_choice",
+      "prompt": "Como você diz 'um' em inglês?",
+      "options": ["one", "two", "three", "zero"],
+      "correct_index": 0,
+      "explanation": "'One' significa um em inglês."
+    },
+    {
+      "type": "matching_pairs",
+      "prompt": "Combine os números",
+      "pairs": [
+        ["um", "one"],
+        ["dois", "two"],
+        ["três", "three"],
+        ["quatro", "four"]
+      ]
+    },
+    {
+      "type": "typing",
+      "prompt": "Escreva 'cinco' em inglês",
+      "correct_answers": ["five"],
+      "hint": "Começa com 'f'",
+      "accent_strict": false
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Qual número é 'ten'?",
+      "options": ["oito", "nove", "dez", "doze"],
+      "correct_index": 2,
+      "explanation": "'Ten' significa dez em inglês."
+    },
+    {
+      "type": "matching_pairs",
+      "prompt": "Combine os números",
+      "pairs": [
+        ["seis", "six"],
+        ["sete", "seven"],
+        ["oito", "eight"],
+        ["nove", "nine"]
+      ]
+    },
+    {
+      "type": "typing",
+      "prompt": "Escreva 'onze' em inglês",
+      "correct_answers": ["eleven"],
+      "hint": "Começa com 'e'",
+      "accent_strict": false
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Como você diz 'vinte' em inglês?",
+      "options": ["fifteen", "sixteen", "nineteen", "twenty"],
+      "correct_index": 3,
+      "explanation": "'Twenty' significa vinte em inglês."
+    },
+    {
+      "type": "sentence_builder",
+      "prompt": "Construa o número: 'quinze'",
+      "words": ["fifteen", "fourteen", "thirteen", "twelve"],
+      "correct_order": [0],
+      "distractors": ["fourteen", "thirteen", "twelve"]
+    }
+  ],
+  "cheat_sheet": {
+    "title": "Números em Inglês",
+    "sections": [
+      {
+        "heading": "Números 1-10",
+        "content": [
+          {
+            "type": "vocabulary",
+            "items": [
+              ["1 - um", "one"],
+              ["2 - dois", "two"],
+              ["3 - três", "three"],
+              ["4 - quatro", "four"],
+              ["5 - cinco", "five"],
+              ["6 - seis", "six"],
+              ["7 - sete", "seven"],
+              ["8 - oito", "eight"],
+              ["9 - nove", "nine"],
+              ["10 - dez", "ten"]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Números 11-20",
+        "content": [
+          {
+            "type": "vocabulary",
+            "items": [
+              ["11 - onze", "eleven"],
+              ["12 - doze", "twelve"],
+              ["13 - treze", "thirteen"],
+              ["14 - quatorze", "fourteen"],
+              ["15 - quinze", "fifteen"],
+              ["16 - dezesseis", "sixteen"],
+              ["17 - dezessete", "seventeen"],
+              ["18 - dezoito", "eighteen"],
+              ["19 - dezenove", "nineteen"],
+              ["20 - vinte", "twenty"]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Padrão -teen",
+        "content": [
+          {
+            "type": "tip",
+            "text": "Os números de 13 a 19 terminam em '-teen' (thirteen, fourteen, etc.). Esta é a origem da palavra 'teenager' (adolescente)."
+          }
+        ]
+      },
+      {
+        "heading": "Diferença do Português",
+        "content": [
+          {
+            "type": "tip",
+            "text": "Em inglês, os números não têm gênero. Usamos 'one' e 'two' para tudo, diferente do português que tem 'um/uma' e 'dois/duas'."
+          }
+        ]
+      }
+    ]
+  }
+}

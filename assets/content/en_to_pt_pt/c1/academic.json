@@ -1,0 +1,150 @@
+{
+  "id": "academic_01",
+  "title": "Academic Language",
+  "description": "Learn academic writing and discourse in European Portuguese",
+  "level": "C1",
+  "language_pair": {
+    "source": "en_US",
+    "target": "pt_PT"
+  },
+  "xp_reward": 30,
+  "order": 3,
+  "icon": "menu_book",
+  "questions": [
+    {
+      "type": "multiple_choice",
+      "prompt": "How do you say 'According to the author' in academic Portuguese?",
+      "options": ["O autor disse", "Segundo o autor", "O autor falou", "De acordo ao autor"],
+      "correct_index": 1,
+      "explanation": "'Segundo o autor' or 'De acordo com o autor' are academic ways to cite sources."
+    },
+    {
+      "type": "typing",
+      "prompt": "Write 'The aim of this study is to...' in Portuguese",
+      "correct_answers": ["O objetivo deste estudo é...", "Este estudo tem como objetivo..."],
+      "hint": "Objetivo = aim/goal",
+      "accent_strict": false
+    },
+    {
+      "type": "matching_pairs",
+      "prompt": "Match the academic connectors",
+      "pairs": [
+        ["Furthermore", "Além disso / Ademais"],
+        ["However", "Contudo / No entanto / Porém"],
+        ["Therefore", "Portanto / Por conseguinte"],
+        ["In conclusion", "Em conclusão / Concluindo"]
+      ]
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Which verb form is typically used in academic writing?",
+      "options": ["First person singular (eu)", "Second person (tu/você)", "Third person/impersonal", "Imperative"],
+      "correct_index": 2,
+      "explanation": "Academic Portuguese typically uses third person or impersonal constructions for objectivity."
+    },
+    {
+      "type": "sentence_builder",
+      "prompt": "Build: 'The data suggests that...'",
+      "words": ["Os", "dados", "sugerem", "que", "sugere"],
+      "correct_order": [0, 1, 2, 3],
+      "distractors": ["sugere"]
+    },
+    {
+      "type": "typing",
+      "prompt": "Write 'As can be observed' in Portuguese (impersonal)",
+      "correct_answers": ["Como se pode observar", "Conforme se observa", "Como é possível observar"],
+      "hint": "Use impersonal 'se'",
+      "accent_strict": false
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "What does 'Saliente-se que...' mean?",
+      "options": ["It is important...", "It should be highlighted that...", "It is wrong that...", "It was said that..."],
+      "correct_index": 1,
+      "explanation": "'Saliente-se' is an impersonal imperative meaning 'let it be highlighted' or 'it should be noted'."
+    },
+    {
+      "type": "matching_pairs",
+      "prompt": "Match citation language",
+      "pairs": [
+        ["According to...", "Segundo... / De acordo com..."],
+        ["As argued by...", "Conforme argumenta..."],
+        ["In the words of...", "Nas palavras de..."],
+        ["As cited in...", "Citado em... / Apud..."]
+      ]
+    }
+  ],
+  "cheat_sheet": {
+    "title": "Academic Language",
+    "sections": [
+      {
+        "heading": "Research Paper Structure",
+        "content": [
+          {
+            "type": "vocabulary",
+            "items": [
+              ["Abstract", "Resumo"],
+              ["Introduction", "Introdução"],
+              ["Literature Review", "Revisão da Literatura"],
+              ["Methodology", "Metodologia"],
+              ["Results", "Resultados"],
+              ["Discussion", "Discussão"],
+              ["Conclusion", "Conclusão"],
+              ["References", "Referências Bibliográficas"]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Academic Connectors",
+        "content": [
+          {
+            "type": "vocabulary",
+            "items": [
+              ["Furthermore/Moreover", "Além disso / Ademais / Para mais"],
+              ["However/Nevertheless", "Contudo / No entanto / Todavia"],
+              ["Therefore/Thus", "Portanto / Por conseguinte / Logo"],
+              ["On the other hand", "Por outro lado"],
+              ["In contrast", "Em contrapartida / Por oposição"],
+              ["In other words", "Por outras palavras / Ou seja"]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Impersonal Constructions",
+        "content": [
+          {
+            "type": "text",
+            "text": "Academic writing uses impersonal forms for objectivity:"
+          },
+          {
+            "type": "example",
+            "source": "Observa-se que...",
+            "target": "It is observed that...",
+            "note": "Impersonal 'se'"
+          },
+          {
+            "type": "example",
+            "source": "Considera-se importante...",
+            "target": "It is considered important...",
+            "note": "Passive reflexive"
+          }
+        ]
+      },
+      {
+        "heading": "Tips",
+        "content": [
+          {
+            "type": "tip",
+            "text": "Use 'nós' (we) sparingly. Prefer impersonal constructions or passive voice in academic writing."
+          },
+          {
+            "type": "warning",
+            "text": "European Portuguese academic style tends to be more formal than Brazilian. Avoid colloquialisms."
+          }
+        ]
+      }
+    ]
+  }
+}

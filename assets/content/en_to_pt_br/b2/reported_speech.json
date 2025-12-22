@@ -1,0 +1,144 @@
+{
+  "id": "reported_speech_01_br",
+  "title": "Reported Speech",
+  "description": "Learn to report what others said in Brazilian Portuguese",
+  "level": "B2",
+  "language_pair": {
+    "source": "en_US",
+    "target": "pt_BR"
+  },
+  "xp_reward": 25,
+  "order": 2,
+  "icon": "chat",
+  "questions": [
+    {
+      "type": "multiple_choice",
+      "prompt": "How do you report: 'Estou cansado' → Ele disse que...",
+      "options": ["...está cansado", "...estava cansado", "...esteve cansado", "...estará cansado"],
+      "correct_index": 1,
+      "explanation": "When reporting speech, present tense usually shifts to imperfect: 'estou' → 'estava'."
+    },
+    {
+      "type": "typing",
+      "prompt": "Report: 'Vou ao cinema' → Ela disse que ___",
+      "correct_answers": ["ia ao cinema", "ela ia ao cinema"],
+      "hint": "Present 'vou' becomes imperfect 'ia'",
+      "accent_strict": false
+    },
+    {
+      "type": "matching_pairs",
+      "prompt": "Match direct to reported speech tenses",
+      "pairs": [
+        ["Present (está)", "Imperfect (estava)"],
+        ["Pretérito perfeito (foi)", "Mais-que-perfeito (tinha ido)"],
+        ["Future (vai)", "Conditional (ia)"],
+        ["Present subjunctive (venha)", "Imperfect subjunctive (viesse)"]
+      ]
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Which verb introduces reported speech meaning 'to say'?",
+      "options": ["Falar", "Dizer", "Contar", "All of these"],
+      "correct_index": 3,
+      "explanation": "All three can introduce reported speech: dizer que, falar que, contar que."
+    },
+    {
+      "type": "sentence_builder",
+      "prompt": "Build: 'He said he was tired'",
+      "words": ["Ele", "disse", "que", "estava", "cansado", "está"],
+      "correct_order": [0, 1, 2, 3, 4],
+      "distractors": ["está"]
+    },
+    {
+      "type": "typing",
+      "prompt": "Report the question: 'Onde você mora?' → Perguntou ___",
+      "correct_answers": ["onde eu morava", "onde morava", "onde é que eu morava"],
+      "hint": "Questions lose the question mark in reported speech",
+      "accent_strict": false
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "How do you report a command: 'Senta!'",
+      "options": ["Disse que senta", "Mandou sentar", "Disse pra sentar", "Both B and C are correct"],
+      "correct_index": 3,
+      "explanation": "Commands are reported with 'mandar + infinitive' or 'dizer pra + infinitive' in Brazil."
+    },
+    {
+      "type": "matching_pairs",
+      "prompt": "Match the time expressions",
+      "pairs": [
+        ["Hoje (direct)", "Naquele dia (reported)"],
+        ["Amanhã (direct)", "No dia seguinte (reported)"],
+        ["Ontem (direct)", "No dia anterior (reported)"],
+        ["Aqui (direct)", "Ali/Lá (reported)"]
+      ]
+    }
+  ],
+  "cheat_sheet": {
+    "title": "Reported Speech",
+    "sections": [
+      {
+        "heading": "Tense Changes",
+        "content": [
+          {
+            "type": "text",
+            "text": "When the reporting verb is in the past, tenses shift back:"
+          },
+          {
+            "type": "vocabulary",
+            "items": [
+              ["Present → Imperfect", "está → estava"],
+              ["Pretérito perfeito → Mais-que-perfeito", "foi → tinha ido"],
+              ["Future → Conditional", "vai → ia"],
+              ["Present subjunctive → Imperfect subjunctive", "venha → viesse"]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Reporting Verbs",
+        "content": [
+          {
+            "type": "vocabulary",
+            "items": [
+              ["To say", "Dizer que... / Falar que..."],
+              ["To tell/explain", "Contar que..."],
+              ["To ask (question)", "Perguntar se.../Perguntar onde..."],
+              ["To order/tell to", "Mandar + infinitive / Dizer pra + infinitive"],
+              ["To admit", "Admitir que..."],
+              ["To deny", "Negar que... (+ subjunctive)"]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Pronoun and Time Changes",
+        "content": [
+          {
+            "type": "vocabulary",
+            "items": [
+              ["Eu → Ele/Ela", "I → He/She"],
+              ["Meu → Dele/Sua", "My → His/Her"],
+              ["Hoje → Naquele dia", "Today → That day"],
+              ["Amanhã → No dia seguinte", "Tomorrow → The next day"],
+              ["Aqui → Ali/Lá", "Here → There"]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Tips",
+        "content": [
+          {
+            "type": "tip",
+            "text": "In Brazilian Portuguese, 'pra' is commonly used instead of 'para' in speech: 'Ele disse pra eu ir'."
+          },
+          {
+            "type": "warning",
+            "text": "After 'perguntar' (to ask), use 'se' for yes/no questions: 'Perguntou se eu vinha'."
+          }
+        ]
+      }
+    ]
+  }
+}

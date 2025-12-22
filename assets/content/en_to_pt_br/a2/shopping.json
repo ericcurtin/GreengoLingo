@@ -1,0 +1,146 @@
+{
+  "id": "shopping_01_br",
+  "title": "Shopping Basics",
+  "description": "Learn essential shopping vocabulary in Brazilian Portuguese",
+  "level": "A2",
+  "language_pair": {
+    "source": "en_US",
+    "target": "pt_BR"
+  },
+  "xp_reward": 15,
+  "order": 3,
+  "icon": "shopping_cart",
+  "questions": [
+    {
+      "type": "multiple_choice",
+      "prompt": "How do you say 'How much does it cost?' in Portuguese?",
+      "options": ["Quanto custa?", "O que é?", "Onde está?", "Como está?"],
+      "correct_index": 0,
+      "explanation": "'Quanto custa?' is the standard way to ask for the price."
+    },
+    {
+      "type": "typing",
+      "prompt": "Write 'I would like' in Portuguese",
+      "correct_answers": ["Eu queria", "Queria", "Eu gostaria", "Gostaria"],
+      "hint": "Conditional form of 'querer'",
+      "accent_strict": false
+    },
+    {
+      "type": "matching_pairs",
+      "prompt": "Match the shopping phrases",
+      "pairs": [
+        ["How much?", "Quanto?"],
+        ["Too expensive", "Muito caro"],
+        ["Cheap", "Barato"],
+        ["The bill", "A conta"]
+      ]
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "What does 'Posso pagar no cartão?' mean?",
+      "options": ["Can I pay cash?", "Can I pay by card?", "Do you have change?", "Is it on sale?"],
+      "correct_index": 1,
+      "explanation": "'Cartão' means card. 'Dinheiro' would be cash."
+    },
+    {
+      "type": "sentence_builder",
+      "prompt": "Build: 'I want to buy this'",
+      "words": ["Eu", "quero", "comprar", "isso", "vender"],
+      "correct_order": [0, 1, 2, 3],
+      "distractors": ["vender"]
+    },
+    {
+      "type": "typing",
+      "prompt": "Write 'Do you have...?' in Portuguese",
+      "correct_answers": ["Você tem?", "Tem?", "Vocês têm?"],
+      "hint": "Using 'ter' (to have)",
+      "accent_strict": false
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "How do you ask for a bigger size?",
+      "options": ["Tem menor?", "Tem maior?", "Tem outra cor?", "Tem mais barato?"],
+      "correct_index": 1,
+      "explanation": "'Maior' means bigger. 'Menor' would be smaller."
+    },
+    {
+      "type": "matching_pairs",
+      "prompt": "Match the shop types",
+      "pairs": [
+        ["Bakery", "Padaria"],
+        ["Pharmacy", "Farmácia"],
+        ["Supermarket", "Supermercado"],
+        ["Bookshop", "Livraria"]
+      ]
+    }
+  ],
+  "cheat_sheet": {
+    "title": "Shopping in Portuguese",
+    "sections": [
+      {
+        "heading": "Essential Phrases",
+        "content": [
+          {
+            "type": "vocabulary",
+            "items": [
+              ["How much does it cost?", "Quanto custa?"],
+              ["I would like...", "Eu queria... / Gostaria de..."],
+              ["Do you have...?", "Você tem...? / Tem...?"],
+              ["I'm just looking", "Estou só olhando"],
+              ["I'll take it", "Vou levar"],
+              ["Can I pay by card?", "Posso pagar no cartão?"],
+              ["Cash", "Dinheiro"],
+              ["Receipt", "Nota fiscal / Recibo"]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Describing Items",
+        "content": [
+          {
+            "type": "vocabulary",
+            "items": [
+              ["Expensive", "Caro"],
+              ["Cheap", "Barato"],
+              ["Big/Bigger", "Grande / Maior"],
+              ["Small/Smaller", "Pequeno / Menor"],
+              ["This one", "Esse/Essa"],
+              ["That one", "Aquele/Aquela"]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Types of Shops",
+        "content": [
+          {
+            "type": "vocabulary",
+            "items": [
+              ["Shop/Store", "Loja"],
+              ["Supermarket", "Supermercado"],
+              ["Market", "Feira / Mercado"],
+              ["Bakery", "Padaria"],
+              ["Butcher", "Açougue"],
+              ["Pharmacy", "Farmácia"],
+              ["Bookshop", "Livraria"]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Tips",
+        "content": [
+          {
+            "type": "tip",
+            "text": "In Brazil, asking 'Posso pagar no cartão?' (with 'no') is more natural than 'com cartão'."
+          },
+          {
+            "type": "warning",
+            "text": "In Brazil, a 'nota fiscal' is the official receipt. Ask for it to ensure your purchase is properly recorded."
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,144 @@
+{
+  "id": "reported_speech_01_pt_en",
+  "title": "Reported Speech",
+  "description": "Aprenda a relatar o que outros disseram em inglês",
+  "level": "B2",
+  "language_pair": {
+    "source": "pt_PT",
+    "target": "en_US"
+  },
+  "xp_reward": 25,
+  "order": 2,
+  "icon": "chat",
+  "questions": [
+    {
+      "type": "multiple_choice",
+      "prompt": "Como se relata 'I am tired' em discurso indirecto?",
+      "options": ["He said he is tired", "He said he was tired", "He said he be tired", "He said he been tired"],
+      "correct_index": 1,
+      "explanation": "No discurso indirecto, o presente 'am' muda para passado 'was'."
+    },
+    {
+      "type": "typing",
+      "prompt": "Relate: 'I will go' → She said ___",
+      "correct_answers": ["she would go", "that she would go"],
+      "hint": "'will' muda para 'would'",
+      "accent_strict": false
+    },
+    {
+      "type": "matching_pairs",
+      "prompt": "Combine as mudanças de tempo verbal",
+      "pairs": [
+        ["Present simple (is)", "Past simple (was)"],
+        ["Past simple (went)", "Past perfect (had gone)"],
+        ["Will", "Would"],
+        ["Can", "Could"]
+      ]
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "O que acontece aos pronomes no discurso indirecto?",
+      "options": ["Não mudam", "Mudam de acordo com o contexto", "Sempre mudam para 'he/she'", "Desaparecem"],
+      "correct_index": 1,
+      "explanation": "Os pronomes mudam conforme quem está a relatar: 'I' pode tornar-se 'he', 'she', etc."
+    },
+    {
+      "type": "sentence_builder",
+      "prompt": "Construa: 'He said he was tired'",
+      "words": ["He", "said", "he", "was", "tired", "is"],
+      "correct_order": [0, 1, 2, 3, 4],
+      "distractors": ["is"]
+    },
+    {
+      "type": "typing",
+      "prompt": "Relate a pergunta: 'Where do you live?' → She asked ___",
+      "correct_answers": ["where I lived", "me where I lived"],
+      "hint": "A ordem muda para afirmativa (não interrogativa)",
+      "accent_strict": false
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Como se relata uma ordem: 'Close the door!'",
+      "options": ["He said close the door", "He told me to close the door", "He said that close the door", "He told closing the door"],
+      "correct_index": 1,
+      "explanation": "Ordens são relatadas com 'told + object + to + infinitive'."
+    },
+    {
+      "type": "matching_pairs",
+      "prompt": "Combine as expressões de tempo",
+      "pairs": [
+        ["Today", "That day"],
+        ["Tomorrow", "The next/following day"],
+        ["Yesterday", "The day before"],
+        ["Here", "There"]
+      ]
+    }
+  ],
+  "cheat_sheet": {
+    "title": "Reported Speech in English",
+    "sections": [
+      {
+        "heading": "Mudanças de Tempo Verbal",
+        "content": [
+          {
+            "type": "vocabulary",
+            "items": [
+              ["Present simple → Past simple", "is → was"],
+              ["Present continuous → Past continuous", "is going → was going"],
+              ["Past simple → Past perfect", "went → had gone"],
+              ["Present perfect → Past perfect", "have done → had done"],
+              ["Will → Would", "will go → would go"],
+              ["Can → Could", "can do → could do"]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Verbos de Relato",
+        "content": [
+          {
+            "type": "vocabulary",
+            "items": [
+              ["Dizer", "Say / Tell"],
+              ["Perguntar", "Ask"],
+              ["Ordenar", "Tell / Order"],
+              ["Admitir", "Admit"],
+              ["Explicar", "Explain"],
+              ["Sugerir", "Suggest"]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Estruturas para Perguntas",
+        "content": [
+          {
+            "type": "example",
+            "source": "Perguntou: 'Onde moras?'",
+            "target": "She asked where I lived",
+            "note": "Ordem de palavras muda para afirmativa"
+          },
+          {
+            "type": "example",
+            "source": "Perguntou: 'Vens à festa?'",
+            "target": "He asked if/whether I was coming to the party",
+            "note": "Perguntas sim/não usam 'if' ou 'whether'"
+          }
+        ]
+      },
+      {
+        "heading": "Dicas",
+        "content": [
+          {
+            "type": "tip",
+            "text": "'Say' não precisa de objecto: 'He said (that)...'. 'Tell' precisa: 'He told me (that)...'"
+          },
+          {
+            "type": "warning",
+            "text": "No discurso indirecto, a ordem das palavras nas perguntas muda para ordem afirmativa."
+          }
+        ]
+      }
+    ]
+  }
+}

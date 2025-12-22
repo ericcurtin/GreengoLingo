@@ -1,0 +1,152 @@
+{
+  "id": "directions_01",
+  "title": "Giving Directions",
+  "description": "Learn to give and understand directions in European Portuguese",
+  "level": "B1",
+  "language_pair": {
+    "source": "en_US",
+    "target": "pt_PT"
+  },
+  "xp_reward": 20,
+  "order": 3,
+  "icon": "directions",
+  "questions": [
+    {
+      "type": "multiple_choice",
+      "prompt": "How do you say 'Turn left' in Portuguese?",
+      "options": ["Vire à esquerda", "Vire à direita", "Siga em frente", "Volte para trás"],
+      "correct_index": 0,
+      "explanation": "'Vire à esquerda' means turn left. 'Direita' is right."
+    },
+    {
+      "type": "typing",
+      "prompt": "Write 'Go straight' in Portuguese",
+      "correct_answers": ["Siga em frente", "Vá em frente", "Continue em frente"],
+      "hint": "Siga or vá + em frente",
+      "accent_strict": false
+    },
+    {
+      "type": "matching_pairs",
+      "prompt": "Match the directions",
+      "pairs": [
+        ["Turn right", "Vire à direita"],
+        ["Turn left", "Vire à esquerda"],
+        ["Go straight", "Siga em frente"],
+        ["Go back", "Volte para trás"]
+      ]
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "What does 'Fica ao lado do banco' mean?",
+      "options": ["It's behind the bank", "It's next to the bank", "It's in front of the bank", "It's far from the bank"],
+      "correct_index": 1,
+      "explanation": "'Ao lado de' means 'next to'. 'Atrás de' is behind, 'em frente de' is in front."
+    },
+    {
+      "type": "sentence_builder",
+      "prompt": "Build: 'Take the first street on the right'",
+      "words": ["Apanhe", "a", "primeira", "rua", "à", "direita", "esquerda"],
+      "correct_order": [0, 1, 2, 3, 4, 5],
+      "distractors": ["esquerda"]
+    },
+    {
+      "type": "typing",
+      "prompt": "Write 'It's near here' in Portuguese",
+      "correct_answers": ["Fica perto daqui", "É perto daqui", "Fica aqui perto"],
+      "hint": "Perto = near, daqui = from here",
+      "accent_strict": false
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "How do you ask 'How do I get to the station?'",
+      "options": ["Onde fica a estação?", "Como chego à estação?", "Há uma estação?", "A estação está aberta?"],
+      "correct_index": 1,
+      "explanation": "'Como chego a...' is the standard way to ask for directions to a place."
+    },
+    {
+      "type": "matching_pairs",
+      "prompt": "Match the location words",
+      "pairs": [
+        ["Next to", "Ao lado de"],
+        ["In front of", "Em frente de"],
+        ["Behind", "Atrás de"],
+        ["Between", "Entre"]
+      ]
+    }
+  ],
+  "cheat_sheet": {
+    "title": "Directions in Portuguese",
+    "sections": [
+      {
+        "heading": "Basic Directions",
+        "content": [
+          {
+            "type": "vocabulary",
+            "items": [
+              ["Turn left", "Vire à esquerda"],
+              ["Turn right", "Vire à direita"],
+              ["Go straight", "Siga em frente"],
+              ["Go back", "Volte para trás"],
+              ["Cross the street", "Atravesse a rua"],
+              ["At the corner", "Na esquina"],
+              ["At the traffic lights", "No semáforo"]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Location Words",
+        "content": [
+          {
+            "type": "vocabulary",
+            "items": [
+              ["Next to", "Ao lado de"],
+              ["In front of", "Em frente de"],
+              ["Behind", "Atrás de"],
+              ["Between", "Entre"],
+              ["Near", "Perto de"],
+              ["Far from", "Longe de"],
+              ["Opposite", "Em frente de / Do outro lado"]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Asking for Directions",
+        "content": [
+          {
+            "type": "example",
+            "source": "Como chego a...?",
+            "target": "How do I get to...?",
+            "note": "Standard way to ask for directions"
+          },
+          {
+            "type": "example",
+            "source": "Onde fica...?",
+            "target": "Where is...?",
+            "note": "For asking about location"
+          },
+          {
+            "type": "example",
+            "source": "É longe daqui?",
+            "target": "Is it far from here?",
+            "note": "To check distance"
+          }
+        ]
+      },
+      {
+        "heading": "Tips",
+        "content": [
+          {
+            "type": "tip",
+            "text": "In Portugal, use 'apanhe' (take) for streets. 'Siga' (follow) also works well."
+          },
+          {
+            "type": "warning",
+            "text": "Remember: 'à esquerda' and 'à direita' use the preposition 'a' + definite article."
+          }
+        ]
+      }
+    ]
+  }
+}

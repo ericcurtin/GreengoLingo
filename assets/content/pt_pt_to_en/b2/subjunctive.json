@@ -1,0 +1,155 @@
+{
+  "id": "subjunctive_01_pt_en",
+  "title": "The Subjunctive Mood",
+  "description": "Aprenda a usar o conjuntivo em inglês",
+  "level": "B2",
+  "language_pair": {
+    "source": "pt_PT",
+    "target": "en_US"
+  },
+  "xp_reward": 25,
+  "order": 1,
+  "icon": "psychology",
+  "questions": [
+    {
+      "type": "multiple_choice",
+      "prompt": "O inglês usa muito o conjuntivo como o português?",
+      "options": ["Sim, sempre", "Não, raramente", "Só no passado", "Só no futuro"],
+      "correct_index": 1,
+      "explanation": "O inglês usa o conjuntivo muito menos que o português. Muitas vezes usa outras estruturas."
+    },
+    {
+      "type": "typing",
+      "prompt": "Como se diz 'Espero que ele venha' em inglês?",
+      "correct_answers": ["I hope he comes", "I hope that he comes"],
+      "hint": "Em inglês, usa-se o presente simples depois de 'hope'",
+      "accent_strict": false
+    },
+    {
+      "type": "matching_pairs",
+      "prompt": "Combine as traduções",
+      "pairs": [
+        ["Espero que...", "I hope (that)..."],
+        ["Quero que ele vá", "I want him to go"],
+        ["Duvido que...", "I doubt (that)..."],
+        ["Embora...", "Although/Even though..."]
+      ]
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Como se traduz 'Quero que faças isso'?",
+      "options": ["I want that you do this", "I want you to do this", "I want you do this", "I want you doing this"],
+      "correct_index": 1,
+      "explanation": "Em inglês, usa-se 'want + object + to infinitive', não 'want that + subjunctive'."
+    },
+    {
+      "type": "sentence_builder",
+      "prompt": "Construa: 'I suggest that he leave'",
+      "words": ["I", "suggest", "that", "he", "leave", "leaves"],
+      "correct_order": [0, 1, 2, 3, 4],
+      "distractors": ["leaves"]
+    },
+    {
+      "type": "typing",
+      "prompt": "Escreva 'Se eu fosse tu' em inglês",
+      "correct_answers": ["If I were you"],
+      "hint": "Usa-se 'were' para todas as pessoas no conjuntivo passado",
+      "accent_strict": false
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Quando é que o inglês usa o conjuntivo?",
+      "options": ["Nunca", "Com 'suggest', 'recommend', 'insist' + that", "Sempre depois de 'that'", "Só em linguagem informal"],
+      "correct_index": 1,
+      "explanation": "O conjuntivo em inglês aparece com verbos como suggest, recommend, insist seguidos de 'that'."
+    },
+    {
+      "type": "matching_pairs",
+      "prompt": "Combine as estruturas",
+      "pairs": [
+        ["Quero que ele vá", "I want him to go"],
+        ["Prefiro que fiques", "I prefer you to stay"],
+        ["É importante que...", "It's important that..."],
+        ["Sugiro que...", "I suggest that..."]
+      ]
+    }
+  ],
+  "cheat_sheet": {
+    "title": "Subjunctive in English",
+    "sections": [
+      {
+        "heading": "Diferenças do Português",
+        "content": [
+          {
+            "type": "text",
+            "text": "O inglês usa o conjuntivo muito menos que o português. Muitas construções usam estruturas diferentes:"
+          },
+          {
+            "type": "vocabulary",
+            "items": [
+              ["Quero que ele vá", "I want him to go (infinitive)"],
+              ["Espero que venhas", "I hope you come (present simple)"],
+              ["Duvido que saiba", "I doubt he knows (present simple)"],
+              ["Embora esteja cansado", "Although he is tired (indicative)"]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Quando o Inglês Usa Conjuntivo",
+        "content": [
+          {
+            "type": "text",
+            "text": "Com verbos formais como suggest, recommend, insist, demand + that:"
+          },
+          {
+            "type": "example",
+            "source": "Sugiro que ele vá",
+            "target": "I suggest that he go",
+            "note": "'go' sem 's' - forma base do verbo"
+          },
+          {
+            "type": "example",
+            "source": "É essencial que ela esteja lá",
+            "target": "It's essential that she be there",
+            "note": "'be' em vez de 'is'"
+          }
+        ]
+      },
+      {
+        "heading": "If I Were...",
+        "content": [
+          {
+            "type": "text",
+            "text": "Em condicionais irreais, usa-se 'were' para todas as pessoas:"
+          },
+          {
+            "type": "example",
+            "source": "Se eu fosse rico",
+            "target": "If I were rich",
+            "note": "'were' e não 'was'"
+          },
+          {
+            "type": "example",
+            "source": "Se ele fosse mais alto",
+            "target": "If he were taller",
+            "note": "Formal: were; Informal: was também é aceite"
+          }
+        ]
+      },
+      {
+        "heading": "Dicas",
+        "content": [
+          {
+            "type": "tip",
+            "text": "Para 'quero que' use: I want + pronome + to + infinitivo. NÃO use 'I want that he...'"
+          },
+          {
+            "type": "warning",
+            "text": "O conjuntivo em inglês é mais comum no inglês americano formal. No inglês britânico, usa-se frequentemente 'should'."
+          }
+        ]
+      }
+    ]
+  }
+}
