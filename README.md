@@ -2,7 +2,7 @@
 
 <img width="1600" height="1600" alt="GreengoLingo" src="https://github.com/user-attachments/assets/55452d70-b75e-4a95-aca4-6ad94b024877" />
 
-A cross-platform language learning app built with Flutter and Rust. Learn Portuguese (European or Brazilian) from English, or English from Portuguese, through gamified lessons and interactive exercises.
+A language app for learning through gamified lessons and interactive exercises.
 
 ## Features
 
