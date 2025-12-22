@@ -6,6 +6,7 @@ import '../../theme/app_theme.dart';
 import '../../theme/colors.dart';
 import '../../providers/settings_provider.dart';
 import '../../providers/gamification_provider.dart';
+import '../../providers/progress_provider.dart';
 import '../../widgets/gamification/xp_bar.dart';
 import '../../widgets/gamification/streak_badge.dart';
 import '../lesson/lesson_screen.dart';
@@ -19,6 +20,7 @@ class HomeScreen extends ConsumerWidget {
     final _ = ref.watch(settingsProvider); // Watch for rebuild on settings change
     final xpInfo = ref.watch(xpInfoProvider);
     final streakInfo = ref.watch(streakInfoProvider);
+    final progressAsync = ref.watch(progressProvider);
 
     return Scaffold(
       body: SafeArea(
@@ -101,69 +103,85 @@ class HomeScreen extends ConsumerWidget {
             ),
 
             // Level Cards
-            SliverPadding(
-              padding: const EdgeInsets.all(16),
-              sliver: SliverGrid(
-                gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-                  crossAxisCount: 2,
-                  mainAxisSpacing: 16,
-                  crossAxisSpacing: 16,
-                  childAspectRatio: 1.1,
+            progressAsync.when(
+              data: (progress) => SliverPadding(
+                padding: const EdgeInsets.all(16),
+                sliver: SliverGrid(
+                  gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+                    crossAxisCount: 2,
+                    mainAxisSpacing: 16,
+                    crossAxisSpacing: 16,
+                    childAspectRatio: 1.1,
+                  ),
+                  delegate: SliverChildListDelegate([
+                    _LevelCard(
+                      level: 'A1',
+                      name: 'Beginner',
+                      lessonCount: progress.getTotalCount('A1'),
+                      completedCount: progress.getCompletedCount('A1'),
+                      color: AppColors.levelA1,
+                      onTap: () => _openLessons(context, ref, 'A1'),
+                    ).animate().fadeIn(delay: 100.ms).scale(begin: const Offset(0.9, 0.9)),
+                    _LevelCard(
+                      level: 'A2',
+                      name: 'Elementary',
+                      lessonCount: progress.getTotalCount('A2'),
+                      completedCount: progress.getCompletedCount('A2'),
+                      color: AppColors.levelA2,
+                      onTap: () => _openLessons(context, ref, 'A2'),
+                    ).animate().fadeIn(delay: 150.ms).scale(begin: const Offset(0.9, 0.9)),
+                    _LevelCard(
+                      level: 'B1',
+                      name: 'Intermediate',
+                      lessonCount: progress.getTotalCount('B1'),
+                      completedCount: progress.getCompletedCount('B1'),
+                      color: AppColors.levelB1,
+                      isLocked: progress.getTotalCount('B1') == 0,
+                      onTap: progress.getTotalCount('B1') > 0
+                          ? () => _openLessons(context, ref, 'B1')
+                          : null,
+                    ).animate().fadeIn(delay: 200.ms).scale(begin: const Offset(0.9, 0.9)),
+                    _LevelCard(
+                      level: 'B2',
+                      name: 'Upper Int.',
+                      lessonCount: progress.getTotalCount('B2'),
+                      completedCount: progress.getCompletedCount('B2'),
+                      color: AppColors.levelB2,
+                      isLocked: progress.getTotalCount('B2') == 0,
+                      onTap: progress.getTotalCount('B2') > 0
+                          ? () => _openLessons(context, ref, 'B2')
+                          : null,
+                    ).animate().fadeIn(delay: 250.ms).scale(begin: const Offset(0.9, 0.9)),
+                    _LevelCard(
+                      level: 'C1',
+                      name: 'Advanced',
+                      lessonCount: progress.getTotalCount('C1'),
+                      completedCount: progress.getCompletedCount('C1'),
+                      color: AppColors.levelC1,
+                      isLocked: progress.getTotalCount('C1') == 0,
+                      onTap: progress.getTotalCount('C1') > 0
+                          ? () => _openLessons(context, ref, 'C1')
+                          : null,
+                    ).animate().fadeIn(delay: 300.ms).scale(begin: const Offset(0.9, 0.9)),
+                    _LevelCard(
+                      level: 'C2',
+                      name: 'Mastery',
+                      lessonCount: progress.getTotalCount('C2'),
+                      completedCount: progress.getCompletedCount('C2'),
+                      color: AppColors.levelC2,
+                      isLocked: progress.getTotalCount('C2') == 0,
+                      onTap: progress.getTotalCount('C2') > 0
+                          ? () => _openLessons(context, ref, 'C2')
+                          : null,
+                    ).animate().fadeIn(delay: 350.ms).scale(begin: const Offset(0.9, 0.9)),
+                  ]),
                 ),
-                delegate: SliverChildListDelegate([
-                  _LevelCard(
-                    level: 'A1',
-                    name: 'Beginner',
-                    lessonCount: 10,
-                    completedCount: 2,
-                    color: AppColors.levelA1,
-                    onTap: () => _openLessons(context, 'A1'),
-                  ).animate().fadeIn(delay: 100.ms).scale(begin: const Offset(0.9, 0.9)),
-                  _LevelCard(
-                    level: 'A2',
-                    name: 'Elementary',
-                    lessonCount: 12,
-                    completedCount: 0,
-                    color: AppColors.levelA2,
-                    onTap: () => _openLessons(context, 'A2'),
-                  ).animate().fadeIn(delay: 150.ms).scale(begin: const Offset(0.9, 0.9)),
-                  _LevelCard(
-                    level: 'B1',
-                    name: 'Intermediate',
-                    lessonCount: 15,
-                    completedCount: 0,
-                    color: AppColors.levelB1,
-                    isLocked: true,
-                    onTap: null,
-                  ).animate().fadeIn(delay: 200.ms).scale(begin: const Offset(0.9, 0.9)),
-                  _LevelCard(
-                    level: 'B2',
-                    name: 'Upper Int.',
-                    lessonCount: 15,
-                    completedCount: 0,
-                    color: AppColors.levelB2,
-                    isLocked: true,
-                    onTap: null,
-                  ).animate().fadeIn(delay: 250.ms).scale(begin: const Offset(0.9, 0.9)),
-                  _LevelCard(
-                    level: 'C1',
-                    name: 'Advanced',
-                    lessonCount: 18,
-                    completedCount: 0,
-                    color: AppColors.levelC1,
-                    isLocked: true,
-                    onTap: null,
-                  ).animate().fadeIn(delay: 300.ms).scale(begin: const Offset(0.9, 0.9)),
-                  _LevelCard(
-                    level: 'C2',
-                    name: 'Mastery',
-                    lessonCount: 20,
-                    completedCount: 0,
-                    color: AppColors.levelC2,
-                    isLocked: true,
-                    onTap: null,
-                  ).animate().fadeIn(delay: 350.ms).scale(begin: const Offset(0.9, 0.9)),
-                ]),
+              ),
+              loading: () => const SliverToBoxAdapter(
+                child: Center(child: CircularProgressIndicator()),
+              ),
+              error: (e, _) => SliverToBoxAdapter(
+                child: Center(child: Text('Error loading progress: $e')),
               ),
             ),
 
@@ -177,10 +195,39 @@ class HomeScreen extends ConsumerWidget {
     );
   }
 
-  void _openLessons(BuildContext context, String level) {
-    Navigator.of(context).push(
-      MaterialPageRoute(builder: (_) => const LessonScreen()),
-    );
+  Future<void> _openLessons(BuildContext context, WidgetRef ref, String level) async {
+    // Get the next lesson to complete
+    final lesson = await ref.read(progressProvider.notifier).getNextLesson(level);
+
+    if (lesson == null) {
+      // No lessons available for this level
+      if (context.mounted) {
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(
+            content: Text('No lessons available for level $level yet.'),
+            behavior: SnackBarBehavior.floating,
+          ),
+        );
+      }
+      return;
+    }
+
+    if (context.mounted) {
+      // Navigate to the lesson
+      final completed = await Navigator.of(context).push<bool>(
+        MaterialPageRoute(
+          builder: (_) => LessonScreen(
+            lesson: lesson,
+            level: level,
+          ),
+        ),
+      );
+
+      // Refresh progress after returning
+      if (completed == true) {
+        ref.invalidate(progressProvider);
+      }
+    }
   }
 }
 
@@ -260,6 +307,12 @@ class _LevelCard extends StatelessWidget {
                           color: Colors.grey.shade400,
                           size: 20,
                         ),
+                      if (!isLocked && completedCount == lessonCount && lessonCount > 0)
+                        const Icon(
+                          Icons.check_circle,
+                          color: AppColors.correct,
+                          size: 20,
+                        ),
                     ],
                   ),
                   const Spacer(),
@@ -273,7 +326,9 @@ class _LevelCard extends StatelessWidget {
                   ),
                   const SizedBox(height: 4),
                   Text(
-                    '$completedCount / $lessonCount lessons',
+                    lessonCount > 0
+                        ? '$completedCount / $lessonCount lessons'
+                        : 'Coming soon',
                     style: TextStyle(
                       fontSize: 12,
                       color: Theme.of(context).colorScheme.onSurfaceVariant,
