@@ -167,6 +167,7 @@ class _LessonScreenState extends ConsumerState<LessonScreen> {
     switch (type) {
       case 'multiple_choice':
         return MultipleChoiceQuestion(
+          key: ValueKey('question_$_currentQuestion'),
           prompt: question['prompt'] as String,
           options: List<String>.from(question['options'] as List),
           correctIndex: question['correct_index'] as int? ?? question['correctIndex'] as int? ?? 0,
@@ -176,6 +177,7 @@ class _LessonScreenState extends ConsumerState<LessonScreen> {
         );
       case 'typing':
         return TypingQuestion(
+          key: ValueKey('question_$_currentQuestion'),
           prompt: question['prompt'] as String,
           correctAnswers: List<String>.from(question['correct_answers'] as List? ?? question['correctAnswers'] as List? ?? []),
           hint: question['hint'] as String?,
@@ -186,6 +188,7 @@ class _LessonScreenState extends ConsumerState<LessonScreen> {
       case 'matching':
         final pairs = question['pairs'] as List;
         return MatchingPairsQuestion(
+          key: ValueKey('question_$_currentQuestion'),
           prompt: question['prompt'] as String,
           pairs: pairs.map((p) {
             if (p is List) {
@@ -203,6 +206,7 @@ class _LessonScreenState extends ConsumerState<LessonScreen> {
         );
       case 'sentence_builder':
         return SentenceBuilderQuestion(
+          key: ValueKey('question_$_currentQuestion'),
           prompt: question['prompt'] as String,
           words: List<String>.from(question['words'] as List),
           correctOrder: List<int>.from(question['correct_order'] as List? ?? question['correctOrder'] as List? ?? []),
