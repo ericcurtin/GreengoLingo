@@ -66,7 +66,8 @@ coverage/
 assets/fonts/*.ttf
 assets/fonts/*.otf
 
-# Generated app icons (run 'just icons' to generate)
+# Generated app icons and logo (run 'just icons' to generate)
+assets/images/logo.png
 android/app/src/main/res/mipmap-*/ic_launcher.png
 ios/Runner/Assets.xcassets/AppIcon.appiconset/*.png
 ios/Runner/Assets.xcassets/LaunchImage.imageset/*.png

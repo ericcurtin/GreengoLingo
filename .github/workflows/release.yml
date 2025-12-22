@@ -51,6 +51,11 @@ jobs:
       - name: Get Flutter dependencies
         run: flutter pub get
 
+      - name: Download logo asset
+        run: |
+          mkdir -p assets/images
+          curl -sL "https://github.com/user-attachments/assets/55452d70-b75e-4a95-aca4-6ad94b024877" -o assets/images/logo.png
+
       - name: Run Flutter analyze
         run: flutter analyze
 
