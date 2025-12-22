@@ -18,7 +18,7 @@ class UserSettings {
     this.activeLanguagePair,
     this.preferredLevel = 'A1',
     this.typingMode = 'lenient',
-    this.darkMode = false,
+    this.darkMode = true,
     this.hapticEnabled = true,
     this.onboardingCompleted = false,
   });
@@ -54,7 +54,7 @@ class UserSettings {
         activeLanguagePair: json['activeLanguagePair'] as String?,
         preferredLevel: json['preferredLevel'] as String? ?? 'A1',
         typingMode: json['typingMode'] as String? ?? 'lenient',
-        darkMode: json['darkMode'] as bool? ?? false,
+        darkMode: json['darkMode'] as bool? ?? true,
         hapticEnabled: json['hapticEnabled'] as bool? ?? true,
         onboardingCompleted: json['onboardingCompleted'] as bool? ?? false,
       );
