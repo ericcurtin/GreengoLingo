@@ -167,16 +167,6 @@ class HomeScreen extends ConsumerWidget {
               ),
             ),
 
-            // Quick Start Section
-            SliverToBoxAdapter(
-              child: Padding(
-                padding: const EdgeInsets.all(16),
-                child: _QuickStartCard(
-                  onStart: () => _startQuickLesson(context, ref),
-                ),
-              ),
-            ),
-
             // Bottom padding
             const SliverToBoxAdapter(
               child: SizedBox(height: 32),
@@ -188,13 +178,6 @@ class HomeScreen extends ConsumerWidget {
   }
 
   void _openLessons(BuildContext context, String level) {
-    // TODO: Navigate to lesson list for this level
-    ScaffoldMessenger.of(context).showSnackBar(
-      SnackBar(content: Text('Opening $level lessons...')),
-    );
-  }
-
-  void _startQuickLesson(BuildContext context, WidgetRef ref) {
     Navigator.of(context).push(
       MaterialPageRoute(builder: (_) => const LessonScreen()),
     );
@@ -313,65 +296,5 @@ class _LevelCard extends StatelessWidget {
         ),
       ),
     );
-  }
-}
-
-class _QuickStartCard extends StatelessWidget {
-  final VoidCallback onStart;
-
-  const _QuickStartCard({required this.onStart});
-
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      padding: const EdgeInsets.all(20),
-      decoration: BoxDecoration(
-        gradient: AppColors.primaryGradient,
-        borderRadius: BorderRadius.circular(20),
-        boxShadow: [
-          BoxShadow(
-            color: AppTheme.primaryGreen.withOpacity(0.3),
-            blurRadius: 15,
-            offset: const Offset(0, 8),
-          ),
-        ],
-      ),
-      child: Row(
-        children: [
-          Expanded(
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                const Text(
-                  'Ready to learn?',
-                  style: TextStyle(
-                    fontSize: 20,
-                    fontWeight: FontWeight.bold,
-                    color: Colors.white,
-                  ),
-                ),
-                const SizedBox(height: 4),
-                Text(
-                  'Jump into your next lesson',
-                  style: TextStyle(
-                    fontSize: 14,
-                    color: Colors.white.withOpacity(0.9),
-                  ),
-                ),
-              ],
-            ),
-          ),
-          ElevatedButton(
-            onPressed: onStart,
-            style: ElevatedButton.styleFrom(
-              backgroundColor: Colors.white,
-              foregroundColor: AppTheme.primaryGreen,
-              padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 12),
-            ),
-            child: const Text('Start'),
-          ),
-        ],
-      ),
-    ).animate().fadeIn(delay: 400.ms).slideY(begin: 0.1);
   }
 }
