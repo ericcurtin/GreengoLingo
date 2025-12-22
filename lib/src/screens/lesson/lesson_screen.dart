@@ -219,6 +219,8 @@ class _LessonScreenState extends ConsumerState<LessonScreen> {
   }
 
   Widget _buildFeedbackBar() {
+    final question = _questions[_currentQuestion];
+
     return Container(
       padding: const EdgeInsets.all(20),
       decoration: BoxDecoration(
@@ -254,6 +256,11 @@ class _LessonScreenState extends ConsumerState<LessonScreen> {
               ),
             ],
           ),
+          // Show explanation when wrong
+          if (!_lastAnswerCorrect) ...[
+            const SizedBox(height: 12),
+            _buildWrongAnswerExplanation(question),
+          ],
           const SizedBox(height: 16),
           SizedBox(
             width: double.infinity,
@@ -274,6 +281,94 @@ class _LessonScreenState extends ConsumerState<LessonScreen> {
         ],
       ),
     ).animate().slideY(begin: 1, duration: 200.ms, curve: Curves.easeOut);
+  }
+
+  Widget _buildWrongAnswerExplanation(Map<String, dynamic> question) {
+    final type = question['type'] as String;
+    String correctAnswerText = '';
+    String? explanation = question['explanation'] as String?;
+
+    switch (type) {
+      case 'multiple_choice':
+        final options = List<String>.from(question['options'] as List);
+        final correctIndex = question['correct_index'] as int? ?? question['correctIndex'] as int? ?? 0;
+        correctAnswerText = options[correctIndex];
+        break;
+      case 'typing':
+        final correctAnswers = List<String>.from(question['correct_answers'] as List? ?? question['correctAnswers'] as List? ?? []);
+        correctAnswerText = correctAnswers.isNotEmpty ? correctAnswers.first : '';
+        break;
+      case 'matching_pairs':
+      case 'matching':
+        final pairs = question['pairs'] as List;
+        final pairStrings = pairs.map((p) {
+          if (p is List) {
+            return '${p[0]} → ${p[1]}';
+          } else if (p is Map) {
+            return '${p['left'] ?? p[0]} → ${p['right'] ?? p[1]}';
+          }
+          return '';
+        }).toList();
+        correctAnswerText = pairStrings.join('\n');
+        break;
+      case 'sentence_builder':
+        final words = List<String>.from(question['words'] as List);
+        final correctOrder = List<int>.from(question['correct_order'] as List? ?? question['correctOrder'] as List? ?? []);
+        correctAnswerText = correctOrder.map((i) => words[i]).join(' ');
+        break;
+    }
+
+    return Container(
+      width: double.infinity,
+      padding: const EdgeInsets.all(12),
+      decoration: BoxDecoration(
+        color: Theme.of(context).brightness == Brightness.dark
+            ? Colors.black26
+            : Colors.white.withOpacity(0.7),
+        borderRadius: BorderRadius.circular(12),
+      ),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Row(
+            children: [
+              Icon(
+                Icons.lightbulb_outline,
+                size: 18,
+                color: AppColors.incorrect,
+              ),
+              const SizedBox(width: 8),
+              Text(
+                'Correct answer:',
+                style: TextStyle(
+                  fontWeight: FontWeight.bold,
+                  color: Theme.of(context).colorScheme.onSurface,
+                ),
+              ),
+            ],
+          ),
+          const SizedBox(height: 8),
+          Text(
+            correctAnswerText,
+            style: TextStyle(
+              fontSize: 16,
+              color: Theme.of(context).colorScheme.onSurface,
+            ),
+          ),
+          if (explanation != null) ...[
+            const SizedBox(height: 12),
+            Text(
+              explanation,
+              style: TextStyle(
+                fontSize: 14,
+                fontStyle: FontStyle.italic,
+                color: Theme.of(context).colorScheme.onSurfaceVariant,
+              ),
+            ),
+          ],
+        ],
+      ),
+    );
   }
 
   Widget _buildCompletionScreen() {

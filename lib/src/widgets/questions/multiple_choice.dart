@@ -29,6 +29,17 @@ class MultipleChoiceQuestion extends StatefulWidget {
 
 class _MultipleChoiceQuestionState extends State<MultipleChoiceQuestion> {
   int? _selectedIndex;
+  late List<int> _shuffledIndices;
+  late int _shuffledCorrectIndex;
+
+  @override
+  void initState() {
+    super.initState();
+    // Create shuffled indices for randomizing option order
+    _shuffledIndices = List.generate(widget.options.length, (i) => i)..shuffle();
+    // Find where the correct answer ended up after shuffling
+    _shuffledCorrectIndex = _shuffledIndices.indexOf(widget.correctIndex);
+  }
 
   void _selectOption(int index) {
     if (!widget.enabled || _selectedIndex != null) return;
@@ -39,7 +50,7 @@ class _MultipleChoiceQuestionState extends State<MultipleChoiceQuestion> {
       _selectedIndex = index;
     });
 
-    final isCorrect = index == widget.correctIndex;
+    final isCorrect = index == _shuffledCorrectIndex;
     widget.onAnswer(isCorrect);
   }
 
@@ -60,12 +71,13 @@ class _MultipleChoiceQuestionState extends State<MultipleChoiceQuestion> {
         ).animate().fadeIn(),
         const SizedBox(height: 32),
 
-        // Options
-        ...widget.options.asMap().entries.map((entry) {
-          final index = entry.key;
-          final option = entry.value;
-          final isSelected = _selectedIndex == index;
-          final isCorrect = index == widget.correctIndex;
+        // Options (displayed in shuffled order)
+        ..._shuffledIndices.asMap().entries.map((entry) {
+          final displayIndex = entry.key;
+          final originalIndex = entry.value;
+          final option = widget.options[originalIndex];
+          final isSelected = _selectedIndex == displayIndex;
+          final isCorrect = displayIndex == _shuffledCorrectIndex;
           final showResult = _selectedIndex != null;
 
           Color backgroundColor;
@@ -101,7 +113,7 @@ class _MultipleChoiceQuestionState extends State<MultipleChoiceQuestion> {
           return Padding(
             padding: const EdgeInsets.only(bottom: 12),
             child: GestureDetector(
-              onTap: () => _selectOption(index),
+              onTap: () => _selectOption(displayIndex),
               child: AnimatedContainer(
                 duration: const Duration(milliseconds: 200),
                 padding: const EdgeInsets.all(16),
@@ -122,7 +134,7 @@ class _MultipleChoiceQuestionState extends State<MultipleChoiceQuestion> {
                       ),
                       child: Center(
                         child: Text(
-                          String.fromCharCode(65 + index), // A, B, C, D
+                          String.fromCharCode(65 + displayIndex), // A, B, C, D
                           style: TextStyle(
                             fontWeight: FontWeight.bold,
                             color: textColor,
@@ -152,7 +164,7 @@ class _MultipleChoiceQuestionState extends State<MultipleChoiceQuestion> {
                 ),
               ),
             ),
-          ).animate().fadeIn(delay: (100 + index * 50).ms).slideX(begin: 0.05);
+          ).animate().fadeIn(delay: (100 + displayIndex * 50).ms).slideX(begin: 0.05);
         }),
 
         // Explanation (if shown and correct)

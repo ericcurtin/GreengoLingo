@@ -30,12 +30,14 @@ class _MatchingPairsQuestionState extends State<MatchingPairsQuestion> {
   final Set<String> _matchedLeft = {};
   final Set<String> _matchedRight = {};
   bool _hasSubmitted = false;
+  late List<String> _shuffledLeft;
   late List<String> _shuffledRight;
 
   @override
   void initState() {
     super.initState();
-    // Shuffle the right column
+    // Shuffle both columns independently for true randomization
+    _shuffledLeft = widget.pairs.map((p) => p.key).toList()..shuffle();
     _shuffledRight = widget.pairs.map((p) => p.value).toList()..shuffle();
   }
 
@@ -142,11 +144,10 @@ class _MatchingPairsQuestionState extends State<MatchingPairsQuestion> {
         Row(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            // Left column
+            // Left column (shuffled)
             Expanded(
               child: Column(
-                children: widget.pairs.map((pair) {
-                  final item = pair.key;
+                children: _shuffledLeft.map((item) {
                   final isMatched = _matchedLeft.contains(item);
                   final isSelected = _selectedLeft == item;
                   final showResult = _hasSubmitted && isMatched;
