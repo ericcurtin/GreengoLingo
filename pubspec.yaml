@@ -44,6 +44,7 @@ flutter:
   uses-material-design: true
 
   assets:
+    - assets/images/
     - assets/content/en_to_pt_pt/a1/
     - assets/content/en_to_pt_br/a1/
     - assets/content/pt_pt_to_en/a1/

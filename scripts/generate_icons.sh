@@ -19,6 +19,12 @@ trap "rm -rf '$TEMP_DIR'" EXIT
 echo "Downloading logo..."
 curl -sL "$LOGO_URL" -o "$TEMP_DIR/logo.png"
 
+# Copy logo to assets/images for in-app use
+ASSETS_IMAGES="$PROJECT_ROOT/assets/images"
+mkdir -p "$ASSETS_IMAGES"
+cp "$TEMP_DIR/logo.png" "$ASSETS_IMAGES/logo.png"
+echo "  In-app logo saved to assets/images/"
+
 # Detect ImageMagick command (magick on Windows, convert on Unix)
 if command -v magick &> /dev/null; then
     CONVERT="magick"

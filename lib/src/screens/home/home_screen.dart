@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
-import '../../theme/app_theme.dart';
 import '../../theme/colors.dart';
 import '../../providers/settings_provider.dart';
 import '../../providers/gamification_provider.dart';
@@ -32,17 +31,13 @@ class HomeScreen extends ConsumerWidget {
               backgroundColor: Theme.of(context).scaffoldBackgroundColor,
               title: Row(
                 children: [
-                  Container(
-                    width: 40,
-                    height: 40,
-                    decoration: BoxDecoration(
-                      color: AppTheme.primaryGreen,
-                      borderRadius: BorderRadius.circular(12),
-                    ),
-                    child: const Icon(
-                      Icons.translate,
-                      color: Colors.white,
-                      size: 24,
+                  ClipRRect(
+                    borderRadius: BorderRadius.circular(12),
+                    child: Image.asset(
+                      'assets/images/logo.png',
+                      width: 40,
+                      height: 40,
+                      fit: BoxFit.cover,
                     ),
                   ),
                   const SizedBox(width: 12),
