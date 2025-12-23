@@ -1,3 +1,5 @@
+import 'dart:math';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 
@@ -29,6 +31,14 @@ class _SentenceBuilderQuestionState extends State<SentenceBuilderQuestion> {
   final List<int> _selectedIndices = [];
   bool _hasSubmitted = false;
   bool _isCorrect = false;
+  List<int> _shuffledDisplayOrder = [];
+
+  @override
+  void initState() {
+    super.initState();
+    _shuffledDisplayOrder = List.generate(widget.words.length, (i) => i)
+      ..shuffle(Random());
+  }
 
   void _selectWord(int index) {
     if (!widget.enabled || _hasSubmitted) return;
@@ -182,13 +192,14 @@ class _SentenceBuilderQuestionState extends State<SentenceBuilderQuestion> {
         Wrap(
           spacing: 10,
           runSpacing: 10,
-          children: widget.words.asMap().entries.map((entry) {
-            final index = entry.key;
-            final word = entry.value;
-            final isUsed = _selectedIndices.contains(index);
+          children: _shuffledDisplayOrder.asMap().entries.map((entry) {
+            final displayIndex = entry.key;
+            final originalIndex = entry.value;
+            final word = widget.words[originalIndex];
+            final isUsed = _selectedIndices.contains(originalIndex);
 
             return GestureDetector(
-              onTap: isUsed ? null : () => _selectWord(index),
+              onTap: isUsed ? null : () => _selectWord(originalIndex),
               child: AnimatedOpacity(
                 duration: const Duration(milliseconds: 200),
                 opacity: isUsed ? 0.4 : 1.0,
@@ -198,7 +209,7 @@ class _SentenceBuilderQuestionState extends State<SentenceBuilderQuestion> {
                   isDisabled: isUsed,
                 ),
               ),
-            ).animate().fadeIn(delay: (200 + index * 50).ms).scale(begin: const Offset(0.9, 0.9));
+            ).animate().fadeIn(delay: (200 + displayIndex * 50).ms).scale(begin: const Offset(0.9, 0.9));
           }).toList(),
         ),
 
