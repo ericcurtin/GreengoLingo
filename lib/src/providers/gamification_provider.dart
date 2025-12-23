@@ -259,9 +259,15 @@ class GamificationNotifier extends Notifier<GamificationState> {
     state = current.copyWith(xp: updatedXP);
   }
 
-  /// Record streak activity
+  /// Record streak activity (only increments streak once per day)
   void recordActivity() {
     final current = state;
+
+    // Only increment streak if this is the first activity today
+    if (current.streak.completedToday) {
+      return; // Already recorded activity for today
+    }
+
     final newStreak = current.streak.currentStreak + 1;
     final newLongest = newStreak > current.streak.longestStreak
         ? newStreak
