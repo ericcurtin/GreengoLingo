@@ -1,0 +1,146 @@
+{
+  "id": "health_01_br",
+  "title": "Health",
+  "description": "Learn health and medical vocabulary in Brazilian Portuguese",
+  "level": "B1",
+  "language_pair": {
+    "source": "en_US",
+    "target": "pt_BR"
+  },
+  "xp_reward": 20,
+  "order": 5,
+  "icon": "medical_services",
+  "questions": [
+    {
+      "type": "multiple_choice",
+      "prompt": "How do you say 'I don't feel well' in Portuguese?",
+      "options": ["Não estou me sentindo bem", "Estou ótimo", "Estou com fome", "Estou cansado"],
+      "correct_index": 0,
+      "explanation": "'Não estou me sentindo bem' is the Brazilian way to say you don't feel well."
+    },
+    {
+      "type": "matching_pairs",
+      "prompt": "Match body parts",
+      "pairs": [
+        ["head", "cabeça"],
+        ["stomach", "estômago"],
+        ["arm", "braço"],
+        ["leg", "perna"]
+      ]
+    },
+    {
+      "type": "typing",
+      "prompt": "Write 'I have a headache' in Portuguese",
+      "correct_answers": ["Estou com dor de cabeça", "Eu estou com dor de cabeça", "Tenho dor de cabeça"],
+      "hint": "Estou com dor de...",
+      "accent_strict": false
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "What does 'Preciso ir ao médico' mean?",
+      "options": ["I need to go to the pharmacy", "I need to go to the doctor", "I need medicine", "I feel better"],
+      "correct_index": 1,
+      "explanation": "'Médico' means doctor. 'Ir ao médico' = to go to the doctor."
+    },
+    {
+      "type": "matching_pairs",
+      "prompt": "Match health terms",
+      "pairs": [
+        ["pain", "dor"],
+        ["fever", "febre"],
+        ["cough", "tosse"],
+        ["cold (illness)", "resfriado"]
+      ]
+    },
+    {
+      "type": "typing",
+      "prompt": "Write 'pharmacy' in Portuguese",
+      "correct_answers": ["farmácia", "Farmácia"],
+      "hint": "Similar to English",
+      "accent_strict": false
+    },
+    {
+      "type": "sentence_builder",
+      "prompt": "Build: 'I need medicine'",
+      "words": ["Preciso", "de", "remédio", "água", "um", "comer"],
+      "correct_order": [0, 1, 2],
+      "distractors": ["água", "um", "comer"]
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "How do you say 'cold/flu' in Brazilian Portuguese?",
+      "options": ["constipação", "resfriado / gripe", "dor", "alergia"],
+      "correct_index": 1,
+      "explanation": "In Brazil, 'resfriado' means cold and 'gripe' means flu. 'Constipação' is used in Portugal."
+    }
+  ],
+  "cheat_sheet": {
+    "title": "Health Vocabulary in Brazilian Portuguese",
+    "sections": [
+      {
+        "heading": "Body Parts",
+        "content": [
+          {
+            "type": "vocabulary",
+            "items": [
+              ["head", "cabeça"],
+              ["stomach", "estômago / barriga"],
+              ["back", "costas"],
+              ["throat", "garganta"],
+              ["arm", "braço"],
+              ["leg", "perna"],
+              ["hand", "mão"],
+              ["foot", "pé"]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Symptoms",
+        "content": [
+          {
+            "type": "vocabulary",
+            "items": [
+              ["pain", "dor"],
+              ["headache", "dor de cabeça"],
+              ["stomachache", "dor de estômago / dor de barriga"],
+              ["fever", "febre"],
+              ["cough", "tosse"],
+              ["cold", "resfriado"],
+              ["flu", "gripe"],
+              ["allergy", "alergia"]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Useful Phrases",
+        "content": [
+          {
+            "type": "vocabulary",
+            "items": [
+              ["I don't feel well", "Não estou me sentindo bem"],
+              ["I have a headache", "Estou com dor de cabeça"],
+              ["I need a doctor", "Preciso de um médico"],
+              ["Where is the hospital?", "Onde fica o hospital?"],
+              ["I'm allergic to...", "Sou alérgico/a a..."]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Brazilian Portuguese",
+        "content": [
+          {
+            "type": "tip",
+            "text": "Brazilians use 'remédio' for medicine (informal) and 'medicamento' (formal)."
+          },
+          {
+            "type": "tip",
+            "text": "'Estou com...' is commonly used: 'Estou com dor' (I have pain), 'Estou com febre' (I have a fever)."
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,144 @@
+{
+  "id": "travel_01_pt",
+  "title": "Travel",
+  "description": "Learn travel vocabulary in European Portuguese",
+  "level": "B1",
+  "language_pair": {
+    "source": "en_US",
+    "target": "pt_PT"
+  },
+  "xp_reward": 20,
+  "order": 6,
+  "icon": "flight",
+  "questions": [
+    {
+      "type": "multiple_choice",
+      "prompt": "How do you say 'I would like to book a room' in Portuguese?",
+      "options": ["Queria reservar um quarto", "Quero um bilhete", "Onde é o hotel?", "Quanto custa?"],
+      "correct_index": 0,
+      "explanation": "'Queria reservar' is polite way to say 'I would like to book'."
+    },
+    {
+      "type": "matching_pairs",
+      "prompt": "Match travel words",
+      "pairs": [
+        ["passport", "passaporte"],
+        ["suitcase", "mala"],
+        ["hotel", "hotel"],
+        ["flight", "voo"]
+      ]
+    },
+    {
+      "type": "typing",
+      "prompt": "Write 'Do you have a reservation?' in Portuguese",
+      "correct_answers": ["Tem uma reserva?", "Tem reserva?"],
+      "hint": "Tem + reserva",
+      "accent_strict": false
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "What does 'Quero fazer check-out' mean?",
+      "options": ["I want to check in", "I want to check out", "I want to book", "I want to cancel"],
+      "correct_index": 1,
+      "explanation": "'Fazer check-out' means to check out of a hotel."
+    },
+    {
+      "type": "matching_pairs",
+      "prompt": "Match accommodation terms",
+      "pairs": [
+        ["single room", "quarto individual"],
+        ["double room", "quarto duplo"],
+        ["breakfast included", "pequeno-almoço incluído"],
+        ["reception", "receção"]
+      ]
+    },
+    {
+      "type": "typing",
+      "prompt": "Write 'Where is the beach?' in Portuguese",
+      "correct_answers": ["Onde é a praia?", "Onde fica a praia?"],
+      "hint": "Onde é/fica + a praia",
+      "accent_strict": false
+    },
+    {
+      "type": "sentence_builder",
+      "prompt": "Build: 'I'm on vacation'",
+      "words": ["Estou", "de", "férias", "trabalho", "em", "casa"],
+      "correct_order": [0, 1, 2],
+      "distractors": ["trabalho", "em", "casa"]
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "What is 'pequeno-almoço' in English?",
+      "options": ["lunch", "dinner", "breakfast", "snack"],
+      "correct_index": 2,
+      "explanation": "'Pequeno-almoço' is European Portuguese for breakfast. Brazil uses 'café da manhã'."
+    }
+  ],
+  "cheat_sheet": {
+    "title": "Travel Vocabulary in European Portuguese",
+    "sections": [
+      {
+        "heading": "At the Hotel",
+        "content": [
+          {
+            "type": "vocabulary",
+            "items": [
+              ["reservation", "reserva"],
+              ["room", "quarto"],
+              ["single room", "quarto individual"],
+              ["double room", "quarto duplo"],
+              ["key", "chave"],
+              ["reception", "receção"],
+              ["check-in", "check-in / entrada"],
+              ["check-out", "check-out / saída"]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Travel Items",
+        "content": [
+          {
+            "type": "vocabulary",
+            "items": [
+              ["passport", "passaporte"],
+              ["suitcase", "mala"],
+              ["backpack", "mochila"],
+              ["ticket", "bilhete"],
+              ["map", "mapa"],
+              ["camera", "máquina fotográfica"]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Useful Phrases",
+        "content": [
+          {
+            "type": "vocabulary",
+            "items": [
+              ["I'd like to book...", "Queria reservar..."],
+              ["Do you have rooms available?", "Têm quartos disponíveis?"],
+              ["What time is breakfast?", "A que horas é o pequeno-almoço?"],
+              ["I'm on vacation", "Estou de férias"],
+              ["tourist information", "informação turística"]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Portugal vs Brazil",
+        "content": [
+          {
+            "type": "tip",
+            "text": "'Pequeno-almoço' (breakfast) is European Portuguese. Brazil uses 'café da manhã'."
+          },
+          {
+            "type": "tip",
+            "text": "'Receção' vs 'recepção' - both spellings exist, but 'receção' follows the new orthographic agreement."
+          }
+        ]
+      }
+    ]
+  }
+}

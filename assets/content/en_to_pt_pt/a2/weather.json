@@ -1,0 +1,146 @@
+{
+  "id": "weather_01_pt",
+  "title": "Weather",
+  "description": "Learn weather vocabulary in European Portuguese",
+  "level": "A2",
+  "language_pair": {
+    "source": "en_US",
+    "target": "pt_PT"
+  },
+  "xp_reward": 15,
+  "order": 5,
+  "icon": "cloud",
+  "questions": [
+    {
+      "type": "multiple_choice",
+      "prompt": "How do you ask 'What's the weather like?' in Portuguese?",
+      "options": ["Como está o tempo?", "Que horas são?", "Onde fica?", "Quanto custa?"],
+      "correct_index": 0,
+      "explanation": "'Como está o tempo?' is the standard way to ask about the weather."
+    },
+    {
+      "type": "matching_pairs",
+      "prompt": "Match the weather words",
+      "pairs": [
+        ["sun", "sol"],
+        ["rain", "chuva"],
+        ["wind", "vento"],
+        ["cloud", "nuvem"]
+      ]
+    },
+    {
+      "type": "typing",
+      "prompt": "Write 'It's hot' in Portuguese",
+      "correct_answers": ["Está calor", "Está quente"],
+      "hint": "Está + calor/quente",
+      "accent_strict": false
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "What does 'Está a chover' mean?",
+      "options": ["It's snowing", "It's raining", "It's windy", "It's sunny"],
+      "correct_index": 1,
+      "explanation": "'Está a chover' is the European Portuguese way to say 'It's raining'."
+    },
+    {
+      "type": "matching_pairs",
+      "prompt": "Match weather descriptions",
+      "pairs": [
+        ["cold", "frio"],
+        ["hot", "calor"],
+        ["warm", "quente"],
+        ["cool", "fresco"]
+      ]
+    },
+    {
+      "type": "typing",
+      "prompt": "Write 'It's sunny' in Portuguese",
+      "correct_answers": ["Está sol", "Está a fazer sol", "Faz sol"],
+      "hint": "Uses 'sol' (sun)",
+      "accent_strict": false
+    },
+    {
+      "type": "sentence_builder",
+      "prompt": "Build: 'Today it's cold'",
+      "words": ["Hoje", "está", "frio", "calor", "amanhã"],
+      "correct_order": [0, 1, 2],
+      "distractors": ["calor", "amanhã"]
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "How do you say 'It's snowing' in Portuguese?",
+      "options": ["Está a chover", "Está a nevar", "Está vento", "Está nublado"],
+      "correct_index": 1,
+      "explanation": "'Nevar' means to snow. 'Está a nevar' is how you say it's snowing in Portugal."
+    }
+  ],
+  "cheat_sheet": {
+    "title": "Weather in European Portuguese",
+    "sections": [
+      {
+        "heading": "Weather Elements",
+        "content": [
+          {
+            "type": "vocabulary",
+            "items": [
+              ["sun", "sol"],
+              ["rain", "chuva"],
+              ["snow", "neve"],
+              ["wind", "vento"],
+              ["cloud", "nuvem"],
+              ["storm", "tempestade"],
+              ["fog", "nevoeiro"]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Describing Weather",
+        "content": [
+          {
+            "type": "vocabulary",
+            "items": [
+              ["It's hot", "Está calor"],
+              ["It's cold", "Está frio"],
+              ["It's raining", "Está a chover"],
+              ["It's snowing", "Está a nevar"],
+              ["It's sunny", "Está sol / Faz sol"],
+              ["It's windy", "Está vento"],
+              ["It's cloudy", "Está nublado"]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Temperatures",
+        "content": [
+          {
+            "type": "vocabulary",
+            "items": [
+              ["hot", "quente"],
+              ["warm", "morno"],
+              ["cool", "fresco"],
+              ["cold", "frio"],
+              ["freezing", "gelado"]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "European Portuguese",
+        "content": [
+          {
+            "type": "tip",
+            "text": "In Portugal, you say 'Está a chover' (it's raining). In Brazil, it's 'Está chovendo'."
+          },
+          {
+            "type": "example",
+            "source": "Vai chover amanhã",
+            "target": "It's going to rain tomorrow",
+            "note": "Use 'vai + infinitive' for future weather"
+          }
+        ]
+      }
+    ]
+  }
+}

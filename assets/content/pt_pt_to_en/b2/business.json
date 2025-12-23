@@ -1,0 +1,146 @@
+{
+  "id": "business_01",
+  "title": "Negócios",
+  "description": "Aprenda vocabulário de negócios em Inglês",
+  "level": "B2",
+  "language_pair": {
+    "source": "pt_PT",
+    "target": "en_US"
+  },
+  "xp_reward": 25,
+  "order": 5,
+  "icon": "business",
+  "questions": [
+    {
+      "type": "multiple_choice",
+      "prompt": "Como se diz 'reunião' em Inglês?",
+      "options": ["meeting", "company", "business", "office"],
+      "correct_index": 0,
+      "explanation": "'Meeting' significa reunião. 'We have a meeting' = Temos uma reunião."
+    },
+    {
+      "type": "matching_pairs",
+      "prompt": "Combine os termos de negócios",
+      "pairs": [
+        ["empresa", "company"],
+        ["escritório", "office"],
+        ["chefe", "boss"],
+        ["funcionário", "employee"]
+      ]
+    },
+    {
+      "type": "typing",
+      "prompt": "Escreva 'Trabalho em marketing' em Inglês",
+      "correct_answers": ["I work in marketing", "I work on marketing"],
+      "hint": "I work in + area",
+      "accent_strict": false
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "O que significa 'I sent the report by email'?",
+      "options": ["Recebi o relatório", "Enviei o relatório por email", "Escrevi o relatório", "Apaguei o relatório"],
+      "correct_index": 1,
+      "explanation": "'Send' significa enviar. 'Report' significa relatório."
+    },
+    {
+      "type": "matching_pairs",
+      "prompt": "Combine mais vocabulário de negócios",
+      "pairs": [
+        ["salário", "salary"],
+        ["contrato", "contract"],
+        ["prazo", "deadline"],
+        ["fatura", "invoice"]
+      ]
+    },
+    {
+      "type": "typing",
+      "prompt": "Escreva 'Podemos marcar uma reunião?' em Inglês",
+      "correct_answers": ["Can we schedule a meeting?", "Can we set up a meeting?"],
+      "hint": "Can we schedule + a meeting",
+      "accent_strict": false
+    },
+    {
+      "type": "sentence_builder",
+      "prompt": "Construa: 'Sou responsável pelo projeto'",
+      "words": ["I'm", "responsible", "for", "the", "project", "meeting"],
+      "correct_order": [0, 1, 2, 3, 4],
+      "distractors": ["meeting"]
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Como se diz 'negociar' em Inglês?",
+      "options": ["deny", "negotiate", "need", "nominate"],
+      "correct_index": 1,
+      "explanation": "'Negotiate' significa negociar. Similar ao Português mas com pronúncia inglesa."
+    }
+  ],
+  "cheat_sheet": {
+    "title": "Vocabulário de Negócios em Inglês",
+    "sections": [
+      {
+        "heading": "Local de Trabalho",
+        "content": [
+          {
+            "type": "vocabulary",
+            "items": [
+              ["empresa", "company"],
+              ["escritório", "office"],
+              ["reunião", "meeting"],
+              ["sala de reuniões", "meeting room / conference room"],
+              ["colega", "colleague"],
+              ["chefe", "boss / manager"],
+              ["funcionário", "employee"]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Termos de Negócios",
+        "content": [
+          {
+            "type": "vocabulary",
+            "items": [
+              ["contrato", "contract"],
+              ["salário", "salary"],
+              ["prazo", "deadline"],
+              ["relatório", "report"],
+              ["fatura", "invoice"],
+              ["orçamento", "budget"],
+              ["lucro", "profit"]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Frases Úteis",
+        "content": [
+          {
+            "type": "vocabulary",
+            "items": [
+              ["marcar uma reunião", "schedule a meeting"],
+              ["enviar um email", "send an email"],
+              ["cumprir o prazo", "meet the deadline"],
+              ["Sou responsável por...", "I'm responsible for..."],
+              ["Poderia esclarecer...", "Could you clarify..."]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Expressões Profissionais",
+        "content": [
+          {
+            "type": "tip",
+            "text": "Em Inglês profissional, use 'Could you...' ou 'Would you mind...' para pedidos educados."
+          },
+          {
+            "type": "example",
+            "source": "Please find attached the report",
+            "target": "Segue em anexo o relatório",
+            "note": "Frase muito comum em emails profissionais"
+          }
+        ]
+      }
+    ]
+  }
+}

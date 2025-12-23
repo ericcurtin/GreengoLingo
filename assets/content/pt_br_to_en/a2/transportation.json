@@ -1,0 +1,147 @@
+{
+  "id": "transportation_01",
+  "title": "Transportes",
+  "description": "Aprenda vocabulário de transportes em Inglês",
+  "level": "A2",
+  "language_pair": {
+    "source": "pt_BR",
+    "target": "en_US"
+  },
+  "xp_reward": 15,
+  "order": 6,
+  "icon": "directions_bus",
+  "questions": [
+    {
+      "type": "multiple_choice",
+      "prompt": "Como se diz 'ônibus' em Inglês?",
+      "options": ["car", "bus", "train", "plane"],
+      "correct_index": 1,
+      "explanation": "'Bus' significa ônibus em Inglês."
+    },
+    {
+      "type": "matching_pairs",
+      "prompt": "Combine os veículos",
+      "pairs": [
+        ["carro", "car"],
+        ["trem", "train"],
+        ["avião", "plane"],
+        ["bicicleta", "bicycle"]
+      ]
+    },
+    {
+      "type": "typing",
+      "prompt": "Escreva 'trem' em Inglês",
+      "correct_answers": ["train", "Train"],
+      "hint": "Começa com 't'",
+      "accent_strict": false
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Como se pergunta 'Onde fica o ponto de ônibus?'",
+      "options": ["Where is the train station?", "Where is the airport?", "Where is the bus stop?", "Where is the car?"],
+      "correct_index": 2,
+      "explanation": "'Bus stop' significa ponto de ônibus."
+    },
+    {
+      "type": "matching_pairs",
+      "prompt": "Combine os termos de transporte",
+      "pairs": [
+        ["metrô", "subway"],
+        ["barco", "boat"],
+        ["moto", "motorcycle"],
+        ["táxi", "taxi / cab"]
+      ]
+    },
+    {
+      "type": "typing",
+      "prompt": "Escreva 'passagem' em Inglês",
+      "correct_answers": ["ticket", "Ticket"],
+      "hint": "Começa com 't'",
+      "accent_strict": false
+    },
+    {
+      "type": "sentence_builder",
+      "prompt": "Construa: 'Eu vou de ônibus'",
+      "words": ["I", "go", "by", "bus", "car", "to"],
+      "correct_order": [0, 1, 2, 3],
+      "distractors": ["car", "to"]
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Como se diz 'carro de aplicativo' em Inglês?",
+      "options": ["car app", "rideshare / Uber", "taxi phone", "app car"],
+      "correct_index": 1,
+      "explanation": "'Rideshare' é o termo geral. Uber e 99 são muito populares no Brasil."
+    }
+  ],
+  "cheat_sheet": {
+    "title": "Transportes em Inglês",
+    "sections": [
+      {
+        "heading": "Veículos",
+        "content": [
+          {
+            "type": "vocabulary",
+            "items": [
+              ["carro", "car"],
+              ["ônibus", "bus"],
+              ["trem", "train"],
+              ["avião", "plane"],
+              ["metrô", "subway"],
+              ["barco", "boat"],
+              ["bicicleta", "bicycle / bike"],
+              ["moto", "motorcycle / motorbike"],
+              ["táxi", "taxi / cab"],
+              ["carro de aplicativo", "rideshare / Uber"]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Locais",
+        "content": [
+          {
+            "type": "vocabulary",
+            "items": [
+              ["estação de trem", "train station"],
+              ["ponto de ônibus", "bus stop"],
+              ["rodoviária", "bus station"],
+              ["aeroporto", "airport"],
+              ["estação de metrô", "subway station"]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Frases Úteis",
+        "content": [
+          {
+            "type": "vocabulary",
+            "items": [
+              ["Eu vou de...", "I go by..."],
+              ["passagem", "ticket"],
+              ["pegar (o ônibus)", "to catch (the bus)"],
+              ["descer", "to get off"],
+              ["baldeação", "transfer"]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Dicas",
+        "content": [
+          {
+            "type": "tip",
+            "text": "Em Inglês, usa-se 'by' para indicar o meio de transporte: 'by bus', 'by car', 'by train'."
+          },
+          {
+            "type": "example",
+            "source": "I'm going to request an Uber",
+            "target": "Vou pedir um Uber",
+            "note": "Muito comum nas grandes cidades"
+          }
+        ]
+      }
+    ]
+  }
+}

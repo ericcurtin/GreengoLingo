@@ -1,0 +1,144 @@
+{
+  "id": "emotions_01",
+  "title": "Emoções",
+  "description": "Aprenda a expressar emoções em Inglês",
+  "level": "B2",
+  "language_pair": {
+    "source": "pt_PT",
+    "target": "en_US"
+  },
+  "xp_reward": 25,
+  "order": 6,
+  "icon": "mood",
+  "questions": [
+    {
+      "type": "multiple_choice",
+      "prompt": "Como se expressa 'Estou desiludido/a' em Inglês?",
+      "options": ["I'm disappointed", "I'm happy", "I'm surprised", "I'm scared"],
+      "correct_index": 0,
+      "explanation": "'Disappointed' significa desiludido/a."
+    },
+    {
+      "type": "matching_pairs",
+      "prompt": "Combine as emoções",
+      "pairs": [
+        ["feliz", "happy"],
+        ["triste", "sad"],
+        ["zangado", "angry"],
+        ["preocupado", "worried"]
+      ]
+    },
+    {
+      "type": "typing",
+      "prompt": "Escreva 'Sinto-me frustrado/a' em Inglês",
+      "correct_answers": ["I feel frustrated", "I'm frustrated"],
+      "hint": "I feel / I'm + frustrated",
+      "accent_strict": false
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Como se diz 'Estou farto/a de' em Inglês?",
+      "options": ["I'm hungry", "I'm fed up with", "I'm full", "I'm scared of"],
+      "correct_index": 1,
+      "explanation": "'To be fed up with' significa estar farto/a de algo."
+    },
+    {
+      "type": "matching_pairs",
+      "prompt": "Combine mais emoções",
+      "pairs": [
+        ["nervoso", "nervous"],
+        ["entusiasmado", "excited"],
+        ["aliviado", "relieved"],
+        ["envergonhado", "embarrassed"]
+      ]
+    },
+    {
+      "type": "typing",
+      "prompt": "Escreva 'Estou orgulhoso de ti' em Inglês",
+      "correct_answers": ["I'm proud of you", "I am proud of you"],
+      "hint": "I'm proud of + you",
+      "accent_strict": false
+    },
+    {
+      "type": "sentence_builder",
+      "prompt": "Construa: 'Sinto-me sobrecarregado'",
+      "words": ["I", "feel", "overwhelmed", "happy", "with", "fear"],
+      "correct_order": [0, 1, 2],
+      "distractors": ["happy", "with", "fear"]
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Como traduzir 'saudade' para Inglês?",
+      "options": ["I'm healthy", "I miss... / longing", "I'm home", "I'm sad"],
+      "correct_index": 1,
+      "explanation": "'Saudade' não tem tradução direta. Usa-se 'I miss...' ou 'longing for...'."
+    }
+  ],
+  "cheat_sheet": {
+    "title": "Expressar Emoções em Inglês",
+    "sections": [
+      {
+        "heading": "Emoções Básicas",
+        "content": [
+          {
+            "type": "vocabulary",
+            "items": [
+              ["feliz", "happy"],
+              ["triste", "sad"],
+              ["zangado", "angry"],
+              ["assustado / com medo", "scared / afraid"],
+              ["surpreso", "surprised"],
+              ["cansado", "tired"]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Emoções Complexas",
+        "content": [
+          {
+            "type": "vocabulary",
+            "items": [
+              ["desiludido", "disappointed"],
+              ["frustrado", "frustrated"],
+              ["aliviado", "relieved"],
+              ["envergonhado", "embarrassed"],
+              ["sobrecarregado", "overwhelmed"],
+              ["nostálgico", "nostalgic"]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Expressões",
+        "content": [
+          {
+            "type": "vocabulary",
+            "items": [
+              ["Estou farto/a de", "I'm fed up with"],
+              ["Estou orgulhoso/a de", "I'm proud of"],
+              ["Tenho saudades de...", "I miss..."],
+              ["Estou de bom humor", "I'm in a good mood"],
+              ["Estou de mau humor", "I'm in a bad mood"]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Traduzir Saudade",
+        "content": [
+          {
+            "type": "tip",
+            "text": "'Saudade' é difícil de traduzir. Pode usar: 'I miss you', 'I long for', 'I yearn for', ou explicar: 'a deep longing'."
+          },
+          {
+            "type": "example",
+            "source": "I really miss home",
+            "target": "Tenho muitas saudades de casa",
+            "note": "'Really miss' aproxima-se da intensidade de 'saudade'"
+          }
+        ]
+      }
+    ]
+  }
+}

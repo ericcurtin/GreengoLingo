@@ -1,0 +1,145 @@
+{
+  "id": "weather_01",
+  "title": "Tempo",
+  "description": "Aprenda vocabulário sobre o tempo em Inglês",
+  "level": "A2",
+  "language_pair": {
+    "source": "pt_BR",
+    "target": "en_US"
+  },
+  "xp_reward": 15,
+  "order": 5,
+  "icon": "cloud",
+  "questions": [
+    {
+      "type": "multiple_choice",
+      "prompt": "Como se pergunta 'Como está o tempo?' em Inglês?",
+      "options": ["What's the weather like?", "What time is it?", "Where is it?", "How much is it?"],
+      "correct_index": 0,
+      "explanation": "'What's the weather like?' é a forma padrão de perguntar sobre o tempo."
+    },
+    {
+      "type": "matching_pairs",
+      "prompt": "Combine as palavras do tempo",
+      "pairs": [
+        ["sol", "sun"],
+        ["chuva", "rain"],
+        ["vento", "wind"],
+        ["nuvem", "cloud"]
+      ]
+    },
+    {
+      "type": "typing",
+      "prompt": "Escreva 'Está calor' em Inglês",
+      "correct_answers": ["It's hot", "It is hot"],
+      "hint": "It's + hot",
+      "accent_strict": false
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "O que significa 'It's raining'?",
+      "options": ["Está nevando", "Está chovendo", "Está ventando", "Está sol"],
+      "correct_index": 1,
+      "explanation": "'It's raining' significa 'Está chovendo'."
+    },
+    {
+      "type": "matching_pairs",
+      "prompt": "Combine as descrições do tempo",
+      "pairs": [
+        ["frio", "cold"],
+        ["calor", "hot"],
+        ["quente", "warm"],
+        ["fresco", "cool"]
+      ]
+    },
+    {
+      "type": "typing",
+      "prompt": "Escreva 'Está sol' em Inglês",
+      "correct_answers": ["It's sunny", "It is sunny"],
+      "hint": "sunny = com sol",
+      "accent_strict": false
+    },
+    {
+      "type": "sentence_builder",
+      "prompt": "Construa: 'Hoje está frio'",
+      "words": ["Today", "it's", "cold", "hot", "tomorrow"],
+      "correct_order": [0, 1, 2],
+      "distractors": ["hot", "tomorrow"]
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "No Brasil, qual tempo é mais comum?",
+      "options": ["Snow (neve)", "Heat (calor)", "Extreme cold (frio intenso)", "Fog (neblina)"],
+      "correct_index": 1,
+      "explanation": "O Brasil é conhecido pelo clima tropical, com calor sendo comum na maioria das regiões."
+    }
+  ],
+  "cheat_sheet": {
+    "title": "Tempo em Inglês",
+    "sections": [
+      {
+        "heading": "Elementos do Tempo",
+        "content": [
+          {
+            "type": "vocabulary",
+            "items": [
+              ["sol", "sun"],
+              ["chuva", "rain"],
+              ["vento", "wind"],
+              ["nuvem", "cloud"],
+              ["tempestade", "storm"],
+              ["umidade", "humidity"]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Descrever o Tempo",
+        "content": [
+          {
+            "type": "vocabulary",
+            "items": [
+              ["Está calor", "It's hot"],
+              ["Está frio", "It's cold"],
+              ["Está chovendo", "It's raining"],
+              ["Está fazendo sol", "It's sunny"],
+              ["Está ventando", "It's windy"],
+              ["Está nublado", "It's cloudy"],
+              ["Está úmido", "It's humid"]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Temperaturas",
+        "content": [
+          {
+            "type": "vocabulary",
+            "items": [
+              ["quente", "hot"],
+              ["morno", "warm"],
+              ["fresco", "cool"],
+              ["frio", "cold"],
+              ["gelado", "freezing"]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Estrutura em Inglês",
+        "content": [
+          {
+            "type": "tip",
+            "text": "Em Inglês, usa-se 'It's' + adjetivo: 'It's hot', 'It's cold', 'It's sunny'."
+          },
+          {
+            "type": "example",
+            "source": "It's going to be very hot tomorrow",
+            "target": "Vai fazer muito calor amanhã",
+            "note": "Use 'going to be' para previsões do tempo"
+          }
+        ]
+      }
+    ]
+  }
+}

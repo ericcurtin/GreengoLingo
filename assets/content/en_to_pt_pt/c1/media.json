@@ -1,0 +1,146 @@
+{
+  "id": "media_01_pt",
+  "title": "Media & Current Affairs",
+  "description": "Learn vocabulary for discussing media and news in European Portuguese",
+  "level": "C1",
+  "language_pair": {
+    "source": "en_US",
+    "target": "pt_PT"
+  },
+  "xp_reward": 30,
+  "order": 6,
+  "icon": "newspaper",
+  "questions": [
+    {
+      "type": "multiple_choice",
+      "prompt": "How do you say 'breaking news' in Portuguese?",
+      "options": ["últimas notícias", "notícias partidas", "notícias importantes", "jornalismo"],
+      "correct_index": 0,
+      "explanation": "'Últimas notícias' or 'notícias de última hora' are used for breaking news."
+    },
+    {
+      "type": "matching_pairs",
+      "prompt": "Match media terms",
+      "pairs": [
+        ["newspaper", "jornal"],
+        ["journalist", "jornalista"],
+        ["headline", "manchete"],
+        ["broadcast", "transmissão"]
+      ]
+    },
+    {
+      "type": "typing",
+      "prompt": "Write 'social media' in Portuguese",
+      "correct_answers": ["redes sociais", "Redes sociais"],
+      "hint": "Redes + sociais",
+      "accent_strict": false
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "What does 'meios de comunicação social' mean?",
+      "options": ["social media", "mass media", "communication tools", "social clubs"],
+      "correct_index": 1,
+      "explanation": "'Meios de comunicação social' refers to mass media (TV, radio, press)."
+    },
+    {
+      "type": "matching_pairs",
+      "prompt": "Match more media vocabulary",
+      "pairs": [
+        ["article", "artigo"],
+        ["editorial", "editorial"],
+        ["interview", "entrevista"],
+        ["report", "reportagem"]
+      ]
+    },
+    {
+      "type": "typing",
+      "prompt": "Write 'fake news' in Portuguese",
+      "correct_answers": ["notícias falsas", "fake news", "desinformação"],
+      "hint": "notícias + falsas",
+      "accent_strict": false
+    },
+    {
+      "type": "sentence_builder",
+      "prompt": "Build: 'According to the report'",
+      "words": ["Segundo", "a", "reportagem", "o", "jornal", "notícia"],
+      "correct_order": [0, 1, 2],
+      "distractors": ["o", "jornal", "notícia"]
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "What is 'fonte fidedigna'?",
+      "options": ["fake source", "reliable source", "anonymous source", "primary source"],
+      "correct_index": 1,
+      "explanation": "'Fidedigno/a' means trustworthy/reliable. 'Fonte fidedigna' = reliable source."
+    }
+  ],
+  "cheat_sheet": {
+    "title": "Media & Current Affairs in European Portuguese",
+    "sections": [
+      {
+        "heading": "Types of Media",
+        "content": [
+          {
+            "type": "vocabulary",
+            "items": [
+              ["mass media", "meios de comunicação social"],
+              ["newspaper", "jornal"],
+              ["magazine", "revista"],
+              ["television", "televisão"],
+              ["radio", "rádio"],
+              ["social media", "redes sociais"],
+              ["online media", "meios digitais"]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "News Terms",
+        "content": [
+          {
+            "type": "vocabulary",
+            "items": [
+              ["breaking news", "últimas notícias / notícias de última hora"],
+              ["headline", "manchete / título"],
+              ["article", "artigo"],
+              ["report", "reportagem"],
+              ["editorial", "editorial"],
+              ["press release", "comunicado de imprensa"],
+              ["news coverage", "cobertura noticiosa"]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Media Literacy",
+        "content": [
+          {
+            "type": "vocabulary",
+            "items": [
+              ["fake news", "notícias falsas / desinformação"],
+              ["reliable source", "fonte fidedigna"],
+              ["fact-checking", "verificação de factos"],
+              ["bias", "parcialidade / viés"],
+              ["objectivity", "objetividade"]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Discussing News",
+        "content": [
+          {
+            "type": "tip",
+            "text": "Use expressions like 'Segundo...', 'De acordo com...', 'Conforme noticiado...' when citing sources."
+          },
+          {
+            "type": "example",
+            "source": "Segundo fontes fidedignas, o governo anunciará medidas esta semana.",
+            "target": "According to reliable sources, the government will announce measures this week.",
+            "note": "Formal news reporting style"
+          }
+        ]
+      }
+    ]
+  }
+}

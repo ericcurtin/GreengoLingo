@@ -1,0 +1,147 @@
+{
+  "id": "transportation_01_br",
+  "title": "Transportation",
+  "description": "Learn transportation vocabulary in Brazilian Portuguese",
+  "level": "A2",
+  "language_pair": {
+    "source": "en_US",
+    "target": "pt_BR"
+  },
+  "xp_reward": 15,
+  "order": 6,
+  "icon": "directions_bus",
+  "questions": [
+    {
+      "type": "multiple_choice",
+      "prompt": "How do you say 'bus' in Brazilian Portuguese?",
+      "options": ["carro", "ônibus", "trem", "avião"],
+      "correct_index": 1,
+      "explanation": "'Ônibus' is the word for bus in Brazil. In Portugal, it's 'autocarro'."
+    },
+    {
+      "type": "matching_pairs",
+      "prompt": "Match the vehicles",
+      "pairs": [
+        ["car", "carro"],
+        ["train", "trem"],
+        ["plane", "avião"],
+        ["bicycle", "bicicleta"]
+      ]
+    },
+    {
+      "type": "typing",
+      "prompt": "Write 'train' in Brazilian Portuguese",
+      "correct_answers": ["trem", "Trem"],
+      "hint": "Short word, different from European Portuguese",
+      "accent_strict": false
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "How do you say 'Where is the bus stop?'",
+      "options": ["Onde fica o ponto de ônibus?", "Onde fica o aeroporto?", "Onde fica a estação?", "Onde fica o carro?"],
+      "correct_index": 0,
+      "explanation": "'Ponto de ônibus' is bus stop in Brazil."
+    },
+    {
+      "type": "matching_pairs",
+      "prompt": "Match transportation terms",
+      "pairs": [
+        ["subway/metro", "metrô"],
+        ["boat", "barco"],
+        ["motorcycle", "moto"],
+        ["taxi", "táxi"]
+      ]
+    },
+    {
+      "type": "typing",
+      "prompt": "Write 'ticket' in Portuguese",
+      "correct_answers": ["passagem", "Passagem", "bilhete"],
+      "hint": "Used for transport tickets",
+      "accent_strict": false
+    },
+    {
+      "type": "sentence_builder",
+      "prompt": "Build: 'I go by bus'",
+      "words": ["Eu", "vou", "de", "ônibus", "carro", "para"],
+      "correct_order": [0, 1, 2, 3],
+      "distractors": ["carro", "para"]
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "What is a popular ride-sharing option in Brazilian cities?",
+      "options": ["Uber/99", "Bicicleta", "Barco", "Trem"],
+      "correct_index": 0,
+      "explanation": "Ride-sharing apps like Uber and 99 are very popular in Brazilian cities."
+    }
+  ],
+  "cheat_sheet": {
+    "title": "Transportation in Brazilian Portuguese",
+    "sections": [
+      {
+        "heading": "Vehicles",
+        "content": [
+          {
+            "type": "vocabulary",
+            "items": [
+              ["car", "carro"],
+              ["bus", "ônibus"],
+              ["train", "trem"],
+              ["plane", "avião"],
+              ["subway/metro", "metrô"],
+              ["boat", "barco"],
+              ["bicycle", "bicicleta"],
+              ["motorcycle", "moto"],
+              ["taxi", "táxi"],
+              ["rideshare", "Uber / carro de aplicativo"]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Places",
+        "content": [
+          {
+            "type": "vocabulary",
+            "items": [
+              ["train station", "estação de trem"],
+              ["bus stop", "ponto de ônibus"],
+              ["bus station", "rodoviária"],
+              ["airport", "aeroporto"],
+              ["metro station", "estação de metrô"]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Useful Phrases",
+        "content": [
+          {
+            "type": "vocabulary",
+            "items": [
+              ["I go by...", "Eu vou de..."],
+              ["ticket", "passagem"],
+              ["bus fare", "tarifa / passagem"],
+              ["to catch (a bus)", "pegar (o ônibus)"],
+              ["to get off", "descer"]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Brazilian Transportation",
+        "content": [
+          {
+            "type": "tip",
+            "text": "In Brazil, 'pegar' is used for catching transport: 'Vou pegar o ônibus' (I'll catch the bus)."
+          },
+          {
+            "type": "example",
+            "source": "Vou pedir um Uber",
+            "target": "I'm going to request an Uber",
+            "note": "Very common in Brazilian cities"
+          }
+        ]
+      }
+    ]
+  }
+}
