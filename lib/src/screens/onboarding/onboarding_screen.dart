@@ -88,6 +88,7 @@ class _OnboardingScreenState extends ConsumerState<OnboardingScreen> {
               padding: const EdgeInsets.all(16),
               child: Row(
                 children: List.generate(4, (index) {
+                  final isDark = Theme.of(context).brightness == Brightness.dark;
                   return Expanded(
                     child: Container(
                       height: 4,
@@ -95,7 +96,7 @@ class _OnboardingScreenState extends ConsumerState<OnboardingScreen> {
                       decoration: BoxDecoration(
                         color: index <= _currentPage
                             ? AppTheme.primaryGreen
-                            : Colors.grey.shade300,
+                            : (isDark ? AppColors.progressBackgroundDark : Colors.grey.shade300),
                         borderRadius: BorderRadius.circular(2),
                       ),
                     ),
@@ -169,50 +170,39 @@ class _WelcomePage extends StatelessWidget {
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Container(
-            width: 120,
-            height: 120,
-            decoration: BoxDecoration(
-              color: AppTheme.primaryGreen,
-              borderRadius: BorderRadius.circular(30),
-              boxShadow: [
-                BoxShadow(
-                  color: AppTheme.primaryGreen.withOpacity(0.3),
-                  blurRadius: 20,
-                  offset: const Offset(0, 10),
-                ),
-              ],
-            ),
-            child: const Icon(
-              Icons.translate,
-              size: 60,
-              color: Colors.white,
+          ClipRRect(
+            borderRadius: BorderRadius.circular(30),
+            child: Image.asset(
+              'assets/images/logo.png',
+              width: 120,
+              height: 120,
+              fit: BoxFit.cover,
             ),
           ).animate().scale(delay: 200.ms, duration: 400.ms, curve: Curves.elasticOut),
           const SizedBox(height: 32),
-          const Text(
+          Text(
             'Welcome to',
             style: TextStyle(
               fontSize: 20,
-              color: AppColors.textMedium,
+              color: Theme.of(context).colorScheme.onSurfaceVariant,
             ),
           ).animate().fadeIn(delay: 400.ms),
           const SizedBox(height: 8),
-          const Text(
+          Text(
             'GreengoLingo',
             style: TextStyle(
               fontSize: 36,
               fontWeight: FontWeight.bold,
-              color: AppColors.textDark,
+              color: Theme.of(context).colorScheme.onSurface,
             ),
           ).animate().fadeIn(delay: 500.ms),
           const SizedBox(height: 16),
-          const Text(
+          Text(
             'Learn languages through fun, interactive lessons with gamification!',
             textAlign: TextAlign.center,
             style: TextStyle(
               fontSize: 16,
-              color: AppColors.textMedium,
+              color: Theme.of(context).colorScheme.onSurfaceVariant,
               height: 1.5,
             ),
           ).animate().fadeIn(delay: 600.ms),
@@ -246,20 +236,20 @@ class _SourceLanguagePage extends StatelessWidget {
       child: Column(
         children: [
           const SizedBox(height: 32),
-          const Text(
+          Text(
             'I speak...',
             style: TextStyle(
               fontSize: 28,
               fontWeight: FontWeight.bold,
-              color: AppColors.textDark,
+              color: Theme.of(context).colorScheme.onSurface,
             ),
           ).animate().fadeIn(),
           const SizedBox(height: 8),
-          const Text(
+          Text(
             'Select your native language',
             style: TextStyle(
               fontSize: 16,
-              color: AppColors.textMedium,
+              color: Theme.of(context).colorScheme.onSurfaceVariant,
             ),
           ).animate().fadeIn(delay: 100.ms),
           const SizedBox(height: 48),
@@ -310,10 +300,10 @@ class _TargetDialectPage extends StatelessWidget {
           const SizedBox(height: 32),
           Text(
             'I want to learn...',
-            style: const TextStyle(
+            style: TextStyle(
               fontSize: 28,
               fontWeight: FontWeight.bold,
-              color: AppColors.textDark,
+              color: Theme.of(context).colorScheme.onSurface,
             ),
           ).animate().fadeIn(),
           const SizedBox(height: 8),
@@ -321,9 +311,9 @@ class _TargetDialectPage extends StatelessWidget {
             isLearningPortuguese
                 ? 'Choose Portuguese dialect'
                 : 'Choose English',
-            style: const TextStyle(
+            style: TextStyle(
               fontSize: 16,
-              color: AppColors.textMedium,
+              color: Theme.of(context).colorScheme.onSurfaceVariant,
             ),
           ).animate().fadeIn(delay: 100.ms),
           const SizedBox(height: 48),
@@ -396,20 +386,20 @@ class _LevelSelectionPage extends StatelessWidget {
       child: Column(
         children: [
           const SizedBox(height: 16),
-          const Text(
+          Text(
             'Your level',
             style: TextStyle(
               fontSize: 28,
               fontWeight: FontWeight.bold,
-              color: AppColors.textDark,
+              color: Theme.of(context).colorScheme.onSurface,
             ),
           ).animate().fadeIn(),
           const SizedBox(height: 8),
-          const Text(
+          Text(
             'Select your current proficiency',
             style: TextStyle(
               fontSize: 16,
-              color: AppColors.textMedium,
+              color: Theme.of(context).colorScheme.onSurfaceVariant,
             ),
           ).animate().fadeIn(delay: 100.ms),
           const SizedBox(height: 24),
@@ -514,16 +504,19 @@ class _LanguageCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final isDark = Theme.of(context).brightness == Brightness.dark;
     return GestureDetector(
       onTap: onTap,
       child: AnimatedContainer(
         duration: const Duration(milliseconds: 200),
         padding: const EdgeInsets.all(20),
         decoration: BoxDecoration(
-          color: isSelected ? AppTheme.primaryGreen.withOpacity(0.1) : Colors.white,
+          color: isSelected
+              ? AppTheme.primaryGreen.withOpacity(0.1)
+              : (isDark ? AppColors.surfaceDark : Colors.white),
           borderRadius: BorderRadius.circular(16),
           border: Border.all(
-            color: isSelected ? AppTheme.primaryGreen : Colors.grey.shade200,
+            color: isSelected ? AppTheme.primaryGreen : (isDark ? Colors.grey.shade700 : Colors.grey.shade200),
             width: isSelected ? 2 : 1,
           ),
           boxShadow: [
@@ -552,7 +545,7 @@ class _LanguageCard extends StatelessWidget {
                     style: TextStyle(
                       fontSize: 18,
                       fontWeight: FontWeight.bold,
-                      color: isSelected ? AppTheme.primaryGreen : AppColors.textDark,
+                      color: isSelected ? AppTheme.primaryGreen : Theme.of(context).colorScheme.onSurface,
                     ),
                   ),
                   if (subtitle != null)
@@ -560,7 +553,7 @@ class _LanguageCard extends StatelessWidget {
                       subtitle!,
                       style: TextStyle(
                         fontSize: 14,
-                        color: AppColors.textMedium,
+                        color: Theme.of(context).colorScheme.onSurfaceVariant,
                       ),
                     ),
                 ],
@@ -596,15 +589,18 @@ class _LevelCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final isDark = Theme.of(context).brightness == Brightness.dark;
     return GestureDetector(
       onTap: onTap,
       child: AnimatedContainer(
         duration: const Duration(milliseconds: 200),
         decoration: BoxDecoration(
-          color: isSelected ? color.withOpacity(0.15) : Colors.white,
+          color: isSelected
+              ? color.withOpacity(0.15)
+              : (isDark ? AppColors.surfaceDark : Colors.white),
           borderRadius: BorderRadius.circular(16),
           border: Border.all(
-            color: isSelected ? color : Colors.grey.shade200,
+            color: isSelected ? color : (isDark ? Colors.grey.shade700 : Colors.grey.shade200),
             width: isSelected ? 2 : 1,
           ),
         ),
@@ -616,7 +612,7 @@ class _LevelCard extends StatelessWidget {
               style: TextStyle(
                 fontSize: 24,
                 fontWeight: FontWeight.bold,
-                color: isSelected ? color : AppColors.textDark,
+                color: isSelected ? color : Theme.of(context).colorScheme.onSurface,
               ),
             ),
             const SizedBox(height: 4),
@@ -624,7 +620,7 @@ class _LevelCard extends StatelessWidget {
               name,
               style: TextStyle(
                 fontSize: 12,
-                color: AppColors.textMedium,
+                color: Theme.of(context).colorScheme.onSurfaceVariant,
               ),
             ),
           ],
