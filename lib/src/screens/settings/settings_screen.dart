@@ -4,6 +4,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../../theme/app_theme.dart';
 import '../../theme/colors.dart';
 import '../../providers/settings_provider.dart';
+import '../../services/haptic_service.dart';
 
 class SettingsScreen extends ConsumerWidget {
   const SettingsScreen({super.key});
@@ -72,6 +73,9 @@ class SettingsScreen extends ConsumerWidget {
                 value: settings.hapticEnabled,
                 onChanged: (value) {
                   ref.read(settingsProvider.notifier).setHapticEnabled(value);
+                  if (value) {
+                    HapticService.instance.mediumTap();
+                  }
                 },
                 activeColor: AppTheme.primaryGreen,
               ),
