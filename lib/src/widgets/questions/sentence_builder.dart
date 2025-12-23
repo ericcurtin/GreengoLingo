@@ -24,7 +24,8 @@ class SentenceBuilderQuestion extends StatefulWidget {
   });
 
   @override
-  State<SentenceBuilderQuestion> createState() => _SentenceBuilderQuestionState();
+  State<SentenceBuilderQuestion> createState() =>
+      _SentenceBuilderQuestionState();
 }
 
 class _SentenceBuilderQuestionState extends State<SentenceBuilderQuestion> {
@@ -133,7 +134,9 @@ class _SentenceBuilderQuestionState extends State<SentenceBuilderQuestion> {
               padding: const EdgeInsets.all(16),
               decoration: BoxDecoration(
                 color: _hasSubmitted
-                    ? (_isCorrect ? AppColors.correctLight : AppColors.incorrectLight)
+                    ? (_isCorrect
+                        ? AppColors.correctLight
+                        : AppColors.incorrectLight)
                     : (isDark ? AppColors.surfaceDark : Colors.grey.shade100),
                 borderRadius: BorderRadius.circular(16),
                 border: Border.all(
@@ -153,24 +156,24 @@ class _SentenceBuilderQuestionState extends State<SentenceBuilderQuestion> {
                         ),
                       ),
                     )
-              : Wrap(
-                  spacing: 8,
-                  runSpacing: 8,
-                  children: _selectedIndices.asMap().entries.map((entry) {
-                    final position = entry.key;
-                    final wordIndex = entry.value;
-                    final word = widget.words[wordIndex];
+                  : Wrap(
+                      spacing: 8,
+                      runSpacing: 8,
+                      children: _selectedIndices.asMap().entries.map((entry) {
+                        final position = entry.key;
+                        final wordIndex = entry.value;
+                        final word = widget.words[wordIndex];
 
-                    return GestureDetector(
-                      onTap: () => _removeWord(position),
-                      child: _WordChip(
-                        word: word,
-                        isInAnswer: true,
-                        isCorrect: _hasSubmitted ? _isCorrect : null,
-                      ),
-                    );
-                  }).toList(),
-                ),
+                        return GestureDetector(
+                          onTap: () => _removeWord(position),
+                          child: _WordChip(
+                            word: word,
+                            isInAnswer: true,
+                            isCorrect: _hasSubmitted ? _isCorrect : null,
+                          ),
+                        );
+                      }).toList(),
+                    ),
             );
           },
         ).animate().fadeIn(delay: 150.ms),
@@ -209,7 +212,10 @@ class _SentenceBuilderQuestionState extends State<SentenceBuilderQuestion> {
                   isDisabled: isUsed,
                 ),
               ),
-            ).animate().fadeIn(delay: (200 + displayIndex * 50).ms).scale(begin: const Offset(0.9, 0.9));
+            )
+                .animate()
+                .fadeIn(delay: (200 + displayIndex * 50).ms)
+                .scale(begin: const Offset(0.9, 0.9));
           }).toList(),
         ),
 
@@ -286,7 +292,8 @@ class _WordChip extends StatelessWidget {
 
     final isDark = Theme.of(context).brightness == Brightness.dark;
     final surfaceColor = isDark ? AppColors.surfaceDark : Colors.white;
-    final defaultBorderColor = isDark ? Colors.grey.shade700 : Colors.grey.shade300;
+    final defaultBorderColor =
+        isDark ? Colors.grey.shade700 : Colors.grey.shade300;
 
     if (isCorrect != null) {
       if (isCorrect!) {

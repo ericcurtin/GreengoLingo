@@ -170,7 +170,9 @@ class _LessonScreenState extends ConsumerState<LessonScreen> {
           key: ValueKey('question_$_currentQuestion'),
           prompt: question['prompt'] as String,
           options: List<String>.from(question['options'] as List),
-          correctIndex: question['correct_index'] as int? ?? question['correctIndex'] as int? ?? 0,
+          correctIndex: question['correct_index'] as int? ??
+              question['correctIndex'] as int? ??
+              0,
           explanation: question['explanation'] as String?,
           enabled: !_showingFeedback,
           onAnswer: _handleAnswer,
@@ -179,7 +181,10 @@ class _LessonScreenState extends ConsumerState<LessonScreen> {
         return TypingQuestion(
           key: ValueKey('question_$_currentQuestion'),
           prompt: question['prompt'] as String,
-          correctAnswers: List<String>.from(question['correct_answers'] as List? ?? question['correctAnswers'] as List? ?? []),
+          correctAnswers: List<String>.from(
+              question['correct_answers'] as List? ??
+                  question['correctAnswers'] as List? ??
+                  []),
           hint: question['hint'] as String?,
           enabled: !_showingFeedback,
           onAnswer: _handleAnswer,
@@ -209,7 +214,9 @@ class _LessonScreenState extends ConsumerState<LessonScreen> {
           key: ValueKey('question_$_currentQuestion'),
           prompt: question['prompt'] as String,
           words: List<String>.from(question['words'] as List),
-          correctOrder: List<int>.from(question['correct_order'] as List? ?? question['correctOrder'] as List? ?? []),
+          correctOrder: List<int>.from(question['correct_order'] as List? ??
+              question['correctOrder'] as List? ??
+              []),
           enabled: !_showingFeedback,
           onAnswer: _handleAnswer,
         );
@@ -291,12 +298,18 @@ class _LessonScreenState extends ConsumerState<LessonScreen> {
     switch (type) {
       case 'multiple_choice':
         final options = List<String>.from(question['options'] as List);
-        final correctIndex = question['correct_index'] as int? ?? question['correctIndex'] as int? ?? 0;
+        final correctIndex = question['correct_index'] as int? ??
+            question['correctIndex'] as int? ??
+            0;
         correctAnswerText = options[correctIndex];
         break;
       case 'typing':
-        final correctAnswers = List<String>.from(question['correct_answers'] as List? ?? question['correctAnswers'] as List? ?? []);
-        correctAnswerText = correctAnswers.isNotEmpty ? correctAnswers.first : '';
+        final correctAnswers = List<String>.from(
+            question['correct_answers'] as List? ??
+                question['correctAnswers'] as List? ??
+                []);
+        correctAnswerText =
+            correctAnswers.isNotEmpty ? correctAnswers.first : '';
         break;
       case 'matching_pairs':
       case 'matching':
@@ -313,7 +326,10 @@ class _LessonScreenState extends ConsumerState<LessonScreen> {
         break;
       case 'sentence_builder':
         final words = List<String>.from(question['words'] as List);
-        final correctOrder = List<int>.from(question['correct_order'] as List? ?? question['correctOrder'] as List? ?? []);
+        final correctOrder = List<int>.from(
+            question['correct_order'] as List? ??
+                question['correctOrder'] as List? ??
+                []);
         correctAnswerText = correctOrder.map((i) => words[i]).join(' ');
         break;
     }
@@ -469,7 +485,8 @@ class _LessonScreenState extends ConsumerState<LessonScreen> {
               SizedBox(
                 width: double.infinity,
                 child: ElevatedButton(
-                  onPressed: () => Navigator.of(context).pop(true), // Return true to indicate completion
+                  onPressed: () => Navigator.of(context)
+                      .pop(true), // Return true to indicate completion
                   child: const Text('Continue'),
                 ),
               ),
@@ -494,7 +511,8 @@ class _LessonScreenState extends ConsumerState<LessonScreen> {
           TextButton(
             onPressed: () {
               Navigator.of(context).pop();
-              Navigator.of(context).pop(false); // Return false to indicate no completion
+              Navigator.of(context)
+                  .pop(false); // Return false to indicate no completion
             },
             child: const Text('Leave'),
           ),

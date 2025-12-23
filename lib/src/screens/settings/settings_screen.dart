@@ -48,7 +48,8 @@ class SettingsScreen extends ConsumerWidget {
               icon: Icons.school_outlined,
               title: 'Preferred Level',
               subtitle: settings.preferredLevel,
-              onTap: () => _showLevelDialog(context, ref, settings.preferredLevel),
+              onTap: () =>
+                  _showLevelDialog(context, ref, settings.preferredLevel),
             ),
             _SettingsTile(
               icon: Icons.keyboard_outlined,
@@ -56,7 +57,8 @@ class SettingsScreen extends ConsumerWidget {
               subtitle: settings.typingMode == 'lenient'
                   ? 'Lenient (ignores accents)'
                   : 'Strict (requires accents)',
-              onTap: () => _showTypingModeDialog(context, ref, settings.typingMode),
+              onTap: () =>
+                  _showTypingModeDialog(context, ref, settings.typingMode),
             ),
 
             const SizedBox(height: 24),
@@ -118,28 +120,36 @@ class SettingsScreen extends ConsumerWidget {
           _DialogOption(
             title: 'English → European Portuguese',
             onTap: () {
-              ref.read(settingsProvider.notifier).setActiveLanguagePair('en_to_pt_pt');
+              ref
+                  .read(settingsProvider.notifier)
+                  .setActiveLanguagePair('en_to_pt_pt');
               Navigator.pop(context);
             },
           ),
           _DialogOption(
             title: 'English → Brazilian Portuguese',
             onTap: () {
-              ref.read(settingsProvider.notifier).setActiveLanguagePair('en_to_pt_br');
+              ref
+                  .read(settingsProvider.notifier)
+                  .setActiveLanguagePair('en_to_pt_br');
               Navigator.pop(context);
             },
           ),
           _DialogOption(
             title: 'European Portuguese → English',
             onTap: () {
-              ref.read(settingsProvider.notifier).setActiveLanguagePair('pt_pt_to_en');
+              ref
+                  .read(settingsProvider.notifier)
+                  .setActiveLanguagePair('pt_pt_to_en');
               Navigator.pop(context);
             },
           ),
           _DialogOption(
             title: 'Brazilian Portuguese → English',
             onTap: () {
-              ref.read(settingsProvider.notifier).setActiveLanguagePair('pt_br_to_en');
+              ref
+                  .read(settingsProvider.notifier)
+                  .setActiveLanguagePair('pt_br_to_en');
               Navigator.pop(context);
             },
           ),
@@ -148,7 +158,8 @@ class SettingsScreen extends ConsumerWidget {
     );
   }
 
-  void _showLevelDialog(BuildContext context, WidgetRef ref, String currentLevel) {
+  void _showLevelDialog(
+      BuildContext context, WidgetRef ref, String currentLevel) {
     showDialog(
       context: context,
       builder: (context) => SimpleDialog(
@@ -167,7 +178,8 @@ class SettingsScreen extends ConsumerWidget {
     );
   }
 
-  void _showTypingModeDialog(BuildContext context, WidgetRef ref, String currentMode) {
+  void _showTypingModeDialog(
+      BuildContext context, WidgetRef ref, String currentMode) {
     showDialog(
       context: context,
       builder: (context) => SimpleDialog(
@@ -275,7 +287,8 @@ class _SettingsTile extends StatelessWidget {
         leading: Icon(icon, color: iconColor ?? AppTheme.primaryGreen),
         title: Text(title),
         subtitle: subtitle != null ? Text(subtitle!) : null,
-        trailing: trailing ?? (onTap != null ? const Icon(Icons.chevron_right) : null),
+        trailing: trailing ??
+            (onTap != null ? const Icon(Icons.chevron_right) : null),
         onTap: onTap,
       ),
     );

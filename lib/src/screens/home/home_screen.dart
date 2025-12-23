@@ -16,7 +16,8 @@ class HomeScreen extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    final _ = ref.watch(settingsProvider); // Watch for rebuild on settings change
+    final _ =
+        ref.watch(settingsProvider); // Watch for rebuild on settings change
     final xpInfo = ref.watch(xpInfoProvider);
     final streakInfo = ref.watch(streakInfoProvider);
     final progressAsync = ref.watch(progressProvider);
@@ -87,7 +88,8 @@ class HomeScreen extends ConsumerWidget {
             // Level Selector Header
             SliverToBoxAdapter(
               child: Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+                padding:
+                    const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
                 child: Text(
                   'Choose Your Level',
                   style: Theme.of(context).textTheme.titleLarge?.copyWith(
@@ -116,7 +118,10 @@ class HomeScreen extends ConsumerWidget {
                       completedCount: progress.getCompletedCount('A1'),
                       color: AppColors.levelA1,
                       onTap: () => _openLessons(context, ref, 'A1'),
-                    ).animate().fadeIn(delay: 100.ms).scale(begin: const Offset(0.9, 0.9)),
+                    )
+                        .animate()
+                        .fadeIn(delay: 100.ms)
+                        .scale(begin: const Offset(0.9, 0.9)),
                     _LevelCard(
                       level: 'A2',
                       name: 'Elementary',
@@ -124,7 +129,10 @@ class HomeScreen extends ConsumerWidget {
                       completedCount: progress.getCompletedCount('A2'),
                       color: AppColors.levelA2,
                       onTap: () => _openLessons(context, ref, 'A2'),
-                    ).animate().fadeIn(delay: 150.ms).scale(begin: const Offset(0.9, 0.9)),
+                    )
+                        .animate()
+                        .fadeIn(delay: 150.ms)
+                        .scale(begin: const Offset(0.9, 0.9)),
                     _LevelCard(
                       level: 'B1',
                       name: 'Intermediate',
@@ -135,7 +143,10 @@ class HomeScreen extends ConsumerWidget {
                       onTap: progress.getTotalCount('B1') > 0
                           ? () => _openLessons(context, ref, 'B1')
                           : null,
-                    ).animate().fadeIn(delay: 200.ms).scale(begin: const Offset(0.9, 0.9)),
+                    )
+                        .animate()
+                        .fadeIn(delay: 200.ms)
+                        .scale(begin: const Offset(0.9, 0.9)),
                     _LevelCard(
                       level: 'B2',
                       name: 'Upper Int.',
@@ -146,7 +157,10 @@ class HomeScreen extends ConsumerWidget {
                       onTap: progress.getTotalCount('B2') > 0
                           ? () => _openLessons(context, ref, 'B2')
                           : null,
-                    ).animate().fadeIn(delay: 250.ms).scale(begin: const Offset(0.9, 0.9)),
+                    )
+                        .animate()
+                        .fadeIn(delay: 250.ms)
+                        .scale(begin: const Offset(0.9, 0.9)),
                     _LevelCard(
                       level: 'C1',
                       name: 'Advanced',
@@ -157,7 +171,10 @@ class HomeScreen extends ConsumerWidget {
                       onTap: progress.getTotalCount('C1') > 0
                           ? () => _openLessons(context, ref, 'C1')
                           : null,
-                    ).animate().fadeIn(delay: 300.ms).scale(begin: const Offset(0.9, 0.9)),
+                    )
+                        .animate()
+                        .fadeIn(delay: 300.ms)
+                        .scale(begin: const Offset(0.9, 0.9)),
                     _LevelCard(
                       level: 'C2',
                       name: 'Mastery',
@@ -168,7 +185,10 @@ class HomeScreen extends ConsumerWidget {
                       onTap: progress.getTotalCount('C2') > 0
                           ? () => _openLessons(context, ref, 'C2')
                           : null,
-                    ).animate().fadeIn(delay: 350.ms).scale(begin: const Offset(0.9, 0.9)),
+                    )
+                        .animate()
+                        .fadeIn(delay: 350.ms)
+                        .scale(begin: const Offset(0.9, 0.9)),
                   ]),
                 ),
               ),
@@ -190,9 +210,11 @@ class HomeScreen extends ConsumerWidget {
     );
   }
 
-  Future<void> _openLessons(BuildContext context, WidgetRef ref, String level) async {
+  Future<void> _openLessons(
+      BuildContext context, WidgetRef ref, String level) async {
     // Get the next lesson to complete
-    final lesson = await ref.read(progressProvider.notifier).getNextLesson(level);
+    final lesson =
+        await ref.read(progressProvider.notifier).getNextLesson(level);
 
     if (lesson == null) {
       // No lessons available for this level
@@ -260,7 +282,8 @@ class _LevelCard extends StatelessWidget {
           borderRadius: BorderRadius.circular(20),
           boxShadow: [
             BoxShadow(
-              color: (isLocked ? Colors.grey : color).withOpacity(isDark ? 0.3 : 0.15),
+              color: (isLocked ? Colors.grey : color)
+                  .withOpacity(isDark ? 0.3 : 0.15),
               blurRadius: 10,
               offset: const Offset(0, 4),
             ),
@@ -302,7 +325,9 @@ class _LevelCard extends StatelessWidget {
                           color: Colors.grey.shade400,
                           size: 20,
                         ),
-                      if (!isLocked && completedCount == lessonCount && lessonCount > 0)
+                      if (!isLocked &&
+                          completedCount == lessonCount &&
+                          lessonCount > 0)
                         const Icon(
                           Icons.check_circle,
                           color: AppColors.correct,
@@ -316,7 +341,9 @@ class _LevelCard extends StatelessWidget {
                     style: TextStyle(
                       fontSize: 14,
                       fontWeight: FontWeight.w600,
-                      color: isLocked ? Colors.grey : Theme.of(context).colorScheme.onSurface,
+                      color: isLocked
+                          ? Colors.grey
+                          : Theme.of(context).colorScheme.onSurface,
                     ),
                   ),
                   const SizedBox(height: 4),
@@ -335,7 +362,9 @@ class _LevelCard extends StatelessWidget {
                     borderRadius: BorderRadius.circular(4),
                     child: LinearProgressIndicator(
                       value: progress,
-                      backgroundColor: isDark ? AppColors.progressBackgroundDark : Colors.grey.shade200,
+                      backgroundColor: isDark
+                          ? AppColors.progressBackgroundDark
+                          : Colors.grey.shade200,
                       valueColor: AlwaysStoppedAnimation(
                         isLocked ? Colors.grey : color,
                       ),

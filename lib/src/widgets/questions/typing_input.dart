@@ -35,7 +35,18 @@ class _TypingQuestionState extends State<TypingQuestion> {
 
   // Portuguese diacritical characters
   static const List<String> _specialChars = [
-    'á', 'à', 'â', 'ã', 'é', 'ê', 'í', 'ó', 'ô', 'õ', 'ú', 'ç',
+    'á',
+    'à',
+    'â',
+    'ã',
+    'é',
+    'ê',
+    'í',
+    'ó',
+    'ô',
+    'õ',
+    'ú',
+    'ç',
   ];
 
   @override
@@ -159,19 +170,27 @@ class _TypingQuestionState extends State<TypingQuestion> {
             hintText: 'Type your answer...',
             filled: true,
             fillColor: _hasSubmitted
-                ? (_isCorrect ? AppColors.correctLight : AppColors.incorrectLight)
-                : (Theme.of(context).brightness == Brightness.dark ? AppColors.surfaceDark : Colors.grey.shade100),
+                ? (_isCorrect
+                    ? AppColors.correctLight
+                    : AppColors.incorrectLight)
+                : (Theme.of(context).brightness == Brightness.dark
+                    ? AppColors.surfaceDark
+                    : Colors.grey.shade100),
             border: OutlineInputBorder(
               borderRadius: BorderRadius.circular(16),
               borderSide: BorderSide.none,
             ),
             enabledBorder: OutlineInputBorder(
               borderRadius: BorderRadius.circular(16),
-              borderSide: BorderSide(color: Theme.of(context).brightness == Brightness.dark ? Colors.grey.shade700 : Colors.grey.shade300),
+              borderSide: BorderSide(
+                  color: Theme.of(context).brightness == Brightness.dark
+                      ? Colors.grey.shade700
+                      : Colors.grey.shade300),
             ),
             focusedBorder: OutlineInputBorder(
               borderRadius: BorderRadius.circular(16),
-              borderSide: const BorderSide(color: AppTheme.primaryGreen, width: 2),
+              borderSide:
+                  const BorderSide(color: AppTheme.primaryGreen, width: 2),
             ),
             suffixIcon: _hasSubmitted
                 ? Icon(
@@ -203,9 +222,14 @@ class _TypingQuestionState extends State<TypingQuestion> {
                   width: 44,
                   height: 44,
                   decoration: BoxDecoration(
-                    color: Theme.of(context).brightness == Brightness.dark ? AppColors.surfaceDark : Colors.white,
+                    color: Theme.of(context).brightness == Brightness.dark
+                        ? AppColors.surfaceDark
+                        : Colors.white,
                     borderRadius: BorderRadius.circular(8),
-                    border: Border.all(color: Theme.of(context).brightness == Brightness.dark ? Colors.grey.shade700 : Colors.grey.shade300),
+                    border: Border.all(
+                        color: Theme.of(context).brightness == Brightness.dark
+                            ? Colors.grey.shade700
+                            : Colors.grey.shade300),
                     boxShadow: [
                       BoxShadow(
                         color: Colors.black.withOpacity(0.05),

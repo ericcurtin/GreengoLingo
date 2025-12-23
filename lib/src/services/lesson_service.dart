@@ -60,7 +60,8 @@ class LessonService {
   }
 
   /// Load lessons from asset files
-  Future<List<Lesson>> _loadLessonsFromAssets(String languagePair, String level) async {
+  Future<List<Lesson>> _loadLessonsFromAssets(
+      String languagePair, String level) async {
     final lessons = <Lesson>[];
     final levelLower = level.toLowerCase();
 
@@ -108,7 +109,8 @@ class LessonService {
   }
 
   /// Get a specific lesson by ID
-  Future<Lesson?> getLessonById(String languagePair, String level, String lessonId) async {
+  Future<Lesson?> getLessonById(
+      String languagePair, String level, String lessonId) async {
     final lessons = await getLessons(languagePair, level);
     try {
       return lessons.firstWhere((l) => l.id == lessonId);

@@ -18,7 +18,8 @@ class LevelProgress {
     required this.completedLessonIds,
   });
 
-  double get progress => totalLessons > 0 ? completedLessons / totalLessons : 0.0;
+  double get progress =>
+      totalLessons > 0 ? completedLessons / totalLessons : 0.0;
   bool get isCompleted => totalLessons > 0 && completedLessons >= totalLessons;
 }
 
@@ -37,8 +38,7 @@ class ProgressState {
   int getCompletedCount(String level) =>
       levelProgress[level]?.completedLessons ?? 0;
 
-  int getTotalCount(String level) =>
-      levelProgress[level]?.totalLessons ?? 0;
+  int getTotalCount(String level) => levelProgress[level]?.totalLessons ?? 0;
 
   List<String> getCompletedIds(String level) =>
       levelProgress[level]?.completedLessonIds ?? [];
@@ -63,7 +63,8 @@ class ProgressNotifier extends AsyncNotifier<ProgressState> {
     final progressMap = <String, LevelProgress>{};
 
     for (final level in levels) {
-      final completedIds = storage.getCompletedLessons('${languagePair}_$level');
+      final completedIds =
+          storage.getCompletedLessons('${languagePair}_$level');
       final lessons = await lessonService.getLessons(languagePair, level);
 
       progressMap[level] = LevelProgress(
@@ -99,7 +100,8 @@ class ProgressNotifier extends AsyncNotifier<ProgressState> {
     final languagePair = current.currentLanguagePair ?? 'en_to_pt_pt';
     final completedIds = current.getCompletedIds(level);
 
-    return LessonService.instance.getNextLesson(languagePair, level, completedIds);
+    return LessonService.instance
+        .getNextLesson(languagePair, level, completedIds);
   }
 
   /// Get all lessons for a level
@@ -125,20 +127,23 @@ class ProgressNotifier extends AsyncNotifier<ProgressState> {
 }
 
 /// Main progress provider
-final progressProvider =
-    AsyncNotifierProvider<ProgressNotifier, ProgressState>(ProgressNotifier.new);
+final progressProvider = AsyncNotifierProvider<ProgressNotifier, ProgressState>(
+    ProgressNotifier.new);
 
 /// Provider for getting available lessons for a level
-final lessonsForLevelProvider = FutureProvider.family<List<Lesson>, String>((ref, level) async {
+final lessonsForLevelProvider =
+    FutureProvider.family<List<Lesson>, String>((ref, level) async {
   final progress = await ref.watch(progressProvider.future);
   final languagePair = progress.currentLanguagePair ?? 'en_to_pt_pt';
   return LessonService.instance.getLessons(languagePair, level);
 });
 
 /// Provider for getting the next lesson for a level
-final nextLessonProvider = FutureProvider.family<Lesson?, String>((ref, level) async {
+final nextLessonProvider =
+    FutureProvider.family<Lesson?, String>((ref, level) async {
   final progress = await ref.watch(progressProvider.future);
   final languagePair = progress.currentLanguagePair ?? 'en_to_pt_pt';
   final completedIds = progress.getCompletedIds(level);
-  return LessonService.instance.getNextLesson(languagePair, level, completedIds);
+  return LessonService.instance
+      .getNextLesson(languagePair, level, completedIds);
 });

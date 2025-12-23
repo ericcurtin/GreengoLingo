@@ -36,7 +36,8 @@ class _MultipleChoiceQuestionState extends State<MultipleChoiceQuestion> {
   void initState() {
     super.initState();
     // Create shuffled indices for randomizing option order
-    _shuffledIndices = List.generate(widget.options.length, (i) => i)..shuffle();
+    _shuffledIndices = List.generate(widget.options.length, (i) => i)
+      ..shuffle();
     // Find where the correct answer ended up after shuffling
     _shuffledCorrectIndex = _shuffledIndices.indexOf(widget.correctIndex);
   }
@@ -99,14 +100,17 @@ class _MultipleChoiceQuestionState extends State<MultipleChoiceQuestion> {
               textColor = AppColors.incorrect;
             } else {
               backgroundColor = surfaceColor;
-              borderColor = isDark ? Colors.grey.shade700 : Colors.grey.shade200;
+              borderColor =
+                  isDark ? Colors.grey.shade700 : Colors.grey.shade200;
               textColor = defaultTextColor;
             }
           } else {
             backgroundColor = isSelected
                 ? AppTheme.primaryGreen.withOpacity(0.1)
                 : surfaceColor;
-            borderColor = isSelected ? AppTheme.primaryGreen : (isDark ? Colors.grey.shade700 : Colors.grey.shade200);
+            borderColor = isSelected
+                ? AppTheme.primaryGreen
+                : (isDark ? Colors.grey.shade700 : Colors.grey.shade200);
             textColor = defaultTextColor;
           }
 
@@ -149,7 +153,8 @@ class _MultipleChoiceQuestionState extends State<MultipleChoiceQuestion> {
                         option,
                         style: TextStyle(
                           fontSize: 18,
-                          fontWeight: isSelected ? FontWeight.bold : FontWeight.normal,
+                          fontWeight:
+                              isSelected ? FontWeight.bold : FontWeight.normal,
                           color: textColor,
                         ),
                       ),
@@ -158,13 +163,17 @@ class _MultipleChoiceQuestionState extends State<MultipleChoiceQuestion> {
                     if (showResult && (isCorrect || isSelected))
                       Icon(
                         isCorrect ? Icons.check_circle : Icons.cancel,
-                        color: isCorrect ? AppColors.correct : AppColors.incorrect,
+                        color:
+                            isCorrect ? AppColors.correct : AppColors.incorrect,
                       ),
                   ],
                 ),
               ),
             ),
-          ).animate().fadeIn(delay: (100 + displayIndex * 50).ms).slideX(begin: 0.05);
+          )
+              .animate()
+              .fadeIn(delay: (100 + displayIndex * 50).ms)
+              .slideX(begin: 0.05);
         }),
 
         // Explanation (if shown and correct)
@@ -181,7 +190,8 @@ class _MultipleChoiceQuestionState extends State<MultipleChoiceQuestion> {
               child: Row(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Icon(Icons.lightbulb_outline, color: AppColors.info, size: 20),
+                  Icon(Icons.lightbulb_outline,
+                      color: AppColors.info, size: 20),
                   const SizedBox(width: 12),
                   Expanded(
                     child: Text(
