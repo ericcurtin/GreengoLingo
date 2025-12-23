@@ -51,7 +51,9 @@ class _MatchingPairsQuestionState extends State<MatchingPairsQuestion> {
   }
 
   void _selectRight(String item) {
-    if (!widget.enabled || _matchedRight.contains(item) || _hasSubmitted) return;
+    if (!widget.enabled || _matchedRight.contains(item) || _hasSubmitted) {
+      return;
+    }
     HapticService.instance.selection();
     setState(() {
       _selectedRight = item;
@@ -67,9 +69,8 @@ class _MatchingPairsQuestionState extends State<MatchingPairsQuestion> {
       _matchedRight.add(_selectedRight!);
 
       // Check if this match is correct for visual feedback
-      final correctRight = widget.pairs
-          .firstWhere((p) => p.key == _selectedLeft)
-          .value;
+      final correctRight =
+          widget.pairs.firstWhere((p) => p.key == _selectedLeft).value;
       final isCorrect = _selectedRight == correctRight;
 
       if (isCorrect) {
@@ -108,7 +109,8 @@ class _MatchingPairsQuestionState extends State<MatchingPairsQuestion> {
   }
 
   bool _isMatchCorrect(String leftItem) {
-    final correctRight = widget.pairs.firstWhere((p) => p.key == leftItem).value;
+    final correctRight =
+        widget.pairs.firstWhere((p) => p.key == leftItem).value;
     return _matches[leftItem] == correctRight;
   }
 
@@ -181,8 +183,10 @@ class _MatchingPairsQuestionState extends State<MatchingPairsQuestion> {
                       .firstOrNull
                       ?.key;
                   final showResult = _hasSubmitted && isMatched;
-                  final isCorrect = showResult && matchedLeftItem != null &&
-                      widget.pairs.any((p) => p.key == matchedLeftItem && p.value == item);
+                  final isCorrect = showResult &&
+                      matchedLeftItem != null &&
+                      widget.pairs.any(
+                          (p) => p.key == matchedLeftItem && p.value == item);
 
                   return _MatchItem(
                     text: item,
@@ -227,7 +231,8 @@ class _MatchItem extends StatelessWidget {
 
     final isDark = Theme.of(context).brightness == Brightness.dark;
     final surfaceColor = isDark ? AppColors.surfaceDark : Colors.white;
-    final defaultBorderColor = isDark ? Colors.grey.shade700 : Colors.grey.shade300;
+    final defaultBorderColor =
+        isDark ? Colors.grey.shade700 : Colors.grey.shade300;
 
     if (showResult) {
       if (isCorrect) {
@@ -272,7 +277,8 @@ class _MatchItem extends StatelessWidget {
                   text,
                   style: TextStyle(
                     fontSize: 16,
-                    fontWeight: isSelected ? FontWeight.bold : FontWeight.normal,
+                    fontWeight:
+                        isSelected ? FontWeight.bold : FontWeight.normal,
                     color: textColor,
                   ),
                   textAlign: TextAlign.center,

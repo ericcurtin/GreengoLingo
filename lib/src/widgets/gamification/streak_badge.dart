@@ -41,7 +41,8 @@ class StreakBadge extends StatelessWidget {
                 style: TextStyle(
                   fontSize: 20,
                   fontWeight: FontWeight.bold,
-                  color: isActive ? AppColors.streakOrange : AppColors.textMedium,
+                  color:
+                      isActive ? AppColors.streakOrange : AppColors.textMedium,
                 ),
               ),
               Text(
@@ -126,9 +127,8 @@ class _StreakFlameState extends State<_StreakFlame>
           child: Icon(
             Icons.local_fire_department,
             size: 32,
-            color: widget.isActive
-                ? AppColors.streakOrange
-                : Colors.grey.shade400,
+            color:
+                widget.isActive ? AppColors.streakOrange : Colors.grey.shade400,
           ),
         );
       },

@@ -236,8 +236,7 @@ class GamificationNotifier extends Notifier<GamificationState> {
     }
 
     // Add streak bonus
-    final streakBonus =
-        (current.streak.currentStreak * 0.1).clamp(0.0, 1.0);
+    final streakBonus = (current.streak.currentStreak * 0.1).clamp(0.0, 1.0);
     totalAmount = (totalAmount * (1 + streakBonus)).round();
 
     // Update XP
@@ -349,7 +348,11 @@ final unlockedAchievementCountProvider = Provider<int>((ref) {
 });
 
 extension on double {
-  double sqrt() => this < 0 ? 0 : this == 0 ? 0 : _sqrt(this);
+  double sqrt() => this < 0
+      ? 0
+      : this == 0
+          ? 0
+          : _sqrt(this);
 
   double _sqrt(double n) {
     double x = n;
@@ -362,4 +365,3 @@ extension on double {
     return x;
   }
 }
-

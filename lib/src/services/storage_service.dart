@@ -127,7 +127,8 @@ class StorageService {
   }
 
   /// Add a completed lesson
-  Future<void> addCompletedLesson(String languagePairCode, String lessonId) async {
+  Future<void> addCompletedLesson(
+      String languagePairCode, String lessonId) async {
     final completed = getCompletedLessons(languagePairCode);
     if (!completed.contains(lessonId)) {
       completed.add(lessonId);
