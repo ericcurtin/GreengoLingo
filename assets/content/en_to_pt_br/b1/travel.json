@@ -1,0 +1,144 @@
+{
+  "id": "travel_01_br",
+  "title": "Travel",
+  "description": "Learn travel vocabulary in Brazilian Portuguese",
+  "level": "B1",
+  "language_pair": {
+    "source": "en_US",
+    "target": "pt_BR"
+  },
+  "xp_reward": 20,
+  "order": 6,
+  "icon": "flight",
+  "questions": [
+    {
+      "type": "multiple_choice",
+      "prompt": "How do you say 'I would like to book a room' in Portuguese?",
+      "options": ["Gostaria de reservar um quarto", "Quero uma passagem", "Onde fica o hotel?", "Quanto custa?"],
+      "correct_index": 0,
+      "explanation": "'Gostaria de reservar' is polite way to say 'I would like to book'."
+    },
+    {
+      "type": "matching_pairs",
+      "prompt": "Match travel words",
+      "pairs": [
+        ["passport", "passaporte"],
+        ["suitcase", "mala"],
+        ["hotel", "hotel"],
+        ["flight", "voo"]
+      ]
+    },
+    {
+      "type": "typing",
+      "prompt": "Write 'Do you have a reservation?' in Portuguese",
+      "correct_answers": ["Você tem reserva?", "Tem reserva?", "Tem uma reserva?"],
+      "hint": "Você tem / Tem + reserva",
+      "accent_strict": false
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "What does 'Quero fazer check-out' mean?",
+      "options": ["I want to check in", "I want to check out", "I want to book", "I want to cancel"],
+      "correct_index": 1,
+      "explanation": "'Fazer check-out' means to check out of a hotel."
+    },
+    {
+      "type": "matching_pairs",
+      "prompt": "Match accommodation terms",
+      "pairs": [
+        ["single room", "quarto de solteiro"],
+        ["double room", "quarto de casal"],
+        ["breakfast included", "café da manhã incluído"],
+        ["reception", "recepção"]
+      ]
+    },
+    {
+      "type": "typing",
+      "prompt": "Write 'Where is the beach?' in Portuguese",
+      "correct_answers": ["Onde fica a praia?", "Onde é a praia?"],
+      "hint": "Onde fica + a praia",
+      "accent_strict": false
+    },
+    {
+      "type": "sentence_builder",
+      "prompt": "Build: 'I'm on vacation'",
+      "words": ["Estou", "de", "férias", "trabalho", "em", "casa"],
+      "correct_order": [0, 1, 2],
+      "distractors": ["trabalho", "em", "casa"]
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "What is 'café da manhã' in English?",
+      "options": ["lunch", "coffee", "breakfast", "snack"],
+      "correct_index": 2,
+      "explanation": "'Café da manhã' (literally 'morning coffee') is Brazilian Portuguese for breakfast."
+    }
+  ],
+  "cheat_sheet": {
+    "title": "Travel Vocabulary in Brazilian Portuguese",
+    "sections": [
+      {
+        "heading": "At the Hotel",
+        "content": [
+          {
+            "type": "vocabulary",
+            "items": [
+              ["reservation", "reserva"],
+              ["room", "quarto"],
+              ["single room", "quarto de solteiro"],
+              ["double room", "quarto de casal"],
+              ["key", "chave"],
+              ["reception", "recepção"],
+              ["check-in", "check-in / entrada"],
+              ["check-out", "check-out / saída"]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Travel Items",
+        "content": [
+          {
+            "type": "vocabulary",
+            "items": [
+              ["passport", "passaporte"],
+              ["suitcase", "mala"],
+              ["backpack", "mochila"],
+              ["ticket", "passagem"],
+              ["map", "mapa"],
+              ["camera", "câmera"]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Useful Phrases",
+        "content": [
+          {
+            "type": "vocabulary",
+            "items": [
+              ["I'd like to book...", "Gostaria de reservar..."],
+              ["Do you have rooms available?", "Vocês têm quartos disponíveis?"],
+              ["What time is breakfast?", "Que horas é o café da manhã?"],
+              ["I'm on vacation", "Estou de férias"],
+              ["tourist information", "informação turística"]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Brazilian Travel",
+        "content": [
+          {
+            "type": "tip",
+            "text": "Brazil has amazing beaches! 'Praia' is an essential word. Popular destinations include Rio, Bahia, and Florianópolis."
+          },
+          {
+            "type": "tip",
+            "text": "'Pousada' is a popular type of small, often family-run inn or guesthouse in Brazil."
+          }
+        ]
+      }
+    ]
+  }
+}

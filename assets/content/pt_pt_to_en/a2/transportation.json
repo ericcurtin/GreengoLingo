@@ -1,0 +1,145 @@
+{
+  "id": "transportation_01",
+  "title": "Transportes",
+  "description": "Aprenda vocabulário de transportes em Inglês",
+  "level": "A2",
+  "language_pair": {
+    "source": "pt_PT",
+    "target": "en_US"
+  },
+  "xp_reward": 15,
+  "order": 6,
+  "icon": "directions_bus",
+  "questions": [
+    {
+      "type": "multiple_choice",
+      "prompt": "Como se diz 'autocarro' em Inglês?",
+      "options": ["car", "bus", "train", "plane"],
+      "correct_index": 1,
+      "explanation": "'Bus' significa autocarro em Inglês."
+    },
+    {
+      "type": "matching_pairs",
+      "prompt": "Combine os veículos",
+      "pairs": [
+        ["carro", "car"],
+        ["comboio", "train"],
+        ["avião", "plane"],
+        ["bicicleta", "bicycle"]
+      ]
+    },
+    {
+      "type": "typing",
+      "prompt": "Escreva 'comboio' em Inglês",
+      "correct_answers": ["train", "Train"],
+      "hint": "Começa com 't'",
+      "accent_strict": false
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Como se pergunta 'Onde é a estação de comboio?'",
+      "options": ["Where is the train station?", "Where is the airport?", "Where is the bus stop?", "Where is the car?"],
+      "correct_index": 0,
+      "explanation": "'Train station' significa estação de comboio."
+    },
+    {
+      "type": "matching_pairs",
+      "prompt": "Combine os termos de transporte",
+      "pairs": [
+        ["metro", "subway / underground"],
+        ["barco", "boat"],
+        ["mota", "motorcycle"],
+        ["táxi", "taxi / cab"]
+      ]
+    },
+    {
+      "type": "typing",
+      "prompt": "Escreva 'bilhete' em Inglês",
+      "correct_answers": ["ticket", "Ticket"],
+      "hint": "Começa com 't'",
+      "accent_strict": false
+    },
+    {
+      "type": "sentence_builder",
+      "prompt": "Construa: 'Eu vou de autocarro'",
+      "words": ["I", "go", "by", "bus", "car", "to"],
+      "correct_order": [0, 1, 2, 3],
+      "distractors": ["car", "to"]
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "O que significa 'bus stop'?",
+      "options": ["parque de estacionamento", "paragem de autocarro", "estação de comboio", "aeroporto"],
+      "correct_index": 1,
+      "explanation": "'Bus stop' significa paragem de autocarro."
+    }
+  ],
+  "cheat_sheet": {
+    "title": "Transportes em Inglês",
+    "sections": [
+      {
+        "heading": "Veículos",
+        "content": [
+          {
+            "type": "vocabulary",
+            "items": [
+              ["carro", "car"],
+              ["autocarro", "bus"],
+              ["comboio", "train"],
+              ["avião", "plane"],
+              ["metro", "subway (US) / underground (UK)"],
+              ["elétrico", "tram"],
+              ["barco", "boat"],
+              ["bicicleta", "bicycle / bike"],
+              ["mota", "motorcycle / motorbike"],
+              ["táxi", "taxi / cab"]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Locais",
+        "content": [
+          {
+            "type": "vocabulary",
+            "items": [
+              ["estação de comboio", "train station"],
+              ["paragem de autocarro", "bus stop"],
+              ["aeroporto", "airport"],
+              ["porto", "port"],
+              ["estação de metro", "subway station"]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Frases Úteis",
+        "content": [
+          {
+            "type": "vocabulary",
+            "items": [
+              ["Eu vou de...", "I go by..."],
+              ["bilhete", "ticket"],
+              ["bilhete de ida", "one-way ticket"],
+              ["bilhete de ida e volta", "return ticket / round trip"],
+              ["plataforma", "platform"]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Inglês Britânico vs Americano",
+        "content": [
+          {
+            "type": "tip",
+            "text": "'Subway' é americano, 'underground' ou 'tube' é britânico para metro."
+          },
+          {
+            "type": "tip",
+            "text": "'Return ticket' é britânico, 'round trip' é americano para bilhete de ida e volta."
+          }
+        ]
+      }
+    ]
+  }
+}

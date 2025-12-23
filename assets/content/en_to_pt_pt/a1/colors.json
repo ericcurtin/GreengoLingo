@@ -1,0 +1,141 @@
+{
+  "id": "colors_01_pt",
+  "title": "Colors",
+  "description": "Learn basic colors in European Portuguese",
+  "level": "A1",
+  "language_pair": {
+    "source": "en_US",
+    "target": "pt_PT"
+  },
+  "xp_reward": 10,
+  "order": 5,
+  "icon": "palette",
+  "questions": [
+    {
+      "type": "multiple_choice",
+      "prompt": "How do you say 'red' in Portuguese?",
+      "options": ["vermelho", "azul", "verde", "amarelo"],
+      "correct_index": 0,
+      "explanation": "'Vermelho' means red. It changes to 'vermelha' for feminine nouns."
+    },
+    {
+      "type": "matching_pairs",
+      "prompt": "Match the colors",
+      "pairs": [
+        ["blue", "azul"],
+        ["green", "verde"],
+        ["yellow", "amarelo"],
+        ["white", "branco"]
+      ]
+    },
+    {
+      "type": "typing",
+      "prompt": "Write 'black' in Portuguese",
+      "correct_answers": ["preto", "Preto"],
+      "hint": "Starts with 'p'",
+      "accent_strict": false
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "What color is 'laranja'?",
+      "options": ["purple", "orange", "pink", "brown"],
+      "correct_index": 1,
+      "explanation": "'Laranja' means orange. It's the same word as the fruit!"
+    },
+    {
+      "type": "matching_pairs",
+      "prompt": "Match more colors",
+      "pairs": [
+        ["pink", "rosa"],
+        ["brown", "castanho"],
+        ["gray", "cinzento"],
+        ["purple", "roxo"]
+      ]
+    },
+    {
+      "type": "typing",
+      "prompt": "Write 'white' in Portuguese",
+      "correct_answers": ["branco", "Branco"],
+      "hint": "Starts with 'b'",
+      "accent_strict": false
+    },
+    {
+      "type": "sentence_builder",
+      "prompt": "Build: 'The car is red'",
+      "words": ["O", "carro", "é", "vermelho", "verde", "casa"],
+      "correct_order": [0, 1, 2, 3],
+      "distractors": ["verde", "casa"]
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "How do you say 'blue' for a feminine noun?",
+      "options": ["azul", "azula", "azulo", "azule"],
+      "correct_index": 0,
+      "explanation": "'Azul' doesn't change form - it stays the same for masculine and feminine nouns."
+    }
+  ],
+  "cheat_sheet": {
+    "title": "Colors in European Portuguese",
+    "sections": [
+      {
+        "heading": "Basic Colors",
+        "content": [
+          {
+            "type": "vocabulary",
+            "items": [
+              ["red", "vermelho / vermelha"],
+              ["blue", "azul"],
+              ["green", "verde"],
+              ["yellow", "amarelo / amarela"],
+              ["white", "branco / branca"],
+              ["black", "preto / preta"]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "More Colors",
+        "content": [
+          {
+            "type": "vocabulary",
+            "items": [
+              ["orange", "laranja"],
+              ["pink", "rosa"],
+              ["purple", "roxo / roxa"],
+              ["brown", "castanho / castanha"],
+              ["gray", "cinzento / cinzenta"]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Gender Agreement",
+        "content": [
+          {
+            "type": "tip",
+            "text": "Most colors change form based on the gender of the noun: 'carro vermelho' (red car - masculine), 'casa vermelha' (red house - feminine)."
+          },
+          {
+            "type": "tip",
+            "text": "Colors ending in -e (verde, laranja, rosa, azul) stay the same for both genders."
+          }
+        ]
+      },
+      {
+        "heading": "European Portuguese",
+        "content": [
+          {
+            "type": "tip",
+            "text": "In Portugal, 'castanho' is used for brown (hair, eyes). 'Marrom' is used in Brazil."
+          },
+          {
+            "type": "example",
+            "source": "Ela tem olhos castanhos",
+            "target": "She has brown eyes",
+            "note": "'Castanhos' agrees with the masculine plural 'olhos'"
+          }
+        ]
+      }
+    ]
+  }
+}

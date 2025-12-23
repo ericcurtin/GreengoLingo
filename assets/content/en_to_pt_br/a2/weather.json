@@ -1,0 +1,143 @@
+{
+  "id": "weather_01_br",
+  "title": "Weather",
+  "description": "Learn weather vocabulary in Brazilian Portuguese",
+  "level": "A2",
+  "language_pair": {
+    "source": "en_US",
+    "target": "pt_BR"
+  },
+  "xp_reward": 15,
+  "order": 5,
+  "icon": "cloud",
+  "questions": [
+    {
+      "type": "multiple_choice",
+      "prompt": "How do you ask 'What's the weather like?' in Portuguese?",
+      "options": ["Como está o tempo?", "Que horas são?", "Onde fica?", "Quanto custa?"],
+      "correct_index": 0,
+      "explanation": "'Como está o tempo?' is the standard way to ask about the weather."
+    },
+    {
+      "type": "matching_pairs",
+      "prompt": "Match the weather words",
+      "pairs": [
+        ["sun", "sol"],
+        ["rain", "chuva"],
+        ["wind", "vento"],
+        ["cloud", "nuvem"]
+      ]
+    },
+    {
+      "type": "typing",
+      "prompt": "Write 'It's hot' in Portuguese",
+      "correct_answers": ["Está calor", "Está quente", "Tá calor"],
+      "hint": "Está + calor/quente",
+      "accent_strict": false
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "What does 'Está chovendo' mean?",
+      "options": ["It's snowing", "It's raining", "It's windy", "It's sunny"],
+      "correct_index": 1,
+      "explanation": "'Está chovendo' is the Brazilian Portuguese way to say 'It's raining'."
+    },
+    {
+      "type": "matching_pairs",
+      "prompt": "Match weather descriptions",
+      "pairs": [
+        ["cold", "frio"],
+        ["hot", "calor"],
+        ["warm", "quente"],
+        ["cool", "fresco"]
+      ]
+    },
+    {
+      "type": "typing",
+      "prompt": "Write 'It's sunny' in Portuguese",
+      "correct_answers": ["Está sol", "Está fazendo sol", "Faz sol", "Tá fazendo sol"],
+      "hint": "Uses 'sol' (sun)",
+      "accent_strict": false
+    },
+    {
+      "type": "sentence_builder",
+      "prompt": "Build: 'Today it's cold'",
+      "words": ["Hoje", "está", "frio", "calor", "amanhã"],
+      "correct_order": [0, 1, 2],
+      "distractors": ["calor", "amanhã"]
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "What weather is common in most of Brazil?",
+      "options": ["Neve (snow)", "Calor (heat)", "Frio intenso (intense cold)", "Nevoeiro (fog)"],
+      "correct_index": 1,
+      "explanation": "Brazil is known for its tropical climate, with heat being common in most regions."
+    }
+  ],
+  "cheat_sheet": {
+    "title": "Weather in Brazilian Portuguese",
+    "sections": [
+      {
+        "heading": "Weather Elements",
+        "content": [
+          {
+            "type": "vocabulary",
+            "items": [
+              ["sun", "sol"],
+              ["rain", "chuva"],
+              ["wind", "vento"],
+              ["cloud", "nuvem"],
+              ["storm", "tempestade"],
+              ["humidity", "umidade"]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Describing Weather",
+        "content": [
+          {
+            "type": "vocabulary",
+            "items": [
+              ["It's hot", "Está calor / Tá quente"],
+              ["It's cold", "Está frio / Tá frio"],
+              ["It's raining", "Está chovendo / Tá chovendo"],
+              ["It's sunny", "Está fazendo sol / Tá sol"],
+              ["It's windy", "Está ventando"],
+              ["It's cloudy", "Está nublado"],
+              ["It's humid", "Está úmido"]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Brazilian Style",
+        "content": [
+          {
+            "type": "tip",
+            "text": "Brazilians often shorten 'está' to 'tá' in casual speech: 'Tá calor!' (It's hot!)"
+          },
+          {
+            "type": "tip",
+            "text": "In Brazil, you say 'Está chovendo' (gerund). In Portugal, it's 'Está a chover'."
+          }
+        ]
+      },
+      {
+        "heading": "Brazilian Climate",
+        "content": [
+          {
+            "type": "tip",
+            "text": "Most of Brazil has tropical weather. Snow is rare and only occurs in the southern states."
+          },
+          {
+            "type": "example",
+            "source": "Vai fazer muito calor amanhã",
+            "target": "It's going to be very hot tomorrow",
+            "note": "Common in Brazilian weather forecasts"
+          }
+        ]
+      }
+    ]
+  }
+}

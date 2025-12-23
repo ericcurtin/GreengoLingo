@@ -1,0 +1,137 @@
+{
+  "id": "colors_01",
+  "title": "Cores",
+  "description": "Aprenda as cores básicas em Inglês",
+  "level": "A1",
+  "language_pair": {
+    "source": "pt_PT",
+    "target": "en_US"
+  },
+  "xp_reward": 10,
+  "order": 5,
+  "icon": "palette",
+  "questions": [
+    {
+      "type": "multiple_choice",
+      "prompt": "Como se diz 'vermelho' em Inglês?",
+      "options": ["red", "blue", "green", "yellow"],
+      "correct_index": 0,
+      "explanation": "'Red' significa vermelho em Inglês."
+    },
+    {
+      "type": "matching_pairs",
+      "prompt": "Combine as cores",
+      "pairs": [
+        ["azul", "blue"],
+        ["verde", "green"],
+        ["amarelo", "yellow"],
+        ["branco", "white"]
+      ]
+    },
+    {
+      "type": "typing",
+      "prompt": "Escreva 'preto' em Inglês",
+      "correct_answers": ["black", "Black"],
+      "hint": "Começa com 'b'",
+      "accent_strict": false
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Qual é a cor 'orange' em Português?",
+      "options": ["roxo", "laranja", "rosa", "castanho"],
+      "correct_index": 1,
+      "explanation": "'Orange' significa laranja - a mesma palavra que a fruta!"
+    },
+    {
+      "type": "matching_pairs",
+      "prompt": "Combine mais cores",
+      "pairs": [
+        ["rosa", "pink"],
+        ["castanho", "brown"],
+        ["cinzento", "gray"],
+        ["roxo", "purple"]
+      ]
+    },
+    {
+      "type": "typing",
+      "prompt": "Escreva 'branco' em Inglês",
+      "correct_answers": ["white", "White"],
+      "hint": "Começa com 'w'",
+      "accent_strict": false
+    },
+    {
+      "type": "sentence_builder",
+      "prompt": "Construa: 'O carro é vermelho'",
+      "words": ["The", "car", "is", "red", "green", "house"],
+      "correct_order": [0, 1, 2, 3],
+      "distractors": ["green", "house"]
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Os adjetivos de cor mudam de género em Inglês?",
+      "options": ["Sim, como em Português", "Não, ficam sempre iguais", "Só alguns", "Só no plural"],
+      "correct_index": 1,
+      "explanation": "Em Inglês, os adjetivos (incluindo cores) não mudam de género nem de número."
+    }
+  ],
+  "cheat_sheet": {
+    "title": "Cores em Inglês",
+    "sections": [
+      {
+        "heading": "Cores Básicas",
+        "content": [
+          {
+            "type": "vocabulary",
+            "items": [
+              ["vermelho", "red"],
+              ["azul", "blue"],
+              ["verde", "green"],
+              ["amarelo", "yellow"],
+              ["branco", "white"],
+              ["preto", "black"]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Mais Cores",
+        "content": [
+          {
+            "type": "vocabulary",
+            "items": [
+              ["laranja", "orange"],
+              ["rosa", "pink"],
+              ["roxo", "purple"],
+              ["castanho", "brown"],
+              ["cinzento", "gray / grey"]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Diferença Importante",
+        "content": [
+          {
+            "type": "tip",
+            "text": "Em Inglês, as cores não mudam de acordo com o género ou número do substantivo. 'Red car', 'red house', 'red cars' - 'red' fica sempre igual."
+          },
+          {
+            "type": "example",
+            "source": "The red cars",
+            "target": "Os carros vermelhos",
+            "note": "Em Português muda para plural, em Inglês não"
+          }
+        ]
+      },
+      {
+        "heading": "Inglês Britânico vs Americano",
+        "content": [
+          {
+            "type": "tip",
+            "text": "'Gray' é a ortografia americana, 'grey' é a ortografia britânica. Ambas estão corretas."
+          }
+        ]
+      }
+    ]
+  }
+}

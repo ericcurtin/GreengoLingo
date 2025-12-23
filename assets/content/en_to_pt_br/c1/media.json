@@ -1,0 +1,146 @@
+{
+  "id": "media_01_br",
+  "title": "Media & Current Affairs",
+  "description": "Learn vocabulary for discussing media and news in Brazilian Portuguese",
+  "level": "C1",
+  "language_pair": {
+    "source": "en_US",
+    "target": "pt_BR"
+  },
+  "xp_reward": 30,
+  "order": 6,
+  "icon": "newspaper",
+  "questions": [
+    {
+      "type": "multiple_choice",
+      "prompt": "How do you say 'breaking news' in Brazilian Portuguese?",
+      "options": ["últimas notícias", "notícias quebradas", "notícias importantes", "jornalismo"],
+      "correct_index": 0,
+      "explanation": "'Últimas notícias' or 'plantão de notícias' are used for breaking news in Brazil."
+    },
+    {
+      "type": "matching_pairs",
+      "prompt": "Match media terms",
+      "pairs": [
+        ["newspaper", "jornal"],
+        ["journalist", "jornalista"],
+        ["headline", "manchete"],
+        ["broadcast", "transmissão"]
+      ]
+    },
+    {
+      "type": "typing",
+      "prompt": "Write 'social media' in Portuguese",
+      "correct_answers": ["redes sociais", "Redes sociais", "mídias sociais"],
+      "hint": "Redes + sociais",
+      "accent_strict": false
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "What does 'mídia' mean in Brazilian Portuguese?",
+      "options": ["middle", "media", "measurement", "medicine"],
+      "correct_index": 1,
+      "explanation": "'Mídia' is the Brazilian Portuguese word for media (from English 'media')."
+    },
+    {
+      "type": "matching_pairs",
+      "prompt": "Match more media vocabulary",
+      "pairs": [
+        ["article", "artigo"],
+        ["editorial", "editorial"],
+        ["interview", "entrevista"],
+        ["report", "reportagem"]
+      ]
+    },
+    {
+      "type": "typing",
+      "prompt": "Write 'fake news' in Portuguese",
+      "correct_answers": ["notícias falsas", "fake news", "desinformação"],
+      "hint": "notícias + falsas",
+      "accent_strict": false
+    },
+    {
+      "type": "sentence_builder",
+      "prompt": "Build: 'According to the report'",
+      "words": ["De", "acordo", "com", "a", "reportagem", "notícia"],
+      "correct_order": [0, 1, 2, 3, 4],
+      "distractors": ["notícia"]
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "What is 'fonte confiável'?",
+      "options": ["fake source", "reliable source", "anonymous source", "primary source"],
+      "correct_index": 1,
+      "explanation": "'Confiável' means reliable/trustworthy. 'Fonte confiável' = reliable source."
+    }
+  ],
+  "cheat_sheet": {
+    "title": "Media & Current Affairs in Brazilian Portuguese",
+    "sections": [
+      {
+        "heading": "Types of Media",
+        "content": [
+          {
+            "type": "vocabulary",
+            "items": [
+              ["media", "mídia"],
+              ["newspaper", "jornal"],
+              ["magazine", "revista"],
+              ["television", "televisão / TV"],
+              ["radio", "rádio"],
+              ["social media", "redes sociais / mídias sociais"],
+              ["online media", "mídia digital"]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "News Terms",
+        "content": [
+          {
+            "type": "vocabulary",
+            "items": [
+              ["breaking news", "últimas notícias / plantão"],
+              ["headline", "manchete"],
+              ["article", "artigo / matéria"],
+              ["report", "reportagem"],
+              ["editorial", "editorial"],
+              ["press release", "comunicado à imprensa"],
+              ["news coverage", "cobertura jornalística"]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Media Literacy",
+        "content": [
+          {
+            "type": "vocabulary",
+            "items": [
+              ["fake news", "notícias falsas / fake news"],
+              ["reliable source", "fonte confiável"],
+              ["fact-checking", "checagem de fatos"],
+              ["bias", "viés"],
+              ["objectivity", "objetividade"]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Brazilian Media",
+        "content": [
+          {
+            "type": "tip",
+            "text": "Brazil uses 'mídia' (from English 'media') commonly. Portugal prefers 'meios de comunicação social'."
+          },
+          {
+            "type": "example",
+            "source": "De acordo com fontes confiáveis, o governo vai anunciar medidas esta semana.",
+            "target": "According to reliable sources, the government will announce measures this week.",
+            "note": "Formal news reporting style"
+          }
+        ]
+      }
+    ]
+  }
+}

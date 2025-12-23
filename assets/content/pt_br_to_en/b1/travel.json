@@ -1,0 +1,146 @@
+{
+  "id": "travel_01",
+  "title": "Viagens",
+  "description": "Aprenda vocabulário de viagens em Inglês",
+  "level": "B1",
+  "language_pair": {
+    "source": "pt_BR",
+    "target": "en_US"
+  },
+  "xp_reward": 20,
+  "order": 6,
+  "icon": "flight",
+  "questions": [
+    {
+      "type": "multiple_choice",
+      "prompt": "Como se diz 'Gostaria de reservar um quarto' em Inglês?",
+      "options": ["I would like to book a room", "I want a ticket", "Where is the hotel?", "How much is it?"],
+      "correct_index": 0,
+      "explanation": "'I would like to book' é a forma educada de fazer uma reserva."
+    },
+    {
+      "type": "matching_pairs",
+      "prompt": "Combine as palavras de viagem",
+      "pairs": [
+        ["passaporte", "passport"],
+        ["mala", "suitcase"],
+        ["hotel", "hotel"],
+        ["voo", "flight"]
+      ]
+    },
+    {
+      "type": "typing",
+      "prompt": "Escreva 'Você tem reserva?' em Inglês",
+      "correct_answers": ["Do you have a reservation?", "Have you got a reservation?"],
+      "hint": "Do you have a + reservation",
+      "accent_strict": false
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "O que significa 'I'd like to check out'?",
+      "options": ["Quero fazer check-in", "Quero fazer check-out", "Quero reservar", "Quero cancelar"],
+      "correct_index": 1,
+      "explanation": "'Check out' significa sair do hotel / fazer check-out."
+    },
+    {
+      "type": "matching_pairs",
+      "prompt": "Combine os termos de hospedagem",
+      "pairs": [
+        ["quarto de solteiro", "single room"],
+        ["quarto de casal", "double room"],
+        ["café da manhã incluído", "breakfast included"],
+        ["recepção", "reception"]
+      ]
+    },
+    {
+      "type": "typing",
+      "prompt": "Escreva 'Onde fica a praia?' em Inglês",
+      "correct_answers": ["Where is the beach?", "Where's the beach?"],
+      "hint": "Where is + the beach",
+      "accent_strict": false
+    },
+    {
+      "type": "sentence_builder",
+      "prompt": "Construa: 'Estou de férias'",
+      "words": ["I'm", "on", "vacation", "work", "at", "home"],
+      "correct_order": [0, 1, 2],
+      "distractors": ["work", "at", "home"]
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Como se diz 'café da manhã' em Inglês?",
+      "options": ["lunch", "coffee", "breakfast", "snack"],
+      "correct_index": 2,
+      "explanation": "'Breakfast' significa café da manhã."
+    }
+  ],
+  "cheat_sheet": {
+    "title": "Vocabulário de Viagens em Inglês",
+    "sections": [
+      {
+        "heading": "No Hotel",
+        "content": [
+          {
+            "type": "vocabulary",
+            "items": [
+              ["reserva", "reservation / booking"],
+              ["quarto", "room"],
+              ["quarto de solteiro", "single room"],
+              ["quarto de casal", "double room"],
+              ["chave", "key"],
+              ["recepção", "reception / front desk"],
+              ["check-in", "check-in"],
+              ["check-out", "check-out"]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Itens de Viagem",
+        "content": [
+          {
+            "type": "vocabulary",
+            "items": [
+              ["passaporte", "passport"],
+              ["mala", "suitcase"],
+              ["mochila", "backpack"],
+              ["passagem", "ticket"],
+              ["mapa", "map"],
+              ["câmera", "camera"]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Frases Úteis",
+        "content": [
+          {
+            "type": "vocabulary",
+            "items": [
+              ["Gostaria de reservar...", "I'd like to book..."],
+              ["Vocês têm quartos disponíveis?", "Do you have rooms available?"],
+              ["Que horas é o café da manhã?", "What time is breakfast?"],
+              ["Estou de férias", "I'm on vacation"],
+              ["informação turística", "tourist information"]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Dicas",
+        "content": [
+          {
+            "type": "tip",
+            "text": "'Vacation' é mais usado em Inglês americano. No Reino Unido, usam 'holiday'."
+          },
+          {
+            "type": "example",
+            "source": "I'm going on vacation to the beach",
+            "target": "Vou de férias para a praia",
+            "note": "Muito útil ao viajar para países de língua inglesa"
+          }
+        ]
+      }
+    ]
+  }
+}

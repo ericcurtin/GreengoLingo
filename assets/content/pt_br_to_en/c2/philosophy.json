@@ -1,0 +1,145 @@
+{
+  "id": "philosophy_01",
+  "title": "Filosofia e Pensamento Abstrato",
+  "description": "Domine conceitos filosóficos e discussões abstratas em Inglês",
+  "level": "C2",
+  "language_pair": {
+    "source": "pt_BR",
+    "target": "en_US"
+  },
+  "xp_reward": 35,
+  "order": 5,
+  "icon": "psychology",
+  "questions": [
+    {
+      "type": "multiple_choice",
+      "prompt": "Como se diz 'consciência' em Inglês?",
+      "options": ["consciousness", "knowledge", "concordance", "consequence"],
+      "correct_index": 0,
+      "explanation": "'Consciousness' significa consciência (estado de estar consciente)."
+    },
+    {
+      "type": "matching_pairs",
+      "prompt": "Combine os conceitos filosóficos",
+      "pairs": [
+        ["existência", "existence"],
+        ["essência", "essence"],
+        ["percepção", "perception"],
+        ["realidade", "reality"]
+      ]
+    },
+    {
+      "type": "typing",
+      "prompt": "Escreva 'livre arbítrio' em Inglês",
+      "correct_answers": ["free will", "Free will"],
+      "hint": "free + will",
+      "accent_strict": false
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "O que significa 'Being and Nothingness'?",
+      "options": ["Ser ou não ser", "O ser e o nada", "O eu e os outros", "Vida e morte"],
+      "correct_index": 1,
+      "explanation": "'Being' = ser, 'Nothingness' = nada. É o título inglês da obra de Sartre."
+    },
+    {
+      "type": "matching_pairs",
+      "prompt": "Combine mais termos filosóficos",
+      "pairs": [
+        ["verdade", "truth"],
+        ["ética", "ethics"],
+        ["moralidade", "morality"],
+        ["razão", "reason"]
+      ]
+    },
+    {
+      "type": "typing",
+      "prompt": "Escreva 'sentido da vida' em Inglês",
+      "correct_answers": ["meaning of life", "the meaning of life"],
+      "hint": "meaning + of life",
+      "accent_strict": false
+    },
+    {
+      "type": "sentence_builder",
+      "prompt": "Construa: 'Penso, logo existo'",
+      "words": ["I", "think", "therefore", "I", "am", "will"],
+      "correct_order": [0, 1, 2, 3, 4],
+      "distractors": ["will"]
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Como se diz 'epistemologia' em Inglês?",
+      "options": ["episteme", "epistemology", "epidermis", "epidemic"],
+      "correct_index": 1,
+      "explanation": "'Epistemology' é o estudo do conhecimento, mesma raiz que em Português."
+    }
+  ],
+  "cheat_sheet": {
+    "title": "Filosofia e Pensamento Abstrato em Inglês",
+    "sections": [
+      {
+        "heading": "Conceitos Fundamentais",
+        "content": [
+          {
+            "type": "vocabulary",
+            "items": [
+              ["existência", "existence"],
+              ["essência", "essence"],
+              ["ser", "being"],
+              ["consciência", "consciousness"],
+              ["realidade", "reality"],
+              ["percepção", "perception"]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Áreas da Filosofia",
+        "content": [
+          {
+            "type": "vocabulary",
+            "items": [
+              ["ética", "ethics"],
+              ["metafísica", "metaphysics"],
+              ["epistemologia", "epistemology"],
+              ["ontologia", "ontology"],
+              ["estética", "aesthetics"],
+              ["lógica", "logic"]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Termos-Chave",
+        "content": [
+          {
+            "type": "vocabulary",
+            "items": [
+              ["livre arbítrio", "free will"],
+              ["determinismo", "determinism"],
+              ["sentido da vida", "meaning of life"],
+              ["verdade", "truth"],
+              ["moralidade", "morality"],
+              ["razão", "reason"]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Citações Famosas",
+        "content": [
+          {
+            "type": "example",
+            "source": "I think, therefore I am",
+            "target": "Penso, logo existo",
+            "note": "'Cogito, ergo sum' de Descartes"
+          },
+          {
+            "type": "tip",
+            "text": "Paulo Freire, filósofo brasileiro, é mundialmente conhecido. Sua obra 'Pedagogia do Oprimido' é 'Pedagogy of the Oppressed' em Inglês."
+          }
+        ]
+      }
+    ]
+  }
+}

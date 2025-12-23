@@ -1,0 +1,147 @@
+{
+  "id": "family_01_pt",
+  "title": "Family",
+  "description": "Learn family vocabulary in European Portuguese",
+  "level": "A1",
+  "language_pair": {
+    "source": "en_US",
+    "target": "pt_PT"
+  },
+  "xp_reward": 10,
+  "order": 6,
+  "icon": "family",
+  "questions": [
+    {
+      "type": "multiple_choice",
+      "prompt": "How do you say 'mother' in Portuguese?",
+      "options": ["pai", "mãe", "filho", "filha"],
+      "correct_index": 1,
+      "explanation": "'Mãe' means mother. 'Mamã' is also used informally."
+    },
+    {
+      "type": "matching_pairs",
+      "prompt": "Match the family members",
+      "pairs": [
+        ["father", "pai"],
+        ["mother", "mãe"],
+        ["son", "filho"],
+        ["daughter", "filha"]
+      ]
+    },
+    {
+      "type": "typing",
+      "prompt": "Write 'brother' in Portuguese",
+      "correct_answers": ["irmão", "Irmão"],
+      "hint": "Starts with 'i'",
+      "accent_strict": false
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "What does 'avó' mean?",
+      "options": ["aunt", "grandmother", "cousin", "sister"],
+      "correct_index": 1,
+      "explanation": "'Avó' means grandmother. 'Avô' means grandfather."
+    },
+    {
+      "type": "matching_pairs",
+      "prompt": "Match more family members",
+      "pairs": [
+        ["sister", "irmã"],
+        ["grandfather", "avô"],
+        ["uncle", "tio"],
+        ["aunt", "tia"]
+      ]
+    },
+    {
+      "type": "typing",
+      "prompt": "Write 'parents' in Portuguese",
+      "correct_answers": ["pais", "Pais"],
+      "hint": "Based on 'pai'",
+      "accent_strict": false
+    },
+    {
+      "type": "sentence_builder",
+      "prompt": "Build: 'I have two brothers'",
+      "words": ["Eu", "tenho", "dois", "irmãos", "irmãs", "três"],
+      "correct_order": [0, 1, 2, 3],
+      "distractors": ["irmãs", "três"]
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "How do you say 'children' (sons and daughters)?",
+      "options": ["filhos", "crianças", "irmãos", "pais"],
+      "correct_index": 0,
+      "explanation": "'Filhos' can mean sons, or children in general (sons and daughters)."
+    }
+  ],
+  "cheat_sheet": {
+    "title": "Family Vocabulary in European Portuguese",
+    "sections": [
+      {
+        "heading": "Immediate Family",
+        "content": [
+          {
+            "type": "vocabulary",
+            "items": [
+              ["father", "pai"],
+              ["mother", "mãe"],
+              ["parents", "pais"],
+              ["son", "filho"],
+              ["daughter", "filha"],
+              ["children", "filhos"],
+              ["brother", "irmão"],
+              ["sister", "irmã"],
+              ["siblings", "irmãos"]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Extended Family",
+        "content": [
+          {
+            "type": "vocabulary",
+            "items": [
+              ["grandfather", "avô"],
+              ["grandmother", "avó"],
+              ["grandparents", "avós"],
+              ["uncle", "tio"],
+              ["aunt", "tia"],
+              ["cousin (male)", "primo"],
+              ["cousin (female)", "prima"]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Plural Forms",
+        "content": [
+          {
+            "type": "tip",
+            "text": "In Portuguese, masculine plural forms include both genders: 'irmãos' can mean 'brothers' or 'siblings' (brothers and sisters)."
+          },
+          {
+            "type": "example",
+            "source": "Os meus avós",
+            "target": "My grandparents",
+            "note": "'Avós' includes both grandfather and grandmother"
+          }
+        ]
+      },
+      {
+        "heading": "Affectionate Terms",
+        "content": [
+          {
+            "type": "vocabulary",
+            "items": [
+              ["dad / daddy", "papá / paizinho"],
+              ["mom / mommy", "mamã / mãezinha"],
+              ["grandpa", "avozinho"],
+              ["grandma", "avozinha"]
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

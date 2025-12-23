@@ -1,0 +1,146 @@
+{
+  "id": "health_01_pt",
+  "title": "Health",
+  "description": "Learn health and medical vocabulary in European Portuguese",
+  "level": "B1",
+  "language_pair": {
+    "source": "en_US",
+    "target": "pt_PT"
+  },
+  "xp_reward": 20,
+  "order": 5,
+  "icon": "medical_services",
+  "questions": [
+    {
+      "type": "multiple_choice",
+      "prompt": "How do you say 'I don't feel well' in Portuguese?",
+      "options": ["Não me sinto bem", "Sinto-me ótimo", "Estou com fome", "Estou cansado"],
+      "correct_index": 0,
+      "explanation": "'Não me sinto bem' is the standard way to say you don't feel well."
+    },
+    {
+      "type": "matching_pairs",
+      "prompt": "Match body parts",
+      "pairs": [
+        ["head", "cabeça"],
+        ["stomach", "estômago"],
+        ["arm", "braço"],
+        ["leg", "perna"]
+      ]
+    },
+    {
+      "type": "typing",
+      "prompt": "Write 'I have a headache' in Portuguese",
+      "correct_answers": ["Tenho dor de cabeça", "Eu tenho dor de cabeça", "Dói-me a cabeça"],
+      "hint": "Tenho dor de...",
+      "accent_strict": false
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "What does 'Preciso de ir ao médico' mean?",
+      "options": ["I need to go to the pharmacy", "I need to go to the doctor", "I need medicine", "I feel better"],
+      "correct_index": 1,
+      "explanation": "'Médico' means doctor. 'Ir ao médico' = to go to the doctor."
+    },
+    {
+      "type": "matching_pairs",
+      "prompt": "Match health terms",
+      "pairs": [
+        ["pain", "dor"],
+        ["fever", "febre"],
+        ["cough", "tosse"],
+        ["cold (illness)", "constipação"]
+      ]
+    },
+    {
+      "type": "typing",
+      "prompt": "Write 'pharmacy' in Portuguese",
+      "correct_answers": ["farmácia", "Farmácia"],
+      "hint": "Similar to English",
+      "accent_strict": false
+    },
+    {
+      "type": "sentence_builder",
+      "prompt": "Build: 'I need medicine'",
+      "words": ["Preciso", "de", "medicamento", "água", "um", "comer"],
+      "correct_order": [0, 1, 2],
+      "distractors": ["água", "um", "comer"]
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "What is 'constipação' in English?",
+      "options": ["constipation", "cold/flu", "headache", "allergy"],
+      "correct_index": 1,
+      "explanation": "Careful! 'Constipação' means cold/flu in Portugal, not constipation (which is 'obstipação')."
+    }
+  ],
+  "cheat_sheet": {
+    "title": "Health Vocabulary in European Portuguese",
+    "sections": [
+      {
+        "heading": "Body Parts",
+        "content": [
+          {
+            "type": "vocabulary",
+            "items": [
+              ["head", "cabeça"],
+              ["stomach", "estômago / barriga"],
+              ["back", "costas"],
+              ["throat", "garganta"],
+              ["arm", "braço"],
+              ["leg", "perna"],
+              ["hand", "mão"],
+              ["foot", "pé"]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Symptoms",
+        "content": [
+          {
+            "type": "vocabulary",
+            "items": [
+              ["pain", "dor"],
+              ["headache", "dor de cabeça"],
+              ["stomachache", "dor de estômago"],
+              ["fever", "febre"],
+              ["cough", "tosse"],
+              ["cold", "constipação"],
+              ["flu", "gripe"],
+              ["allergy", "alergia"]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Useful Phrases",
+        "content": [
+          {
+            "type": "vocabulary",
+            "items": [
+              ["I don't feel well", "Não me sinto bem"],
+              ["I have a headache", "Tenho dor de cabeça"],
+              ["I need a doctor", "Preciso de um médico"],
+              ["Where is the hospital?", "Onde é o hospital?"],
+              ["I'm allergic to...", "Sou alérgico/a a..."]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "False Friends",
+        "content": [
+          {
+            "type": "warning",
+            "text": "'Constipação' means cold/flu, NOT constipation. This is a common mistake!"
+          },
+          {
+            "type": "tip",
+            "text": "In Portugal, pharmacies (farmácias) can provide advice for minor ailments."
+          }
+        ]
+      }
+    ]
+  }
+}

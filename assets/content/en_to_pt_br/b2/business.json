@@ -1,0 +1,144 @@
+{
+  "id": "business_01_br",
+  "title": "Business",
+  "description": "Learn business vocabulary in Brazilian Portuguese",
+  "level": "B2",
+  "language_pair": {
+    "source": "en_US",
+    "target": "pt_BR"
+  },
+  "xp_reward": 25,
+  "order": 5,
+  "icon": "business",
+  "questions": [
+    {
+      "type": "multiple_choice",
+      "prompt": "How do you say 'meeting' in Portuguese?",
+      "options": ["reunião", "empresa", "negócio", "escritório"],
+      "correct_index": 0,
+      "explanation": "'Reunião' means meeting. 'A gente tem uma reunião' = We have a meeting."
+    },
+    {
+      "type": "matching_pairs",
+      "prompt": "Match business terms",
+      "pairs": [
+        ["company", "empresa"],
+        ["office", "escritório"],
+        ["boss", "chefe"],
+        ["employee", "funcionário"]
+      ]
+    },
+    {
+      "type": "typing",
+      "prompt": "Write 'I work in marketing' in Portuguese",
+      "correct_answers": ["Trabalho com marketing", "Eu trabalho com marketing", "Trabalho em marketing"],
+      "hint": "Trabalho com/em + area",
+      "accent_strict": false
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "What does 'Mandei o relatório por email' mean?",
+      "options": ["I received the report", "I sent the report by email", "I wrote the report", "I deleted the report"],
+      "correct_index": 1,
+      "explanation": "'Mandar' (casual) or 'enviar' means to send. 'Relatório' means report."
+    },
+    {
+      "type": "matching_pairs",
+      "prompt": "Match more business vocabulary",
+      "pairs": [
+        ["salary", "salário"],
+        ["contract", "contrato"],
+        ["deadline", "prazo"],
+        ["invoice", "nota fiscal"]
+      ]
+    },
+    {
+      "type": "typing",
+      "prompt": "Write 'Can we schedule a meeting?' in Portuguese",
+      "correct_answers": ["Podemos marcar uma reunião?", "A gente pode marcar uma reunião?"],
+      "hint": "Podemos / A gente pode + marcar",
+      "accent_strict": false
+    },
+    {
+      "type": "sentence_builder",
+      "prompt": "Build: 'I'm responsible for the project'",
+      "words": ["Sou", "responsável", "pelo", "projeto", "reunião", "empresa"],
+      "correct_order": [0, 1, 2, 3],
+      "distractors": ["reunião", "empresa"]
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "What's 'startup' in Brazilian business Portuguese?",
+      "options": ["empresa iniciante", "startup", "empresa pequena", "negócio novo"],
+      "correct_index": 1,
+      "explanation": "Brazil uses many English tech terms. 'Startup' is commonly used in Brazilian business."
+    }
+  ],
+  "cheat_sheet": {
+    "title": "Business Vocabulary in Brazilian Portuguese",
+    "sections": [
+      {
+        "heading": "Workplace",
+        "content": [
+          {
+            "type": "vocabulary",
+            "items": [
+              ["company", "empresa"],
+              ["office", "escritório"],
+              ["meeting", "reunião"],
+              ["meeting room", "sala de reunião"],
+              ["colleague", "colega"],
+              ["boss", "chefe"],
+              ["employee", "funcionário"]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Business Terms",
+        "content": [
+          {
+            "type": "vocabulary",
+            "items": [
+              ["contract", "contrato"],
+              ["salary", "salário"],
+              ["deadline", "prazo / deadline"],
+              ["report", "relatório"],
+              ["invoice", "nota fiscal"],
+              ["budget", "orçamento"],
+              ["profit", "lucro"]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Useful Phrases",
+        "content": [
+          {
+            "type": "vocabulary",
+            "items": [
+              ["schedule a meeting", "marcar uma reunião"],
+              ["send an email", "mandar um email"],
+              ["meet the deadline", "cumprir o prazo"],
+              ["I'm responsible for...", "Sou responsável por..."],
+              ["work from home", "trabalhar de casa / home office"]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Brazilian Business Culture",
+        "content": [
+          {
+            "type": "tip",
+            "text": "Brazilian business Portuguese uses many English loan words: 'feedback', 'deadline', 'meeting', 'home office'."
+          },
+          {
+            "type": "tip",
+            "text": "Brazilians often use 'você' in business, though some regions may be more formal."
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,143 @@
+{
+  "id": "debate_01",
+  "title": "Debate e Argumentação",
+  "description": "Aprenda a debater e argumentar em Inglês",
+  "level": "C1",
+  "language_pair": {
+    "source": "pt_BR",
+    "target": "en_US"
+  },
+  "xp_reward": 30,
+  "order": 5,
+  "icon": "forum",
+  "questions": [
+    {
+      "type": "multiple_choice",
+      "prompt": "Como se diz 'Na minha opinião' formalmente em Inglês?",
+      "options": ["In my opinion", "I think", "For me", "I don't know"],
+      "correct_index": 0,
+      "explanation": "'In my opinion' é a forma formal de expressar uma opinião."
+    },
+    {
+      "type": "matching_pairs",
+      "prompt": "Combine as expressões de debate",
+      "pairs": [
+        ["Concordo", "I agree"],
+        ["Discordo", "I disagree"],
+        ["No entanto", "However"],
+        ["Por outro lado", "On the other hand"]
+      ]
+    },
+    {
+      "type": "typing",
+      "prompt": "Escreva 'Discordo respeitosamente' em Inglês",
+      "correct_answers": ["I respectfully disagree", "With all due respect, I disagree"],
+      "hint": "I respectfully + disagree",
+      "accent_strict": false
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "O que significa 'Although I partly agree, I must point out that...'?",
+      "options": ["Concordo completamente", "Embora eu concorde em parte, devo destacar que...", "Discordo totalmente", "Deixe-me pensar"],
+      "correct_index": 1,
+      "explanation": "'Although' introduz uma concessão. 'Point out' significa destacar/salientar."
+    },
+    {
+      "type": "matching_pairs",
+      "prompt": "Combine mais marcadores discursivos",
+      "pairs": [
+        ["Além disso", "Furthermore"],
+        ["Apesar disso", "Nevertheless"],
+        ["Em conclusão", "In conclusion"],
+        ["Portanto", "Therefore"]
+      ]
+    },
+    {
+      "type": "typing",
+      "prompt": "Escreva 'Do meu ponto de vista' em Inglês",
+      "correct_answers": ["From my point of view", "In my view"],
+      "hint": "From my point of...",
+      "accent_strict": false
+    },
+    {
+      "type": "sentence_builder",
+      "prompt": "Construa: 'Concordo parcialmente, mas...'",
+      "words": ["I", "partially", "agree", "but", "totally", "never"],
+      "correct_order": [0, 1, 2, 3],
+      "distractors": ["totally", "never"]
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Qual é uma forma formal de contra-argumentar?",
+      "options": ["That's stupid", "Allow me to disagree", "I don't care", "Whatever"],
+      "correct_index": 1,
+      "explanation": "'Allow me to disagree' é uma forma educada e formal de discordar."
+    }
+  ],
+  "cheat_sheet": {
+    "title": "Debate e Argumentação em Inglês",
+    "sections": [
+      {
+        "heading": "Expressar Opiniões",
+        "content": [
+          {
+            "type": "vocabulary",
+            "items": [
+              ["Na minha opinião", "In my opinion"],
+              ["Do meu ponto de vista", "From my point of view / In my view"],
+              ["Acredito que", "I believe that"],
+              ["Me parece que", "It seems to me that"],
+              ["Estou convicto de que", "I'm convinced that"]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Concordar e Discordar",
+        "content": [
+          {
+            "type": "vocabulary",
+            "items": [
+              ["Concordo plenamente", "I completely agree"],
+              ["Concordo em parte", "I partly agree"],
+              ["Discordo respeitosamente", "I respectfully disagree"],
+              ["Permita-me discordar", "Allow me to disagree"],
+              ["Entendo seu ponto, mas...", "I see your point, but..."]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Marcadores Discursivos",
+        "content": [
+          {
+            "type": "vocabulary",
+            "items": [
+              ["Além disso", "Furthermore / Moreover"],
+              ["No entanto", "However / Yet"],
+              ["Apesar disso", "Nevertheless / Nonetheless"],
+              ["Por outro lado", "On the other hand"],
+              ["Portanto", "Therefore / Consequently"],
+              ["Em conclusão", "In conclusion / To conclude"]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Estilo Acadêmico",
+        "content": [
+          {
+            "type": "tip",
+            "text": "Em Inglês formal, evite 'I think' e use 'It could be argued that...', 'Evidence suggests that...'"
+          },
+          {
+            "type": "example",
+            "source": "I acknowledge the validity of your argument, however...",
+            "target": "Reconheço a validade do seu argumento, porém...",
+            "note": "Estilo acadêmico muito formal"
+          }
+        ]
+      }
+    ]
+  }
+}

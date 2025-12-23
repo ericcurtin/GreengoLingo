@@ -1,0 +1,145 @@
+{
+  "id": "family_01",
+  "title": "Família",
+  "description": "Aprenda vocabulário de família em Inglês",
+  "level": "A1",
+  "language_pair": {
+    "source": "pt_PT",
+    "target": "en_US"
+  },
+  "xp_reward": 10,
+  "order": 6,
+  "icon": "family",
+  "questions": [
+    {
+      "type": "multiple_choice",
+      "prompt": "Como se diz 'mãe' em Inglês?",
+      "options": ["father", "mother", "son", "daughter"],
+      "correct_index": 1,
+      "explanation": "'Mother' significa mãe. 'Mom' ou 'mum' são formas mais informais."
+    },
+    {
+      "type": "matching_pairs",
+      "prompt": "Combine os membros da família",
+      "pairs": [
+        ["pai", "father"],
+        ["mãe", "mother"],
+        ["filho", "son"],
+        ["filha", "daughter"]
+      ]
+    },
+    {
+      "type": "typing",
+      "prompt": "Escreva 'irmão' em Inglês",
+      "correct_answers": ["brother", "Brother"],
+      "hint": "Começa com 'b'",
+      "accent_strict": false
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "O que significa 'grandmother'?",
+      "options": ["tia", "avó", "prima", "irmã"],
+      "correct_index": 1,
+      "explanation": "'Grandmother' significa avó. 'Grandma' é a forma informal."
+    },
+    {
+      "type": "matching_pairs",
+      "prompt": "Combine mais membros da família",
+      "pairs": [
+        ["irmã", "sister"],
+        ["avô", "grandfather"],
+        ["tio", "uncle"],
+        ["tia", "aunt"]
+      ]
+    },
+    {
+      "type": "typing",
+      "prompt": "Escreva 'pais' em Inglês",
+      "correct_answers": ["parents", "Parents"],
+      "hint": "Começa com 'p'",
+      "accent_strict": false
+    },
+    {
+      "type": "sentence_builder",
+      "prompt": "Construa: 'Eu tenho dois irmãos'",
+      "words": ["I", "have", "two", "brothers", "sisters", "three"],
+      "correct_order": [0, 1, 2, 3],
+      "distractors": ["sisters", "three"]
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Como se diz 'filhos' (meninos e meninas)?",
+      "options": ["sons", "children", "brothers", "parents"],
+      "correct_index": 1,
+      "explanation": "'Children' é o termo geral para filhos (inclui meninos e meninas)."
+    }
+  ],
+  "cheat_sheet": {
+    "title": "Vocabulário de Família em Inglês",
+    "sections": [
+      {
+        "heading": "Família Imediata",
+        "content": [
+          {
+            "type": "vocabulary",
+            "items": [
+              ["pai", "father / dad"],
+              ["mãe", "mother / mom"],
+              ["pais", "parents"],
+              ["filho", "son"],
+              ["filha", "daughter"],
+              ["filhos (crianças)", "children"],
+              ["irmão", "brother"],
+              ["irmã", "sister"],
+              ["irmãos", "siblings"]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Família Alargada",
+        "content": [
+          {
+            "type": "vocabulary",
+            "items": [
+              ["avô", "grandfather / grandpa"],
+              ["avó", "grandmother / grandma"],
+              ["avós", "grandparents"],
+              ["tio", "uncle"],
+              ["tia", "aunt"],
+              ["primo", "cousin"],
+              ["prima", "cousin"]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Diferenças Importantes",
+        "content": [
+          {
+            "type": "tip",
+            "text": "Em Inglês, 'cousin' é usado tanto para primos como para primas - não há distinção de género."
+          },
+          {
+            "type": "tip",
+            "text": "'Siblings' é o termo para irmãos (inclui irmãos e irmãs). É mais formal do que 'brothers and sisters'."
+          }
+        ]
+      },
+      {
+        "heading": "Formas Informais",
+        "content": [
+          {
+            "type": "vocabulary",
+            "items": [
+              ["papá (informal)", "dad / daddy"],
+              ["mamã (informal)", "mom / mommy / mum"],
+              ["avozinho", "grandpa / gramps"],
+              ["avozinha", "grandma / granny"]
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

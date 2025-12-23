@@ -1,0 +1,145 @@
+{
+  "id": "philosophy_01_pt",
+  "title": "Philosophy & Abstract Thought",
+  "description": "Master philosophical concepts and abstract discussions in European Portuguese",
+  "level": "C2",
+  "language_pair": {
+    "source": "en_US",
+    "target": "pt_PT"
+  },
+  "xp_reward": 35,
+  "order": 5,
+  "icon": "psychology",
+  "questions": [
+    {
+      "type": "multiple_choice",
+      "prompt": "How do you say 'consciousness' in Portuguese?",
+      "options": ["consciência", "conhecimento", "concordância", "consequência"],
+      "correct_index": 0,
+      "explanation": "'Consciência' can mean both consciousness and conscience in Portuguese."
+    },
+    {
+      "type": "matching_pairs",
+      "prompt": "Match philosophical concepts",
+      "pairs": [
+        ["existence", "existência"],
+        ["essence", "essência"],
+        ["perception", "perceção"],
+        ["reality", "realidade"]
+      ]
+    },
+    {
+      "type": "typing",
+      "prompt": "Write 'free will' in Portuguese",
+      "correct_answers": ["livre arbítrio", "livre-arbítrio"],
+      "hint": "livre + arbítrio",
+      "accent_strict": false
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "What does 'O ser e o nada' mean?",
+      "options": ["To be or not to be", "Being and Nothingness", "The self and others", "Life and death"],
+      "correct_index": 1,
+      "explanation": "'Ser' = being, 'nada' = nothingness. This is the Portuguese title of Sartre's famous work."
+    },
+    {
+      "type": "matching_pairs",
+      "prompt": "Match more philosophical terms",
+      "pairs": [
+        ["truth", "verdade"],
+        ["ethics", "ética"],
+        ["morality", "moralidade"],
+        ["reason", "razão"]
+      ]
+    },
+    {
+      "type": "typing",
+      "prompt": "Write 'meaning of life' in Portuguese",
+      "correct_answers": ["sentido da vida", "significado da vida"],
+      "hint": "sentido + da vida",
+      "accent_strict": false
+    },
+    {
+      "type": "sentence_builder",
+      "prompt": "Build: 'I think, therefore I am'",
+      "words": ["Penso", "logo", "existo", "sou", "então"],
+      "correct_order": [0, 1, 2],
+      "distractors": ["sou", "então"]
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "How do you say 'epistemology' in Portuguese?",
+      "options": ["episteme", "epistemologia", "epiderme", "epidemia"],
+      "correct_index": 1,
+      "explanation": "'Epistemologia' is the study of knowledge, same root as English."
+    }
+  ],
+  "cheat_sheet": {
+    "title": "Philosophy & Abstract Thought in European Portuguese",
+    "sections": [
+      {
+        "heading": "Core Concepts",
+        "content": [
+          {
+            "type": "vocabulary",
+            "items": [
+              ["existence", "existência"],
+              ["essence", "essência"],
+              ["being", "ser"],
+              ["consciousness", "consciência"],
+              ["reality", "realidade"],
+              ["perception", "perceção"]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Philosophical Fields",
+        "content": [
+          {
+            "type": "vocabulary",
+            "items": [
+              ["ethics", "ética"],
+              ["metaphysics", "metafísica"],
+              ["epistemology", "epistemologia"],
+              ["ontology", "ontologia"],
+              ["aesthetics", "estética"],
+              ["logic", "lógica"]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Key Terms",
+        "content": [
+          {
+            "type": "vocabulary",
+            "items": [
+              ["free will", "livre arbítrio"],
+              ["determinism", "determinismo"],
+              ["meaning of life", "sentido da vida"],
+              ["truth", "verdade"],
+              ["morality", "moralidade"],
+              ["reason", "razão"]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Famous Quotes",
+        "content": [
+          {
+            "type": "example",
+            "source": "Penso, logo existo",
+            "target": "I think, therefore I am",
+            "note": "Descartes' 'Cogito, ergo sum'"
+          },
+          {
+            "type": "tip",
+            "text": "Portuguese philosophy has a rich tradition. Fernando Pessoa explored identity with his heteronyms."
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,144 @@
+{
+  "id": "emotions_01_pt",
+  "title": "Emotions",
+  "description": "Learn to express emotions in European Portuguese",
+  "level": "B2",
+  "language_pair": {
+    "source": "en_US",
+    "target": "pt_PT"
+  },
+  "xp_reward": 25,
+  "order": 6,
+  "icon": "mood",
+  "questions": [
+    {
+      "type": "multiple_choice",
+      "prompt": "How do you express 'I'm disappointed' in Portuguese?",
+      "options": ["Estou desiludido/a", "Estou contente", "Estou surpreso/a", "Estou com medo"],
+      "correct_index": 0,
+      "explanation": "'Desiludido/a' means disappointed. Note the gender agreement."
+    },
+    {
+      "type": "matching_pairs",
+      "prompt": "Match the emotions",
+      "pairs": [
+        ["happy", "feliz"],
+        ["sad", "triste"],
+        ["angry", "zangado"],
+        ["worried", "preocupado"]
+      ]
+    },
+    {
+      "type": "typing",
+      "prompt": "Write 'I feel frustrated' in Portuguese",
+      "correct_answers": ["Sinto-me frustrado", "Sinto-me frustrada", "Estou frustrado", "Estou frustrada"],
+      "hint": "Sinto-me / Estou + frustrado/a",
+      "accent_strict": false
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "What does 'Estou farto/a' mean?",
+      "options": ["I'm hungry", "I'm fed up / tired of", "I'm full (food)", "I'm scared"],
+      "correct_index": 1,
+      "explanation": "'Estar farto/a de' means to be fed up with, tired of something."
+    },
+    {
+      "type": "matching_pairs",
+      "prompt": "Match more emotions",
+      "pairs": [
+        ["nervous", "nervoso"],
+        ["excited", "entusiasmado"],
+        ["relieved", "aliviado"],
+        ["embarrassed", "envergonhado"]
+      ]
+    },
+    {
+      "type": "typing",
+      "prompt": "Write 'I'm proud of you' in Portuguese",
+      "correct_answers": ["Estou orgulhoso de ti", "Estou orgulhosa de ti", "Tenho orgulho de ti"],
+      "hint": "Estou orgulhoso/a de...",
+      "accent_strict": false
+    },
+    {
+      "type": "sentence_builder",
+      "prompt": "Build: 'I feel overwhelmed'",
+      "words": ["Sinto-me", "sobrecarregado", "feliz", "com", "medo"],
+      "correct_order": [0, 1],
+      "distractors": ["feliz", "com", "medo"]
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "How do you say 'I'm homesick' in Portuguese?",
+      "options": ["Estou doente em casa", "Tenho saudades de casa", "A minha casa está doente", "Estou em casa"],
+      "correct_index": 1,
+      "explanation": "'Saudade' is a uniquely Portuguese concept - a deep longing. 'Ter saudades de' = to miss."
+    }
+  ],
+  "cheat_sheet": {
+    "title": "Expressing Emotions in European Portuguese",
+    "sections": [
+      {
+        "heading": "Basic Emotions",
+        "content": [
+          {
+            "type": "vocabulary",
+            "items": [
+              ["happy", "feliz / contente"],
+              ["sad", "triste"],
+              ["angry", "zangado/a"],
+              ["scared", "assustado/a / com medo"],
+              ["surprised", "surpreso/a"],
+              ["tired", "cansado/a"]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Complex Emotions",
+        "content": [
+          {
+            "type": "vocabulary",
+            "items": [
+              ["disappointed", "desiludido/a"],
+              ["frustrated", "frustrado/a"],
+              ["relieved", "aliviado/a"],
+              ["embarrassed", "envergonhado/a"],
+              ["overwhelmed", "sobrecarregado/a"],
+              ["nostalgic", "nostálgico/a"]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Expressions",
+        "content": [
+          {
+            "type": "vocabulary",
+            "items": [
+              ["I'm fed up with", "Estou farto/a de"],
+              ["I'm proud of", "Estou orgulhoso/a de"],
+              ["I miss...", "Tenho saudades de..."],
+              ["I'm in a good mood", "Estou de bom humor"],
+              ["I'm in a bad mood", "Estou de mau humor"]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Saudade",
+        "content": [
+          {
+            "type": "tip",
+            "text": "'Saudade' is a uniquely Portuguese word describing a deep, melancholic longing for someone or something absent."
+          },
+          {
+            "type": "example",
+            "source": "Tenho muitas saudades tuas",
+            "target": "I miss you so much",
+            "note": "This is deeply emotional and commonly used in Portuguese"
+          }
+        ]
+      }
+    ]
+  }
+}

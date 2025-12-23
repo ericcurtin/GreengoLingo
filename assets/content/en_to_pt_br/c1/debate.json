@@ -1,0 +1,143 @@
+{
+  "id": "debate_01_br",
+  "title": "Debate & Argumentation",
+  "description": "Learn to debate and argue effectively in Brazilian Portuguese",
+  "level": "C1",
+  "language_pair": {
+    "source": "en_US",
+    "target": "pt_BR"
+  },
+  "xp_reward": 30,
+  "order": 5,
+  "icon": "forum",
+  "questions": [
+    {
+      "type": "multiple_choice",
+      "prompt": "How do you say 'In my opinion' formally in Portuguese?",
+      "options": ["Na minha opinião", "Eu acho que", "Para mim", "Sei lá"],
+      "correct_index": 0,
+      "explanation": "'Na minha opinião' is the formal way to express an opinion."
+    },
+    {
+      "type": "matching_pairs",
+      "prompt": "Match debate expressions",
+      "pairs": [
+        ["I agree", "Concordo"],
+        ["I disagree", "Discordo"],
+        ["However", "No entanto"],
+        ["On the other hand", "Por outro lado"]
+      ]
+    },
+    {
+      "type": "typing",
+      "prompt": "Write 'I respectfully disagree' in Portuguese",
+      "correct_answers": ["Discordo respeitosamente", "Com todo respeito, discordo"],
+      "hint": "Discordo + respeitosamente",
+      "accent_strict": false
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "What does 'Embora eu concorde em parte, devo destacar que...' mean?",
+      "options": ["I completely agree", "Although I partly agree, I must point out that...", "I strongly disagree", "Let me think about it"],
+      "correct_index": 1,
+      "explanation": "'Embora' introduces a concession. 'Destacar' means to emphasize/point out."
+    },
+    {
+      "type": "matching_pairs",
+      "prompt": "Match more discourse markers",
+      "pairs": [
+        ["Furthermore", "Além disso"],
+        ["Nevertheless", "Apesar disso"],
+        ["In conclusion", "Em conclusão"],
+        ["Therefore", "Portanto"]
+      ]
+    },
+    {
+      "type": "typing",
+      "prompt": "Write 'From my point of view' in Portuguese",
+      "correct_answers": ["Do meu ponto de vista", "Sob meu ponto de vista"],
+      "hint": "Do meu ponto de...",
+      "accent_strict": false
+    },
+    {
+      "type": "sentence_builder",
+      "prompt": "Build: 'I partially agree, but...'",
+      "words": ["Concordo", "parcialmente", "mas", "totalmente", "nunca"],
+      "correct_order": [0, 1, 2],
+      "distractors": ["totalmente", "nunca"]
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "What is a formal way to present a counter-argument?",
+      "options": ["Isso é besteira", "Permita-me discordar", "Não me importo", "Tanto faz"],
+      "correct_index": 1,
+      "explanation": "'Permita-me discordar' (Allow me to disagree) is a polite, formal way to disagree."
+    }
+  ],
+  "cheat_sheet": {
+    "title": "Debate & Argumentation in Brazilian Portuguese",
+    "sections": [
+      {
+        "heading": "Expressing Opinions",
+        "content": [
+          {
+            "type": "vocabulary",
+            "items": [
+              ["In my opinion", "Na minha opinião"],
+              ["From my point of view", "Do meu ponto de vista"],
+              ["I believe that", "Acredito que"],
+              ["It seems to me that", "Me parece que"],
+              ["I'm convinced that", "Estou convicto/a de que"]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Agreeing & Disagreeing",
+        "content": [
+          {
+            "type": "vocabulary",
+            "items": [
+              ["I completely agree", "Concordo plenamente"],
+              ["I partly agree", "Concordo em parte"],
+              ["I respectfully disagree", "Discordo respeitosamente"],
+              ["Allow me to disagree", "Permita-me discordar"],
+              ["I see your point, but...", "Entendo seu ponto, mas..."]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Discourse Markers",
+        "content": [
+          {
+            "type": "vocabulary",
+            "items": [
+              ["Furthermore", "Além disso / Ademais"],
+              ["However", "No entanto / Porém"],
+              ["Nevertheless", "Apesar disso"],
+              ["On the other hand", "Por outro lado"],
+              ["Therefore", "Portanto / Logo"],
+              ["In conclusion", "Em conclusão / Concluindo"]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Brazilian Academic Style",
+        "content": [
+          {
+            "type": "tip",
+            "text": "In Brazilian academic contexts, it's common to use 'Conforme' (according to) when citing authors or sources."
+          },
+          {
+            "type": "example",
+            "source": "Reconheço a validade do seu argumento, porém...",
+            "target": "I acknowledge the validity of your argument, however...",
+            "note": "Formal academic style"
+          }
+        ]
+      }
+    ]
+  }
+}
