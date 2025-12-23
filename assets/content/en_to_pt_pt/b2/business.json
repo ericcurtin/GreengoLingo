@@ -1,0 +1,144 @@
+{
+  "id": "business_01_pt",
+  "title": "Business",
+  "description": "Learn business vocabulary in European Portuguese",
+  "level": "B2",
+  "language_pair": {
+    "source": "en_US",
+    "target": "pt_PT"
+  },
+  "xp_reward": 25,
+  "order": 5,
+  "icon": "business",
+  "questions": [
+    {
+      "type": "multiple_choice",
+      "prompt": "How do you say 'meeting' in Portuguese?",
+      "options": ["reunião", "empresa", "negócio", "escritório"],
+      "correct_index": 0,
+      "explanation": "'Reunião' means meeting. 'Temos uma reunião' = We have a meeting."
+    },
+    {
+      "type": "matching_pairs",
+      "prompt": "Match business terms",
+      "pairs": [
+        ["company", "empresa"],
+        ["office", "escritório"],
+        ["boss", "chefe"],
+        ["employee", "funcionário"]
+      ]
+    },
+    {
+      "type": "typing",
+      "prompt": "Write 'I work in marketing' in Portuguese",
+      "correct_answers": ["Trabalho em marketing", "Eu trabalho em marketing"],
+      "hint": "Trabalho em + area",
+      "accent_strict": false
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "What does 'Enviei o relatório por email' mean?",
+      "options": ["I received the report", "I sent the report by email", "I wrote the report", "I deleted the report"],
+      "correct_index": 1,
+      "explanation": "'Enviar' means to send. 'Relatório' means report."
+    },
+    {
+      "type": "matching_pairs",
+      "prompt": "Match more business vocabulary",
+      "pairs": [
+        ["salary", "salário"],
+        ["contract", "contrato"],
+        ["deadline", "prazo"],
+        ["invoice", "fatura"]
+      ]
+    },
+    {
+      "type": "typing",
+      "prompt": "Write 'Can we schedule a meeting?' in Portuguese",
+      "correct_answers": ["Podemos marcar uma reunião?", "Podemos agendar uma reunião?"],
+      "hint": "Podemos + marcar/agendar",
+      "accent_strict": false
+    },
+    {
+      "type": "sentence_builder",
+      "prompt": "Build: 'I'm responsible for the project'",
+      "words": ["Sou", "responsável", "pelo", "projeto", "reunião", "empresa"],
+      "correct_order": [0, 1, 2, 3],
+      "distractors": ["reunião", "empresa"]
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "How do you say 'to negotiate' in Portuguese?",
+      "options": ["negar", "negociar", "necessitar", "nomear"],
+      "correct_index": 1,
+      "explanation": "'Negociar' means to negotiate. Similar to English but with Portuguese pronunciation."
+    }
+  ],
+  "cheat_sheet": {
+    "title": "Business Vocabulary in European Portuguese",
+    "sections": [
+      {
+        "heading": "Workplace",
+        "content": [
+          {
+            "type": "vocabulary",
+            "items": [
+              ["company", "empresa"],
+              ["office", "escritório"],
+              ["meeting", "reunião"],
+              ["meeting room", "sala de reuniões"],
+              ["colleague", "colega"],
+              ["boss", "chefe"],
+              ["employee", "funcionário"]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Business Terms",
+        "content": [
+          {
+            "type": "vocabulary",
+            "items": [
+              ["contract", "contrato"],
+              ["salary", "salário"],
+              ["deadline", "prazo"],
+              ["report", "relatório"],
+              ["invoice", "fatura"],
+              ["budget", "orçamento"],
+              ["profit", "lucro"]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Useful Phrases",
+        "content": [
+          {
+            "type": "vocabulary",
+            "items": [
+              ["schedule a meeting", "marcar uma reunião"],
+              ["send an email", "enviar um email"],
+              ["meet the deadline", "cumprir o prazo"],
+              ["I'm responsible for...", "Sou responsável por..."],
+              ["Could you clarify...", "Poderia esclarecer..."]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Business Culture",
+        "content": [
+          {
+            "type": "tip",
+            "text": "In Portugal, formal address (você/o senhor/a senhora) is important in business contexts."
+          },
+          {
+            "type": "tip",
+            "text": "Titles like 'Doutor/Doutora' or 'Engenheiro/Engenheira' are commonly used professionally."
+          }
+        ]
+      }
+    ]
+  }
+}

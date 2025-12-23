@@ -1,0 +1,147 @@
+{
+  "id": "transportation_01_pt",
+  "title": "Transportation",
+  "description": "Learn transportation vocabulary in European Portuguese",
+  "level": "A2",
+  "language_pair": {
+    "source": "en_US",
+    "target": "pt_PT"
+  },
+  "xp_reward": 15,
+  "order": 6,
+  "icon": "directions_bus",
+  "questions": [
+    {
+      "type": "multiple_choice",
+      "prompt": "How do you say 'bus' in European Portuguese?",
+      "options": ["carro", "autocarro", "comboio", "avião"],
+      "correct_index": 1,
+      "explanation": "'Autocarro' is the word for bus in Portugal. In Brazil, it's 'ônibus'."
+    },
+    {
+      "type": "matching_pairs",
+      "prompt": "Match the vehicles",
+      "pairs": [
+        ["car", "carro"],
+        ["train", "comboio"],
+        ["plane", "avião"],
+        ["bicycle", "bicicleta"]
+      ]
+    },
+    {
+      "type": "typing",
+      "prompt": "Write 'train' in European Portuguese",
+      "correct_answers": ["comboio", "Comboio"],
+      "hint": "Different from Brazilian Portuguese",
+      "accent_strict": false
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "How do you say 'Where is the train station?'",
+      "options": ["Onde é a estação de comboio?", "Onde é o aeroporto?", "Onde é a paragem?", "Onde é o carro?"],
+      "correct_index": 0,
+      "explanation": "'Estação de comboio' is train station in Portugal."
+    },
+    {
+      "type": "matching_pairs",
+      "prompt": "Match transportation terms",
+      "pairs": [
+        ["subway/metro", "metro"],
+        ["boat", "barco"],
+        ["motorcycle", "mota"],
+        ["taxi", "táxi"]
+      ]
+    },
+    {
+      "type": "typing",
+      "prompt": "Write 'ticket' in Portuguese",
+      "correct_answers": ["bilhete", "Bilhete"],
+      "hint": "Used for transport and events",
+      "accent_strict": false
+    },
+    {
+      "type": "sentence_builder",
+      "prompt": "Build: 'I go by bus'",
+      "words": ["Eu", "vou", "de", "autocarro", "carro", "para"],
+      "correct_order": [0, 1, 2, 3],
+      "distractors": ["carro", "para"]
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "What is 'paragem' in English?",
+      "options": ["parking", "stop (bus/tram)", "station", "airport"],
+      "correct_index": 1,
+      "explanation": "'Paragem' is a stop (for bus, tram). 'Paragem de autocarro' = bus stop."
+    }
+  ],
+  "cheat_sheet": {
+    "title": "Transportation in European Portuguese",
+    "sections": [
+      {
+        "heading": "Vehicles",
+        "content": [
+          {
+            "type": "vocabulary",
+            "items": [
+              ["car", "carro"],
+              ["bus", "autocarro"],
+              ["train", "comboio"],
+              ["plane", "avião"],
+              ["subway/metro", "metro"],
+              ["tram", "elétrico"],
+              ["boat", "barco"],
+              ["bicycle", "bicicleta"],
+              ["motorcycle", "mota"],
+              ["taxi", "táxi"]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Places",
+        "content": [
+          {
+            "type": "vocabulary",
+            "items": [
+              ["train station", "estação de comboio"],
+              ["bus stop", "paragem de autocarro"],
+              ["airport", "aeroporto"],
+              ["port", "porto"],
+              ["metro station", "estação de metro"]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Useful Phrases",
+        "content": [
+          {
+            "type": "vocabulary",
+            "items": [
+              ["I go by...", "Eu vou de..."],
+              ["ticket", "bilhete"],
+              ["one-way ticket", "bilhete de ida"],
+              ["return ticket", "bilhete de ida e volta"],
+              ["platform", "plataforma / cais"]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Portugal vs Brazil",
+        "content": [
+          {
+            "type": "tip",
+            "text": "Many transportation words differ between Portugal and Brazil: autocarro/ônibus (bus), comboio/trem (train), elétrico/bonde (tram)."
+          },
+          {
+            "type": "example",
+            "source": "Apanho o autocarro às oito",
+            "target": "I catch the bus at eight",
+            "note": "'Apanhar' is used in Portugal; 'pegar' in Brazil"
+          }
+        ]
+      }
+    ]
+  }
+}

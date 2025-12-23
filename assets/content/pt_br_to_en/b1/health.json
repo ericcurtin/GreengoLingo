@@ -1,0 +1,148 @@
+{
+  "id": "health_01",
+  "title": "Saúde",
+  "description": "Aprenda vocabulário de saúde em Inglês",
+  "level": "B1",
+  "language_pair": {
+    "source": "pt_BR",
+    "target": "en_US"
+  },
+  "xp_reward": 20,
+  "order": 5,
+  "icon": "medical_services",
+  "questions": [
+    {
+      "type": "multiple_choice",
+      "prompt": "Como se diz 'Não estou me sentindo bem' em Inglês?",
+      "options": ["I don't feel well", "I feel great", "I'm hungry", "I'm tired"],
+      "correct_index": 0,
+      "explanation": "'I don't feel well' é a forma padrão de dizer que não se sente bem."
+    },
+    {
+      "type": "matching_pairs",
+      "prompt": "Combine as partes do corpo",
+      "pairs": [
+        ["cabeça", "head"],
+        ["estômago", "stomach"],
+        ["braço", "arm"],
+        ["perna", "leg"]
+      ]
+    },
+    {
+      "type": "typing",
+      "prompt": "Escreva 'Estou com dor de cabeça' em Inglês",
+      "correct_answers": ["I have a headache", "I've got a headache"],
+      "hint": "I have a + headache",
+      "accent_strict": false
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "O que significa 'I need to see a doctor'?",
+      "options": ["Preciso ir à farmácia", "Preciso ir ao médico", "Preciso de remédio", "Estou me sentindo melhor"],
+      "correct_index": 1,
+      "explanation": "'Doctor' significa médico. 'See a doctor' = ir ao médico."
+    },
+    {
+      "type": "matching_pairs",
+      "prompt": "Combine os termos de saúde",
+      "pairs": [
+        ["dor", "pain"],
+        ["febre", "fever"],
+        ["tosse", "cough"],
+        ["resfriado", "cold"]
+      ]
+    },
+    {
+      "type": "typing",
+      "prompt": "Escreva 'farmácia' em Inglês",
+      "correct_answers": ["pharmacy", "Pharmacy", "drugstore"],
+      "hint": "Começa com 'ph'",
+      "accent_strict": false
+    },
+    {
+      "type": "sentence_builder",
+      "prompt": "Construa: 'Preciso de remédio'",
+      "words": ["I", "need", "medicine", "water", "some", "food"],
+      "correct_order": [0, 1, 2],
+      "distractors": ["water", "some", "food"]
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Como se expressa dor em Inglês?",
+      "options": ["I have a pain in my...", "I do pain in...", "Pain is in...", "My pain has..."],
+      "correct_index": 0,
+      "explanation": "'I have a pain in my...' ou 'My ... hurts' são as formas mais comuns."
+    }
+  ],
+  "cheat_sheet": {
+    "title": "Vocabulário de Saúde em Inglês",
+    "sections": [
+      {
+        "heading": "Partes do Corpo",
+        "content": [
+          {
+            "type": "vocabulary",
+            "items": [
+              ["cabeça", "head"],
+              ["estômago / barriga", "stomach"],
+              ["costas", "back"],
+              ["garganta", "throat"],
+              ["braço", "arm"],
+              ["perna", "leg"],
+              ["mão", "hand"],
+              ["pé", "foot"]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Sintomas",
+        "content": [
+          {
+            "type": "vocabulary",
+            "items": [
+              ["dor", "pain"],
+              ["dor de cabeça", "headache"],
+              ["dor de barriga", "stomachache"],
+              ["febre", "fever"],
+              ["tosse", "cough"],
+              ["resfriado", "cold"],
+              ["gripe", "flu"],
+              ["alergia", "allergy"]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Frases Úteis",
+        "content": [
+          {
+            "type": "vocabulary",
+            "items": [
+              ["Não estou me sentindo bem", "I don't feel well"],
+              ["Estou com dor de cabeça", "I have a headache"],
+              ["Preciso de um médico", "I need a doctor"],
+              ["Onde fica o hospital?", "Where is the hospital?"],
+              ["Sou alérgico/a a...", "I'm allergic to..."]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Estruturas Úteis",
+        "content": [
+          {
+            "type": "tip",
+            "text": "Para dor, use: 'I have a ... ache' (headache, stomachache) ou 'My ... hurts' (My back hurts)."
+          },
+          {
+            "type": "example",
+            "source": "My throat hurts",
+            "target": "Minha garganta dói / Estou com dor de garganta",
+            "note": "Esta estrutura é muito comum em Inglês"
+          }
+        ]
+      }
+    ]
+  }
+}

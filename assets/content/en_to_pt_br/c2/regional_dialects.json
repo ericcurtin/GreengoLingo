@@ -1,0 +1,134 @@
+{
+  "id": "regional_dialects_01_br",
+  "title": "Regional Dialects",
+  "description": "Master regional variations in Brazilian Portuguese",
+  "level": "C2",
+  "language_pair": {
+    "source": "en_US",
+    "target": "pt_BR"
+  },
+  "xp_reward": 35,
+  "order": 6,
+  "icon": "map",
+  "questions": [
+    {
+      "type": "multiple_choice",
+      "prompt": "The 'carioca' accent (Rio de Janeiro) is characterized by:",
+      "options": ["Pronouncing 's' as 'sh' at end of syllables", "No final 's' sound", "Strong rolling 'r'", "No accent at all"],
+      "correct_index": 0,
+      "explanation": "Rio's accent famously turns final 's' into a 'sh' sound: 'mesmo' → 'meshmo'."
+    },
+    {
+      "type": "matching_pairs",
+      "prompt": "Match regional accents with states",
+      "pairs": [
+        ["Carioca", "Rio de Janeiro"],
+        ["Paulistano", "São Paulo"],
+        ["Gaúcho", "Rio Grande do Sul"],
+        ["Nordestino", "Northeast region"]
+      ]
+    },
+    {
+      "type": "typing",
+      "prompt": "What do Gaúchos call 'you' (singular)?",
+      "correct_answers": ["tu", "Tu"],
+      "hint": "Different from 'você' in most of Brazil",
+      "accent_strict": false
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "In Rio Grande do Sul, what unique greeting is used?",
+      "options": ["Oi", "E aí", "Bah", "Opa"],
+      "correct_index": 2,
+      "explanation": "'Bah' is a characteristic Gaúcho expression, used for surprise or emphasis."
+    },
+    {
+      "type": "matching_pairs",
+      "prompt": "Match regional vocabulary",
+      "pairs": [
+        ["macaxeira (Northeast)", "mandioca (cassava)"],
+        ["aipim (Rio)", "mandioca (cassava)"],
+        ["bergamota (South)", "tangerina (tangerine)"],
+        ["cachaça (national)", "pinga (popular term)"]
+      ]
+    },
+    {
+      "type": "typing",
+      "prompt": "What do people in the Northeast call 'cassava'?",
+      "correct_answers": ["macaxeira", "Macaxeira"],
+      "hint": "Different from mandioca",
+      "accent_strict": false
+    },
+    {
+      "type": "sentence_builder",
+      "prompt": "Build: 'Wow, that's cool!' (Gaúcho style)",
+      "words": ["Bah", "que", "tri", "legal", "muito"],
+      "correct_order": [0, 1, 2],
+      "distractors": ["legal", "muito"]
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Which region commonly uses 'tu' with third-person verbs?",
+      "options": ["São Paulo", "Northeast", "Rio de Janeiro", "Many regions informally"],
+      "correct_index": 3,
+      "explanation": "Many regions use 'tu' with third-person verbs: 'Tu vai' instead of 'Tu vais'."
+    }
+  ],
+  "cheat_sheet": {
+    "title": "Regional Dialects in Brazilian Portuguese",
+    "sections": [
+      {
+        "heading": "Major Regional Accents",
+        "content": [
+          {
+            "type": "vocabulary",
+            "items": [
+              ["Rio de Janeiro", "Carioca - 's' becomes 'sh'"],
+              ["São Paulo", "Paulistano - strong 'r' sounds"],
+              ["Rio Grande do Sul", "Gaúcho - uses 'tu', unique expressions"],
+              ["Northeast", "Nordestino - open vowels, melodic"],
+              ["Minas Gerais", "Mineiro - shortened words, 'uai'"]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Regional Vocabulary: Cassava",
+        "content": [
+          {
+            "type": "tip",
+            "text": "The same food has different names: 'mandioca' (standard), 'macaxeira' (Northeast), 'aipim' (Rio)."
+          }
+        ]
+      },
+      {
+        "heading": "Gaúcho Expressions",
+        "content": [
+          {
+            "type": "vocabulary",
+            "items": [
+              ["Bah!", "Expression of surprise"],
+              ["Tri", "Very / really"],
+              ["Guri/guria", "Boy/girl"],
+              ["Tchê", "Hey / man"],
+              ["Bergamota", "Tangerine"]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Tu vs Você",
+        "content": [
+          {
+            "type": "tip",
+            "text": "'Tu' is used in the South (with correct verb forms), Rio (often with você verb forms), and parts of the North."
+          },
+          {
+            "type": "warning",
+            "text": "Using 'tu' with incorrect verbs ('Tu vai') is common but considered informal/non-standard."
+          }
+        ]
+      }
+    ]
+  }
+}

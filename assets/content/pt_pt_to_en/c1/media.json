@@ -1,0 +1,146 @@
+{
+  "id": "media_01",
+  "title": "Media e Atualidade",
+  "description": "Aprenda vocabulário para discutir media e notícias em Inglês",
+  "level": "C1",
+  "language_pair": {
+    "source": "pt_PT",
+    "target": "en_US"
+  },
+  "xp_reward": 30,
+  "order": 6,
+  "icon": "newspaper",
+  "questions": [
+    {
+      "type": "multiple_choice",
+      "prompt": "Como se diz 'últimas notícias' em Inglês?",
+      "options": ["breaking news", "broken news", "important news", "journalism"],
+      "correct_index": 0,
+      "explanation": "'Breaking news' é a expressão para últimas notícias / notícias de última hora."
+    },
+    {
+      "type": "matching_pairs",
+      "prompt": "Combine os termos de media",
+      "pairs": [
+        ["jornal", "newspaper"],
+        ["jornalista", "journalist"],
+        ["manchete", "headline"],
+        ["transmissão", "broadcast"]
+      ]
+    },
+    {
+      "type": "typing",
+      "prompt": "Escreva 'redes sociais' em Inglês",
+      "correct_answers": ["social media", "Social media"],
+      "hint": "social + media",
+      "accent_strict": false
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "O que significa 'mass media'?",
+      "options": ["redes sociais", "meios de comunicação social", "ferramentas de comunicação", "clubes sociais"],
+      "correct_index": 1,
+      "explanation": "'Mass media' refere-se aos meios de comunicação social (TV, rádio, imprensa)."
+    },
+    {
+      "type": "matching_pairs",
+      "prompt": "Combine mais vocabulário de media",
+      "pairs": [
+        ["artigo", "article"],
+        ["editorial", "editorial"],
+        ["entrevista", "interview"],
+        ["reportagem", "report"]
+      ]
+    },
+    {
+      "type": "typing",
+      "prompt": "Escreva 'notícias falsas' em Inglês",
+      "correct_answers": ["fake news", "misinformation", "disinformation"],
+      "hint": "fake + news",
+      "accent_strict": false
+    },
+    {
+      "type": "sentence_builder",
+      "prompt": "Construa: 'Segundo a reportagem'",
+      "words": ["According", "to", "the", "report", "newspaper", "news"],
+      "correct_order": [0, 1, 2, 3],
+      "distractors": ["newspaper", "news"]
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "O que é 'reliable source'?",
+      "options": ["fonte falsa", "fonte fidedigna", "fonte anónima", "fonte primária"],
+      "correct_index": 1,
+      "explanation": "'Reliable' significa fidedigno/confiável. 'Reliable source' = fonte fidedigna."
+    }
+  ],
+  "cheat_sheet": {
+    "title": "Media e Atualidade em Inglês",
+    "sections": [
+      {
+        "heading": "Tipos de Media",
+        "content": [
+          {
+            "type": "vocabulary",
+            "items": [
+              ["meios de comunicação social", "mass media"],
+              ["jornal", "newspaper"],
+              ["revista", "magazine"],
+              ["televisão", "television / TV"],
+              ["rádio", "radio"],
+              ["redes sociais", "social media"],
+              ["meios digitais", "digital media"]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Termos de Notícias",
+        "content": [
+          {
+            "type": "vocabulary",
+            "items": [
+              ["últimas notícias", "breaking news"],
+              ["manchete", "headline"],
+              ["artigo", "article"],
+              ["reportagem", "report"],
+              ["editorial", "editorial"],
+              ["comunicado de imprensa", "press release"],
+              ["cobertura noticiosa", "news coverage"]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Literacia Mediática",
+        "content": [
+          {
+            "type": "vocabulary",
+            "items": [
+              ["notícias falsas", "fake news / misinformation"],
+              ["fonte fidedigna", "reliable source"],
+              ["verificação de factos", "fact-checking"],
+              ["parcialidade", "bias"],
+              ["objetividade", "objectivity"]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Discutir Notícias",
+        "content": [
+          {
+            "type": "tip",
+            "text": "Use 'According to...', 'Based on...', 'As reported by...' quando citar fontes."
+          },
+          {
+            "type": "example",
+            "source": "According to reliable sources, the government will announce measures this week.",
+            "target": "Segundo fontes fidedignas, o governo anunciará medidas esta semana.",
+            "note": "Estilo formal de reportagem"
+          }
+        ]
+      }
+    ]
+  }
+}

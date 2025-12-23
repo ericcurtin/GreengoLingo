@@ -1,0 +1,144 @@
+{
+  "id": "emotions_01_br",
+  "title": "Emotions",
+  "description": "Learn to express emotions in Brazilian Portuguese",
+  "level": "B2",
+  "language_pair": {
+    "source": "en_US",
+    "target": "pt_BR"
+  },
+  "xp_reward": 25,
+  "order": 6,
+  "icon": "mood",
+  "questions": [
+    {
+      "type": "multiple_choice",
+      "prompt": "How do you express 'I'm disappointed' in Portuguese?",
+      "options": ["Estou decepcionado/a", "Estou contente", "Estou surpreso/a", "Estou com medo"],
+      "correct_index": 0,
+      "explanation": "'Decepcionado/a' is the Brazilian word for disappointed. Note the gender agreement."
+    },
+    {
+      "type": "matching_pairs",
+      "prompt": "Match the emotions",
+      "pairs": [
+        ["happy", "feliz"],
+        ["sad", "triste"],
+        ["angry", "com raiva"],
+        ["worried", "preocupado"]
+      ]
+    },
+    {
+      "type": "typing",
+      "prompt": "Write 'I feel frustrated' in Portuguese",
+      "correct_answers": ["Estou frustrado", "Estou frustrada", "Me sinto frustrado", "Me sinto frustrada"],
+      "hint": "Estou / Me sinto + frustrado/a",
+      "accent_strict": false
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "What does 'Estou de saco cheio' mean?",
+      "options": ["I'm hungry", "I'm fed up / sick of it", "I'm full (food)", "I'm scared"],
+      "correct_index": 1,
+      "explanation": "'Estar de saco cheio' is a Brazilian expression meaning to be fed up with something."
+    },
+    {
+      "type": "matching_pairs",
+      "prompt": "Match more emotions",
+      "pairs": [
+        ["nervous", "nervoso"],
+        ["excited", "animado"],
+        ["relieved", "aliviado"],
+        ["embarrassed", "com vergonha"]
+      ]
+    },
+    {
+      "type": "typing",
+      "prompt": "Write 'I'm proud of you' in Portuguese",
+      "correct_answers": ["Estou orgulhoso de você", "Estou orgulhosa de você", "Tenho orgulho de você"],
+      "hint": "Estou orgulhoso/a de...",
+      "accent_strict": false
+    },
+    {
+      "type": "sentence_builder",
+      "prompt": "Build: 'I feel overwhelmed'",
+      "words": ["Estou", "sobrecarregado", "feliz", "com", "medo"],
+      "correct_order": [0, 1],
+      "distractors": ["feliz", "com", "medo"]
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "How do you say 'I'm homesick' in Portuguese?",
+      "options": ["Estou doente em casa", "Estou com saudade de casa", "Minha casa está doente", "Estou em casa"],
+      "correct_index": 1,
+      "explanation": "'Saudade' is a uniquely Portuguese concept. 'Estar com saudade de' = to miss."
+    }
+  ],
+  "cheat_sheet": {
+    "title": "Expressing Emotions in Brazilian Portuguese",
+    "sections": [
+      {
+        "heading": "Basic Emotions",
+        "content": [
+          {
+            "type": "vocabulary",
+            "items": [
+              ["happy", "feliz / contente"],
+              ["sad", "triste"],
+              ["angry", "com raiva / bravo/a"],
+              ["scared", "com medo / assustado/a"],
+              ["surprised", "surpreso/a"],
+              ["tired", "cansado/a"]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Complex Emotions",
+        "content": [
+          {
+            "type": "vocabulary",
+            "items": [
+              ["disappointed", "decepcionado/a"],
+              ["frustrated", "frustrado/a"],
+              ["relieved", "aliviado/a"],
+              ["embarrassed", "com vergonha / envergonhado/a"],
+              ["overwhelmed", "sobrecarregado/a"],
+              ["excited", "animado/a / empolgado/a"]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Brazilian Expressions",
+        "content": [
+          {
+            "type": "vocabulary",
+            "items": [
+              ["I'm fed up with", "Estou de saco cheio de"],
+              ["I'm proud of", "Estou orgulhoso/a de"],
+              ["I miss...", "Estou com saudade de..."],
+              ["I'm in a good mood", "Estou de bom humor"],
+              ["I'm stressed", "Estou estressado/a"]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Saudade",
+        "content": [
+          {
+            "type": "tip",
+            "text": "'Saudade' is a uniquely Portuguese word. In Brazil: 'Estou com saudade' or 'Estou morrendo de saudade' (I miss you so much)."
+          },
+          {
+            "type": "example",
+            "source": "Estou com muita saudade de você",
+            "target": "I miss you so much",
+            "note": "Very common and emotional in Brazilian Portuguese"
+          }
+        ]
+      }
+    ]
+  }
+}

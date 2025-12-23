@@ -1,0 +1,149 @@
+{
+  "id": "family_01_br",
+  "title": "Family",
+  "description": "Learn family vocabulary in Brazilian Portuguese",
+  "level": "A1",
+  "language_pair": {
+    "source": "en_US",
+    "target": "pt_BR"
+  },
+  "xp_reward": 10,
+  "order": 6,
+  "icon": "family",
+  "questions": [
+    {
+      "type": "multiple_choice",
+      "prompt": "How do you say 'mother' in Portuguese?",
+      "options": ["pai", "mãe", "filho", "filha"],
+      "correct_index": 1,
+      "explanation": "'Mãe' means mother. 'Mamãe' is commonly used in Brazil."
+    },
+    {
+      "type": "matching_pairs",
+      "prompt": "Match the family members",
+      "pairs": [
+        ["father", "pai"],
+        ["mother", "mãe"],
+        ["son", "filho"],
+        ["daughter", "filha"]
+      ]
+    },
+    {
+      "type": "typing",
+      "prompt": "Write 'brother' in Portuguese",
+      "correct_answers": ["irmão", "Irmão"],
+      "hint": "Starts with 'i'",
+      "accent_strict": false
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "What does 'avó' mean?",
+      "options": ["aunt", "grandmother", "cousin", "sister"],
+      "correct_index": 1,
+      "explanation": "'Avó' means grandmother. 'Vovó' is the affectionate form used in Brazil."
+    },
+    {
+      "type": "matching_pairs",
+      "prompt": "Match more family members",
+      "pairs": [
+        ["sister", "irmã"],
+        ["grandfather", "avô"],
+        ["uncle", "tio"],
+        ["aunt", "tia"]
+      ]
+    },
+    {
+      "type": "typing",
+      "prompt": "Write 'parents' in Portuguese",
+      "correct_answers": ["pais", "Pais"],
+      "hint": "Based on 'pai'",
+      "accent_strict": false
+    },
+    {
+      "type": "sentence_builder",
+      "prompt": "Build: 'I have two sisters'",
+      "words": ["Eu", "tenho", "duas", "irmãs", "irmãos", "três"],
+      "correct_order": [0, 1, 2, 3],
+      "distractors": ["irmãos", "três"]
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "How do Brazilians affectionately say 'dad'?",
+      "options": ["pai", "papai", "paizinho", "padrinho"],
+      "correct_index": 1,
+      "explanation": "'Papai' is the most common affectionate term for father in Brazil."
+    }
+  ],
+  "cheat_sheet": {
+    "title": "Family Vocabulary in Brazilian Portuguese",
+    "sections": [
+      {
+        "heading": "Immediate Family",
+        "content": [
+          {
+            "type": "vocabulary",
+            "items": [
+              ["father", "pai"],
+              ["mother", "mãe"],
+              ["parents", "pais"],
+              ["son", "filho"],
+              ["daughter", "filha"],
+              ["children", "filhos"],
+              ["brother", "irmão"],
+              ["sister", "irmã"],
+              ["siblings", "irmãos"]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Extended Family",
+        "content": [
+          {
+            "type": "vocabulary",
+            "items": [
+              ["grandfather", "avô"],
+              ["grandmother", "avó"],
+              ["grandparents", "avós"],
+              ["uncle", "tio"],
+              ["aunt", "tia"],
+              ["cousin (male)", "primo"],
+              ["cousin (female)", "prima"]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Brazilian Affectionate Terms",
+        "content": [
+          {
+            "type": "vocabulary",
+            "items": [
+              ["dad / daddy", "papai"],
+              ["mom / mommy", "mamãe"],
+              ["grandpa", "vovô"],
+              ["grandma", "vovó"],
+              ["auntie", "titia"],
+              ["uncle (affectionate)", "titio"]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Cultural Note",
+        "content": [
+          {
+            "type": "tip",
+            "text": "Brazilians often use diminutives to show affection: 'mãezinha' (little mom), 'paizinho' (little dad)."
+          },
+          {
+            "type": "example",
+            "source": "Oi, mamãe!",
+            "target": "Hi, mom!",
+            "note": "'Mamãe' is very commonly used in everyday Brazilian Portuguese"
+          }
+        ]
+      }
+    ]
+  }
+}
