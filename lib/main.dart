@@ -5,6 +5,7 @@ import 'package:hive_flutter/hive_flutter.dart';
 
 import 'src/app.dart';
 import 'src/services/storage_service.dart';
+import 'src/services/haptic_service.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -14,6 +15,9 @@ Future<void> main() async {
 
   // Initialize storage service
   await StorageService.instance.init();
+
+  // Initialize haptic service
+  await HapticService.instance.init();
 
   // Set preferred orientations
   await SystemChrome.setPreferredOrientations([
