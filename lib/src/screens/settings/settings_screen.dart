@@ -77,24 +77,6 @@ class SettingsScreen extends ConsumerWidget {
 
             const SizedBox(height: 24),
 
-            // About Section
-            _SectionHeader(title: 'About'),
-            _SettingsTile(
-              icon: Icons.info_outline,
-              title: 'Version',
-              subtitle: '0.1.0',
-            ),
-            _SettingsTile(
-              icon: Icons.code,
-              title: 'Open Source',
-              subtitle: 'View on GitHub',
-              onTap: () {
-                // TODO: Open GitHub link
-              },
-            ),
-
-            const SizedBox(height: 24),
-
             // Reset Section
             _SectionHeader(title: 'Data'),
             _SettingsTile(
