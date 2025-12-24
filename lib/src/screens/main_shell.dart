@@ -29,35 +29,37 @@ class MainShell extends ConsumerWidget {
           StatisticsScreen(),
         ],
       ),
-      bottomNavigationBar: NavigationBar(
-        selectedIndex: selectedIndex,
-        onDestinationSelected: (index) {
-          ref.read(selectedNavIndexProvider.notifier).state = index;
-        },
-        backgroundColor: isDark ? AppColors.surfaceDark : Colors.white,
-        indicatorColor: AppColors.primaryGreen.withOpacity(0.2),
-        destinations: const [
-          NavigationDestination(
-            icon: Icon(Icons.home_outlined),
-            selectedIcon: Icon(Icons.home),
-            label: 'Home',
-          ),
-          NavigationDestination(
-            icon: Icon(Icons.replay_outlined),
-            selectedIcon: Icon(Icons.replay),
-            label: 'Review',
-          ),
-          NavigationDestination(
-            icon: Icon(Icons.book_outlined),
-            selectedIcon: Icon(Icons.book),
-            label: 'Vocab',
-          ),
-          NavigationDestination(
-            icon: Icon(Icons.bar_chart_outlined),
-            selectedIcon: Icon(Icons.bar_chart),
-            label: 'Stats',
-          ),
-        ],
+      bottomNavigationBar: SafeArea(
+        child: NavigationBar(
+          selectedIndex: selectedIndex,
+          onDestinationSelected: (index) {
+            ref.read(selectedNavIndexProvider.notifier).state = index;
+          },
+          backgroundColor: isDark ? AppColors.surfaceDark : Colors.white,
+          indicatorColor: AppColors.primaryGreen.withOpacity(0.2),
+          destinations: const [
+            NavigationDestination(
+              icon: Icon(Icons.home_outlined),
+              selectedIcon: Icon(Icons.home),
+              label: 'Home',
+            ),
+            NavigationDestination(
+              icon: Icon(Icons.replay_outlined),
+              selectedIcon: Icon(Icons.replay),
+              label: 'Review',
+            ),
+            NavigationDestination(
+              icon: Icon(Icons.book_outlined),
+              selectedIcon: Icon(Icons.book),
+              label: 'Vocab',
+            ),
+            NavigationDestination(
+              icon: Icon(Icons.bar_chart_outlined),
+              selectedIcon: Icon(Icons.bar_chart),
+              label: 'Stats',
+            ),
+          ],
+        ),
       ),
     );
   }
