@@ -274,6 +274,7 @@ class _TargetDialectPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final isLearningPortuguese = sourceLanguage == 'english';
+    final titleText = isLearningPortuguese ? 'I want to learn...' : 'I speak...';
 
     return Padding(
       padding: const EdgeInsets.all(32),
@@ -281,7 +282,7 @@ class _TargetDialectPage extends StatelessWidget {
         children: [
           const SizedBox(height: 32),
           Text(
-            'I want to learn...',
+            titleText,
             style: TextStyle(
               fontSize: 28,
               fontWeight: FontWeight.bold,
@@ -290,61 +291,34 @@ class _TargetDialectPage extends StatelessWidget {
           ).animate().fadeIn(),
           const SizedBox(height: 8),
           Text(
-            isLearningPortuguese
-                ? 'Choose Portuguese dialect'
-                : 'Choose English',
+            'Choose your dialect',
             style: TextStyle(
               fontSize: 16,
               color: Theme.of(context).colorScheme.onSurfaceVariant,
             ),
           ).animate().fadeIn(delay: 100.ms),
           const SizedBox(height: 48),
-          if (isLearningPortuguese) ...[
-            _LanguageCard(
-              flag: '🇵🇹',
-              name: 'European Portuguese',
-              subtitle: 'Portugal',
-              isSelected: selected == 'pt_PT',
-              onTap: () {
-                HapticService.instance.selection();
-                onSelect('pt_PT');
-              },
-            ).animate().fadeIn(delay: 200.ms).slideX(begin: -0.1),
-            const SizedBox(height: 16),
-            _LanguageCard(
-              flag: '🇧🇷',
-              name: 'Brazilian Portuguese',
-              subtitle: 'Brazil',
-              isSelected: selected == 'pt_BR',
-              onTap: () {
-                HapticService.instance.selection();
-                onSelect('pt_BR');
-              },
-            ).animate().fadeIn(delay: 300.ms).slideX(begin: -0.1),
-          ] else ...[
-            _LanguageCard(
-              flag: '🇺🇸',
-              name: 'American English',
-              subtitle: 'United States',
-              isSelected:
-                  selected == 'pt_PT', // Using pt_PT to mean "from PT to EN"
-              onTap: () {
-                HapticService.instance.selection();
-                onSelect('pt_PT');
-              },
-            ).animate().fadeIn(delay: 200.ms).slideX(begin: -0.1),
-            const SizedBox(height: 16),
-            _LanguageCard(
-              flag: '🇺🇸',
-              name: 'American English',
-              subtitle: 'From Brazilian Portuguese',
-              isSelected: selected == 'pt_BR',
-              onTap: () {
-                HapticService.instance.selection();
-                onSelect('pt_BR');
-              },
-            ).animate().fadeIn(delay: 300.ms).slideX(begin: -0.1),
-          ],
+          _LanguageCard(
+            flag: '🇵🇹',
+            name: 'European Portuguese',
+            subtitle: 'Portugal',
+            isSelected: selected == 'pt_PT',
+            onTap: () {
+              HapticService.instance.selection();
+              onSelect('pt_PT');
+            },
+          ).animate().fadeIn(delay: 200.ms).slideX(begin: -0.1),
+          const SizedBox(height: 16),
+          _LanguageCard(
+            flag: '🇧🇷',
+            name: 'Brazilian Portuguese',
+            subtitle: 'Brazil',
+            isSelected: selected == 'pt_BR',
+            onTap: () {
+              HapticService.instance.selection();
+              onSelect('pt_BR');
+            },
+          ).animate().fadeIn(delay: 300.ms).slideX(begin: -0.1),
         ],
       ),
     );
