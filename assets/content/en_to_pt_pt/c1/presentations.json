@@ -1,0 +1,117 @@
+{
+  "id": "presentations_01",
+  "title": "Formal Presentations",
+  "description": "Learn vocabulary for giving professional presentations",
+  "level": "C1",
+  "language_pair": {
+    "source": "en_US",
+    "target": "pt_PT"
+  },
+  "xp_reward": 30,
+  "order": 10,
+  "icon": "present_to_all",
+  "questions": [
+    {
+      "type": "multiple_choice",
+      "prompt": "How do you start a formal presentation?",
+      "options": ["Bom dia, vou falar sobre...", "Ei, olhem isto...", "Então, o que acham?", "Está bem?"],
+      "correct_index": 0,
+      "explanation": "A formal opening sets a professional tone."
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "What does 'diapositivo' mean?",
+      "options": ["Diagram", "Slide", "Display", "Device"],
+      "correct_index": 1,
+      "explanation": "Diapositivo is a slide (presentation slide)."
+    },
+    {
+      "type": "typing",
+      "prompt": "Write 'conclusion' in Portuguese",
+      "correct_answers": ["Conclusão", "conclusao"],
+      "hint": "End of presentation...",
+      "accent_strict": false
+    },
+    {
+      "type": "matching_pairs",
+      "prompt": "Match the presentation terms",
+      "pairs": [
+        ["Slide", "Diapositivo"],
+        ["Chart", "Gráfico"],
+        ["Summary", "Resumo"],
+        ["Question", "Pergunta"]
+      ]
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "How do you say 'as you can see'?",
+      "options": ["Como podem ver", "O que pensam", "Por outro lado", "Em primeiro lugar"],
+      "correct_index": 0,
+      "explanation": "'Como podem ver' draws attention to visuals."
+    },
+    {
+      "type": "sentence_builder",
+      "prompt": "Build: 'In conclusion, I would like to say'",
+      "words": ["Em", "conclusão", "gostaria", "de", "dizer", "que"],
+      "correct_order": [0, 1, 2, 3, 4],
+      "distractors": ["que"]
+    },
+    {
+      "type": "typing",
+      "prompt": "Write 'overview' in Portuguese",
+      "correct_answers": ["Visão geral", "visao geral", "Panorama", "panorama"],
+      "hint": "General view of a topic...",
+      "accent_strict": false
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "What does 'passando ao próximo ponto' mean?",
+      "options": ["Going to the next point", "Making a point", "Missing the point", "Main point"],
+      "correct_index": 0,
+      "explanation": "This phrase transitions between topics."
+    }
+  ],
+  "cheat_sheet": {
+    "title": "Formal Presentations",
+    "sections": [
+      {
+        "heading": "Structure",
+        "content": [
+          {
+            "type": "vocabulary",
+            "items": [
+              ["Introduction", "Introdução"],
+              ["Overview", "Visão geral"],
+              ["Main points", "Pontos principais"],
+              ["Conclusion", "Conclusão"],
+              ["Questions", "Perguntas"]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Useful Phrases",
+        "content": [
+          {
+            "type": "example",
+            "source": "Vou começar por...",
+            "target": "I'll start by...",
+            "note": "Opening a section"
+          },
+          {
+            "type": "example",
+            "source": "Passando ao próximo ponto...",
+            "target": "Moving to the next point...",
+            "note": "Transitioning"
+          },
+          {
+            "type": "example",
+            "source": "Há alguma pergunta?",
+            "target": "Are there any questions?",
+            "note": "Inviting questions"
+          }
+        ]
+      }
+    ]
+  }
+}

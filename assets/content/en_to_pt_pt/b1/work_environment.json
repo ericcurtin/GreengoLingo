@@ -1,0 +1,120 @@
+{
+  "id": "work_environment_01",
+  "title": "Work Environment",
+  "description": "Learn office and workplace vocabulary",
+  "level": "B1",
+  "language_pair": {
+    "source": "en_US",
+    "target": "pt_PT"
+  },
+  "xp_reward": 20,
+  "order": 7,
+  "icon": "work",
+  "questions": [
+    {
+      "type": "multiple_choice",
+      "prompt": "How do you say 'meeting' in Portuguese?",
+      "options": ["Reunião", "Escritório", "Empresa", "Colega"],
+      "correct_index": 0,
+      "explanation": "Reunião means meeting."
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "What does 'chefe' mean?",
+      "options": ["Colleague", "Boss", "Employee", "Client"],
+      "correct_index": 1,
+      "explanation": "Chefe means boss or chief."
+    },
+    {
+      "type": "typing",
+      "prompt": "Write 'office' in Portuguese",
+      "correct_answers": ["Escritório", "escritorio"],
+      "hint": "Where you work...",
+      "accent_strict": false
+    },
+    {
+      "type": "matching_pairs",
+      "prompt": "Match the workplace terms",
+      "pairs": [
+        ["Meeting", "Reunião"],
+        ["Office", "Escritório"],
+        ["Boss", "Chefe"],
+        ["Colleague", "Colega"]
+      ]
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "How do you say 'deadline'?",
+      "options": ["Prazo", "Salário", "Contrato", "Projeto"],
+      "correct_index": 0,
+      "explanation": "Prazo means deadline or time limit."
+    },
+    {
+      "type": "sentence_builder",
+      "prompt": "Build: 'The meeting is at three o'clock'",
+      "words": ["A", "reunião", "é", "às", "três", "horas"],
+      "correct_order": [0, 1, 2, 3, 4, 5],
+      "distractors": []
+    },
+    {
+      "type": "typing",
+      "prompt": "Write 'salary' in Portuguese",
+      "correct_answers": ["Salário", "salario"],
+      "hint": "Similar to the English word...",
+      "accent_strict": false
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "What does 'despedir' mean?",
+      "options": ["To hire", "To fire/dismiss", "To promote", "To retire"],
+      "correct_index": 1,
+      "explanation": "Despedir means to fire or dismiss from a job."
+    }
+  ],
+  "cheat_sheet": {
+    "title": "Work Environment",
+    "sections": [
+      {
+        "heading": "People at Work",
+        "content": [
+          {
+            "type": "vocabulary",
+            "items": [
+              ["Boss", "Chefe"],
+              ["Colleague", "Colega"],
+              ["Employee", "Empregado/Funcionário"],
+              ["Client", "Cliente"],
+              ["Manager", "Gestor"],
+              ["Director", "Diretor"]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Office Terms",
+        "content": [
+          {
+            "type": "vocabulary",
+            "items": [
+              ["Meeting", "Reunião"],
+              ["Office", "Escritório"],
+              ["Deadline", "Prazo"],
+              ["Project", "Projeto"],
+              ["Contract", "Contrato"],
+              ["Salary", "Salário"]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Tips",
+        "content": [
+          {
+            "type": "tip",
+            "text": "In Portugal, formal workplace language is important. Use 'você' or titles with superiors."
+          }
+        ]
+      }
+    ]
+  }
+}

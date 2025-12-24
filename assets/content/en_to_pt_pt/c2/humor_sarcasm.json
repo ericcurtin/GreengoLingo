@@ -1,0 +1,112 @@
+{
+  "id": "humor_sarcasm_01",
+  "title": "Humor & Irony",
+  "description": "Learn to understand and use humor, irony, and sarcasm",
+  "level": "C2",
+  "language_pair": {
+    "source": "en_US",
+    "target": "pt_PT"
+  },
+  "xp_reward": 35,
+  "order": 8,
+  "icon": "mood",
+  "questions": [
+    {
+      "type": "multiple_choice",
+      "prompt": "What does 'Está bom, está!' typically express?",
+      "options": ["Genuine agreement", "Sarcastic disbelief", "A question", "Anger"],
+      "correct_index": 1,
+      "explanation": "This phrase often expresses ironic disbelief or skepticism."
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "What is 'ironia'?",
+      "options": ["Iron", "Irony", "Anger", "Envy"],
+      "correct_index": 1,
+      "explanation": "Ironia is irony."
+    },
+    {
+      "type": "typing",
+      "prompt": "Write 'joke' in Portuguese",
+      "correct_answers": ["Piada", "piada", "Anedota", "anedota"],
+      "hint": "Something funny...",
+      "accent_strict": false
+    },
+    {
+      "type": "matching_pairs",
+      "prompt": "Match the humor-related terms",
+      "pairs": [
+        ["Joke", "Piada"],
+        ["Irony", "Ironia"],
+        ["Sarcasm", "Sarcasmo"],
+        ["To laugh", "Rir"]
+      ]
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "What does 'Pois, pois...' often convey?",
+      "options": ["Strong agreement", "Polite skepticism", "Excitement", "Sadness"],
+      "correct_index": 1,
+      "explanation": "'Pois, pois' can express polite doubt or half-hearted agreement."
+    },
+    {
+      "type": "sentence_builder",
+      "prompt": "Build: 'That's very funny' (sarcastic)",
+      "words": ["Isso", "é", "muito", "engraçado", "mesmo", "não"],
+      "correct_order": [0, 1, 2, 3],
+      "distractors": ["mesmo", "não"]
+    },
+    {
+      "type": "typing",
+      "prompt": "Write 'to make fun of' in Portuguese",
+      "correct_answers": ["Gozar", "gozar", "Troçar", "trocar"],
+      "hint": "To tease or mock...",
+      "accent_strict": false
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "What does 'Sim, claro!' often express sarcastically?",
+      "options": ["Yes, of course (genuine)", "Yes, right! (disbelief)", "Maybe", "I don't know"],
+      "correct_index": 1,
+      "explanation": "With the right tone, this becomes sarcastic."
+    }
+  ],
+  "cheat_sheet": {
+    "title": "Humor & Irony",
+    "sections": [
+      {
+        "heading": "Vocabulary",
+        "content": [
+          {
+            "type": "vocabulary",
+            "items": [
+              ["Joke", "Piada"],
+              ["Humor", "Humor"],
+              ["Irony", "Ironia"],
+              ["Sarcasm", "Sarcasmo"],
+              ["To laugh", "Rir"],
+              ["Funny", "Engraçado"]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Ironic Expressions",
+        "content": [
+          {
+            "type": "example",
+            "source": "Está bom, está!",
+            "target": "Yeah, right!",
+            "note": "Expresses disbelief"
+          },
+          {
+            "type": "example",
+            "source": "Pois, pois...",
+            "target": "Yeah, yeah...",
+            "note": "Skeptical agreement"
+          }
+        ]
+      }
+    ]
+  }
+}

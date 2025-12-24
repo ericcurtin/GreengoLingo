@@ -1,0 +1,111 @@
+{
+  "id": "politics_01",
+  "title": "Politics & Government",
+  "description": "Learn political vocabulary and discuss current affairs",
+  "level": "B2",
+  "language_pair": {
+    "source": "en_US",
+    "target": "pt_PT"
+  },
+  "xp_reward": 25,
+  "order": 7,
+  "icon": "account_balance",
+  "questions": [
+    {
+      "type": "multiple_choice",
+      "prompt": "How do you say 'government' in Portuguese?",
+      "options": ["Governo", "Parlamento", "Eleições", "Partido"],
+      "correct_index": 0,
+      "explanation": "Governo means government."
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "What does 'deputado' mean?",
+      "options": ["Senator", "Minister", "Deputy/MP", "Mayor"],
+      "correct_index": 2,
+      "explanation": "Deputado is a member of parliament (deputy/MP)."
+    },
+    {
+      "type": "typing",
+      "prompt": "Write 'elections' in Portuguese",
+      "correct_answers": ["Eleições", "eleicoes"],
+      "hint": "Similar to English...",
+      "accent_strict": false
+    },
+    {
+      "type": "matching_pairs",
+      "prompt": "Match the political terms",
+      "pairs": [
+        ["Government", "Governo"],
+        ["Elections", "Eleições"],
+        ["Political party", "Partido político"],
+        ["Law", "Lei"]
+      ]
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "How do you say 'democracy'?",
+      "options": ["Monarquia", "Democracia", "Ditadura", "República"],
+      "correct_index": 1,
+      "explanation": "Democracia means democracy."
+    },
+    {
+      "type": "sentence_builder",
+      "prompt": "Build: 'The elections will be next year'",
+      "words": ["As", "eleições", "serão", "no", "próximo", "ano"],
+      "correct_order": [0, 1, 2, 3, 4, 5],
+      "distractors": []
+    },
+    {
+      "type": "typing",
+      "prompt": "Write 'to vote' in Portuguese",
+      "correct_answers": ["Votar", "votar"],
+      "hint": "Similar to English 'vote'...",
+      "accent_strict": false
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "What does 'primeiro-ministro' mean?",
+      "options": ["President", "Prime Minister", "King", "Minister"],
+      "correct_index": 1,
+      "explanation": "Primeiro-ministro is Prime Minister."
+    }
+  ],
+  "cheat_sheet": {
+    "title": "Politics & Government",
+    "sections": [
+      {
+        "heading": "Government",
+        "content": [
+          {
+            "type": "vocabulary",
+            "items": [
+              ["Government", "Governo"],
+              ["Parliament", "Parlamento"],
+              ["Prime Minister", "Primeiro-ministro"],
+              ["President", "Presidente"],
+              ["Minister", "Ministro"],
+              ["Deputy/MP", "Deputado"]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Politics",
+        "content": [
+          {
+            "type": "vocabulary",
+            "items": [
+              ["Elections", "Eleições"],
+              ["To vote", "Votar"],
+              ["Political party", "Partido político"],
+              ["Democracy", "Democracia"],
+              ["Law", "Lei"],
+              ["Policy", "Política"]
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,112 @@
+{
+  "id": "negotiations_01",
+  "title": "Business Negotiations",
+  "description": "Learn vocabulary for professional negotiations",
+  "level": "C1",
+  "language_pair": {
+    "source": "en_US",
+    "target": "pt_PT"
+  },
+  "xp_reward": 30,
+  "order": 9,
+  "icon": "handshake",
+  "questions": [
+    {
+      "type": "multiple_choice",
+      "prompt": "How do you say 'to negotiate' in Portuguese?",
+      "options": ["Negociar", "Acordar", "Assinar", "Propor"],
+      "correct_index": 0,
+      "explanation": "Negociar means to negotiate."
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "What does 'proposta' mean?",
+      "options": ["Purpose", "Proposal", "Property", "Proportion"],
+      "correct_index": 1,
+      "explanation": "Proposta is a proposal or offer."
+    },
+    {
+      "type": "typing",
+      "prompt": "Write 'agreement' in Portuguese",
+      "correct_answers": ["Acordo", "acordo"],
+      "hint": "When parties agree...",
+      "accent_strict": false
+    },
+    {
+      "type": "matching_pairs",
+      "prompt": "Match the negotiation terms",
+      "pairs": [
+        ["Proposal", "Proposta"],
+        ["Agreement", "Acordo"],
+        ["Terms", "Condições"],
+        ["Compromise", "Compromisso"]
+      ]
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "How do you say 'deal' (business)?",
+      "options": ["Negócio", "Dinheiro", "Empresa", "Lucro"],
+      "correct_index": 0,
+      "explanation": "Negócio means deal or business."
+    },
+    {
+      "type": "sentence_builder",
+      "prompt": "Build: 'We reached an agreement'",
+      "words": ["Chegámos", "a", "um", "acordo", "finalmente", "bom"],
+      "correct_order": [0, 1, 2, 3],
+      "distractors": ["finalmente", "bom"]
+    },
+    {
+      "type": "typing",
+      "prompt": "Write 'deadline' in Portuguese",
+      "correct_answers": ["Prazo", "prazo"],
+      "hint": "Time limit...",
+      "accent_strict": false
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "What does 'cláusula' mean?",
+      "options": ["Clause", "Class", "Close", "Clear"],
+      "correct_index": 0,
+      "explanation": "Cláusula is a clause in a contract."
+    }
+  ],
+  "cheat_sheet": {
+    "title": "Business Negotiations",
+    "sections": [
+      {
+        "heading": "Negotiation Terms",
+        "content": [
+          {
+            "type": "vocabulary",
+            "items": [
+              ["To negotiate", "Negociar"],
+              ["Proposal", "Proposta"],
+              ["Agreement", "Acordo"],
+              ["Terms/Conditions", "Condições"],
+              ["Compromise", "Compromisso"],
+              ["Deal", "Negócio"]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Useful Phrases",
+        "content": [
+          {
+            "type": "example",
+            "source": "Podemos chegar a um acordo",
+            "target": "We can reach an agreement",
+            "note": "Expressing willingness to negotiate"
+          },
+          {
+            "type": "example",
+            "source": "Quais são as suas condições?",
+            "target": "What are your terms?",
+            "note": "Asking about requirements"
+          }
+        ]
+      }
+    ]
+  }
+}

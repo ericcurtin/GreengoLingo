@@ -1,0 +1,120 @@
+{
+  "id": "sports_01",
+  "title": "Sports & Fitness",
+  "description": "Learn sports and fitness vocabulary",
+  "level": "B1",
+  "language_pair": {
+    "source": "en_US",
+    "target": "pt_PT"
+  },
+  "xp_reward": 20,
+  "order": 9,
+  "icon": "sports_soccer",
+  "questions": [
+    {
+      "type": "multiple_choice",
+      "prompt": "How do you say 'football/soccer' in Portuguese?",
+      "options": ["Futebol", "Basquetebol", "Voleibol", "Ténis"],
+      "correct_index": 0,
+      "explanation": "Futebol is football (soccer)."
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "What does 'equipa' mean in Portugal?",
+      "options": ["Equipment", "Team", "Stadium", "Coach"],
+      "correct_index": 1,
+      "explanation": "Equipa is the European Portuguese word for team."
+    },
+    {
+      "type": "typing",
+      "prompt": "Write 'to win' in Portuguese",
+      "correct_answers": ["Ganhar", "ganhar"],
+      "hint": "Opposite of losing...",
+      "accent_strict": false
+    },
+    {
+      "type": "matching_pairs",
+      "prompt": "Match the sports terms",
+      "pairs": [
+        ["Football", "Futebol"],
+        ["Team", "Equipa"],
+        ["Match/Game", "Jogo"],
+        ["To win", "Ganhar"]
+      ]
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "How do you say 'gym' in Portuguese?",
+      "options": ["Piscina", "Ginásio", "Campo", "Pavilhão"],
+      "correct_index": 1,
+      "explanation": "Ginásio is a gym."
+    },
+    {
+      "type": "sentence_builder",
+      "prompt": "Build: 'My team won the match'",
+      "words": ["A", "minha", "equipa", "ganhou", "o", "jogo"],
+      "correct_order": [0, 1, 2, 3, 4, 5],
+      "distractors": []
+    },
+    {
+      "type": "typing",
+      "prompt": "Write 'to train/exercise' in Portuguese",
+      "correct_answers": ["Treinar", "treinar"],
+      "hint": "Related to 'training'...",
+      "accent_strict": false
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "What does 'treinador' mean?",
+      "options": ["Player", "Referee", "Coach", "Fan"],
+      "correct_index": 2,
+      "explanation": "Treinador means coach or trainer."
+    }
+  ],
+  "cheat_sheet": {
+    "title": "Sports & Fitness",
+    "sections": [
+      {
+        "heading": "Sports",
+        "content": [
+          {
+            "type": "vocabulary",
+            "items": [
+              ["Football", "Futebol"],
+              ["Basketball", "Basquetebol"],
+              ["Tennis", "Ténis"],
+              ["Swimming", "Natação"],
+              ["Running", "Corrida"],
+              ["Cycling", "Ciclismo"]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Sports Terms",
+        "content": [
+          {
+            "type": "vocabulary",
+            "items": [
+              ["Team", "Equipa"],
+              ["Match/Game", "Jogo"],
+              ["Coach", "Treinador"],
+              ["Player", "Jogador"],
+              ["To win", "Ganhar"],
+              ["To lose", "Perder"]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Tips",
+        "content": [
+          {
+            "type": "tip",
+            "text": "In Portugal, 'equipa' is used for team. In Brazil, it's 'time' (pronounced CHEE-mee)."
+          }
+        ]
+      }
+    ]
+  }
+}

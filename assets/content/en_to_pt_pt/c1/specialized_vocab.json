@@ -1,0 +1,110 @@
+{
+  "id": "specialized_vocab_01",
+  "title": "Specialized Vocabulary",
+  "description": "Learn technical and specialized terminology",
+  "level": "C1",
+  "language_pair": {
+    "source": "en_US",
+    "target": "pt_PT"
+  },
+  "xp_reward": 30,
+  "order": 7,
+  "icon": "science",
+  "questions": [
+    {
+      "type": "multiple_choice",
+      "prompt": "How do you say 'breakthrough' (scientific) in Portuguese?",
+      "options": ["Avanço", "Recuo", "Descoberta", "Investigação"],
+      "correct_index": 0,
+      "explanation": "Avanço or 'descoberta revolucionária' for breakthrough."
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "What does 'hipótese' mean in scientific context?",
+      "options": ["Theory", "Hypothesis", "Conclusion", "Evidence"],
+      "correct_index": 1,
+      "explanation": "Hipótese is a hypothesis."
+    },
+    {
+      "type": "typing",
+      "prompt": "Write 'research' in Portuguese",
+      "correct_answers": ["Investigação", "investigacao", "Pesquisa", "pesquisa"],
+      "hint": "In Portugal, it's 'investigação'...",
+      "accent_strict": false
+    },
+    {
+      "type": "matching_pairs",
+      "prompt": "Match the scientific terms",
+      "pairs": [
+        ["Research", "Investigação"],
+        ["Theory", "Teoria"],
+        ["Experiment", "Experiência"],
+        ["Data", "Dados"]
+      ]
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "How do you say 'to analyze'?",
+      "options": ["Sintetizar", "Analisar", "Resumir", "Comparar"],
+      "correct_index": 1,
+      "explanation": "Analisar means to analyze."
+    },
+    {
+      "type": "sentence_builder",
+      "prompt": "Build: 'The results confirm the hypothesis'",
+      "words": ["Os", "resultados", "confirmam", "a", "hipótese", "inicial"],
+      "correct_order": [0, 1, 2, 3, 4],
+      "distractors": ["inicial"]
+    },
+    {
+      "type": "typing",
+      "prompt": "Write 'conclusion' in Portuguese",
+      "correct_answers": ["Conclusão", "conclusao"],
+      "hint": "Same root as English...",
+      "accent_strict": false
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "What does 'metodologia' mean?",
+      "options": ["Method", "Methodology", "Myth", "Medicine"],
+      "correct_index": 1,
+      "explanation": "Metodologia is methodology."
+    }
+  ],
+  "cheat_sheet": {
+    "title": "Specialized Vocabulary",
+    "sections": [
+      {
+        "heading": "Scientific Terms",
+        "content": [
+          {
+            "type": "vocabulary",
+            "items": [
+              ["Research", "Investigação"],
+              ["Hypothesis", "Hipótese"],
+              ["Theory", "Teoria"],
+              ["Experiment", "Experiência"],
+              ["Data", "Dados"],
+              ["Conclusion", "Conclusão"]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Academic Verbs",
+        "content": [
+          {
+            "type": "vocabulary",
+            "items": [
+              ["To analyze", "Analisar"],
+              ["To synthesize", "Sintetizar"],
+              ["To evaluate", "Avaliar"],
+              ["To demonstrate", "Demonstrar"],
+              ["To validate", "Validar"]
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

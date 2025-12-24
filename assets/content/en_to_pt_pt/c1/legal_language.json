@@ -1,0 +1,111 @@
+{
+  "id": "legal_language_01",
+  "title": "Legal Language",
+  "description": "Learn formal and legal terminology",
+  "level": "C1",
+  "language_pair": {
+    "source": "en_US",
+    "target": "pt_PT"
+  },
+  "xp_reward": 30,
+  "order": 8,
+  "icon": "gavel",
+  "questions": [
+    {
+      "type": "multiple_choice",
+      "prompt": "How do you say 'contract' in Portuguese?",
+      "options": ["Contrato", "Acordo", "Tratado", "Convenção"],
+      "correct_index": 0,
+      "explanation": "Contrato is a contract."
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "What does 'advogado' mean?",
+      "options": ["Judge", "Lawyer", "Prosecutor", "Witness"],
+      "correct_index": 1,
+      "explanation": "Advogado is a lawyer."
+    },
+    {
+      "type": "typing",
+      "prompt": "Write 'court' (legal) in Portuguese",
+      "correct_answers": ["Tribunal", "tribunal"],
+      "hint": "Where cases are tried...",
+      "accent_strict": false
+    },
+    {
+      "type": "matching_pairs",
+      "prompt": "Match the legal terms",
+      "pairs": [
+        ["Lawyer", "Advogado"],
+        ["Judge", "Juiz"],
+        ["Court", "Tribunal"],
+        ["Law", "Lei"]
+      ]
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "How do you say 'plaintiff'?",
+      "options": ["Réu", "Queixoso", "Testemunha", "Jurado"],
+      "correct_index": 1,
+      "explanation": "Queixoso or 'demandante' is the plaintiff."
+    },
+    {
+      "type": "sentence_builder",
+      "prompt": "Build: 'The defendant was acquitted'",
+      "words": ["O", "réu", "foi", "absolvido", "condenado", "pelo"],
+      "correct_order": [0, 1, 2, 3],
+      "distractors": ["condenado", "pelo"]
+    },
+    {
+      "type": "typing",
+      "prompt": "Write 'evidence' in Portuguese",
+      "correct_answers": ["Prova", "prova", "Provas", "provas"],
+      "hint": "Used in court...",
+      "accent_strict": false
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "What does 'sentença' mean?",
+      "options": ["Sentence (grammar)", "Verdict/Sentence", "Paragraph", "Statement"],
+      "correct_index": 1,
+      "explanation": "Sentença is a verdict or judicial sentence."
+    }
+  ],
+  "cheat_sheet": {
+    "title": "Legal Language",
+    "sections": [
+      {
+        "heading": "Court Personnel",
+        "content": [
+          {
+            "type": "vocabulary",
+            "items": [
+              ["Lawyer", "Advogado"],
+              ["Judge", "Juiz"],
+              ["Prosecutor", "Procurador"],
+              ["Defendant", "Réu"],
+              ["Plaintiff", "Queixoso"],
+              ["Witness", "Testemunha"]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Legal Terms",
+        "content": [
+          {
+            "type": "vocabulary",
+            "items": [
+              ["Court", "Tribunal"],
+              ["Contract", "Contrato"],
+              ["Evidence", "Prova"],
+              ["Verdict", "Sentença"],
+              ["Appeal", "Recurso"],
+              ["Rights", "Direitos"]
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

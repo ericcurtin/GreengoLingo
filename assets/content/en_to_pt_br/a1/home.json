@@ -1,0 +1,104 @@
+{
+  "id": "home_01",
+  "title": "Home & Rooms",
+  "description": "Learn household vocabulary in Brazilian Portuguese",
+  "level": "A1",
+  "language_pair": {
+    "source": "en_US",
+    "target": "pt_BR"
+  },
+  "xp_reward": 10,
+  "order": 10,
+  "icon": "home",
+  "questions": [
+    {
+      "type": "multiple_choice",
+      "prompt": "How do you say 'house' in Portuguese?",
+      "options": ["Casa", "Quarto", "Cozinha", "Sala"],
+      "correct_index": 0,
+      "explanation": "Casa means house or home."
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "What does 'cozinha' mean?",
+      "options": ["Bedroom", "Bathroom", "Kitchen", "Living room"],
+      "correct_index": 2,
+      "explanation": "Cozinha is the kitchen."
+    },
+    {
+      "type": "typing",
+      "prompt": "Write 'bedroom' in Portuguese",
+      "correct_answers": ["Quarto", "quarto"],
+      "hint": "Also means 'room'...",
+      "accent_strict": false
+    },
+    {
+      "type": "matching_pairs",
+      "prompt": "Match the rooms",
+      "pairs": [
+        ["House", "Casa"],
+        ["Kitchen", "Cozinha"],
+        ["Bedroom", "Quarto"],
+        ["Bathroom", "Banheiro"]
+      ]
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "How do you say 'bathroom' in Brazilian Portuguese?",
+      "options": ["Casa de banho", "Banheiro", "Sala de banho", "Lavabo"],
+      "correct_index": 1,
+      "explanation": "Banheiro is bathroom in Brazil (Portugal uses 'casa de banho')."
+    },
+    {
+      "type": "sentence_builder",
+      "prompt": "Build: 'The house is big'",
+      "words": ["A", "casa", "é", "grande", "muito"],
+      "correct_order": [0, 1, 2, 3],
+      "distractors": ["muito"]
+    },
+    {
+      "type": "typing",
+      "prompt": "Write 'garden' in Portuguese",
+      "correct_answers": ["Jardim", "jardim"],
+      "hint": "Starts with 'J'...",
+      "accent_strict": false
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "What does 'janela' mean?",
+      "options": ["Door", "Window", "Floor", "Ceiling"],
+      "correct_index": 1,
+      "explanation": "Janela means window."
+    }
+  ],
+  "cheat_sheet": {
+    "title": "Home Vocabulary",
+    "sections": [
+      {
+        "heading": "Rooms",
+        "content": [
+          {
+            "type": "vocabulary",
+            "items": [
+              ["House", "Casa"],
+              ["Kitchen", "Cozinha"],
+              ["Bedroom", "Quarto"],
+              ["Bathroom", "Banheiro"],
+              ["Living room", "Sala"],
+              ["Garden", "Jardim"]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Tips",
+        "content": [
+          {
+            "type": "tip",
+            "text": "In Brazil, bathroom is 'banheiro'. In Portugal, it's 'casa de banho'."
+          }
+        ]
+      }
+    ]
+  }
+}
