@@ -29,37 +29,37 @@ class MainShell extends ConsumerWidget {
           StatisticsScreen(),
         ],
       ),
-      bottomNavigationBar: SafeArea(
-        child: NavigationBar(
-          selectedIndex: selectedIndex,
-          onDestinationSelected: (index) {
-            ref.read(selectedNavIndexProvider.notifier).state = index;
-          },
-          backgroundColor: isDark ? AppColors.surfaceDark : Colors.white,
-          indicatorColor: AppColors.primaryGreen.withOpacity(0.2),
-          destinations: const [
-            NavigationDestination(
-              icon: Icon(Icons.home_outlined),
-              selectedIcon: Icon(Icons.home),
-              label: 'Home',
-            ),
-            NavigationDestination(
-              icon: Icon(Icons.replay_outlined),
-              selectedIcon: Icon(Icons.replay),
-              label: 'Review',
-            ),
-            NavigationDestination(
-              icon: Icon(Icons.book_outlined),
-              selectedIcon: Icon(Icons.book),
-              label: 'Vocab',
-            ),
-            NavigationDestination(
-              icon: Icon(Icons.bar_chart_outlined),
-              selectedIcon: Icon(Icons.bar_chart),
-              label: 'Stats',
-            ),
-          ],
-        ),
+      bottomNavigationBar: BottomNavigationBar(
+        currentIndex: selectedIndex,
+        onTap: (index) {
+          ref.read(selectedNavIndexProvider.notifier).state = index;
+        },
+        type: BottomNavigationBarType.fixed,
+        backgroundColor: isDark ? AppColors.surfaceDark : Colors.white,
+        selectedItemColor: AppColors.primaryGreen,
+        unselectedItemColor: isDark ? Colors.grey[400] : Colors.grey[600],
+        items: const [
+          BottomNavigationBarItem(
+            icon: Icon(Icons.home_outlined),
+            activeIcon: Icon(Icons.home),
+            label: 'Home',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.replay_outlined),
+            activeIcon: Icon(Icons.replay),
+            label: 'Review',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.book_outlined),
+            activeIcon: Icon(Icons.book),
+            label: 'Vocab',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.bar_chart_outlined),
+            activeIcon: Icon(Icons.bar_chart),
+            label: 'Stats',
+          ),
+        ],
       ),
     );
   }
