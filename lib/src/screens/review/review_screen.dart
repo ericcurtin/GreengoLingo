@@ -6,6 +6,7 @@ import '../../theme/colors.dart';
 import '../../providers/srs_provider.dart';
 import '../../services/haptic_service.dart';
 import 'srs_review_screen.dart';
+import 'quick_practice_screen.dart';
 
 /// Review mode options
 enum ReviewMode {
@@ -23,6 +24,7 @@ class ReviewScreen extends ConsumerWidget {
     final srsState = ref.watch(srsProvider);
     final dueCount = srsState.dueCards.length;
     final weakCount = srsState.weakCards.length;
+    final totalCards = srsState.cards.length;
 
     return Scaffold(
       appBar: AppBar(
@@ -102,18 +104,22 @@ class ReviewScreen extends ConsumerWidget {
               // Random Practice Card
               _ReviewModeCard(
                 title: 'Quick Practice',
-                subtitle: 'Practice random vocabulary from completed lessons',
+                subtitle: totalCards > 0
+                    ? '$totalCards words available to practice'
+                    : 'Complete lessons to add vocabulary',
                 icon: Icons.shuffle_rounded,
                 color: AppColors.levelB1,
-                onTap: () {
-                  HapticService.instance.lightTap();
-                  // TODO: Navigate to quick practice
-                  ScaffoldMessenger.of(context).showSnackBar(
-                    const SnackBar(
-                      content: Text('Coming soon: Quick practice'),
-                    ),
-                  );
-                },
+                count: totalCards > 0 ? totalCards : null,
+                onTap: totalCards > 0
+                    ? () {
+                        HapticService.instance.lightTap();
+                        Navigator.of(context).push(
+                          MaterialPageRoute(
+                            builder: (_) => const QuickPracticeScreen(),
+                          ),
+                        );
+                      }
+                    : null,
               ).animate().fadeIn(delay: 400.ms).slideY(begin: 0.1),
 
               const SizedBox(height: 32),
