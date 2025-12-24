@@ -241,9 +241,10 @@ class HomeScreen extends ConsumerWidget {
         ),
       );
 
-      // Refresh progress after returning
+      // Refresh progress after returning from a completed lesson
+      // This ensures the UI reflects the updated progress
       if (completed == true) {
-        ref.invalidate(progressProvider);
+        await ref.read(progressProvider.notifier).refresh();
       }
     }
   }
