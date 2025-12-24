@@ -31,13 +31,17 @@ class _VocabularyScreenState extends ConsumerState<VocabularyScreen> {
     final filteredItems = vocabState.filteredItems;
     final stats = vocabState.stats;
 
-    return Scaffold(
-      appBar: AppBar(
-        title: const Text('Vocabulary'),
-        backgroundColor: Colors.transparent,
-        elevation: 0,
-      ),
-      body: Column(
+    return SafeArea(
+      bottom: false,
+      child: Column(
+        children: [
+          AppBar(
+            title: const Text('Vocabulary'),
+            backgroundColor: Colors.transparent,
+            elevation: 0,
+          ),
+          Expanded(
+            child: Column(
         children: [
           // Search and filter bar
           Padding(
@@ -164,6 +168,9 @@ class _VocabularyScreenState extends ConsumerState<VocabularyScreen> {
                       ).animate().fadeIn(delay: (50 * index).ms).slideX(begin: 0.05);
                     },
                   ),
+            ),
+          ],
+        ),
           ),
         ],
       ),
