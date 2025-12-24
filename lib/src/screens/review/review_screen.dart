@@ -26,22 +26,19 @@ class ReviewScreen extends ConsumerWidget {
     final weakCount = srsState.weakCards.length;
     final totalCards = srsState.cards.length;
 
-    return SafeArea(
-      bottom: false,
-      child: CustomScrollView(
-        slivers: [
-          SliverAppBar(
-            floating: true,
-            title: const Text('Review'),
-            backgroundColor: Theme.of(context).scaffoldBackgroundColor,
-            elevation: 0,
-          ),
-          SliverToBoxAdapter(
-            child: Padding(
-              padding: const EdgeInsets.all(16),
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
+    return Scaffold(
+      primary: false,
+      appBar: AppBar(
+        title: const Text('Review'),
+        backgroundColor: Colors.transparent,
+        elevation: 0,
+      ),
+      body: SafeArea(
+        child: SingleChildScrollView(
+          padding: const EdgeInsets.all(16),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
               // Header
               Text(
                 'Practice & Review',
@@ -167,11 +164,9 @@ class ReviewScreen extends ConsumerWidget {
                   ),
                 ],
               ).animate().fadeIn(delay: 600.ms).slideY(begin: 0.1),
-              ],
-            ),
+            ],
           ),
         ),
-        ],
       ),
     );
   }
