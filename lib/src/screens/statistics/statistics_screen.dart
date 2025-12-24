@@ -28,20 +28,16 @@ class _StatisticsScreenState extends ConsumerState<StatisticsScreen> {
     final xpInfo = ref.watch(xpInfoProvider);
     final streakInfo = ref.watch(streakInfoProvider);
 
-    return SafeArea(
-      bottom: false,
-      child: CustomScrollView(
-        slivers: [
-          SliverAppBar(
-            floating: true,
-            title: const Text('Statistics'),
-            backgroundColor: Theme.of(context).scaffoldBackgroundColor,
-            elevation: 0,
-          ),
-          SliverToBoxAdapter(
-            child: Padding(
-              padding: const EdgeInsets.all(16),
-              child: Column(
+    return Scaffold(
+      primary: false,
+      appBar: AppBar(
+        title: const Text('Statistics'),
+        backgroundColor: Colors.transparent,
+        elevation: 0,
+      ),
+      body: SingleChildScrollView(
+        padding: const EdgeInsets.all(16),
+        child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             // Header stats
@@ -216,11 +212,8 @@ class _StatisticsScreenState extends ConsumerState<StatisticsScreen> {
             ).animate().fadeIn(delay: 600.ms).slideY(begin: 0.1),
 
             const SizedBox(height: 24),
-              ],
-            ),
-          ),
+          ],
         ),
-        ],
       ),
     );
   }
