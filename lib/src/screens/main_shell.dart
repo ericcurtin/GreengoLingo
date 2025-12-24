@@ -19,60 +19,48 @@ class MainShell extends ConsumerWidget {
     final selectedIndex = ref.watch(selectedNavIndexProvider);
     final isDark = Theme.of(context).brightness == Brightness.dark;
 
-    return Column(
-      children: [
-        Expanded(
-          child: IndexedStack(
-            index: selectedIndex,
-            children: const [
-              HomeScreen(),
-              ReviewScreen(),
-              VocabularyScreen(),
-              StatisticsScreen(),
-            ],
+    return Scaffold(
+      body: IndexedStack(
+        index: selectedIndex,
+        children: const [
+          HomeScreen(),
+          ReviewScreen(),
+          VocabularyScreen(),
+          StatisticsScreen(),
+        ],
+      ),
+      bottomNavigationBar: BottomNavigationBar(
+        currentIndex: selectedIndex,
+        onTap: (index) {
+          ref.read(selectedNavIndexProvider.notifier).state = index;
+        },
+        type: BottomNavigationBarType.fixed,
+        backgroundColor: isDark ? AppColors.surfaceDark : Colors.white,
+        selectedItemColor: AppColors.primaryGreen,
+        unselectedItemColor: isDark ? Colors.grey[400] : Colors.grey[600],
+        items: const [
+          BottomNavigationBarItem(
+            icon: Icon(Icons.home_outlined),
+            activeIcon: Icon(Icons.home),
+            label: 'Home',
           ),
-        ),
-        Material(
-          color: isDark ? AppColors.surfaceDark : Colors.white,
-          elevation: 8,
-          child: SafeArea(
-            top: false,
-            child: BottomNavigationBar(
-              currentIndex: selectedIndex,
-              onTap: (index) {
-                ref.read(selectedNavIndexProvider.notifier).state = index;
-              },
-              type: BottomNavigationBarType.fixed,
-              backgroundColor: isDark ? AppColors.surfaceDark : Colors.white,
-              selectedItemColor: AppColors.primaryGreen,
-              unselectedItemColor: isDark ? Colors.grey[400] : Colors.grey[600],
-              elevation: 0,
-              items: const [
-                BottomNavigationBarItem(
-                  icon: Icon(Icons.home_outlined),
-                  activeIcon: Icon(Icons.home),
-                  label: 'Home',
-                ),
-                BottomNavigationBarItem(
-                  icon: Icon(Icons.replay_outlined),
-                  activeIcon: Icon(Icons.replay),
-                  label: 'Review',
-                ),
-                BottomNavigationBarItem(
-                  icon: Icon(Icons.book_outlined),
-                  activeIcon: Icon(Icons.book),
-                  label: 'Vocab',
-                ),
-                BottomNavigationBarItem(
-                  icon: Icon(Icons.bar_chart_outlined),
-                  activeIcon: Icon(Icons.bar_chart),
-                  label: 'Stats',
-                ),
-              ],
-            ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.replay_outlined),
+            activeIcon: Icon(Icons.replay),
+            label: 'Review',
           ),
-        ),
-      ],
+          BottomNavigationBarItem(
+            icon: Icon(Icons.book_outlined),
+            activeIcon: Icon(Icons.book),
+            label: 'Vocab',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.bar_chart_outlined),
+            activeIcon: Icon(Icons.bar_chart),
+            label: 'Stats',
+          ),
+        ],
+      ),
     );
   }
 }

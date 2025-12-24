@@ -22,9 +22,9 @@ class HomeScreen extends ConsumerWidget {
     final streakInfo = ref.watch(streakInfoProvider);
     final progressAsync = ref.watch(progressProvider);
 
-    return Scaffold(
-      body: SafeArea(
-        child: CustomScrollView(
+    return SafeArea(
+      bottom: false,
+      child: CustomScrollView(
           slivers: [
             // App Bar
             SliverAppBar(
@@ -206,7 +206,6 @@ class HomeScreen extends ConsumerWidget {
             ),
           ],
         ),
-      ),
     );
   }
 
