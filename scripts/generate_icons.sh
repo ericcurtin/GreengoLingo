@@ -34,11 +34,8 @@ else
             echo "Error: ImageMagick not found and logo download failed."
             exit 1
         fi
-        # Generate a simple green placeholder icon with "GL" text
-        $CONVERT -size 1024x1024 xc:"#58CC02" \
-            -gravity center -pointsize 400 -fill white \
-            -font Helvetica-Bold -annotate 0 "GL" \
-            "$TEMP_DIR/logo.png"
+        # Generate a simple green placeholder icon
+        $CONVERT -size 1024x1024 xc:"#58CC02" "$TEMP_DIR/logo.png"
     fi
 fi
 
