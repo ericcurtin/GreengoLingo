@@ -13,6 +13,14 @@ use crate::models::{
     TypingMode,
 };
 use crate::progress::{LessonCompletionResult, ProgressStats, ProgressTracker};
+use crate::srs::{
+    SRSCard, SRSCardStats, SRSScheduler, SRSUpdate, VocabularyBank, VocabularyCategory,
+    VocabularyItem, VocabularyStats,
+};
+use crate::statistics::{
+    DailyStats, LearningAnalytics, LearningVelocity, LifetimeStats, MonthlySummary,
+    StatisticsTracker, StudyPatternAnalysis, WeakArea, WeeklySummary,
+};
 use serde::{Deserialize, Serialize};
 use std::collections::HashMap;
 
@@ -557,4 +565,340 @@ pub fn serialize_user_settings(settings: &UserSettings) -> Result<String, String
 /// Deserialize user settings from JSON
 pub fn deserialize_user_settings(json: String) -> Result<UserSettings, String> {
     serde_json::from_str(&json).map_err(|e| e.to_string())
+}
+
+// ============================================================================
+// SRS (Spaced Repetition System) API
+// ============================================================================
+
+/// Create a new SRS card
+#[flutter_rust_bridge::frb(sync)]
+pub fn create_srs_card(
+    word_id: String,
+    source_word: String,
+    target_word: String,
+    language_pair: String,
+    level: String,
+    lesson_id: String,
+    current_date: String,
+) -> SRSCard {
+    SRSCard::new(
+        word_id,
+        source_word,
+        target_word,
+        language_pair,
+        level,
+        lesson_id,
+        &current_date,
+    )
+}
+
+/// Create SRS card with full details
+#[allow(clippy::too_many_arguments)]
+#[flutter_rust_bridge::frb(sync)]
+pub fn create_srs_card_with_details(
+    word_id: String,
+    source_word: String,
+    target_word: String,
+    language_pair: String,
+    level: String,
+    lesson_id: String,
+    pronunciation: Option<String>,
+    example_sentence: Option<String>,
+    current_date: String,
+) -> SRSCard {
+    SRSCard::with_details(
+        word_id,
+        source_word,
+        target_word,
+        language_pair,
+        level,
+        lesson_id,
+        pronunciation,
+        example_sentence,
+        &current_date,
+    )
+}
+
+/// Calculate next review for an SRS card
+#[flutter_rust_bridge::frb(sync)]
+pub fn calculate_srs_review(card: &SRSCard, quality: u8, current_date: String) -> SRSUpdate {
+    SRSScheduler::calculate_next_review(card, quality, &current_date)
+}
+
+/// Apply SRS update to a card
+#[flutter_rust_bridge::frb(sync)]
+pub fn apply_srs_update(card: &mut SRSCard, update: &SRSUpdate, current_date: String) {
+    SRSScheduler::apply_update(card, update, &current_date);
+}
+
+/// Check if SRS card is due for review
+#[flutter_rust_bridge::frb(sync)]
+pub fn is_srs_card_due(card: &SRSCard, current_date: String) -> bool {
+    card.is_due(&current_date)
+}
+
+/// Get SRS card mastery level
+#[flutter_rust_bridge::frb(sync)]
+pub fn get_srs_mastery_level(card: &SRSCard) -> SRSMasteryInfo {
+    let level = card.mastery_level();
+    SRSMasteryInfo {
+        level: format!("{:?}", level),
+        name: level.display_name().to_string(),
+        color: level.color().to_string(),
+    }
+}
+
+/// Calculate SRS card statistics
+#[flutter_rust_bridge::frb(sync)]
+pub fn calculate_srs_stats(cards: Vec<SRSCard>, current_date: String) -> SRSCardStats {
+    SRSCardStats::from_cards(&cards, &current_date)
+}
+
+/// Serialize SRS cards to JSON
+pub fn serialize_srs_cards(cards: &[SRSCard]) -> Result<String, String> {
+    serde_json::to_string(cards).map_err(|e| e.to_string())
+}
+
+/// Deserialize SRS cards from JSON
+pub fn deserialize_srs_cards(json: String) -> Result<Vec<SRSCard>, String> {
+    serde_json::from_str(&json).map_err(|e| e.to_string())
+}
+
+// ============================================================================
+// Vocabulary Bank API
+// ============================================================================
+
+/// Create a new vocabulary bank
+#[flutter_rust_bridge::frb(sync)]
+pub fn create_vocabulary_bank() -> VocabularyBank {
+    VocabularyBank::new()
+}
+
+/// Create a vocabulary item
+#[allow(clippy::too_many_arguments)]
+#[flutter_rust_bridge::frb(sync)]
+pub fn create_vocabulary_item(
+    id: String,
+    source: String,
+    target: String,
+    lesson_id: String,
+    level: String,
+    language_pair: String,
+    category: String,
+    current_date: String,
+) -> VocabularyItem {
+    let cat = match category.as_str() {
+        "noun" => VocabularyCategory::Noun,
+        "verb" => VocabularyCategory::Verb,
+        "adjective" => VocabularyCategory::Adjective,
+        "adverb" => VocabularyCategory::Adverb,
+        "pronoun" => VocabularyCategory::Pronoun,
+        "preposition" => VocabularyCategory::Preposition,
+        "conjunction" => VocabularyCategory::Conjunction,
+        "interjection" => VocabularyCategory::Interjection,
+        "phrase" => VocabularyCategory::Phrase,
+        "expression" => VocabularyCategory::Expression,
+        "idiom" => VocabularyCategory::Idiom,
+        "grammar" => VocabularyCategory::Grammar,
+        _ => VocabularyCategory::Other,
+    };
+    VocabularyItem::new(
+        id,
+        source,
+        target,
+        lesson_id,
+        level,
+        language_pair,
+        cat,
+        &current_date,
+    )
+}
+
+/// Add item to vocabulary bank
+#[flutter_rust_bridge::frb(sync)]
+pub fn add_to_vocabulary_bank(bank: &mut VocabularyBank, item: VocabularyItem) {
+    bank.add(item);
+}
+
+/// Search vocabulary bank
+#[flutter_rust_bridge::frb(sync)]
+pub fn search_vocabulary(
+    bank: &VocabularyBank,
+    query: String,
+    limit: Option<usize>,
+) -> Vec<VocabularyItem> {
+    bank.search(&query, limit).into_iter().cloned().collect()
+}
+
+/// Get vocabulary statistics
+#[flutter_rust_bridge::frb(sync)]
+pub fn get_vocabulary_stats(bank: &VocabularyBank) -> VocabularyStats {
+    bank.stats()
+}
+
+/// Serialize vocabulary bank to JSON
+pub fn serialize_vocabulary_bank(bank: &VocabularyBank) -> Result<String, String> {
+    serde_json::to_string(bank).map_err(|e| e.to_string())
+}
+
+/// Deserialize vocabulary bank from JSON
+pub fn deserialize_vocabulary_bank(json: String) -> Result<VocabularyBank, String> {
+    serde_json::from_str(&json).map_err(|e| e.to_string())
+}
+
+// ============================================================================
+// Statistics API
+// ============================================================================
+
+/// Create a new statistics tracker
+#[flutter_rust_bridge::frb(sync)]
+pub fn create_statistics_tracker() -> StatisticsTracker {
+    StatisticsTracker::new()
+}
+
+/// Record lesson completion in statistics
+#[flutter_rust_bridge::frb(sync)]
+pub fn record_lesson_stats(
+    tracker: &mut StatisticsTracker,
+    date: String,
+    xp: u32,
+    questions: u32,
+    correct: u32,
+    time_seconds: u32,
+    level: String,
+) {
+    tracker.record_lesson_completion(&date, xp, questions, correct, time_seconds, &level);
+}
+
+/// Record question answer in statistics
+#[flutter_rust_bridge::frb(sync)]
+pub fn record_question_stats(
+    tracker: &mut StatisticsTracker,
+    date: String,
+    question_type: String,
+    correct: bool,
+) {
+    tracker.record_question(&date, &question_type, correct);
+}
+
+/// Record SRS review in statistics
+#[flutter_rust_bridge::frb(sync)]
+pub fn record_srs_review_stats(tracker: &mut StatisticsTracker, date: String, correct: bool) {
+    tracker.record_srs_review(&date, correct);
+}
+
+/// Record words learned in statistics
+#[flutter_rust_bridge::frb(sync)]
+pub fn record_words_learned_stats(tracker: &mut StatisticsTracker, date: String, count: u32) {
+    tracker.record_words_learned(&date, count);
+}
+
+/// Get daily stats for a date
+#[flutter_rust_bridge::frb(sync)]
+pub fn get_daily_stats(tracker: &StatisticsTracker, date: String) -> Option<DailyStats> {
+    tracker.get_daily(&date).cloned()
+}
+
+/// Get lifetime stats
+#[flutter_rust_bridge::frb(sync)]
+pub fn get_lifetime_stats(tracker: &StatisticsTracker) -> LifetimeStats {
+    tracker.lifetime.clone()
+}
+
+/// Get XP trend for last N days
+#[flutter_rust_bridge::frb(sync)]
+pub fn get_xp_trend(tracker: &StatisticsTracker, days: usize) -> Vec<XPTrendPoint> {
+    tracker
+        .xp_trend(days)
+        .into_iter()
+        .map(|(date, xp)| XPTrendPoint { date, xp })
+        .collect()
+}
+
+/// Get accuracy trend for last N days
+#[flutter_rust_bridge::frb(sync)]
+pub fn get_accuracy_trend(tracker: &StatisticsTracker, days: usize) -> Vec<AccuracyTrendPoint> {
+    tracker
+        .accuracy_trend(days)
+        .into_iter()
+        .map(|(date, accuracy)| AccuracyTrendPoint { date, accuracy })
+        .collect()
+}
+
+/// Calculate learning velocity
+#[flutter_rust_bridge::frb(sync)]
+pub fn calculate_learning_velocity(tracker: &StatisticsTracker, days: usize) -> LearningVelocity {
+    LearningAnalytics::calculate_velocity(tracker, days)
+}
+
+/// Identify weak areas
+#[flutter_rust_bridge::frb(sync)]
+pub fn identify_weak_areas(
+    tracker: &StatisticsTracker,
+    accuracy_threshold: f32,
+    min_attempts: u32,
+) -> Vec<WeakArea> {
+    LearningAnalytics::identify_weak_areas(tracker, accuracy_threshold, min_attempts)
+}
+
+/// Analyze study patterns
+#[flutter_rust_bridge::frb(sync)]
+pub fn analyze_study_patterns(tracker: &StatisticsTracker) -> StudyPatternAnalysis {
+    LearningAnalytics::analyze_study_patterns(tracker)
+}
+
+/// Generate weekly summary
+pub fn generate_weekly_summary(
+    tracker: &StatisticsTracker,
+    week_start: String,
+    week_end: String,
+    streak_maintained: bool,
+) -> WeeklySummary {
+    WeeklySummary::generate(tracker, &week_start, &week_end, None, streak_maintained)
+}
+
+/// Generate monthly summary
+pub fn generate_monthly_summary(
+    tracker: &StatisticsTracker,
+    year: u32,
+    month: u32,
+) -> MonthlySummary {
+    MonthlySummary::generate(tracker, year, month, None)
+}
+
+/// Serialize statistics tracker to JSON
+pub fn serialize_statistics_tracker(tracker: &StatisticsTracker) -> Result<String, String> {
+    serde_json::to_string(tracker).map_err(|e| e.to_string())
+}
+
+/// Deserialize statistics tracker from JSON
+pub fn deserialize_statistics_tracker(json: String) -> Result<StatisticsTracker, String> {
+    serde_json::from_str(&json).map_err(|e| e.to_string())
+}
+
+// ============================================================================
+// Additional DTOs for new features
+// ============================================================================
+
+/// SRS mastery level info
+#[derive(Debug, Clone, Serialize, Deserialize)]
+pub struct SRSMasteryInfo {
+    pub level: String,
+    pub name: String,
+    pub color: String,
+}
+
+/// XP trend data point
+#[derive(Debug, Clone, Serialize, Deserialize)]
+pub struct XPTrendPoint {
+    pub date: String,
+    pub xp: u32,
+}
+
+/// Accuracy trend data point
+#[derive(Debug, Clone, Serialize, Deserialize)]
+pub struct AccuracyTrendPoint {
+    pub date: String,
+    pub accuracy: f32,
 }

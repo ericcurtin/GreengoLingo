@@ -1,0 +1,118 @@
+{
+  "id": "opinions_01",
+  "title": "Expressing Opinions",
+  "description": "Learn to express and discuss opinions",
+  "level": "B1",
+  "language_pair": {
+    "source": "en_US",
+    "target": "pt_PT"
+  },
+  "xp_reward": 20,
+  "order": 10,
+  "icon": "chat",
+  "questions": [
+    {
+      "type": "multiple_choice",
+      "prompt": "How do you say 'I think that...'?",
+      "options": ["Acho que...", "Sei que...", "Quero que...", "Digo que..."],
+      "correct_index": 0,
+      "explanation": "'Acho que' is a common way to express an opinion."
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "What does 'concordo' mean?",
+      "options": ["I disagree", "I agree", "I think", "I believe"],
+      "correct_index": 1,
+      "explanation": "Concordo means 'I agree'."
+    },
+    {
+      "type": "typing",
+      "prompt": "Write 'In my opinion' in Portuguese",
+      "correct_answers": ["Na minha opinião", "na minha opiniao"],
+      "hint": "Literally 'in my opinion'...",
+      "accent_strict": false
+    },
+    {
+      "type": "matching_pairs",
+      "prompt": "Match the opinion phrases",
+      "pairs": [
+        ["I think", "Acho"],
+        ["I agree", "Concordo"],
+        ["I disagree", "Discordo"],
+        ["In my opinion", "Na minha opinião"]
+      ]
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "How do you say 'I completely agree'?",
+      "options": ["Concordo completamente", "Discordo totalmente", "Não sei", "Talvez"],
+      "correct_index": 0,
+      "explanation": "Completamente adds emphasis to agreement."
+    },
+    {
+      "type": "sentence_builder",
+      "prompt": "Build: 'I think it's a good idea'",
+      "words": ["Acho", "que", "é", "uma", "boa", "ideia"],
+      "correct_order": [0, 1, 2, 3, 4, 5],
+      "distractors": []
+    },
+    {
+      "type": "typing",
+      "prompt": "Write 'I believe' in Portuguese",
+      "correct_answers": ["Acredito", "acredito", "Creio", "creio"],
+      "hint": "Related to 'credible'...",
+      "accent_strict": false
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "What does 'Pois, mas...' typically introduce?",
+      "options": ["Strong agreement", "A counterargument", "A question", "A greeting"],
+      "correct_index": 1,
+      "explanation": "'Pois, mas...' means 'Yes, but...' introducing a different view."
+    }
+  ],
+  "cheat_sheet": {
+    "title": "Expressing Opinions",
+    "sections": [
+      {
+        "heading": "Giving Opinions",
+        "content": [
+          {
+            "type": "vocabulary",
+            "items": [
+              ["I think that", "Acho que"],
+              ["In my opinion", "Na minha opinião"],
+              ["I believe", "Acredito/Creio"],
+              ["It seems to me", "Parece-me que"],
+              ["According to me", "Para mim"]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Agreeing & Disagreeing",
+        "content": [
+          {
+            "type": "vocabulary",
+            "items": [
+              ["I agree", "Concordo"],
+              ["I disagree", "Discordo"],
+              ["Exactly!", "Exatamente!"],
+              ["That's true", "É verdade"],
+              ["I don't think so", "Não acho"]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Tips",
+        "content": [
+          {
+            "type": "tip",
+            "text": "Use 'Acho que' for casual opinions and 'Na minha opinião' for more formal contexts."
+          }
+        ]
+      }
+    ]
+  }
+}

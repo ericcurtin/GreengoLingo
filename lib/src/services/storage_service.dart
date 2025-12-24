@@ -9,10 +9,16 @@ class StorageService {
   static const String _settingsBox = 'settings';
   static const String _progressBox = 'progress';
   static const String _gamificationBox = 'gamification';
+  static const String _srsBox = 'srs';
+  static const String _vocabularyBox = 'vocabulary';
+  static const String _statisticsBox = 'statistics';
 
   late Box<String> _settings;
   late Box<String> _progress;
   late Box<String> _gamification;
+  late Box<String> _srs;
+  late Box<String> _vocabulary;
+  late Box<String> _statistics;
 
   bool _initialized = false;
 
@@ -23,6 +29,9 @@ class StorageService {
     _settings = await Hive.openBox<String>(_settingsBox);
     _progress = await Hive.openBox<String>(_progressBox);
     _gamification = await Hive.openBox<String>(_gamificationBox);
+    _srs = await Hive.openBox<String>(_srsBox);
+    _vocabulary = await Hive.openBox<String>(_vocabularyBox);
+    _statistics = await Hive.openBox<String>(_statisticsBox);
 
     _initialized = true;
   }
@@ -171,6 +180,98 @@ class StorageService {
   }
 
   // ============================================================================
+  // SRS (Spaced Repetition System)
+  // ============================================================================
+
+  /// Save SRS cards JSON for a language pair
+  Future<void> saveSRSCards(String languagePairCode, String json) async {
+    await _srs.put('cards_$languagePairCode', json);
+  }
+
+  /// Load SRS cards JSON for a language pair
+  String? loadSRSCards(String languagePairCode) {
+    return _srs.get('cards_$languagePairCode');
+  }
+
+  /// Save all SRS cards JSON (global)
+  Future<void> saveAllSRSCards(String json) async {
+    await _srs.put('all_cards', json);
+  }
+
+  /// Load all SRS cards JSON
+  String? loadAllSRSCards() {
+    return _srs.get('all_cards');
+  }
+
+  // ============================================================================
+  // Vocabulary Bank
+  // ============================================================================
+
+  /// Save vocabulary bank JSON for a language pair
+  Future<void> saveVocabularyBank(String languagePairCode, String json) async {
+    await _vocabulary.put('bank_$languagePairCode', json);
+  }
+
+  /// Load vocabulary bank JSON for a language pair
+  String? loadVocabularyBank(String languagePairCode) {
+    return _vocabulary.get('bank_$languagePairCode');
+  }
+
+  /// Save all vocabulary JSON (global)
+  Future<void> saveAllVocabulary(String json) async {
+    await _vocabulary.put('all_vocabulary', json);
+  }
+
+  /// Load all vocabulary JSON
+  String? loadAllVocabulary() {
+    return _vocabulary.get('all_vocabulary');
+  }
+
+  // ============================================================================
+  // Statistics
+  // ============================================================================
+
+  /// Save statistics tracker JSON
+  Future<void> saveStatisticsTracker(String json) async {
+    await _statistics.put('tracker', json);
+  }
+
+  /// Load statistics tracker JSON
+  String? loadStatisticsTracker() {
+    return _statistics.get('tracker');
+  }
+
+  /// Save daily stats for a specific date
+  Future<void> saveDailyStats(String date, String json) async {
+    await _statistics.put('daily_$date', json);
+  }
+
+  /// Load daily stats for a specific date
+  String? loadDailyStats(String date) {
+    return _statistics.get('daily_$date');
+  }
+
+  /// Save weekly summary
+  Future<void> saveWeeklySummary(String weekStart, String json) async {
+    await _statistics.put('weekly_$weekStart', json);
+  }
+
+  /// Load weekly summary
+  String? loadWeeklySummary(String weekStart) {
+    return _statistics.get('weekly_$weekStart');
+  }
+
+  /// Save monthly summary
+  Future<void> saveMonthlySummary(int year, int month, String json) async {
+    await _statistics.put('monthly_${year}_$month', json);
+  }
+
+  /// Load monthly summary
+  String? loadMonthlySummary(int year, int month) {
+    return _statistics.get('monthly_${year}_$month');
+  }
+
+  // ============================================================================
   // Utility
   // ============================================================================
 
@@ -179,11 +280,17 @@ class StorageService {
     await _settings.clear();
     await _progress.clear();
     await _gamification.clear();
+    await _srs.clear();
+    await _vocabulary.clear();
+    await _statistics.clear();
   }
 
   /// Clear only progress (keep settings)
   Future<void> clearProgress() async {
     await _progress.clear();
     await _gamification.clear();
+    await _srs.clear();
+    await _vocabulary.clear();
+    await _statistics.clear();
   }
 }

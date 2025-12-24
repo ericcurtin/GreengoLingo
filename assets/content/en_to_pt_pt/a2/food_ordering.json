@@ -1,0 +1,121 @@
+{
+  "id": "food_ordering_01",
+  "title": "Restaurant Ordering",
+  "description": "Learn to order food at a restaurant",
+  "level": "A2",
+  "language_pair": {
+    "source": "en_US",
+    "target": "pt_PT"
+  },
+  "xp_reward": 15,
+  "order": 8,
+  "icon": "restaurant_menu",
+  "questions": [
+    {
+      "type": "multiple_choice",
+      "prompt": "How do you say 'I would like' in Portuguese?",
+      "options": ["Eu queria", "Eu tenho", "Eu sou", "Eu vou"],
+      "correct_index": 0,
+      "explanation": "'Queria' is a polite way to say 'I would like'."
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "What does 'a conta, por favor' mean?",
+      "options": ["The menu, please", "The bill, please", "More water, please", "A table, please"],
+      "correct_index": 1,
+      "explanation": "A conta is the bill or check at a restaurant."
+    },
+    {
+      "type": "typing",
+      "prompt": "Write 'menu' in Portuguese",
+      "correct_answers": ["Ementa", "ementa", "Menu", "menu"],
+      "hint": "In Portugal it's called 'ementa'...",
+      "accent_strict": false
+    },
+    {
+      "type": "matching_pairs",
+      "prompt": "Match the restaurant phrases",
+      "pairs": [
+        ["The bill", "A conta"],
+        ["A table for two", "Uma mesa para dois"],
+        ["The menu", "A ementa"],
+        ["I would like", "Queria"]
+      ]
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "How do you ask for a recommendation?",
+      "options": ["O que recomenda?", "Onde fica?", "Que horas são?", "Como está?"],
+      "correct_index": 0,
+      "explanation": "'O que recomenda?' means 'What do you recommend?'"
+    },
+    {
+      "type": "sentence_builder",
+      "prompt": "Build: 'I would like a glass of wine'",
+      "words": ["Queria", "um", "copo", "de", "vinho", "branco"],
+      "correct_order": [0, 1, 2, 3, 4],
+      "distractors": ["branco"]
+    },
+    {
+      "type": "typing",
+      "prompt": "Write 'waiter' in Portuguese",
+      "correct_answers": ["Empregado", "empregado"],
+      "hint": "Used to call the server...",
+      "accent_strict": false
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "What does 'Está incluído o serviço?' mean?",
+      "options": ["Is the tip included?", "Is it spicy?", "Is it vegetarian?", "Is it ready?"],
+      "correct_index": 0,
+      "explanation": "This asks if service/tip is included in the bill."
+    }
+  ],
+  "cheat_sheet": {
+    "title": "Restaurant Vocabulary",
+    "sections": [
+      {
+        "heading": "Ordering",
+        "content": [
+          {
+            "type": "vocabulary",
+            "items": [
+              ["I would like", "Queria"],
+              ["The menu", "A ementa"],
+              ["The bill", "A conta"],
+              ["A table for...", "Uma mesa para..."],
+              ["To order", "Pedir"],
+              ["Waiter", "Empregado"]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Useful Phrases",
+        "content": [
+          {
+            "type": "example",
+            "source": "O que recomenda?",
+            "target": "What do you recommend?",
+            "note": "Polite way to ask for suggestions"
+          },
+          {
+            "type": "example",
+            "source": "Mais pão, por favor",
+            "target": "More bread, please",
+            "note": "Asking for more of something"
+          }
+        ]
+      },
+      {
+        "heading": "Tips",
+        "content": [
+          {
+            "type": "tip",
+            "text": "In Portugal, tipping is appreciated but not mandatory. 5-10% is common."
+          }
+        ]
+      }
+    ]
+  }
+}

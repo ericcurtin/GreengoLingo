@@ -1,0 +1,119 @@
+{
+  "id": "technology_01",
+  "title": "Technology",
+  "description": "Learn technology and digital vocabulary",
+  "level": "B1",
+  "language_pair": {
+    "source": "en_US",
+    "target": "pt_PT"
+  },
+  "xp_reward": 20,
+  "order": 8,
+  "icon": "computer",
+  "questions": [
+    {
+      "type": "multiple_choice",
+      "prompt": "How do you say 'computer' in Portuguese?",
+      "options": ["Computador", "Telemóvel", "Ecrã", "Teclado"],
+      "correct_index": 0,
+      "explanation": "Computador means computer."
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "What does 'telemóvel' mean in Portugal?",
+      "options": ["Television", "Mobile phone", "Remote control", "Tablet"],
+      "correct_index": 1,
+      "explanation": "Telemóvel is the European Portuguese word for mobile phone."
+    },
+    {
+      "type": "typing",
+      "prompt": "Write 'screen' in Portuguese (European)",
+      "correct_answers": ["Ecrã", "ecra"],
+      "hint": "Different from Brazilian Portuguese...",
+      "accent_strict": false
+    },
+    {
+      "type": "matching_pairs",
+      "prompt": "Match the technology terms",
+      "pairs": [
+        ["Computer", "Computador"],
+        ["Mobile phone", "Telemóvel"],
+        ["Screen", "Ecrã"],
+        ["Keyboard", "Teclado"]
+      ]
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "How do you say 'to download'?",
+      "options": ["Carregar", "Descarregar", "Enviar", "Apagar"],
+      "correct_index": 1,
+      "explanation": "Descarregar means to download. 'Carregar' is to upload."
+    },
+    {
+      "type": "sentence_builder",
+      "prompt": "Build: 'I need to charge my phone'",
+      "words": ["Preciso", "de", "carregar", "o", "telemóvel", "meu"],
+      "correct_order": [0, 1, 2, 3, 5, 4],
+      "distractors": []
+    },
+    {
+      "type": "typing",
+      "prompt": "Write 'password' in Portuguese",
+      "correct_answers": ["Palavra-passe", "palavra-passe", "Senha", "senha"],
+      "hint": "Literally 'word-pass'...",
+      "accent_strict": false
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "What does 'rato' mean in computing?",
+      "options": ["Rat", "Mouse (device)", "Cable", "Port"],
+      "correct_index": 1,
+      "explanation": "Rato literally means rat but refers to a computer mouse."
+    }
+  ],
+  "cheat_sheet": {
+    "title": "Technology Vocabulary",
+    "sections": [
+      {
+        "heading": "Devices",
+        "content": [
+          {
+            "type": "vocabulary",
+            "items": [
+              ["Computer", "Computador"],
+              ["Laptop", "Portátil"],
+              ["Mobile phone", "Telemóvel"],
+              ["Tablet", "Tablet"],
+              ["Screen", "Ecrã"],
+              ["Printer", "Impressora"]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Computer Parts",
+        "content": [
+          {
+            "type": "vocabulary",
+            "items": [
+              ["Keyboard", "Teclado"],
+              ["Mouse", "Rato"],
+              ["Hard drive", "Disco rígido"],
+              ["Memory", "Memória"],
+              ["Password", "Palavra-passe"]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Tips",
+        "content": [
+          {
+            "type": "tip",
+            "text": "Many tech terms differ between Portugal and Brazil: telemóvel vs celular, ecrã vs tela."
+          }
+        ]
+      }
+    ]
+  }
+}

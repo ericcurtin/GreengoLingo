@@ -1,0 +1,106 @@
+{
+  "id": "poetry_01",
+  "title": "Poetic Expressions",
+  "description": "Learn literary and poetic language",
+  "level": "C2",
+  "language_pair": {
+    "source": "en_US",
+    "target": "pt_PT"
+  },
+  "xp_reward": 35,
+  "order": 7,
+  "icon": "auto_stories",
+  "questions": [
+    {
+      "type": "multiple_choice",
+      "prompt": "What does 'saudade' express?",
+      "options": ["Happiness", "Longing/nostalgia", "Anger", "Fear"],
+      "correct_index": 1,
+      "explanation": "Saudade is a uniquely Portuguese word for deep longing or nostalgic melancholy."
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "What is a 'metáfora'?",
+      "options": ["Rhyme", "Metaphor", "Verse", "Stanza"],
+      "correct_index": 1,
+      "explanation": "Metáfora is a metaphor, a literary device."
+    },
+    {
+      "type": "typing",
+      "prompt": "Write 'verse' in Portuguese",
+      "correct_answers": ["Verso", "verso"],
+      "hint": "A line of poetry...",
+      "accent_strict": false
+    },
+    {
+      "type": "matching_pairs",
+      "prompt": "Match the literary terms",
+      "pairs": [
+        ["Poem", "Poema"],
+        ["Verse", "Verso"],
+        ["Rhyme", "Rima"],
+        ["Metaphor", "Metáfora"]
+      ]
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "What does 'lírica' refer to?",
+      "options": ["Lyrics only", "Lyric poetry", "Opera", "Drama"],
+      "correct_index": 1,
+      "explanation": "Lírica refers to lyric poetry expressing emotions."
+    },
+    {
+      "type": "sentence_builder",
+      "prompt": "Build: 'Poetry expresses the soul'",
+      "words": ["A", "poesia", "expressa", "a", "alma", "humana"],
+      "correct_order": [0, 1, 2, 3, 4],
+      "distractors": ["humana"]
+    },
+    {
+      "type": "typing",
+      "prompt": "Write 'stanza' in Portuguese",
+      "correct_answers": ["Estrofe", "estrofe"],
+      "hint": "A group of verses...",
+      "accent_strict": false
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "What does 'soneto' mean?",
+      "options": ["Sound", "Sonnet", "Song", "Story"],
+      "correct_index": 1,
+      "explanation": "Soneto is a sonnet, a 14-line poem."
+    }
+  ],
+  "cheat_sheet": {
+    "title": "Poetic Expressions",
+    "sections": [
+      {
+        "heading": "Literary Terms",
+        "content": [
+          {
+            "type": "vocabulary",
+            "items": [
+              ["Poem", "Poema"],
+              ["Poetry", "Poesia"],
+              ["Verse", "Verso"],
+              ["Stanza", "Estrofe"],
+              ["Rhyme", "Rima"],
+              ["Sonnet", "Soneto"]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Unique Portuguese Concepts",
+        "content": [
+          {
+            "type": "example",
+            "source": "Saudade",
+            "target": "Deep longing, nostalgic melancholy",
+            "note": "Untranslatable Portuguese concept"
+          }
+        ]
+      }
+    ]
+  }
+}

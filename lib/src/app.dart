@@ -4,7 +4,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'theme/app_theme.dart';
 import 'providers/settings_provider.dart';
 import 'screens/onboarding/onboarding_screen.dart';
-import 'screens/home/home_screen.dart';
+import 'screens/main_shell.dart';
 
 class GreengoLingoApp extends ConsumerWidget {
   const GreengoLingoApp({super.key});
@@ -23,7 +23,7 @@ class GreengoLingoApp extends ConsumerWidget {
       home: settings.when(
         data: (data) {
           if (data.onboardingCompleted) {
-            return const HomeScreen();
+            return const MainShell();
           }
           return const OnboardingScreen();
         },

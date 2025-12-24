@@ -1,0 +1,119 @@
+{
+  "id": "clothing_01",
+  "title": "Clothing",
+  "description": "Learn clothing vocabulary in Brazilian Portuguese",
+  "level": "A1",
+  "language_pair": {
+    "source": "en_US",
+    "target": "pt_BR"
+  },
+  "xp_reward": 10,
+  "order": 8,
+  "icon": "checkroom",
+  "questions": [
+    {
+      "type": "multiple_choice",
+      "prompt": "How do you say 'shirt' in Portuguese?",
+      "options": ["Camisa", "Calça", "Sapatos", "Chapéu"],
+      "correct_index": 0,
+      "explanation": "Camisa is a shirt."
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "What does 'sapatos' mean?",
+      "options": ["Socks", "Hat", "Shoes", "Pants"],
+      "correct_index": 2,
+      "explanation": "Sapatos means shoes."
+    },
+    {
+      "type": "typing",
+      "prompt": "Write 'pants' in Brazilian Portuguese",
+      "correct_answers": ["Calça", "calca"],
+      "hint": "Singular in Brazil...",
+      "accent_strict": false
+    },
+    {
+      "type": "matching_pairs",
+      "prompt": "Match the clothing items",
+      "pairs": [
+        ["Shirt", "Camisa"],
+        ["Shoes", "Sapatos"],
+        ["Hat", "Chapéu"],
+        ["Dress", "Vestido"]
+      ]
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "How do you say 'T-shirt' in Brazilian Portuguese?",
+      "options": ["Camiseta", "Camisola", "Blusa", "Jaqueta"],
+      "correct_index": 0,
+      "explanation": "Camiseta is T-shirt in Brazil."
+    },
+    {
+      "type": "sentence_builder",
+      "prompt": "Build: 'I like this shirt'",
+      "words": ["Eu", "gosto", "dessa", "camisa", "muito"],
+      "correct_order": [0, 1, 2, 3],
+      "distractors": ["muito"]
+    },
+    {
+      "type": "typing",
+      "prompt": "Write 'socks' in Portuguese",
+      "correct_answers": ["Meias", "meias"],
+      "hint": "Also used for stockings",
+      "accent_strict": false
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "What does 'saia' mean?",
+      "options": ["Skirt", "Blouse", "Belt", "Scarf"],
+      "correct_index": 0,
+      "explanation": "Saia means skirt."
+    }
+  ],
+  "cheat_sheet": {
+    "title": "Clothing Vocabulary",
+    "sections": [
+      {
+        "heading": "Upper Body",
+        "content": [
+          {
+            "type": "vocabulary",
+            "items": [
+              ["Shirt", "Camisa"],
+              ["T-shirt", "Camiseta"],
+              ["Jacket", "Jaqueta"],
+              ["Sweater", "Suéter/Blusa de frio"],
+              ["Blouse", "Blusa"]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Lower Body & Accessories",
+        "content": [
+          {
+            "type": "vocabulary",
+            "items": [
+              ["Pants", "Calça"],
+              ["Skirt", "Saia"],
+              ["Dress", "Vestido"],
+              ["Shoes", "Sapatos"],
+              ["Socks", "Meias"],
+              ["Hat", "Chapéu"]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Tips",
+        "content": [
+          {
+            "type": "tip",
+            "text": "In Brazil, pants is singular 'calça'. In Portugal, it's plural 'calças'."
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,111 @@
+{
+  "id": "arts_culture_01",
+  "title": "Arts & Culture",
+  "description": "Learn vocabulary for discussing arts and cultural topics",
+  "level": "B2",
+  "language_pair": {
+    "source": "en_US",
+    "target": "pt_PT"
+  },
+  "xp_reward": 25,
+  "order": 8,
+  "icon": "palette",
+  "questions": [
+    {
+      "type": "multiple_choice",
+      "prompt": "How do you say 'painting' in Portuguese?",
+      "options": ["Pintura", "Escultura", "Fotografia", "Desenho"],
+      "correct_index": 0,
+      "explanation": "Pintura means painting."
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "What does 'exposição' mean?",
+      "options": ["Explosion", "Exhibition", "Expression", "Experience"],
+      "correct_index": 1,
+      "explanation": "Exposição is an exhibition or display."
+    },
+    {
+      "type": "typing",
+      "prompt": "Write 'museum' in Portuguese",
+      "correct_answers": ["Museu", "museu"],
+      "hint": "Very similar to English...",
+      "accent_strict": false
+    },
+    {
+      "type": "matching_pairs",
+      "prompt": "Match the art terms",
+      "pairs": [
+        ["Painting", "Pintura"],
+        ["Sculpture", "Escultura"],
+        ["Exhibition", "Exposição"],
+        ["Artist", "Artista"]
+      ]
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "How do you say 'masterpiece'?",
+      "options": ["Obra prima", "Obra de arte", "Artista", "Quadro"],
+      "correct_index": 0,
+      "explanation": "Obra prima is a masterpiece. 'Obra de arte' is work of art."
+    },
+    {
+      "type": "sentence_builder",
+      "prompt": "Build: 'This painting is beautiful'",
+      "words": ["Esta", "pintura", "é", "muito", "bonita", "antiga"],
+      "correct_order": [0, 1, 2, 3, 4],
+      "distractors": ["antiga"]
+    },
+    {
+      "type": "typing",
+      "prompt": "Write 'literature' in Portuguese",
+      "correct_answers": ["Literatura", "literatura"],
+      "hint": "Same as English...",
+      "accent_strict": false
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "What does 'património' mean?",
+      "options": ["Patriotism", "Heritage/patrimony", "Pattern", "Patronage"],
+      "correct_index": 1,
+      "explanation": "Património means heritage or patrimony."
+    }
+  ],
+  "cheat_sheet": {
+    "title": "Arts & Culture",
+    "sections": [
+      {
+        "heading": "Visual Arts",
+        "content": [
+          {
+            "type": "vocabulary",
+            "items": [
+              ["Painting", "Pintura"],
+              ["Sculpture", "Escultura"],
+              ["Photography", "Fotografia"],
+              ["Drawing", "Desenho"],
+              ["Artist", "Artista"],
+              ["Museum", "Museu"]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Cultural Terms",
+        "content": [
+          {
+            "type": "vocabulary",
+            "items": [
+              ["Exhibition", "Exposição"],
+              ["Masterpiece", "Obra prima"],
+              ["Heritage", "Património"],
+              ["Literature", "Literatura"],
+              ["Architecture", "Arquitetura"],
+              ["Concert", "Concerto"]
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

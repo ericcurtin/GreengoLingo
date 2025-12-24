@@ -1,0 +1,112 @@
+{
+  "id": "native_fluency_01",
+  "title": "Native-Level Expressions",
+  "description": "Master colloquial expressions and native-like fluency",
+  "level": "C2",
+  "language_pair": {
+    "source": "en_US",
+    "target": "pt_PT"
+  },
+  "xp_reward": 35,
+  "order": 10,
+  "icon": "record_voice_over",
+  "questions": [
+    {
+      "type": "multiple_choice",
+      "prompt": "What does 'Estou-me nas tintas' mean?",
+      "options": ["I'm painting", "I don't care", "I'm colorful", "I'm tired"],
+      "correct_index": 1,
+      "explanation": "This colloquial expression means 'I don't care'."
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "What does 'meter água' mean colloquially?",
+      "options": ["To add water", "To fail/mess up", "To swim", "To rain"],
+      "correct_index": 1,
+      "explanation": "'Meter água' means to fail or make a mistake."
+    },
+    {
+      "type": "typing",
+      "prompt": "Write the expression for 'it's raining cats and dogs'",
+      "correct_answers": ["Chove a cântaros", "chove a cantaros", "Está a chover a potes", "esta a chover a potes"],
+      "hint": "Portuguese uses 'buckets'...",
+      "accent_strict": false
+    },
+    {
+      "type": "matching_pairs",
+      "prompt": "Match the idioms",
+      "pairs": [
+        ["I don't care", "Estou-me nas tintas"],
+        ["To fail", "Meter água"],
+        ["Easy as pie", "Canja"],
+        ["No way!", "Nem pensar!"]
+      ]
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "What does 'canja' mean in colloquial usage?",
+      "options": ["Chicken soup (literally)", "Something very easy", "A party", "A problem"],
+      "correct_index": 1,
+      "explanation": "'Canja' (chicken soup) means something very easy."
+    },
+    {
+      "type": "sentence_builder",
+      "prompt": "Build: 'No way I'm doing that!'",
+      "words": ["Nem", "pensar", "fazer", "isso", "em", "vou"],
+      "correct_order": [0, 4, 1, 5, 2, 3],
+      "distractors": []
+    },
+    {
+      "type": "typing",
+      "prompt": "Write 'cool/awesome' in Portuguese slang",
+      "correct_answers": ["Fixe", "fixe", "Brutal", "brutal"],
+      "hint": "Common in Portugal...",
+      "accent_strict": false
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "What does 'dar graxa' mean?",
+      "options": ["To give grease", "To flatter/suck up", "To clean", "To help"],
+      "correct_index": 1,
+      "explanation": "'Dar graxa' means to flatter someone, usually for personal gain."
+    }
+  ],
+  "cheat_sheet": {
+    "title": "Native-Level Expressions",
+    "sections": [
+      {
+        "heading": "Common Idioms",
+        "content": [
+          {
+            "type": "vocabulary",
+            "items": [
+              ["I don't care", "Estou-me nas tintas"],
+              ["To fail/mess up", "Meter água"],
+              ["Very easy", "Canja"],
+              ["No way!", "Nem pensar!"],
+              ["To flatter", "Dar graxa"],
+              ["Cool", "Fixe"]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Colloquial Expressions",
+        "content": [
+          {
+            "type": "example",
+            "source": "É canja!",
+            "target": "It's easy!/Piece of cake!",
+            "note": "Very common expression"
+          },
+          {
+            "type": "example",
+            "source": "Estou feito ao bife",
+            "target": "I'm in trouble",
+            "note": "Literally 'made into steak'"
+          }
+        ]
+      }
+    ]
+  }
+}

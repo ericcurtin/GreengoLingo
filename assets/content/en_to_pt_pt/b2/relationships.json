@@ -1,0 +1,110 @@
+{
+  "id": "relationships_01",
+  "title": "Relationships",
+  "description": "Learn vocabulary for social and personal relationships",
+  "level": "B2",
+  "language_pair": {
+    "source": "en_US",
+    "target": "pt_PT"
+  },
+  "xp_reward": 25,
+  "order": 9,
+  "icon": "people",
+  "questions": [
+    {
+      "type": "multiple_choice",
+      "prompt": "How do you say 'friendship' in Portuguese?",
+      "options": ["Amizade", "Amor", "Casamento", "Namoro"],
+      "correct_index": 0,
+      "explanation": "Amizade means friendship."
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "What does 'namoro' mean?",
+      "options": ["Marriage", "Dating/relationship", "Friendship", "Engagement"],
+      "correct_index": 1,
+      "explanation": "Namoro is a romantic relationship or dating."
+    },
+    {
+      "type": "typing",
+      "prompt": "Write 'to trust' in Portuguese",
+      "correct_answers": ["Confiar", "confiar"],
+      "hint": "Related to 'confidence'...",
+      "accent_strict": false
+    },
+    {
+      "type": "matching_pairs",
+      "prompt": "Match the relationship terms",
+      "pairs": [
+        ["Friendship", "Amizade"],
+        ["Love", "Amor"],
+        ["Marriage", "Casamento"],
+        ["Trust", "Confiança"]
+      ]
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "How do you say 'to get along with'?",
+      "options": ["Dar-se bem com", "Zangar-se com", "Apaixonar-se por", "Discutir com"],
+      "correct_index": 0,
+      "explanation": "'Dar-se bem com' means to get along well with someone."
+    },
+    {
+      "type": "sentence_builder",
+      "prompt": "Build: 'We have been friends for years'",
+      "words": ["Somos", "amigos", "há", "muitos", "anos", "bons"],
+      "correct_order": [0, 1, 2, 3, 4],
+      "distractors": ["bons"]
+    },
+    {
+      "type": "typing",
+      "prompt": "Write 'engagement' in Portuguese",
+      "correct_answers": ["Noivado", "noivado"],
+      "hint": "Before marriage...",
+      "accent_strict": false
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "What does 'perdoar' mean?",
+      "options": ["To forget", "To forgive", "To apologize", "To argue"],
+      "correct_index": 1,
+      "explanation": "Perdoar means to forgive."
+    }
+  ],
+  "cheat_sheet": {
+    "title": "Relationships",
+    "sections": [
+      {
+        "heading": "Types of Relationships",
+        "content": [
+          {
+            "type": "vocabulary",
+            "items": [
+              ["Friendship", "Amizade"],
+              ["Love", "Amor"],
+              ["Marriage", "Casamento"],
+              ["Dating", "Namoro"],
+              ["Engagement", "Noivado"],
+              ["Divorce", "Divórcio"]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Actions & Feelings",
+        "content": [
+          {
+            "type": "vocabulary",
+            "items": [
+              ["To trust", "Confiar"],
+              ["To forgive", "Perdoar"],
+              ["To get along with", "Dar-se bem com"],
+              ["To argue", "Discutir"],
+              ["To fall in love", "Apaixonar-se"]
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

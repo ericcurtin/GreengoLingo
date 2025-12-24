@@ -1,0 +1,121 @@
+{
+  "id": "feelings_01",
+  "title": "Feelings & Emotions",
+  "description": "Learn to express feelings and emotions",
+  "level": "A2",
+  "language_pair": {
+    "source": "en_US",
+    "target": "pt_PT"
+  },
+  "xp_reward": 15,
+  "order": 9,
+  "icon": "mood",
+  "questions": [
+    {
+      "type": "multiple_choice",
+      "prompt": "How do you say 'I am happy' in Portuguese?",
+      "options": ["Estou feliz", "Estou triste", "Estou cansado", "Estou zangado"],
+      "correct_index": 0,
+      "explanation": "Feliz means happy. Use 'estou' for temporary states."
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "What does 'triste' mean?",
+      "options": ["Tired", "Sad", "Angry", "Scared"],
+      "correct_index": 1,
+      "explanation": "Triste means sad."
+    },
+    {
+      "type": "typing",
+      "prompt": "Write 'tired' in Portuguese",
+      "correct_answers": ["Cansado", "cansado", "Cansada", "cansada"],
+      "hint": "Changes based on gender...",
+      "accent_strict": false
+    },
+    {
+      "type": "matching_pairs",
+      "prompt": "Match the emotions",
+      "pairs": [
+        ["Happy", "Feliz"],
+        ["Sad", "Triste"],
+        ["Angry", "Zangado"],
+        ["Tired", "Cansado"]
+      ]
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "How do you say 'I am scared'?",
+      "options": ["Tenho fome", "Tenho sede", "Tenho medo", "Tenho frio"],
+      "correct_index": 2,
+      "explanation": "'Ter medo' literally means 'to have fear'."
+    },
+    {
+      "type": "sentence_builder",
+      "prompt": "Build: 'I feel very tired'",
+      "words": ["Sinto-me", "muito", "cansado", "hoje", "bem"],
+      "correct_order": [0, 1, 2],
+      "distractors": ["hoje", "bem"]
+    },
+    {
+      "type": "typing",
+      "prompt": "Write 'worried' in Portuguese",
+      "correct_answers": ["Preocupado", "preocupado", "Preocupada", "preocupada"],
+      "hint": "Similar to 'preoccupied'...",
+      "accent_strict": false
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "What does 'entusiasmado' mean?",
+      "options": ["Bored", "Excited", "Nervous", "Calm"],
+      "correct_index": 1,
+      "explanation": "Entusiasmado means excited or enthusiastic."
+    }
+  ],
+  "cheat_sheet": {
+    "title": "Feelings & Emotions",
+    "sections": [
+      {
+        "heading": "Basic Emotions",
+        "content": [
+          {
+            "type": "vocabulary",
+            "items": [
+              ["Happy", "Feliz"],
+              ["Sad", "Triste"],
+              ["Angry", "Zangado/a"],
+              ["Tired", "Cansado/a"],
+              ["Scared", "Assustado/a"],
+              ["Worried", "Preocupado/a"]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Expressing Feelings",
+        "content": [
+          {
+            "type": "example",
+            "source": "Estou feliz",
+            "target": "I am happy (temporary)",
+            "note": "Use 'estar' for temporary states"
+          },
+          {
+            "type": "example",
+            "source": "Sinto-me bem",
+            "target": "I feel well",
+            "note": "'Sentir-se' is reflexive"
+          }
+        ]
+      },
+      {
+        "heading": "Tips",
+        "content": [
+          {
+            "type": "tip",
+            "text": "Adjectives change gender: 'cansado' (m) vs 'cansada' (f)."
+          }
+        ]
+      }
+    ]
+  }
+}

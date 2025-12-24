@@ -1,0 +1,119 @@
+{
+  "id": "clothing_01",
+  "title": "Clothing",
+  "description": "Learn clothing vocabulary in European Portuguese",
+  "level": "A1",
+  "language_pair": {
+    "source": "en_US",
+    "target": "pt_PT"
+  },
+  "xp_reward": 10,
+  "order": 8,
+  "icon": "checkroom",
+  "questions": [
+    {
+      "type": "multiple_choice",
+      "prompt": "How do you say 'shirt' in Portuguese?",
+      "options": ["Camisa", "Calças", "Sapatos", "Chapéu"],
+      "correct_index": 0,
+      "explanation": "Camisa is a shirt. T-shirt is 'T-shirt' or 'camisola' in Portugal."
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "What does 'sapatos' mean?",
+      "options": ["Socks", "Hat", "Shoes", "Pants"],
+      "correct_index": 2,
+      "explanation": "Sapatos means shoes."
+    },
+    {
+      "type": "typing",
+      "prompt": "Write 'pants/trousers' in Portuguese",
+      "correct_answers": ["Calças", "calcas"],
+      "hint": "Starts with 'C'...",
+      "accent_strict": false
+    },
+    {
+      "type": "matching_pairs",
+      "prompt": "Match the clothing items",
+      "pairs": [
+        ["Shirt", "Camisa"],
+        ["Shoes", "Sapatos"],
+        ["Hat", "Chapéu"],
+        ["Dress", "Vestido"]
+      ]
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "How do you say 'jacket' in Portuguese?",
+      "options": ["Vestido", "Casaco", "Saia", "Meias"],
+      "correct_index": 1,
+      "explanation": "Casaco is a jacket or coat."
+    },
+    {
+      "type": "sentence_builder",
+      "prompt": "Build: 'I like this shirt'",
+      "words": ["Eu", "gosto", "desta", "camisa", "muito"],
+      "correct_order": [0, 1, 2, 3],
+      "distractors": ["muito"]
+    },
+    {
+      "type": "typing",
+      "prompt": "Write 'socks' in Portuguese",
+      "correct_answers": ["Meias", "meias"],
+      "hint": "Also used for stockings",
+      "accent_strict": false
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "What does 'saia' mean?",
+      "options": ["Skirt", "Blouse", "Belt", "Scarf"],
+      "correct_index": 0,
+      "explanation": "Saia means skirt."
+    }
+  ],
+  "cheat_sheet": {
+    "title": "Clothing Vocabulary",
+    "sections": [
+      {
+        "heading": "Upper Body",
+        "content": [
+          {
+            "type": "vocabulary",
+            "items": [
+              ["Shirt", "Camisa"],
+              ["T-shirt", "T-shirt/Camisola"],
+              ["Jacket", "Casaco"],
+              ["Sweater", "Camisola"],
+              ["Blouse", "Blusa"]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Lower Body & Accessories",
+        "content": [
+          {
+            "type": "vocabulary",
+            "items": [
+              ["Pants", "Calças"],
+              ["Skirt", "Saia"],
+              ["Dress", "Vestido"],
+              ["Shoes", "Sapatos"],
+              ["Socks", "Meias"],
+              ["Hat", "Chapéu"]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Tips",
+        "content": [
+          {
+            "type": "tip",
+            "text": "In Portugal, 'camisola' can mean both sweater and T-shirt depending on context."
+          }
+        ]
+      }
+    ]
+  }
+}

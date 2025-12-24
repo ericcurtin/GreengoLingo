@@ -1,0 +1,126 @@
+{
+  "id": "food_drink_01",
+  "title": "Food & Drink",
+  "description": "Learn basic food and beverage vocabulary in European Portuguese",
+  "level": "A1",
+  "language_pair": {
+    "source": "en_US",
+    "target": "pt_PT"
+  },
+  "xp_reward": 10,
+  "order": 7,
+  "icon": "restaurant",
+  "questions": [
+    {
+      "type": "multiple_choice",
+      "prompt": "How do you say 'water' in Portuguese?",
+      "options": ["Água", "Leite", "Café", "Chá"],
+      "correct_index": 0,
+      "explanation": "Água means water. Note the accent on the 'A'."
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "What does 'pão' mean?",
+      "options": ["Rice", "Bread", "Meat", "Fish"],
+      "correct_index": 1,
+      "explanation": "Pão is bread, a staple in Portuguese cuisine."
+    },
+    {
+      "type": "typing",
+      "prompt": "Write 'coffee' in Portuguese",
+      "correct_answers": ["Café", "cafe"],
+      "hint": "Very similar to the English word...",
+      "accent_strict": false
+    },
+    {
+      "type": "matching_pairs",
+      "prompt": "Match the food items",
+      "pairs": [
+        ["Water", "Água"],
+        ["Milk", "Leite"],
+        ["Bread", "Pão"],
+        ["Coffee", "Café"]
+      ]
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "How do you say 'fruit' in Portuguese?",
+      "options": ["Vegetal", "Fruta", "Carne", "Peixe"],
+      "correct_index": 1,
+      "explanation": "Fruta means fruit. 'Frutas' is the plural form."
+    },
+    {
+      "type": "sentence_builder",
+      "prompt": "Build: 'I want water'",
+      "words": ["Eu", "quero", "água", "por", "favor"],
+      "correct_order": [0, 1, 2],
+      "distractors": ["por", "favor"]
+    },
+    {
+      "type": "typing",
+      "prompt": "Write 'tea' in Portuguese",
+      "correct_answers": ["Chá", "cha"],
+      "hint": "Three letters with an accent",
+      "accent_strict": false
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "What does 'carne' mean?",
+      "options": ["Fish", "Vegetable", "Meat", "Fruit"],
+      "correct_index": 2,
+      "explanation": "Carne means meat. 'Carne de vaca' is beef."
+    }
+  ],
+  "cheat_sheet": {
+    "title": "Food & Drink Basics",
+    "sections": [
+      {
+        "heading": "Drinks",
+        "content": [
+          {
+            "type": "vocabulary",
+            "items": [
+              ["Water", "Água"],
+              ["Milk", "Leite"],
+              ["Coffee", "Café"],
+              ["Tea", "Chá"],
+              ["Juice", "Sumo"],
+              ["Wine", "Vinho"]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Food Basics",
+        "content": [
+          {
+            "type": "vocabulary",
+            "items": [
+              ["Bread", "Pão"],
+              ["Meat", "Carne"],
+              ["Fish", "Peixe"],
+              ["Fruit", "Fruta"],
+              ["Vegetables", "Legumes"],
+              ["Rice", "Arroz"]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Tips",
+        "content": [
+          {
+            "type": "tip",
+            "text": "In Portugal, 'sumo' means juice, while in Brazil they say 'suco'."
+          },
+          {
+            "type": "example",
+            "source": "Uma água, por favor",
+            "target": "A water, please",
+            "note": "Basic way to order at a restaurant"
+          }
+        ]
+      }
+    ]
+  }
+}

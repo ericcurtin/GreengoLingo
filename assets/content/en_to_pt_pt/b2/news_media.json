@@ -1,0 +1,111 @@
+{
+  "id": "news_media_01",
+  "title": "News & Media",
+  "description": "Learn vocabulary for discussing news and media",
+  "level": "B2",
+  "language_pair": {
+    "source": "en_US",
+    "target": "pt_PT"
+  },
+  "xp_reward": 25,
+  "order": 10,
+  "icon": "newspaper",
+  "questions": [
+    {
+      "type": "multiple_choice",
+      "prompt": "How do you say 'newspaper' in Portuguese?",
+      "options": ["Jornal", "Revista", "Notícia", "Artigo"],
+      "correct_index": 0,
+      "explanation": "Jornal is a newspaper."
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "What does 'telejornal' mean?",
+      "options": ["Telegram", "TV news", "Journal", "Radio show"],
+      "correct_index": 1,
+      "explanation": "Telejornal is the TV news broadcast."
+    },
+    {
+      "type": "typing",
+      "prompt": "Write 'journalist' in Portuguese",
+      "correct_answers": ["Jornalista", "jornalista"],
+      "hint": "Similar to English...",
+      "accent_strict": false
+    },
+    {
+      "type": "matching_pairs",
+      "prompt": "Match the media terms",
+      "pairs": [
+        ["Newspaper", "Jornal"],
+        ["Magazine", "Revista"],
+        ["News", "Notícia"],
+        ["Article", "Artigo"]
+      ]
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "How do you say 'headline'?",
+      "options": ["Título", "Manchete", "Parágrafo", "Secção"],
+      "correct_index": 1,
+      "explanation": "Manchete is a headline."
+    },
+    {
+      "type": "sentence_builder",
+      "prompt": "Build: 'I read the news every day'",
+      "words": ["Leio", "as", "notícias", "todos", "os", "dias"],
+      "correct_order": [0, 1, 2, 3, 4, 5],
+      "distractors": []
+    },
+    {
+      "type": "typing",
+      "prompt": "Write 'interview' in Portuguese",
+      "correct_answers": ["Entrevista", "entrevista"],
+      "hint": "Same as English...",
+      "accent_strict": false
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "What does 'reportagem' mean?",
+      "options": ["Reporter", "Report/coverage", "Reputation", "Repair"],
+      "correct_index": 1,
+      "explanation": "Reportagem is a report or news coverage."
+    }
+  ],
+  "cheat_sheet": {
+    "title": "News & Media",
+    "sections": [
+      {
+        "heading": "Media Types",
+        "content": [
+          {
+            "type": "vocabulary",
+            "items": [
+              ["Newspaper", "Jornal"],
+              ["Magazine", "Revista"],
+              ["TV news", "Telejornal"],
+              ["Radio", "Rádio"],
+              ["Website", "Site/Sítio web"],
+              ["Social media", "Redes sociais"]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Journalism",
+        "content": [
+          {
+            "type": "vocabulary",
+            "items": [
+              ["News", "Notícia"],
+              ["Headline", "Manchete"],
+              ["Article", "Artigo"],
+              ["Journalist", "Jornalista"],
+              ["Interview", "Entrevista"],
+              ["Report", "Reportagem"]
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

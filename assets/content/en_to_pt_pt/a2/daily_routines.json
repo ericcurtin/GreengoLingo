@@ -1,0 +1,117 @@
+{
+  "id": "daily_routines_01",
+  "title": "Daily Routines",
+  "description": "Learn to describe daily activities and routines",
+  "level": "A2",
+  "language_pair": {
+    "source": "en_US",
+    "target": "pt_PT"
+  },
+  "xp_reward": 15,
+  "order": 10,
+  "icon": "schedule",
+  "questions": [
+    {
+      "type": "multiple_choice",
+      "prompt": "How do you say 'I wake up' in Portuguese?",
+      "options": ["Acordo", "Durmo", "Como", "Trabalho"],
+      "correct_index": 0,
+      "explanation": "Acordar means to wake up."
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "What does 'tomar o pequeno-almoço' mean?",
+      "options": ["To have lunch", "To have dinner", "To have breakfast", "To have a snack"],
+      "correct_index": 2,
+      "explanation": "Pequeno-almoço is breakfast in European Portuguese."
+    },
+    {
+      "type": "typing",
+      "prompt": "Write 'to sleep' in Portuguese",
+      "correct_answers": ["Dormir", "dormir"],
+      "hint": "Similar to 'dormitory'...",
+      "accent_strict": false
+    },
+    {
+      "type": "matching_pairs",
+      "prompt": "Match the daily activities",
+      "pairs": [
+        ["To wake up", "Acordar"],
+        ["To sleep", "Dormir"],
+        ["To work", "Trabalhar"],
+        ["To eat", "Comer"]
+      ]
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "How do you say 'I take a shower'?",
+      "options": ["Tomo banho", "Tomo café", "Tomo o autocarro", "Tomo o comboio"],
+      "correct_index": 0,
+      "explanation": "'Tomar banho' means to take a shower/bath."
+    },
+    {
+      "type": "sentence_builder",
+      "prompt": "Build: 'I wake up at seven'",
+      "words": ["Acordo", "às", "sete", "horas", "sempre"],
+      "correct_order": [0, 1, 2, 3],
+      "distractors": ["sempre"]
+    },
+    {
+      "type": "typing",
+      "prompt": "Write 'to get dressed' in Portuguese",
+      "correct_answers": ["Vestir-me", "vestir-me", "Vestir", "vestir"],
+      "hint": "Related to 'vest' or clothing...",
+      "accent_strict": false
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "What does 'deitar-me' mean?",
+      "options": ["To wake up", "To go to bed", "To get up", "To have lunch"],
+      "correct_index": 1,
+      "explanation": "Deitar-se means to go to bed or lie down."
+    }
+  ],
+  "cheat_sheet": {
+    "title": "Daily Routines",
+    "sections": [
+      {
+        "heading": "Morning Routine",
+        "content": [
+          {
+            "type": "vocabulary",
+            "items": [
+              ["To wake up", "Acordar"],
+              ["To get up", "Levantar-me"],
+              ["To take a shower", "Tomar banho"],
+              ["To get dressed", "Vestir-me"],
+              ["To have breakfast", "Tomar o pequeno-almoço"]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Evening Routine",
+        "content": [
+          {
+            "type": "vocabulary",
+            "items": [
+              ["To have dinner", "Jantar"],
+              ["To watch TV", "Ver televisão"],
+              ["To go to bed", "Deitar-me"],
+              ["To sleep", "Dormir"]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Tips",
+        "content": [
+          {
+            "type": "tip",
+            "text": "In Portugal, breakfast is 'pequeno-almoço'. In Brazil, it's 'café da manhã'."
+          }
+        ]
+      }
+    ]
+  }
+}

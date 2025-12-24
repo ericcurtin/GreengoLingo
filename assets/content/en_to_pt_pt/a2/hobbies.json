@@ -1,0 +1,122 @@
+{
+  "id": "hobbies_01",
+  "title": "Hobbies",
+  "description": "Learn to talk about hobbies and leisure activities",
+  "level": "A2",
+  "language_pair": {
+    "source": "en_US",
+    "target": "pt_PT"
+  },
+  "xp_reward": 15,
+  "order": 7,
+  "icon": "sports_esports",
+  "questions": [
+    {
+      "type": "multiple_choice",
+      "prompt": "How do you say 'I like to read' in Portuguese?",
+      "options": ["Gosto de ler", "Gosto de comer", "Gosto de dormir", "Gosto de correr"],
+      "correct_index": 0,
+      "explanation": "'Ler' means to read. 'Gosto de' expresses liking something."
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "What does 'nadar' mean?",
+      "options": ["To run", "To swim", "To play", "To dance"],
+      "correct_index": 1,
+      "explanation": "Nadar means to swim."
+    },
+    {
+      "type": "typing",
+      "prompt": "Write 'to play' in Portuguese",
+      "correct_answers": ["Jogar", "jogar"],
+      "hint": "Used for games and sports...",
+      "accent_strict": false
+    },
+    {
+      "type": "matching_pairs",
+      "prompt": "Match the hobbies",
+      "pairs": [
+        ["To read", "Ler"],
+        ["To swim", "Nadar"],
+        ["To cook", "Cozinhar"],
+        ["To dance", "Dançar"]
+      ]
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "How do you ask 'What are your hobbies?'",
+      "options": ["Quais são os teus passatempos?", "Onde moras?", "Como estás?", "Que horas são?"],
+      "correct_index": 0,
+      "explanation": "Passatempos means hobbies or pastimes."
+    },
+    {
+      "type": "sentence_builder",
+      "prompt": "Build: 'I like to watch movies'",
+      "words": ["Gosto", "de", "ver", "filmes", "muito"],
+      "correct_order": [0, 1, 2, 3],
+      "distractors": ["muito"]
+    },
+    {
+      "type": "typing",
+      "prompt": "Write 'music' in Portuguese",
+      "correct_answers": ["Música", "musica"],
+      "hint": "Very similar to English...",
+      "accent_strict": false
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "What does 'desporto' mean in Portugal?",
+      "options": ["Music", "Art", "Sport", "Travel"],
+      "correct_index": 2,
+      "explanation": "Desporto is the European Portuguese word for sport (Brazil uses 'esporte')."
+    }
+  ],
+  "cheat_sheet": {
+    "title": "Hobbies & Activities",
+    "sections": [
+      {
+        "heading": "Common Verbs",
+        "content": [
+          {
+            "type": "vocabulary",
+            "items": [
+              ["To read", "Ler"],
+              ["To write", "Escrever"],
+              ["To swim", "Nadar"],
+              ["To run", "Correr"],
+              ["To dance", "Dançar"],
+              ["To cook", "Cozinhar"]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Activities",
+        "content": [
+          {
+            "type": "vocabulary",
+            "items": [
+              ["Sport", "Desporto"],
+              ["Music", "Música"],
+              ["Cinema/Movies", "Cinema"],
+              ["Photography", "Fotografia"],
+              ["Travel", "Viajar"],
+              ["Gardening", "Jardinagem"]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Useful Phrases",
+        "content": [
+          {
+            "type": "example",
+            "source": "Gosto de jogar futebol",
+            "target": "I like to play football",
+            "note": "Use 'gosto de' + infinitive verb"
+          }
+        ]
+      }
+    ]
+  }
+}

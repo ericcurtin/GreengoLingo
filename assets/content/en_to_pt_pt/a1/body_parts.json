@@ -1,0 +1,120 @@
+{
+  "id": "body_parts_01",
+  "title": "Body Parts",
+  "description": "Learn parts of the body in European Portuguese",
+  "level": "A1",
+  "language_pair": {
+    "source": "en_US",
+    "target": "pt_PT"
+  },
+  "xp_reward": 10,
+  "order": 9,
+  "icon": "accessibility_new",
+  "questions": [
+    {
+      "type": "multiple_choice",
+      "prompt": "How do you say 'head' in Portuguese?",
+      "options": ["Cabeça", "Mão", "Pé", "Braço"],
+      "correct_index": 0,
+      "explanation": "Cabeça means head."
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "What does 'mão' mean?",
+      "options": ["Foot", "Arm", "Hand", "Leg"],
+      "correct_index": 2,
+      "explanation": "Mão means hand. The plural is 'mãos'."
+    },
+    {
+      "type": "typing",
+      "prompt": "Write 'eye' in Portuguese",
+      "correct_answers": ["Olho", "olho"],
+      "hint": "Starts with 'O'...",
+      "accent_strict": false
+    },
+    {
+      "type": "matching_pairs",
+      "prompt": "Match the body parts",
+      "pairs": [
+        ["Head", "Cabeça"],
+        ["Hand", "Mão"],
+        ["Foot", "Pé"],
+        ["Arm", "Braço"]
+      ]
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "How do you say 'nose' in Portuguese?",
+      "options": ["Boca", "Nariz", "Orelha", "Olho"],
+      "correct_index": 1,
+      "explanation": "Nariz means nose."
+    },
+    {
+      "type": "sentence_builder",
+      "prompt": "Build: 'My head hurts'",
+      "words": ["A", "minha", "cabeça", "dói", "muito"],
+      "correct_order": [0, 1, 2, 3],
+      "distractors": ["muito"]
+    },
+    {
+      "type": "typing",
+      "prompt": "Write 'ear' in Portuguese",
+      "correct_answers": ["Orelha", "orelha"],
+      "hint": "Starts with 'O'...",
+      "accent_strict": false
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "What does 'perna' mean?",
+      "options": ["Arm", "Finger", "Leg", "Knee"],
+      "correct_index": 2,
+      "explanation": "Perna means leg."
+    }
+  ],
+  "cheat_sheet": {
+    "title": "Body Parts",
+    "sections": [
+      {
+        "heading": "Head & Face",
+        "content": [
+          {
+            "type": "vocabulary",
+            "items": [
+              ["Head", "Cabeça"],
+              ["Eye", "Olho"],
+              ["Ear", "Orelha"],
+              ["Nose", "Nariz"],
+              ["Mouth", "Boca"],
+              ["Hair", "Cabelo"]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Body",
+        "content": [
+          {
+            "type": "vocabulary",
+            "items": [
+              ["Arm", "Braço"],
+              ["Hand", "Mão"],
+              ["Leg", "Perna"],
+              ["Foot", "Pé"],
+              ["Finger", "Dedo"],
+              ["Knee", "Joelho"]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Tips",
+        "content": [
+          {
+            "type": "tip",
+            "text": "'Dedo' is used for both fingers and toes. 'Dedo do pé' specifies toe."
+          }
+        ]
+      }
+    ]
+  }
+}

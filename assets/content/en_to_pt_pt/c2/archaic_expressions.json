@@ -1,0 +1,103 @@
+{
+  "id": "archaic_expressions_01",
+  "title": "Archaic Expressions",
+  "description": "Learn historical and formal Portuguese expressions",
+  "level": "C2",
+  "language_pair": {
+    "source": "en_US",
+    "target": "pt_PT"
+  },
+  "xp_reward": 35,
+  "order": 9,
+  "icon": "history_edu",
+  "questions": [
+    {
+      "type": "multiple_choice",
+      "prompt": "What does the archaic 'vossa mercê' mean?",
+      "options": ["Your mercy", "Your grace/you (formal)", "Mercy me", "Your servant"],
+      "correct_index": 1,
+      "explanation": "'Vossa mercê' evolved into the modern 'você' (you)."
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "What is 'outrossim' in modern Portuguese?",
+      "options": ["Otherwise", "Also/Furthermore", "Otherwise", "Despite"],
+      "correct_index": 1,
+      "explanation": "Outrossim is an archaic way to say 'também' or 'além disso'."
+    },
+    {
+      "type": "typing",
+      "prompt": "Write the modern equivalent of 'porventura'",
+      "correct_answers": ["Talvez", "talvez", "Por acaso", "por acaso"],
+      "hint": "Perhaps/maybe...",
+      "accent_strict": false
+    },
+    {
+      "type": "matching_pairs",
+      "prompt": "Match archaic to modern equivalents",
+      "pairs": [
+        ["Vossa mercê", "Você"],
+        ["Outrossim", "Também"],
+        ["Porventura", "Talvez"],
+        ["Deveras", "Realmente"]
+      ]
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "What does 'doravante' mean?",
+      "options": ["Before", "Henceforth/from now on", "Meanwhile", "Sometimes"],
+      "correct_index": 1,
+      "explanation": "Doravante means henceforth or from now on."
+    },
+    {
+      "type": "sentence_builder",
+      "prompt": "Build: 'Henceforth, this is forbidden'",
+      "words": ["Doravante", "isto", "está", "proibido", "sempre", "muito"],
+      "correct_order": [0, 1, 2, 3],
+      "distractors": ["sempre", "muito"]
+    },
+    {
+      "type": "typing",
+      "prompt": "Write the archaic word for 'truth'",
+      "correct_answers": ["Verdade", "verdade"],
+      "hint": "Still used today...",
+      "accent_strict": false
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Where might you encounter 'conquanto'?",
+      "options": ["Casual speech", "Legal/formal documents", "Children's books", "Pop songs"],
+      "correct_index": 1,
+      "explanation": "'Conquanto' (although) appears in formal or legal texts."
+    }
+  ],
+  "cheat_sheet": {
+    "title": "Archaic Expressions",
+    "sections": [
+      {
+        "heading": "Archaic → Modern",
+        "content": [
+          {
+            "type": "vocabulary",
+            "items": [
+              ["Vossa mercê → Você", "Your grace → You"],
+              ["Outrossim → Também", "Furthermore → Also"],
+              ["Porventura → Talvez", "Perchance → Perhaps"],
+              ["Deveras → Realmente", "Truly → Really"],
+              ["Doravante → De agora em diante", "Henceforth"]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Tips",
+        "content": [
+          {
+            "type": "tip",
+            "text": "Many archaic terms survive in legal, religious, and literary contexts."
+          }
+        ]
+      }
+    ]
+  }
+}
