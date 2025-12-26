@@ -27,7 +27,6 @@ class ReviewScreen extends ConsumerWidget {
     final totalCards = srsState.cards.length;
 
     return Scaffold(
-      primary: false,
       appBar: AppBar(
         title: const Text('Review'),
         backgroundColor: Colors.transparent,
