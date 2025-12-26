@@ -1,6 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
+import 'home/home_screen.dart';
+import 'review/review_screen.dart';
+import 'vocabulary/vocabulary_screen.dart';
+import 'statistics/statistics_screen.dart';
 import '../theme/colors.dart';
 
 /// Selected navigation index provider
@@ -18,11 +22,11 @@ class MainShell extends ConsumerWidget {
     return Scaffold(
       body: IndexedStack(
         index: selectedIndex,
-        children: [
-          const Center(child: Text('Home - TEST')),
-          const Center(child: Text('Review')),
-          const Center(child: Text('Vocab')),
-          const Center(child: Text('Stats')),
+        children: const [
+          HomeScreen(),
+          ReviewScreen(),
+          VocabularyScreen(),
+          StatisticsScreen(),
         ],
       ),
       bottomNavigationBar: BottomNavigationBar(
