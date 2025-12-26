@@ -32,7 +32,6 @@ class _VocabularyScreenState extends ConsumerState<VocabularyScreen> {
     final stats = vocabState.stats;
 
     return Scaffold(
-      primary: false,
       appBar: AppBar(
         title: const Text('Vocabulary'),
         backgroundColor: Colors.transparent,

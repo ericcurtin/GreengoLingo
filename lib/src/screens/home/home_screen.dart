@@ -23,7 +23,6 @@ class HomeScreen extends ConsumerWidget {
     final progressAsync = ref.watch(progressProvider);
 
     return Scaffold(
-      primary: false,
       body: SafeArea(
         child: CustomScrollView(
           slivers: [

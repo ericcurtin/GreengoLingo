@@ -29,7 +29,6 @@ class _StatisticsScreenState extends ConsumerState<StatisticsScreen> {
     final streakInfo = ref.watch(streakInfoProvider);
 
     return Scaffold(
-      primary: false,
       appBar: AppBar(
         title: const Text('Statistics'),
         backgroundColor: Colors.transparent,
