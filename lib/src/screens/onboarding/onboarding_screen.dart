@@ -574,7 +574,7 @@ class _LevelCard extends StatelessWidget {
                     : Theme.of(context).colorScheme.onSurface,
               ),
             ),
-            const SizedBox(height: 1),
+            const SizedBox(height: 0),
             Text(
               name,
               style: TextStyle(
