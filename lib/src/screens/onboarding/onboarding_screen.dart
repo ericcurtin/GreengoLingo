@@ -569,12 +569,12 @@ class _LevelCard extends StatelessWidget {
               style: TextStyle(
                 fontSize: 24,
                 fontWeight: FontWeight.bold,
+                height: 1.0,
                 color: isSelected
                     ? color
                     : Theme.of(context).colorScheme.onSurface,
               ),
             ),
-            const SizedBox(height: 0),
             Text(
               name,
               style: TextStyle(
