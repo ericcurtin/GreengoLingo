@@ -6,7 +6,6 @@ import '../../theme/app_theme.dart';
 import '../../theme/colors.dart';
 import '../../providers/settings_provider.dart';
 import '../../services/haptic_service.dart';
-import '../home/home_screen.dart';
 
 class OnboardingScreen extends ConsumerStatefulWidget {
   const OnboardingScreen({super.key});
@@ -70,12 +69,7 @@ class _OnboardingScreenState extends ConsumerState<OnboardingScreen> {
             .setPreferredLevel(_selectedLevel!);
       }
       await ref.read(settingsProvider.notifier).completeOnboarding();
-
-      if (mounted) {
-        Navigator.of(context).pushReplacement(
-          MaterialPageRoute(builder: (_) => const HomeScreen()),
-        );
-      }
+      // Router in app.dart will automatically show MainShell when onboardingCompleted is true
     }
   }
 
