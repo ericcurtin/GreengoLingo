@@ -357,8 +357,8 @@ class _LevelSelectionPage extends StatelessWidget {
           Expanded(
             child: GridView.count(
               crossAxisCount: 2,
-              mainAxisSpacing: 12,
-              crossAxisSpacing: 12,
+              mainAxisSpacing: 8,
+              crossAxisSpacing: 8,
               childAspectRatio: 1.5,
               children: [
                 _LevelCard(
